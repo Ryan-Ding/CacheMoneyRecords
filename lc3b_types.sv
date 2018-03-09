@@ -49,7 +49,14 @@ lc3b_opcode opcode;
 lc3b_aluop aluop;
 logic load_cc;
 logic load_regfile;
-/* ... other signals ... */
+
+logic storemux_sel;
+logic destmux_sel;
+logic [2:0] alumux8_sel;
+logic alumux2_sel;
+logic aluoutmux_sel;
+logic wbmux_sel;
+logic [1:0] mem_byte_enable;
 } lc3b_control_word;
 
 endpackage : lc3b_types

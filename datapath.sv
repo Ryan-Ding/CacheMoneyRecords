@@ -2,21 +2,86 @@ import lc3b_types::*;
 
 module datapath
 (
-    input clk,
-
-    /* control signals */
-    input lc3b_line instruction_mem_in,
-	 input lc3b_line data_mem_in,
-
-	 output lc3b_word pc_out,
-	 output lc3b_line wdata,
-	 output lc3b_word mem_address
-
-	
+	wishbone.master ifetch,
+	wishbone.master memory
 
     /* declare more ports here */
 );
 
+
+logic clk;
+logic [1:0] mem_byte_enable;
+lc3b_word temp_address;
+
+/* declare internal signals */
+
+// fetch signals
+lc3b_word pcmux_out;
+lc3b_word pc_out;
+lc3b_word pc_plus2_out;
+
+//if_id signals
+lc3b_word if_id_reg_out;
+
+// decode signals
+lc3b_word sr1_out;
+lc3b_word sr2_out;
+lc3b_reg destmux_out;
+lc3b_reg storemux_out;
+lc3b_control_word control_out;
+
+//id_ex signals
+logic[95:0] id_ex_reg_out;
+lc3b_control_word crtl_reg_id_ex_out;
+
+//execute signals
+lc3b_word aluoutmux_out;
+lc3b_word alu_out;
+lc3b_word wbmux_out;
+lc3b_word adj6_out;
+lc3b_word adj9_out;
+lc3b_word adj11_out;
+lc3b_word sext5_out;
+lc3b_word zext4_out;
+lc3b_word sext6_out;
+lc3b_word zextshf_8_out;
+lc3b_word alumux8_out;
+lc3b_word alumux2_out;
+
+//ex_mem signals
+logic[95:0] ex_mem_reg_out;
+lc3b_control_word crtl_reg_ex_mem_out;
+
+//mem_wb signals
+lc3b_control_word crtl_reg_mem_wb_out;
+
+//write back signals
+lc3b_nzp gencc_out;
+lc3b_nzp cc_out;
+logic branch_enable;
+logic[1:0] br_ctrl_out;
+
+
+
+
+/* input signals */
+lc3b_line instruction_mem_in;
+lc3b_line data_mem_in;
+
+/* output signals */
+lc3b_word pc_out;
+lc3b_line wdata;
+
+lc3b_word mem_address;
+
+assign ifetch.ADR = pc_out;
+assign instruction_mem_in = ifetch.DAT_S;
+
+assign memory.DAT_M = wdata;
+assign memory.ADR = mem_address;
+assign temp_address = 2 * (mem_address[3:1]);
+assign memory.SEL = (16'b0000000000000011 & mem_byte_enable) << temp_address;
+	 
 // get instruction from 128 bits memory output
 assign instruction_data = instruction_mem_in >> (16 * pc_out[3:1]);
 assign mem_rdata = data_mem_in >> (16 * mem_address[3:1]);
@@ -47,7 +112,8 @@ assign crtl_reg_ex_mem_out = ex_mem_reg_out[95:64];
 assign pc_reg_mem_wb_out = mem_wb_reg_out[15:0];
 assign mem_data_mem_wb_out = mem_wb_reg_out[31:16];
 assign aluout_mem_wb_out = mem_wb_reg_out[47:32];
-assign crtl_reg_mem_wb_out = mem_wb_reg_out[79:48];
+assign ir_mem_wb_out = mem_wb_reg_out[79:48];
+assign crtl_reg_mem_wb_out = mem_wb_reg_out[95:80];
 
 mux4 pcmux(
 	.sel(br_ctrl_out),
@@ -181,8 +247,8 @@ mux8 #(.width(16)) alumux8
 mux2 #(.width(16)) alumux2
 (
 	.sel(alumux2_sel),
-   .a(pc_reg_id_ex_out),
-	.b(sr1_id_ex_out),
+   .a(sr1_id_ex_out),
+	.b(pc_reg_id_ex_out),
 	.out(alumux2_out)
 );
 
@@ -192,13 +258,15 @@ alu alu
     .a(alumux2_out),
 	 .b(alumux8_out),
     .f(alu_out)
-);
+); 
 
-mux2 #(.width(16)) aluoutmux
+mux4 #(.width(16)) aluoutmux
 (
 	.sel(aluoutmux_sel),
    .a(alu_out),
-	.b(zextshf_8_out),
+	.b(sr1_id_ex_out),
+	.c(zextshf_8_out),
+	.d(),
 	.out(aluoutmux_out)
 );
 
@@ -218,14 +286,15 @@ register #(.width(96)) ex_mem_reg
 );
 
 // memory write back pipeline register
-register #(.width(80)) mem_wb_reg
+register #(.width(96)) mem_wb_reg
 (
 	.clk,
 	.load(load_mem_wb_reg),
-	.in({crtl_reg_ex_mem_out,aluout_ex_mem_out, mem_rdata, pc_reg_ex_mem_out}),
+	.in({crtl_reg_ex_mem_out,ir_ex_mem_out,aluout_ex_mem_out, mem_rdata, pc_reg_ex_mem_out}),
 	.out(mem_wb_reg_out)
 );
 
+//write back stage
 mux4 #(.width(16)) wbmux
 (
 	.sel(wbmux_sel),
@@ -240,28 +309,13 @@ register #(.width(3)) cc
 (
 	.clk,
 	.load(load_cc),
-	.in(gencc_out),import lc3b_types::*;
-
-module cccomp
-(
-    input lc3b_reg ir_in,
-	 input lc3b_nzp nzp_in,
-    output logic out
-);
-
-always_comb
-begin
-		out = (ir_in[0] & nzp_in[0]) + (ir_in[1] & nzp_in[1]) + (ir_in[2] & nzp_in[2]);
-end
-
-endmodule : cccomp
-
+	.in(gencc_out),
 	.out(cc_out)
 );
 
 cccomp cccomp
 (
-    .ir_in(dest),
+    .ir_in(ir_mem_wb_out[11:9]),
 	 .nzp_in(cc_out),
     .out(branch_enable)
 );

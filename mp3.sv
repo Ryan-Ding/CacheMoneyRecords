@@ -35,11 +35,7 @@ logic addermux_sel;
 logic jsr_check;
 logic destmux_sel;
 logic is_even;
-logic stbmux_sel;sext #(.width(5)) sext5
-(
-	 .in(imm5),
-    .out(sext5_out)
-);
+logic stbmux_sel;
 lc3b_aluop aluop;
 lc3b_opcode opcode;
 lc3b_offset6 offset6;
