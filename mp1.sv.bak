@@ -1,0 +1,40 @@
+import lc3b_types::*;
+
+module mp1
+(
+    input clk,
+
+    /* Memory signals */
+    input mem_resp,
+    input lc3b_word mem_rdata,
+    output mem_read,
+    output mem_write,
+    output lc3b_mem_wmask mem_byte_enable,
+    output lc3b_word mem_address,
+    output lc3b_word mem_wdata
+);
+
+logic bench_enable;
+logic load_pc;
+logic load_ir;
+logic load_regfile;
+logic load_mar;
+logic load_mdr;
+logic load_cc;
+logic pcmux_sel;
+logic storemux_sel;
+logic alumux_sel;
+logic regfilemux_sel;
+logic marmux_sel;
+logic mdrmux_sel;
+lc3b_aluop aluop;
+lc3b_opcode opcode;
+
+
+/* Instantiate MP 0 top level blocks here */
+datapath d0(.*);
+control control0(.*);
+
+
+
+endmodule : mp1

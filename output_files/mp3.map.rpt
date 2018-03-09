@@ -1,0 +1,223 @@
+Analysis & Synthesis report for mp3
+Thu Mar  8 21:53:48 2018
+Quartus II 32-bit Version 13.1.4 Build 182 03/12/2014 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2014 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                ;
++-------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status   ; Failed - Thu Mar  8 21:53:48 2018           ;
+; Quartus II 32-bit Version     ; 13.1.4 Build 182 03/12/2014 SJ Full Version ;
+; Revision Name                 ; mp3                                         ;
+; Top-level Entity Name         ; mp3                                         ;
+; Family                        ; Stratix III                                 ;
+; Logic utilization             ; N/A until Partition Merge                   ;
+;     Combinational ALUTs       ; N/A until Partition Merge                   ;
+;     Memory ALUTs              ; N/A until Partition Merge                   ;
+;     Dedicated logic registers ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; DSP block 18-bit elements     ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; EP3SE50F780C2      ;                    ;
+; Top-level entity name                                                           ; mp3                ; mp3                ;
+; Family name                                                                     ; Stratix III        ; Cyclone IV GX      ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                        ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                               ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                                    ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Synthesis Seed                                                                  ; 1                  ; 1                  ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 13.1.4 Build 182 03/12/2014 SJ Full Version
+    Info: Processing started: Thu Mar  8 21:53:45 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mp3 -c mp3
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (12021): Found 1 design units, including 0 entities, in source file lc3b_types.sv
+    Info (12022): Found design unit 1: lc3b_types (SystemVerilog)
+Info (12021): Found 6 design units, including 6 entities, in source file adj.sv
+    Info (12023): Found entity 1: adj
+    Info (12023): Found entity 2: sext
+    Info (12023): Found entity 3: zext
+    Info (12023): Found entity 4: zext_shift
+    Info (12023): Found entity 5: mdrmask
+    Info (12023): Found entity 6: srmask
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: alu
+Error (10170): Verilog HDL syntax error at control.sv(14) near text â File: /home/rding4/ece411/mp3/control.sv Line: 14
+Error (10170): Verilog HDL syntax error at control.sv(14) near text "â";  expecting ";" File: /home/rding4/ece411/mp3/control.sv Line: 14
+Error (10170): Verilog HDL syntax error at control.sv(14) near text € File: /home/rding4/ece411/mp3/control.sv Line: 14
+Error (10170): Verilog HDL syntax error at control.sv(14) near text ™ File: /home/rding4/ece411/mp3/control.sv Line: 14
+Error (10112): Ignored design unit "control_rom" at control.sv(4) due to previous errors File: /home/rding4/ece411/mp3/control.sv Line: 4
+Info (12021): Found 0 design units, including 0 entities, in source file control.sv
+Error (10170): Verilog HDL syntax error at datapath.sv(173) near text ".";  expecting ")" File: /home/rding4/ece411/mp3/datapath.sv Line: 173
+Error (10170): Verilog HDL syntax error at datapath.sv(243) near text "import";  expecting ")" File: /home/rding4/ece411/mp3/datapath.sv Line: 243
+Error (10987): SystemVerilog error at datapath.sv(257): closing label "cccomp" must match the original label "datapath" File: /home/rding4/ece411/mp3/datapath.sv Line: 257
+Error (10112): Ignored design unit "datapath" at datapath.sv(3) due to previous errors File: /home/rding4/ece411/mp3/datapath.sv Line: 3
+Error (10170): Verilog HDL syntax error at datapath.sv(259) near text ".";  expecting a description File: /home/rding4/ece411/mp3/datapath.sv Line: 259
+Info (12021): Found 0 design units, including 0 entities, in source file datapath.sv
+Info (12021): Found 1 design units, including 1 entities, in source file gencc.sv
+    Info (12023): Found entity 1: gencc
+Info (12021): Found 1 design units, including 1 entities, in source file ir.sv
+    Info (12023): Found entity 1: ir
+Info (12021): Found 1 design units, including 1 entities, in source file mp3.sv
+    Info (12023): Found entity 1: mp3
+Info (12021): Found 1 design units, including 1 entities, in source file plus2.sv
+    Info (12023): Found entity 1: plus2
+Info (12021): Found 1 design units, including 1 entities, in source file regfile.sv
+    Info (12023): Found entity 1: regfile
+Info (12021): Found 1 design units, including 1 entities, in source file register.sv
+    Info (12023): Found entity 1: register
+Info (12021): Found 1 design units, including 1 entities, in source file add.sv
+    Info (12023): Found entity 1: add
+Info (12021): Found 1 design units, including 1 entities, in source file cccomp.sv
+    Info (12023): Found entity 1: cccomp
+Error (10987): SystemVerilog error at mux.sv(61): closing label "mux4" must match the original label "mux8" File: /home/rding4/ece411/mp3/mux.sv Line: 61
+Error (10112): Ignored design unit "mux8" at mux.sv(35) due to previous errors File: /home/rding4/ece411/mp3/mux.sv Line: 35
+Info (12021): Found 0 design units, including 0 entities, in source file mux.sv
+Error (10170): Verilog HDL syntax error at br_ctrl.sv(13) near text ":";  expecting an operand File: /home/rding4/ece411/mp3/br_ctrl.sv Line: 13
+Error (10170): Verilog HDL syntax error at br_ctrl.sv(27) near text "end";  expecting "endcase" File: /home/rding4/ece411/mp3/br_ctrl.sv Line: 27
+Info (12021): Found 0 design units, including 0 entities, in source file br_ctrl.sv
+Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 14 errors, 0 warnings
+    Error: Peak virtual memory: 383 megabytes
+    Error: Processing ended: Thu Mar  8 21:53:48 2018
+    Error: Elapsed time: 00:00:03
+    Error: Total CPU time (on all processors): 00:00:01
+
+
