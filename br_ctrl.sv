@@ -10,7 +10,7 @@ module br_ctrl
 always_comb
 begin
 	out = 2'b00;
-		case(opcode):
+		case(opcode) 
 			op_br : begin 
 				if (branch_enable == 1) out = 2'b01;
 				else out = 2'b00;
@@ -24,6 +24,7 @@ begin
 			op_trap : begin
 				out = 2'b10;
 			end
+		endcase
 end
 
 endmodule : br_ctrl

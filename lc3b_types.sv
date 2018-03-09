@@ -8,7 +8,7 @@ typedef logic  [8:0] lc3b_offset9;
 typedef logic  [5:0] lc3b_offset6;
 typedef logic  [10:0] lc3b_offset11;
 typedef logic  [4:0] lc3b_imm5;
-typedef logic [3:0] lc3b_imm4;
+typedef logic [3:0] lc3b_imm4; 
 typedef logic [7:0] lc3b_trapvect8;
 
 typedef logic  [2:0] lc3b_reg;
@@ -49,14 +49,15 @@ lc3b_opcode opcode;
 lc3b_aluop aluop;
 logic load_cc;
 logic load_regfile;
-
 logic storemux_sel;
 logic destmux_sel;
 logic [2:0] alumux8_sel;
 logic alumux2_sel;
-logic aluoutmux_sel;
-logic wbmux_sel;
+logic [1:0] aluoutmux_sel;
+logic [1:0] wbmux_sel;
 logic [1:0] mem_byte_enable;
+logic mem_read;
+logic mem_write;
 } lc3b_control_word;
 
 endpackage : lc3b_types

@@ -58,4 +58,4 @@ begin
 	else 
 		out = h;
 end
-endmodule : mux4
+endmodule : mux8
