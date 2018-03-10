@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mp3
-Fri Mar  9 16:50:23 2018
+Fri Mar  9 19:21:43 2018
 Quartus II 32-bit Version 13.1.4 Build 182 03/12/2014 SJ Full Version
 
 
@@ -16,42 +16,40 @@ Quartus II 32-bit Version 13.1.4 Build 182 03/12/2014 SJ Full Version
   8. Registers Removed During Synthesis
   9. Removed Registers Triggering Further Register Optimizations
  10. General Register Statistics
- 11. Parameter Settings for User Entity Instance: datapath:datapath|mux4:pcmux
- 12. Parameter Settings for User Entity Instance: datapath:datapath|register:pc
- 13. Parameter Settings for User Entity Instance: datapath:datapath|plus2:pc_plus2
- 14. Parameter Settings for User Entity Instance: datapath:datapath|register:if_id_reg
- 15. Parameter Settings for User Entity Instance: datapath:datapath|mux2:storemux
- 16. Parameter Settings for User Entity Instance: datapath:datapath|mux2:destmux
- 17. Parameter Settings for User Entity Instance: datapath:datapath|register:id_ex_reg
- 18. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj6
- 19. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj9
- 20. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj11
- 21. Parameter Settings for User Entity Instance: datapath:datapath|sext:sext6
- 22. Parameter Settings for User Entity Instance: datapath:datapath|sext:sext5
- 23. Parameter Settings for User Entity Instance: datapath:datapath|zext:zext4
- 24. Parameter Settings for User Entity Instance: datapath:datapath|mux8:alumux8
- 25. Parameter Settings for User Entity Instance: datapath:datapath|mux2:alumux2
- 26. Parameter Settings for User Entity Instance: datapath:datapath|mux4:aluoutmux
- 27. Parameter Settings for User Entity Instance: datapath:datapath|zext_shift:zextshf_8
- 28. Parameter Settings for User Entity Instance: datapath:datapath|register:ex_mem_reg
- 29. Parameter Settings for User Entity Instance: datapath:datapath|register:mem_wb_reg
- 30. Parameter Settings for User Entity Instance: datapath:datapath|mux4:wbmux
- 31. Parameter Settings for User Entity Instance: datapath:datapath|register:cc
- 32. Port Connectivity Checks: "datapath:datapath|br_ctrl:br_ctrl"
- 33. Port Connectivity Checks: "datapath:datapath|register:cc"
- 34. Port Connectivity Checks: "datapath:datapath|mux4:wbmux"
- 35. Port Connectivity Checks: "datapath:datapath|register:mem_wb_reg"
- 36. Port Connectivity Checks: "datapath:datapath|register:ex_mem_reg"
- 37. Port Connectivity Checks: "datapath:datapath|mux4:aluoutmux"
- 38. Port Connectivity Checks: "datapath:datapath|mux8:alumux8"
- 39. Port Connectivity Checks: "datapath:datapath|register:id_ex_reg"
- 40. Port Connectivity Checks: "datapath:datapath|regfile:regfile"
- 41. Port Connectivity Checks: "datapath:datapath|mux2:destmux"
- 42. Port Connectivity Checks: "datapath:datapath|register:if_id_reg"
- 43. Port Connectivity Checks: "datapath:datapath|register:pc"
- 44. Port Connectivity Checks: "datapath:datapath|mux4:pcmux"
- 45. Elapsed Time Per Partition
- 46. Analysis & Synthesis Messages
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: datapath:datapath|mux4:pcmux
+ 13. Parameter Settings for User Entity Instance: datapath:datapath|register:pc
+ 14. Parameter Settings for User Entity Instance: datapath:datapath|plus2:pc_plus2
+ 15. Parameter Settings for User Entity Instance: datapath:datapath|register:if_id_reg
+ 16. Parameter Settings for User Entity Instance: datapath:datapath|mux2:storemux
+ 17. Parameter Settings for User Entity Instance: datapath:datapath|mux2:destmux
+ 18. Parameter Settings for User Entity Instance: datapath:datapath|register:id_ex_reg
+ 19. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj6
+ 20. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj9
+ 21. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj11
+ 22. Parameter Settings for User Entity Instance: datapath:datapath|sext:sext6
+ 23. Parameter Settings for User Entity Instance: datapath:datapath|sext:sext5
+ 24. Parameter Settings for User Entity Instance: datapath:datapath|zext:zext4
+ 25. Parameter Settings for User Entity Instance: datapath:datapath|mux8:alumux8
+ 26. Parameter Settings for User Entity Instance: datapath:datapath|mux2:alumux2
+ 27. Parameter Settings for User Entity Instance: datapath:datapath|mux4:aluoutmux
+ 28. Parameter Settings for User Entity Instance: datapath:datapath|zext_shift:zextshf_8
+ 29. Parameter Settings for User Entity Instance: datapath:datapath|register:ex_mem_reg
+ 30. Parameter Settings for User Entity Instance: datapath:datapath|register:mem_wb_reg
+ 31. Parameter Settings for User Entity Instance: datapath:datapath|mux4:wbmux
+ 32. Parameter Settings for User Entity Instance: datapath:datapath|register:cc
+ 33. Port Connectivity Checks: "datapath:datapath|mux4:wbmux"
+ 34. Port Connectivity Checks: "datapath:datapath|register:mem_wb_reg"
+ 35. Port Connectivity Checks: "datapath:datapath|register:ex_mem_reg"
+ 36. Port Connectivity Checks: "datapath:datapath|mux4:aluoutmux"
+ 37. Port Connectivity Checks: "datapath:datapath|mux8:alumux8"
+ 38. Port Connectivity Checks: "datapath:datapath|register:id_ex_reg"
+ 39. Port Connectivity Checks: "datapath:datapath|mux2:destmux"
+ 40. Port Connectivity Checks: "datapath:datapath|register:if_id_reg"
+ 41. Port Connectivity Checks: "datapath:datapath|register:pc"
+ 42. Port Connectivity Checks: "datapath:datapath|mux4:pcmux"
+ 43. Elapsed Time Per Partition
+ 44. Analysis & Synthesis Messages
 
 
 
@@ -77,13 +75,13 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Mar  9 16:50:22 2018       ;
+; Analysis & Synthesis Status     ; Successful - Fri Mar  9 19:21:43 2018       ;
 ; Quartus II 32-bit Version       ; 13.1.4 Build 182 03/12/2014 SJ Full Version ;
 ; Revision Name                   ; mp3                                         ;
 ; Top-level Entity Name           ; mp3                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
+; Total registers                 ; 351                                         ;
 ; Total pins                      ; 580                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -224,284 +222,100 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                        ;
-+---------------------------------------------+----------------------+
-; Resource                                    ; Usage                ;
-+---------------------------------------------+----------------------+
-; Estimate of Logic utilization (ALMs needed) ; 0                    ;
-;                                             ;                      ;
-; Combinational ALUT usage for logic          ; 0                    ;
-;     -- 7 input functions                    ; 0                    ;
-;     -- 6 input functions                    ; 0                    ;
-;     -- 5 input functions                    ; 0                    ;
-;     -- 4 input functions                    ; 0                    ;
-;     -- <=3 input functions                  ; 0                    ;
-;                                             ;                      ;
-; Dedicated logic registers                   ; 0                    ;
-;                                             ;                      ;
-; I/O pins                                    ; 580                  ;
-; Total DSP Blocks                            ; 0                    ;
-; Maximum fan-out node                        ; ifetch.ADR[0]~output ;
-; Maximum fan-out                             ; 1                    ;
-; Total fan-out                               ; 580                  ;
-; Average fan-out                             ; 0.50                 ;
-+---------------------------------------------+----------------------+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimate of Logic utilization (ALMs needed) ; 305              ;
+;                                             ;                  ;
+; Combinational ALUT usage for logic          ; 420              ;
+;     -- 7 input functions                    ; 64               ;
+;     -- 6 input functions                    ; 83               ;
+;     -- 5 input functions                    ; 46               ;
+;     -- 4 input functions                    ; 147              ;
+;     -- <=3 input functions                  ; 80               ;
+;                                             ;                  ;
+; Dedicated logic registers                   ; 351              ;
+;                                             ;                  ;
+; I/O pins                                    ; 580              ;
+; Total DSP Blocks                            ; 0                ;
+; Maximum fan-out node                        ; ifetch.CLK~input ;
+; Maximum fan-out                             ; 351              ;
+; Total fan-out                               ; 3574             ;
+; Average fan-out                             ; 1.85             ;
++---------------------------------------------+------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                       ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
-; |mp3                       ; 0 (0)             ; 0 (0)        ; 0                 ; 0          ; 580  ; 0            ; |mp3                ; work         ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                       ;
++---------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------------+--------------+
+; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                            ; Library Name ;
++---------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------------+--------------+
+; |mp3                            ; 420 (0)           ; 351 (0)      ; 0                 ; 0          ; 580  ; 0            ; |mp3                                           ; work         ;
+;    |datapath:datapath|          ; 420 (224)         ; 351 (0)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath                         ; work         ;
+;       |alu:alu|                 ; 32 (32)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|alu:alu                 ; work         ;
+;       |br_ctrl:br_ctrl|         ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|br_ctrl:br_ctrl         ; work         ;
+;       |cccomp:cccomp|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|cccomp:cccomp           ; work         ;
+;       |control_rom:control_rom| ; 11 (11)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|control_rom:control_rom ; work         ;
+;       |gencc:gencc|             ; 5 (5)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|gencc:gencc             ; work         ;
+;       |mux2:storemux|           ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux2:storemux           ; work         ;
+;       |mux4:pcmux|              ; 15 (15)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux4:pcmux              ; work         ;
+;       |mux4:wbmux|              ; 16 (16)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux4:wbmux              ; work         ;
+;       |mux8:alumux8|            ; 23 (23)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux8:alumux8            ; work         ;
+;       |plus2:pc_plus2|          ; 15 (15)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|plus2:pc_plus2          ; work         ;
+;       |regfile:regfile|         ; 72 (72)           ; 128 (128)    ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|regfile:regfile         ; work         ;
+;       |register:cc|             ; 0 (0)             ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:cc             ; work         ;
+;       |register:ex_mem_reg|     ; 0 (0)             ; 59 (59)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:ex_mem_reg     ; work         ;
+;       |register:id_ex_reg|      ; 0 (0)             ; 55 (55)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:id_ex_reg      ; work         ;
+;       |register:if_id_reg|      ; 0 (0)             ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:if_id_reg      ; work         ;
+;       |register:mem_wb_reg|     ; 0 (0)             ; 58 (58)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:mem_wb_reg     ; work         ;
+;       |register:pc|             ; 1 (1)             ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:pc             ; work         ;
++---------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                     ;
-+-----------------------------------------------------------------+--------------------------------------+
-; Register name                                                   ; Reason for Removal                   ;
-+-----------------------------------------------------------------+--------------------------------------+
-; datapath:datapath|register:cc|data[0..2]                        ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:mem_wb_reg|data[15..22]              ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[15]                  ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[14]                  ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[14]                  ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[13]                  ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[13]                  ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[12]                  ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[12]                  ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[11]                  ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[11]                  ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[10]                  ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[10]                  ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[9]                   ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[9]                   ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[8]                   ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[8]                   ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[7]                   ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[7]                   ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[6]                   ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[6]                   ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[5]                   ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[5]                   ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[4]                   ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[4]                   ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[3]                   ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[3]                   ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[2]                   ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[2]                   ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[1]                   ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[1]                   ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[0]                   ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[0]                   ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[23..47,57]           ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[57]                  ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[58]                  ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[58]                  ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[59]                  ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[59]                  ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[84]                  ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[84]                  ; Lost fanout                          ;
-; datapath:datapath|register:mem_wb_reg|data[85]                  ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:ex_mem_reg|data[85]                  ; Lost fanout                          ;
-; datapath:datapath|register:ex_mem_reg|data[16..47]              ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:id_ex_reg|data[14]                   ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[14]                   ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[13,30]                ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[13]                   ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[12,29]                ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[12]                   ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[11,28]                ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[11]                   ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[10,27]                ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[10]                   ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[9,26]                 ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[9]                    ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[8,25]                 ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[8]                    ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[7,24]                 ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[7]                    ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[6,23]                 ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[6]                    ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[5,22]                 ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[5]                    ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[4,21]                 ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[4]                    ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[3,20]                 ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[3]                    ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[2,19]                 ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[2]                    ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[1,18]                 ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[1]                    ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[0,17]                 ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[0]                    ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[16,37..47,52..58]     ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[20]                   ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[36,51]                ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[19]                   ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[32..35,48..50,73..75] ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[21]                   ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[15,80..83]            ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[15]                   ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[31]                   ; Lost fanout                          ;
-; datapath:datapath|register:if_id_reg|data[16..18,22..27]        ; Lost fanout                          ;
-; datapath:datapath|register:id_ex_reg|data[70..72]               ; Lost fanout                          ;
-; datapath:datapath|register:ex_mem_reg|data[64,65]               ; Stuck at GND due to stuck port clock ;
-; datapath:datapath|register:if_id_reg|data[28..31]               ; Lost fanout                          ;
-; datapath:datapath|register:pc|data[0..15]                       ; Stuck at GND due to stuck port clock ;
-; Total Number of Removed Registers = 228                         ;                                      ;
-+-----------------------------------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                       ;
++-------------------------------------------------------------+------------------------------------------------------------+
+; Register name                                               ; Reason for Removal                                         ;
++-------------------------------------------------------------+------------------------------------------------------------+
+; datapath:datapath|register:id_ex_reg|data[64,70..72,81..83] ; Stuck at GND due to stuck port data_in                     ;
+; datapath:datapath|register:ex_mem_reg|data[64]              ; Stuck at GND due to stuck port data_in                     ;
+; datapath:datapath|register:id_ex_reg|data[0..15]            ; Lost fanout                                                ;
+; datapath:datapath|register:id_ex_reg|data[75]               ; Merged with datapath:datapath|register:id_ex_reg|data[65]  ;
+; datapath:datapath|register:id_ex_reg|data[79]               ; Merged with datapath:datapath|register:id_ex_reg|data[78]  ;
+; datapath:datapath|register:ex_mem_reg|data[79]              ; Merged with datapath:datapath|register:ex_mem_reg|data[78] ;
+; datapath:datapath|register:mem_wb_reg|data[79]              ; Merged with datapath:datapath|register:mem_wb_reg|data[78] ;
+; Total Number of Removed Registers = 28                      ;                                                            ;
++-------------------------------------------------------------+------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                ;
-+------------------------------------------------+-------------------------+---------------------------------------------------------------------------------+
-; Register name                                  ; Reason for Removal      ; Registers Removed due to This Register                                          ;
-+------------------------------------------------+-------------------------+---------------------------------------------------------------------------------+
-; datapath:datapath|register:cc|data[0]          ; Stuck at GND            ; datapath:datapath|register:pc|data[4], datapath:datapath|register:pc|data[3],   ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:pc|data[2], datapath:datapath|register:pc|data[1],   ;
-;                                                ;                         ; datapath:datapath|register:pc|data[0], datapath:datapath|register:pc|data[5],   ;
-;                                                ;                         ; datapath:datapath|register:pc|data[6], datapath:datapath|register:pc|data[7],   ;
-;                                                ;                         ; datapath:datapath|register:pc|data[8], datapath:datapath|register:pc|data[9],   ;
-;                                                ;                         ; datapath:datapath|register:pc|data[10], datapath:datapath|register:pc|data[11], ;
-;                                                ;                         ; datapath:datapath|register:pc|data[12], datapath:datapath|register:pc|data[13], ;
-;                                                ;                         ; datapath:datapath|register:pc|data[14], datapath:datapath|register:pc|data[15]  ;
-; datapath:datapath|register:ex_mem_reg|data[32] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[14],                                  ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:id_ex_reg|data[13],                                  ;
-;                                                ;                         ; datapath:datapath|register:id_ex_reg|data[12],                                  ;
-;                                                ;                         ; datapath:datapath|register:id_ex_reg|data[0],                                   ;
-;                                                ;                         ; datapath:datapath|register:id_ex_reg|data[48],                                  ;
-;                                                ;                         ; datapath:datapath|register:id_ex_reg|data[32],                                  ;
-;                                                ;                         ; datapath:datapath|register:id_ex_reg|data[15],                                  ;
-;                                                ;                         ; datapath:datapath|register:if_id_reg|data[16],                                  ;
-;                                                ;                         ; datapath:datapath|register:id_ex_reg|data[72],                                  ;
-;                                                ;                         ; datapath:datapath|register:id_ex_reg|data[71],                                  ;
-;                                                ;                         ; datapath:datapath|register:id_ex_reg|data[70]                                   ;
-; datapath:datapath|register:ex_mem_reg|data[38] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[6],                                   ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:id_ex_reg|data[38],                                  ;
-;                                                ;                         ; datapath:datapath|register:id_ex_reg|data[53],                                  ;
-;                                                ;                         ; datapath:datapath|register:if_id_reg|data[21]                                   ;
-; datapath:datapath|register:ex_mem_reg|data[36] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[4],                                   ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:id_ex_reg|data[52],                                  ;
-;                                                ;                         ; datapath:datapath|register:if_id_reg|data[20],                                  ;
-;                                                ;                         ; datapath:datapath|register:id_ex_reg|data[36]                                   ;
-; datapath:datapath|register:ex_mem_reg|data[35] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[3],                                   ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:id_ex_reg|data[51],                                  ;
-;                                                ;                         ; datapath:datapath|register:if_id_reg|data[19],                                  ;
-;                                                ;                         ; datapath:datapath|register:id_ex_reg|data[35]                                   ;
-; datapath:datapath|register:ex_mem_reg|data[34] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[2],                                   ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:id_ex_reg|data[50],                                  ;
-;                                                ;                         ; datapath:datapath|register:id_ex_reg|data[34],                                  ;
-;                                                ;                         ; datapath:datapath|register:if_id_reg|data[18]                                   ;
-; datapath:datapath|register:ex_mem_reg|data[33] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[1],                                   ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:id_ex_reg|data[49],                                  ;
-;                                                ;                         ; datapath:datapath|register:id_ex_reg|data[33],                                  ;
-;                                                ;                         ; datapath:datapath|register:if_id_reg|data[17]                                   ;
-; datapath:datapath|register:ex_mem_reg|data[39] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[7],                                   ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:id_ex_reg|data[54],                                  ;
-;                                                ;                         ; datapath:datapath|register:id_ex_reg|data[39],                                  ;
-;                                                ;                         ; datapath:datapath|register:if_id_reg|data[22]                                   ;
-; datapath:datapath|register:ex_mem_reg|data[40] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[8],                                   ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:id_ex_reg|data[55],                                  ;
-;                                                ;                         ; datapath:datapath|register:id_ex_reg|data[40],                                  ;
-;                                                ;                         ; datapath:datapath|register:if_id_reg|data[23]                                   ;
-; datapath:datapath|register:mem_wb_reg|data[84] ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[84],                                 ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[31],                                  ;
-;                                                ;                         ; datapath:datapath|register:if_id_reg|data[28]                                   ;
-; datapath:datapath|register:mem_wb_reg|data[13] ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[13],                                 ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[13]                                   ;
-; datapath:datapath|register:mem_wb_reg|data[12] ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[12],                                 ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[12]                                   ;
-; datapath:datapath|register:mem_wb_reg|data[11] ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[11],                                 ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[11]                                   ;
-; datapath:datapath|register:mem_wb_reg|data[10] ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[10],                                 ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[10]                                   ;
-; datapath:datapath|register:mem_wb_reg|data[9]  ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[9],                                  ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[9]                                    ;
-; datapath:datapath|register:mem_wb_reg|data[8]  ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[8],                                  ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[8]                                    ;
-; datapath:datapath|register:mem_wb_reg|data[7]  ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[7],                                  ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[7]                                    ;
-; datapath:datapath|register:mem_wb_reg|data[6]  ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[6],                                  ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[6]                                    ;
-; datapath:datapath|register:mem_wb_reg|data[5]  ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[5],                                  ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[5]                                    ;
-; datapath:datapath|register:mem_wb_reg|data[4]  ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[4],                                  ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[4]                                    ;
-; datapath:datapath|register:mem_wb_reg|data[3]  ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[3],                                  ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[3]                                    ;
-; datapath:datapath|register:mem_wb_reg|data[2]  ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[2],                                  ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[2]                                    ;
-; datapath:datapath|register:mem_wb_reg|data[1]  ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[1],                                  ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[1]                                    ;
-; datapath:datapath|register:mem_wb_reg|data[0]  ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[0],                                  ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[0]                                    ;
-; datapath:datapath|register:mem_wb_reg|data[57] ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[57],                                 ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[25]                                   ;
-; datapath:datapath|register:mem_wb_reg|data[58] ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[58],                                 ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[26]                                   ;
-; datapath:datapath|register:mem_wb_reg|data[59] ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[59],                                 ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[27]                                   ;
-; datapath:datapath|register:mem_wb_reg|data[85] ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[85],                                 ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[29]                                   ;
-; datapath:datapath|register:ex_mem_reg|data[42] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[10],                                  ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:id_ex_reg|data[42]                                   ;
-; datapath:datapath|register:ex_mem_reg|data[37] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[5],                                   ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:id_ex_reg|data[37]                                   ;
-; datapath:datapath|register:mem_wb_reg|data[15] ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[15],                                 ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[15]                                   ;
-; datapath:datapath|register:mem_wb_reg|data[14] ; Stuck at GND            ; datapath:datapath|register:ex_mem_reg|data[14],                                 ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:if_id_reg|data[14]                                   ;
-; datapath:datapath|register:ex_mem_reg|data[41] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[9],                                   ;
-;                                                ; due to stuck port clock ; datapath:datapath|register:id_ex_reg|data[41]                                   ;
-; datapath:datapath|register:ex_mem_reg|data[27] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[27]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[28] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[28]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[29] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[29]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[30] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[30]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[31] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[31]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[17] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[17]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[18] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[18]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[19] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[19]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[20] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[20]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[21] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[21]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[23] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[23]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[22] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[22]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[24] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[24]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[25] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[25]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[26] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[26]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[16] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[16]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[43] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[43]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[44] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[44]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[45] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[45]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[46] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[46]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:ex_mem_reg|data[47] ; Stuck at GND            ; datapath:datapath|register:id_ex_reg|data[47]                                   ;
-;                                                ; due to stuck port clock ;                                                                                 ;
-; datapath:datapath|register:id_ex_reg|data[56]  ; Lost Fanouts            ; datapath:datapath|register:if_id_reg|data[24]                                   ;
-; datapath:datapath|register:id_ex_reg|data[75]  ; Lost Fanouts            ; datapath:datapath|register:if_id_reg|data[30]                                   ;
-+------------------------------------------------+-------------------------+---------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                ;
++-----------------------------------------------+---------------------------+------------------------------------------------+
+; Register name                                 ; Reason for Removal        ; Registers Removed due to This Register         ;
++-----------------------------------------------+---------------------------+------------------------------------------------+
+; datapath:datapath|register:id_ex_reg|data[70] ; Stuck at GND              ; datapath:datapath|register:id_ex_reg|data[15], ;
+;                                               ; due to stuck port data_in ; datapath:datapath|register:id_ex_reg|data[14], ;
+;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[13], ;
+;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[11], ;
+;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[10], ;
+;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[9],  ;
+;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[8],  ;
+;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[7],  ;
+;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[6],  ;
+;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[5],  ;
+;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[4],  ;
+;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[3],  ;
+;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[2],  ;
+;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[1],  ;
+;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[0]   ;
+; datapath:datapath|register:id_ex_reg|data[64] ; Stuck at GND              ; datapath:datapath|register:ex_mem_reg|data[64] ;
+;                                               ; due to stuck port data_in ;                                                ;
+; datapath:datapath|register:id_ex_reg|data[81] ; Stuck at GND              ; datapath:datapath|register:id_ex_reg|data[12]  ;
+;                                               ; due to stuck port data_in ;                                                ;
++-----------------------------------------------+---------------------------+------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -509,14 +323,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 351   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Load   ; 16    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 131   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; Yes        ; |mp3|datapath:datapath|register:pc|data[1]          ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |mp3|datapath:datapath|register:if_id_reg|data[30]  ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |mp3|datapath:datapath|register:mem_wb_reg|data[16] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |mp3|datapath:datapath|mux4:wbmux|f[3]              ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[12]         ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[6]          ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[2]          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 
 
 +---------------------------------------------------------------------------+
@@ -729,25 +558,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------+
-; Port Connectivity Checks: "datapath:datapath|br_ctrl:br_ctrl" ;
-+--------+-------+----------+-----------------------------------+
-; Port   ; Type  ; Severity ; Details                           ;
-+--------+-------+----------+-----------------------------------+
-; opcode ; Input ; Info     ; Stuck at GND                      ;
-+--------+-------+----------+-----------------------------------+
-
-
-+-----------------------------------------------------------+
-; Port Connectivity Checks: "datapath:datapath|register:cc" ;
-+------+-------+----------+---------------------------------+
-; Port ; Type  ; Severity ; Details                         ;
-+------+-------+----------+---------------------------------+
-; clk  ; Input ; Info     ; Stuck at GND                    ;
-; load ; Input ; Info     ; Stuck at GND                    ;
-+------+-------+----------+---------------------------------+
-
-
 +----------------------------------------------------------+
 ; Port Connectivity Checks: "datapath:datapath|mux4:wbmux" ;
 +------+-------+----------+--------------------------------+
@@ -762,10 +572,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port        ; Type   ; Severity ; Details                                                                             ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
-; clk         ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; load        ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; out[87..86] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; out[83..60] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; out[83..80] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; out[77..70] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; out[67..60] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; out[56..48] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
 
@@ -775,7 +585,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-----------------------------------------+
 ; Port ; Type  ; Severity ; Details                                 ;
 +------+-------+----------+-----------------------------------------+
-; clk  ; Input ; Info     ; Stuck at GND                            ;
 ; load ; Input ; Info     ; Stuck at VCC                            ;
 +------+-------+----------+-----------------------------------------+
 
@@ -798,26 +607,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+----------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "datapath:datapath|register:id_ex_reg"                                                      ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; clk         ; Input  ; Info     ; Stuck at GND                                                                        ;
-; load        ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; out[87..84] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; out[79..76] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; out[69..59] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------+
-; Port Connectivity Checks: "datapath:datapath|regfile:regfile" ;
-+------+-------+----------+-------------------------------------+
-; Port ; Type  ; Severity ; Details                             ;
-+------+-------+----------+-------------------------------------+
-; clk  ; Input ; Info     ; Stuck at GND                        ;
-+------+-------+----------+-------------------------------------+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:datapath|register:id_ex_reg" ;
++------+-------+----------+----------------------------------------+
+; Port ; Type  ; Severity ; Details                                ;
++------+-------+----------+----------------------------------------+
+; load ; Input ; Info     ; Stuck at VCC                           ;
++------+-------+----------+----------------------------------------+
 
 
 +------------------------------------------------------------+
@@ -834,7 +630,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+----------------------------------------+
 ; Port ; Type  ; Severity ; Details                                ;
 +------+-------+----------+----------------------------------------+
-; clk  ; Input ; Info     ; Stuck at GND                           ;
 ; load ; Input ; Info     ; Stuck at VCC                           ;
 +------+-------+----------+----------------------------------------+
 
@@ -844,7 +639,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+---------------------------------+
 ; Port ; Type  ; Severity ; Details                         ;
 +------+-------+----------+---------------------------------+
-; clk  ; Input ; Info     ; Stuck at GND                    ;
 ; load ; Input ; Info     ; Stuck at VCC                    ;
 +------+-------+----------+---------------------------------+
 
@@ -863,7 +657,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -873,7 +667,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.1.4 Build 182 03/12/2014 SJ Full Version
-    Info: Processing started: Fri Mar  9 16:50:19 2018
+    Info: Processing started: Fri Mar  9 19:21:39 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mp3 -c mp3
 Info (20034): Auto device selection is not supported for Cyclone V device family. The default device, 5CGXFC7C7F23C8, is set.
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
@@ -920,22 +714,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file br_ctrl
     Info (12023): Found entity 1: br_ctrl
 Info (12127): Elaborating entity "mp3" for the top level hierarchy
 Info (12128): Elaborating entity "datapath" for hierarchy "datapath:datapath"
-Warning (10858): Verilog HDL warning at datapath.sv(13): object mem_byte_enable used but never assigned
-Warning (10858): Verilog HDL warning at datapath.sv(94): object data_mem_in used but never assigned
-Warning (10230): Verilog HDL assignment warning at datapath.sv(104): truncated value with size 16 to match size of target (12)
-Warning (10230): Verilog HDL assignment warning at datapath.sv(108): truncated value with size 16 to match size of target (12)
-Warning (10230): Verilog HDL assignment warning at datapath.sv(109): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at datapath.sv(117): truncated value with size 128 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at datapath.sv(118): truncated value with size 128 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at datapath.sv(153): truncated value with size 32 to match size of target (16)
-Warning (10030): Net "mem_byte_enable" at datapath.sv(13) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "data_mem_in" at datapath.sv(94) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "clk" at datapath.sv(12) has no driver or initial value, using a default initial value '0'
+Warning (10858): Verilog HDL warning at datapath.sv(14): object mem_byte_enable used but never assigned
+Warning (10230): Verilog HDL assignment warning at datapath.sv(105): truncated value with size 16 to match size of target (12)
+Warning (10230): Verilog HDL assignment warning at datapath.sv(114): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at datapath.sv(122): truncated value with size 128 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at datapath.sv(123): truncated value with size 128 to match size of target (16)
+Warning (10030): Net "mem_byte_enable" at datapath.sv(14) has no driver or initial value, using a default initial value '0'
 Warning (10034): Output port "ifetch.DAT_M" at datapath.sv(5) has no driver
 Warning (10034): Output port "ifetch.SEL" at datapath.sv(5) has no driver
-Warning (10034): Output port "ifetch.CYC" at datapath.sv(5) has no driver
-Warning (10034): Output port "ifetch.STB" at datapath.sv(5) has no driver
-Warning (10034): Output port "ifetch.WE" at datapath.sv(5) has no driver
 Info (12128): Elaborating entity "mux4" for hierarchy "datapath:datapath|mux4:pcmux"
 Info (12128): Elaborating entity "register" for hierarchy "datapath:datapath|register:pc"
 Info (12128): Elaborating entity "plus2" for hierarchy "datapath:datapath|plus2:pc_plus2"
@@ -959,19 +745,9 @@ Info (12128): Elaborating entity "cccomp" for hierarchy "datapath:datapath|cccom
 Info (12128): Elaborating entity "gencc" for hierarchy "datapath:datapath|gencc:gencc"
 Info (12128): Elaborating entity "br_ctrl" for hierarchy "datapath:datapath|br_ctrl:br_ctrl"
 Warning (10270): Verilog HDL Case Statement warning at br_ctrl.sv(13): incomplete case statement has no default case item
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276006): RAM logic "datapath:datapath|regfile:regfile|data" is uninferred due to "logic" being set as ramstyle synthesis attribute
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "ifetch.ADR[0]" is stuck at GND
-    Warning (13410): Pin "ifetch.ADR[1]" is stuck at GND
-    Warning (13410): Pin "ifetch.ADR[2]" is stuck at GND
-    Warning (13410): Pin "ifetch.ADR[3]" is stuck at GND
-    Warning (13410): Pin "ifetch.ADR[4]" is stuck at GND
-    Warning (13410): Pin "ifetch.ADR[5]" is stuck at GND
-    Warning (13410): Pin "ifetch.ADR[6]" is stuck at GND
-    Warning (13410): Pin "ifetch.ADR[7]" is stuck at GND
-    Warning (13410): Pin "ifetch.ADR[8]" is stuck at GND
-    Warning (13410): Pin "ifetch.ADR[9]" is stuck at GND
-    Warning (13410): Pin "ifetch.ADR[10]" is stuck at GND
-    Warning (13410): Pin "ifetch.ADR[11]" is stuck at GND
     Warning (13410): Pin "ifetch.SEL[0]" is stuck at GND
     Warning (13410): Pin "ifetch.SEL[1]" is stuck at GND
     Warning (13410): Pin "ifetch.SEL[2]" is stuck at GND
@@ -989,8 +765,8 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "ifetch.SEL[14]" is stuck at GND
     Warning (13410): Pin "ifetch.SEL[15]" is stuck at GND
     Warning (13410): Pin "ifetch.WE" is stuck at GND
-    Warning (13410): Pin "ifetch.STB" is stuck at GND
-    Warning (13410): Pin "ifetch.CYC" is stuck at GND
+    Warning (13410): Pin "ifetch.STB" is stuck at VCC
+    Warning (13410): Pin "ifetch.CYC" is stuck at VCC
     Warning (13410): Pin "ifetch.DAT_M[0]" is stuck at GND
     Warning (13410): Pin "ifetch.DAT_M[1]" is stuck at GND
     Warning (13410): Pin "ifetch.DAT_M[2]" is stuck at GND
@@ -1119,18 +895,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "ifetch.DAT_M[125]" is stuck at GND
     Warning (13410): Pin "ifetch.DAT_M[126]" is stuck at GND
     Warning (13410): Pin "ifetch.DAT_M[127]" is stuck at GND
-    Warning (13410): Pin "memory.ADR[0]" is stuck at GND
-    Warning (13410): Pin "memory.ADR[1]" is stuck at GND
-    Warning (13410): Pin "memory.ADR[2]" is stuck at GND
-    Warning (13410): Pin "memory.ADR[3]" is stuck at GND
-    Warning (13410): Pin "memory.ADR[4]" is stuck at GND
-    Warning (13410): Pin "memory.ADR[5]" is stuck at GND
-    Warning (13410): Pin "memory.ADR[6]" is stuck at GND
-    Warning (13410): Pin "memory.ADR[7]" is stuck at GND
-    Warning (13410): Pin "memory.ADR[8]" is stuck at GND
-    Warning (13410): Pin "memory.ADR[9]" is stuck at GND
-    Warning (13410): Pin "memory.ADR[10]" is stuck at GND
-    Warning (13410): Pin "memory.ADR[11]" is stuck at GND
     Warning (13410): Pin "memory.SEL[0]" is stuck at GND
     Warning (13410): Pin "memory.SEL[1]" is stuck at GND
     Warning (13410): Pin "memory.SEL[2]" is stuck at GND
@@ -1148,408 +912,23 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "memory.SEL[14]" is stuck at GND
     Warning (13410): Pin "memory.SEL[15]" is stuck at GND
     Warning (13410): Pin "memory.WE" is stuck at GND
-    Warning (13410): Pin "memory.STB" is stuck at GND
-    Warning (13410): Pin "memory.CYC" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[0]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[1]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[2]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[3]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[4]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[5]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[6]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[7]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[8]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[9]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[10]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[11]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[12]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[13]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[14]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[15]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[16]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[17]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[18]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[19]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[20]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[21]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[22]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[23]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[24]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[25]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[26]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[27]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[28]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[29]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[30]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[31]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[32]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[33]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[34]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[35]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[36]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[37]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[38]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[39]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[40]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[41]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[42]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[43]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[44]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[45]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[46]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[47]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[48]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[49]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[50]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[51]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[52]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[53]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[54]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[55]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[56]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[57]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[58]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[59]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[60]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[61]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[62]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[63]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[64]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[65]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[66]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[67]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[68]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[69]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[70]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[71]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[72]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[73]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[74]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[75]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[76]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[77]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[78]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[79]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[80]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[81]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[82]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[83]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[84]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[85]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[86]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[87]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[88]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[89]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[90]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[91]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[92]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[93]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[94]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[95]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[96]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[97]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[98]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[99]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[100]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[101]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[102]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[103]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[104]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[105]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[106]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[107]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[108]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[109]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[110]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[111]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[112]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[113]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[114]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[115]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[116]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[117]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[118]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[119]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[120]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[121]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[122]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[123]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[124]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[125]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[126]" is stuck at GND
-    Warning (13410): Pin "memory.DAT_M[127]" is stuck at GND
-Info (17049): 122 registers lost all their fanouts during netlist optimizations.
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 16 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 262 input pin(s) that do not drive logic
+Warning (21074): Design contains 5 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "ifetch.RTY"
     Warning (15610): No output dependent on input pin "ifetch.ACK"
-    Warning (15610): No output dependent on input pin "ifetch.CLK"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[0]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[1]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[2]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[3]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[4]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[5]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[6]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[7]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[8]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[9]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[10]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[11]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[12]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[13]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[14]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[15]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[16]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[17]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[18]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[19]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[20]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[21]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[22]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[23]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[24]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[25]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[26]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[27]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[28]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[29]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[30]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[31]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[32]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[33]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[34]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[35]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[36]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[37]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[38]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[39]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[40]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[41]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[42]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[43]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[44]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[45]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[46]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[47]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[48]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[49]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[50]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[51]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[52]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[53]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[54]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[55]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[56]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[57]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[58]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[59]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[60]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[61]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[62]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[63]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[64]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[65]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[66]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[67]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[68]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[69]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[70]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[71]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[72]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[73]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[74]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[75]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[76]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[77]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[78]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[79]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[80]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[81]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[82]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[83]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[84]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[85]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[86]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[87]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[88]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[89]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[90]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[91]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[92]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[93]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[94]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[95]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[96]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[97]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[98]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[99]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[100]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[101]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[102]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[103]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[104]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[105]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[106]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[107]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[108]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[109]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[110]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[111]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[112]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[113]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[114]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[115]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[116]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[117]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[118]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[119]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[120]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[121]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[122]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[123]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[124]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[125]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[126]"
-    Warning (15610): No output dependent on input pin "ifetch.DAT_S[127]"
     Warning (15610): No output dependent on input pin "memory.RTY"
     Warning (15610): No output dependent on input pin "memory.ACK"
     Warning (15610): No output dependent on input pin "memory.CLK"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[0]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[1]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[2]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[3]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[4]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[5]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[6]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[7]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[8]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[9]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[10]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[11]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[12]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[13]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[14]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[15]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[16]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[17]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[18]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[19]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[20]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[21]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[22]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[23]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[24]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[25]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[26]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[27]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[28]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[29]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[30]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[31]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[32]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[33]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[34]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[35]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[36]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[37]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[38]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[39]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[40]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[41]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[42]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[43]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[44]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[45]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[46]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[47]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[48]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[49]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[50]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[51]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[52]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[53]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[54]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[55]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[56]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[57]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[58]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[59]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[60]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[61]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[62]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[63]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[64]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[65]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[66]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[67]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[68]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[69]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[70]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[71]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[72]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[73]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[74]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[75]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[76]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[77]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[78]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[79]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[80]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[81]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[82]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[83]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[84]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[85]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[86]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[87]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[88]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[89]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[90]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[91]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[92]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[93]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[94]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[95]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[96]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[97]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[98]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[99]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[100]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[101]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[102]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[103]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[104]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[105]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[106]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[107]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[108]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[109]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[110]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[111]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[112]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[113]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[114]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[115]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[116]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[117]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[118]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[119]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[120]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[121]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[122]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[123]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[124]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[125]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[126]"
-    Warning (15610): No output dependent on input pin "memory.DAT_S[127]"
-Info (21057): Implemented 580 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1242 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 262 input pins
     Info (21059): Implemented 318 output pins
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 599 warnings
-    Info: Peak virtual memory: 429 megabytes
-    Info: Processing ended: Fri Mar  9 16:50:23 2018
+    Info (21061): Implemented 662 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 180 warnings
+    Info: Peak virtual memory: 457 megabytes
+    Info: Processing ended: Fri Mar  9 19:21:43 2018
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:02
 

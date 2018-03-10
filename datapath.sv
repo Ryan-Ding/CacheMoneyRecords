@@ -10,6 +10,7 @@ module datapath
 
 
 logic clk;
+assign clk= ifetch.CLK;
 logic [1:0] mem_byte_enable;
 lc3b_word temp_address;
 
@@ -103,9 +104,13 @@ lc3b_word mem_address;
 
 assign ifetch.ADR = pc_out;
 assign instruction_mem_in = ifetch.DAT_S;
+assign ifetch.WE = 0;
+assign ifetch.STB = 1;
+assign ifetch.CYC = 1;
 
+assign data_mem_in = memory.DAT_S;
 assign memory.DAT_M = wdata;
-assign memory.ADR = mem_address;
+assign memory.ADR = mem_address[15:4];
 assign temp_address = 2 * (mem_address[3:1]);
 assign memory.SEL = (16'b0000000000000011 & mem_byte_enable) << temp_address;
 assign memory.WE = crtl_reg_ex_mem_out.mem_write;
@@ -150,8 +155,8 @@ assign mem_address = aluout_ex_mem_out;
 assign pc_reg_mem_wb_out = mem_wb_reg_out[15:0];
 assign mem_data_mem_wb_out = mem_wb_reg_out[31:16];
 assign aluout_mem_wb_out = mem_wb_reg_out[47:32];
-assign ir_mem_wb_out = mem_wb_reg_out[79:48];
-assign crtl_reg_mem_wb_out = mem_wb_reg_out[87:80];
+assign ir_mem_wb_out = mem_wb_reg_out[63:48];
+assign crtl_reg_mem_wb_out = mem_wb_reg_out[87:64];
 assign load_mem_wb_reg = 1'b1;
 
 mux4 pcmux(
@@ -209,7 +214,7 @@ mux2 #(.width(3)) storemux(
 //dest mux
 mux2 #(.width(3)) destmux(
 	.sel(control_out.destmux_sel),
-	.a(ir_if_id_out[11:9]),
+	.a(ir_mem_wb_out[11:9]),
 	.b(3'b111),
 	.f(destmux_out)
 );
@@ -218,7 +223,7 @@ mux2 #(.width(3)) destmux(
 regfile regfile
 (
     .clk,
-    .load(control_out.load_regfile),
+    .load(crtl_reg_mem_wb_out.load_regfile),
     .in(wbmux_out),
     .src_a(storemux_out), 
 	 .src_b(ir_if_id_out[2:0]),
@@ -325,7 +330,7 @@ register #(.width(88)) ex_mem_reg
 (
 	.clk,
 	.load(load_ex_mem_reg),
-	.in({control_out ,ir_if_id_out ,aluoutmux_out, sr1_id_ex_out, pc_reg_if_id_out}),
+	.in({ crtl_reg_id_ex_out,ir_id_ex_out ,aluoutmux_out, sr1_id_ex_out, pc_reg_if_id_out}),
 	.out(ex_mem_reg_out)
 );
 
