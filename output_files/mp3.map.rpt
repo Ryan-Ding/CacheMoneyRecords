@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mp3
-Fri Mar  9 19:21:43 2018
+Fri Mar  9 20:21:31 2018
 Quartus II 32-bit Version 13.1.4 Build 182 03/12/2014 SJ Full Version
 
 
@@ -75,13 +75,13 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Mar  9 19:21:43 2018       ;
+; Analysis & Synthesis Status     ; Successful - Fri Mar  9 20:21:30 2018       ;
 ; Quartus II 32-bit Version       ; 13.1.4 Build 182 03/12/2014 SJ Full Version ;
 ; Revision Name                   ; mp3                                         ;
 ; Top-level Entity Name           ; mp3                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 351                                         ;
+; Total registers                 ; 353                                         ;
 ; Total pins                      ; 580                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -227,23 +227,23 @@ applicable agreement for further details.
 +---------------------------------------------+------------------+
 ; Resource                                    ; Usage            ;
 +---------------------------------------------+------------------+
-; Estimate of Logic utilization (ALMs needed) ; 305              ;
+; Estimate of Logic utilization (ALMs needed) ; 315              ;
 ;                                             ;                  ;
-; Combinational ALUT usage for logic          ; 420              ;
-;     -- 7 input functions                    ; 64               ;
-;     -- 6 input functions                    ; 83               ;
+; Combinational ALUT usage for logic          ; 428              ;
+;     -- 7 input functions                    ; 77               ;
+;     -- 6 input functions                    ; 81               ;
 ;     -- 5 input functions                    ; 46               ;
-;     -- 4 input functions                    ; 147              ;
-;     -- <=3 input functions                  ; 80               ;
+;     -- 4 input functions                    ; 162              ;
+;     -- <=3 input functions                  ; 62               ;
 ;                                             ;                  ;
-; Dedicated logic registers                   ; 351              ;
+; Dedicated logic registers                   ; 353              ;
 ;                                             ;                  ;
 ; I/O pins                                    ; 580              ;
 ; Total DSP Blocks                            ; 0                ;
 ; Maximum fan-out node                        ; ifetch.CLK~input ;
-; Maximum fan-out                             ; 351              ;
-; Total fan-out                               ; 3574             ;
-; Average fan-out                             ; 1.85             ;
+; Maximum fan-out                             ; 353              ;
+; Total fan-out                               ; 3653             ;
+; Average fan-out                             ; 1.88             ;
 +---------------------------------------------+------------------+
 
 
@@ -252,13 +252,14 @@ applicable agreement for further details.
 +---------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------------+--------------+
 ; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                            ; Library Name ;
 +---------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------------+--------------+
-; |mp3                            ; 420 (0)           ; 351 (0)      ; 0                 ; 0          ; 580  ; 0            ; |mp3                                           ; work         ;
-;    |datapath:datapath|          ; 420 (224)         ; 351 (0)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath                         ; work         ;
-;       |alu:alu|                 ; 32 (32)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|alu:alu                 ; work         ;
+; |mp3                            ; 428 (0)           ; 353 (0)      ; 0                 ; 0          ; 580  ; 0            ; |mp3                                           ; work         ;
+;    |datapath:datapath|          ; 428 (224)         ; 353 (0)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath                         ; work         ;
+;       |alu:alu|                 ; 35 (35)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|alu:alu                 ; work         ;
 ;       |br_ctrl:br_ctrl|         ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|br_ctrl:br_ctrl         ; work         ;
 ;       |cccomp:cccomp|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|cccomp:cccomp           ; work         ;
-;       |control_rom:control_rom| ; 11 (11)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|control_rom:control_rom ; work         ;
+;       |control_rom:control_rom| ; 12 (12)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|control_rom:control_rom ; work         ;
 ;       |gencc:gencc|             ; 5 (5)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|gencc:gencc             ; work         ;
+;       |mux2:alumux2|            ; 4 (4)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux2:alumux2            ; work         ;
 ;       |mux2:storemux|           ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux2:storemux           ; work         ;
 ;       |mux4:pcmux|              ; 15 (15)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux4:pcmux              ; work         ;
 ;       |mux4:wbmux|              ; 16 (16)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux4:wbmux              ; work         ;
@@ -267,7 +268,7 @@ applicable agreement for further details.
 ;       |regfile:regfile|         ; 72 (72)           ; 128 (128)    ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|regfile:regfile         ; work         ;
 ;       |register:cc|             ; 0 (0)             ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:cc             ; work         ;
 ;       |register:ex_mem_reg|     ; 0 (0)             ; 59 (59)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:ex_mem_reg     ; work         ;
-;       |register:id_ex_reg|      ; 0 (0)             ; 55 (55)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:id_ex_reg      ; work         ;
+;       |register:id_ex_reg|      ; 0 (0)             ; 57 (57)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:id_ex_reg      ; work         ;
 ;       |register:if_id_reg|      ; 0 (0)             ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:if_id_reg      ; work         ;
 ;       |register:mem_wb_reg|     ; 0 (0)             ; 58 (58)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:mem_wb_reg     ; work         ;
 ;       |register:pc|             ; 1 (1)             ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:pc             ; work         ;
@@ -275,20 +276,35 @@ applicable agreement for further details.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                       ;
-+-------------------------------------------------------------+------------------------------------------------------------+
-; Register name                                               ; Reason for Removal                                         ;
-+-------------------------------------------------------------+------------------------------------------------------------+
-; datapath:datapath|register:id_ex_reg|data[64,70..72,81..83] ; Stuck at GND due to stuck port data_in                     ;
-; datapath:datapath|register:ex_mem_reg|data[64]              ; Stuck at GND due to stuck port data_in                     ;
-; datapath:datapath|register:id_ex_reg|data[0..15]            ; Lost fanout                                                ;
-; datapath:datapath|register:id_ex_reg|data[75]               ; Merged with datapath:datapath|register:id_ex_reg|data[65]  ;
-; datapath:datapath|register:id_ex_reg|data[79]               ; Merged with datapath:datapath|register:id_ex_reg|data[78]  ;
-; datapath:datapath|register:ex_mem_reg|data[79]              ; Merged with datapath:datapath|register:ex_mem_reg|data[78] ;
-; datapath:datapath|register:mem_wb_reg|data[79]              ; Merged with datapath:datapath|register:mem_wb_reg|data[78] ;
-; Total Number of Removed Registers = 28                      ;                                                            ;
-+-------------------------------------------------------------+------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                     ;
++-----------------------------------------------------------+------------------------------------------------------------+
+; Register name                                             ; Reason for Removal                                         ;
++-----------------------------------------------------------+------------------------------------------------------------+
+; datapath:datapath|register:id_ex_reg|data[64,70,71,82,83] ; Stuck at GND due to stuck port data_in                     ;
+; datapath:datapath|register:ex_mem_reg|data[64]            ; Stuck at GND due to stuck port data_in                     ;
+; datapath:datapath|register:id_ex_reg|data[15]             ; Merged with datapath:datapath|register:ex_mem_reg|data[15] ;
+; datapath:datapath|register:id_ex_reg|data[14]             ; Merged with datapath:datapath|register:ex_mem_reg|data[14] ;
+; datapath:datapath|register:id_ex_reg|data[13]             ; Merged with datapath:datapath|register:ex_mem_reg|data[13] ;
+; datapath:datapath|register:id_ex_reg|data[12]             ; Merged with datapath:datapath|register:ex_mem_reg|data[12] ;
+; datapath:datapath|register:id_ex_reg|data[11]             ; Merged with datapath:datapath|register:ex_mem_reg|data[11] ;
+; datapath:datapath|register:id_ex_reg|data[10]             ; Merged with datapath:datapath|register:ex_mem_reg|data[10] ;
+; datapath:datapath|register:id_ex_reg|data[9]              ; Merged with datapath:datapath|register:ex_mem_reg|data[9]  ;
+; datapath:datapath|register:id_ex_reg|data[8]              ; Merged with datapath:datapath|register:ex_mem_reg|data[8]  ;
+; datapath:datapath|register:id_ex_reg|data[7]              ; Merged with datapath:datapath|register:ex_mem_reg|data[7]  ;
+; datapath:datapath|register:id_ex_reg|data[6]              ; Merged with datapath:datapath|register:ex_mem_reg|data[6]  ;
+; datapath:datapath|register:id_ex_reg|data[5]              ; Merged with datapath:datapath|register:ex_mem_reg|data[5]  ;
+; datapath:datapath|register:id_ex_reg|data[4]              ; Merged with datapath:datapath|register:ex_mem_reg|data[4]  ;
+; datapath:datapath|register:id_ex_reg|data[3]              ; Merged with datapath:datapath|register:ex_mem_reg|data[3]  ;
+; datapath:datapath|register:id_ex_reg|data[2]              ; Merged with datapath:datapath|register:ex_mem_reg|data[2]  ;
+; datapath:datapath|register:id_ex_reg|data[1]              ; Merged with datapath:datapath|register:ex_mem_reg|data[1]  ;
+; datapath:datapath|register:id_ex_reg|data[0]              ; Merged with datapath:datapath|register:ex_mem_reg|data[0]  ;
+; datapath:datapath|register:id_ex_reg|data[75]             ; Merged with datapath:datapath|register:id_ex_reg|data[65]  ;
+; datapath:datapath|register:id_ex_reg|data[79]             ; Merged with datapath:datapath|register:id_ex_reg|data[78]  ;
+; datapath:datapath|register:ex_mem_reg|data[79]            ; Merged with datapath:datapath|register:ex_mem_reg|data[78] ;
+; datapath:datapath|register:mem_wb_reg|data[79]            ; Merged with datapath:datapath|register:mem_wb_reg|data[78] ;
+; Total Number of Removed Registers = 26                    ;                                                            ;
++-----------------------------------------------------------+------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -296,24 +312,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------+---------------------------+------------------------------------------------+
 ; Register name                                 ; Reason for Removal        ; Registers Removed due to This Register         ;
 +-----------------------------------------------+---------------------------+------------------------------------------------+
-; datapath:datapath|register:id_ex_reg|data[70] ; Stuck at GND              ; datapath:datapath|register:id_ex_reg|data[15], ;
-;                                               ; due to stuck port data_in ; datapath:datapath|register:id_ex_reg|data[14], ;
-;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[13], ;
-;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[11], ;
-;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[10], ;
-;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[9],  ;
-;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[8],  ;
-;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[7],  ;
-;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[6],  ;
-;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[5],  ;
-;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[4],  ;
-;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[3],  ;
-;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[2],  ;
-;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[1],  ;
-;                                               ;                           ; datapath:datapath|register:id_ex_reg|data[0]   ;
 ; datapath:datapath|register:id_ex_reg|data[64] ; Stuck at GND              ; datapath:datapath|register:ex_mem_reg|data[64] ;
-;                                               ; due to stuck port data_in ;                                                ;
-; datapath:datapath|register:id_ex_reg|data[81] ; Stuck at GND              ; datapath:datapath|register:id_ex_reg|data[12]  ;
 ;                                               ; due to stuck port data_in ;                                                ;
 +-----------------------------------------------+---------------------------+------------------------------------------------+
 
@@ -323,9 +322,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 351   ;
+; Total registers                              ; 353   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 16    ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 131   ;
@@ -338,13 +337,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; Yes        ; |mp3|datapath:datapath|register:pc|data[1]          ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |mp3|datapath:datapath|register:if_id_reg|data[30]  ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; Yes        ; |mp3|datapath:datapath|register:pc|data[4]          ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |mp3|datapath:datapath|register:ex_mem_reg|data[36] ;
 ; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |mp3|datapath:datapath|register:mem_wb_reg|data[16] ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |mp3|datapath:datapath|mux4:wbmux|f[3]              ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |mp3|datapath:datapath|register:if_id_reg|data[28]  ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |mp3|datapath:datapath|mux4:wbmux|f[8]              ;
 ; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[12]         ;
 ; 6:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[6]          ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[2]          ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[3]          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 
 
@@ -667,7 +667,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.1.4 Build 182 03/12/2014 SJ Full Version
-    Info: Processing started: Fri Mar  9 19:21:39 2018
+    Info: Processing started: Fri Mar  9 20:21:26 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mp3 -c mp3
 Info (20034): Auto device selection is not supported for Cyclone V device family. The default device, 5CGXFC7C7F23C8, is set.
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
@@ -715,7 +715,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file br_ctrl
 Info (12127): Elaborating entity "mp3" for the top level hierarchy
 Info (12128): Elaborating entity "datapath" for hierarchy "datapath:datapath"
 Warning (10858): Verilog HDL warning at datapath.sv(14): object mem_byte_enable used but never assigned
-Warning (10230): Verilog HDL assignment warning at datapath.sv(105): truncated value with size 16 to match size of target (12)
 Warning (10230): Verilog HDL assignment warning at datapath.sv(114): truncated value with size 32 to match size of target (16)
 Warning (10230): Verilog HDL assignment warning at datapath.sv(122): truncated value with size 128 to match size of target (16)
 Warning (10230): Verilog HDL assignment warning at datapath.sv(123): truncated value with size 128 to match size of target (16)
@@ -913,7 +912,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "memory.SEL[15]" is stuck at GND
     Warning (13410): Pin "memory.WE" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 16 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 5 input pin(s) that do not drive logic
@@ -922,14 +920,14 @@ Warning (21074): Design contains 5 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "memory.RTY"
     Warning (15610): No output dependent on input pin "memory.ACK"
     Warning (15610): No output dependent on input pin "memory.CLK"
-Info (21057): Implemented 1242 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1254 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 262 input pins
     Info (21059): Implemented 318 output pins
-    Info (21061): Implemented 662 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 180 warnings
-    Info: Peak virtual memory: 457 megabytes
-    Info: Processing ended: Fri Mar  9 19:21:43 2018
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:02
+    Info (21061): Implemented 674 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 179 warnings
+    Info: Peak virtual memory: 444 megabytes
+    Info: Processing ended: Fri Mar  9 20:21:31 2018
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:03
 
 

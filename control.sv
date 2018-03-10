@@ -52,6 +52,7 @@ case(opcode)
 	end
 	op_br: begin
 		ctrl.aluop = alu_add;
+		ctrl.alumux2_sel = 1'b1;
 		ctrl.alumux8_sel = 3'b011;
 	end
 	op_ldr: begin
@@ -66,7 +67,7 @@ case(opcode)
 		ctrl.load_regfile = 1'b1;
 	end
 	op_not: begin
-		ctrl.aluop = alu_add;
+		ctrl.aluop = alu_not;
 		ctrl.storemux_sel = 1'b1;
 
 		ctrl.aluoutmux_sel = 2'b00;

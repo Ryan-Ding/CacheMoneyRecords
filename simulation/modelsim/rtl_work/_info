@@ -19,7 +19,7 @@ Z7 8/home/chaohua2/ece411/mp3/ECE411-MP3/adj.sv
 Z8 F/home/chaohua2/ece411/mp3/ECE411-MP3/adj.sv
 L0 6
 Z9 OV;L;10.1d;51
-Z10 !s108 1520644911.638094
+Z10 !s108 1520648506.234029
 Z11 !s107 /home/chaohua2/ece411/mp3/ECE411-MP3/adj.sv|
 Z12 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/ECE411-MP3|/home/chaohua2/ece411/mp3/ECE411-MP3/adj.sv|
 Z13 o-sv -work work -O0
@@ -67,7 +67,7 @@ Z15 8/home/chaohua2/ece411/mp3/ECE411-MP3/alu.sv
 Z16 F/home/chaohua2/ece411/mp3/ECE411-MP3/alu.sv
 L0 3
 R9
-Z17 !s108 1520644912.041408
+Z17 !s108 1520648506.566670
 Z18 !s107 /home/chaohua2/ece411/mp3/ECE411-MP3/alu.sv|
 Z19 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/ECE411-MP3|/home/chaohua2/ece411/mp3/ECE411-MP3/alu.sv|
 R13
@@ -116,7 +116,7 @@ Z21 8/home/chaohua2/ece411/mp3/ECE411-MP3/br_ctrl.sv
 Z22 F/home/chaohua2/ece411/mp3/ECE411-MP3/br_ctrl.sv
 L0 3
 R9
-Z23 !s108 1520644912.713786
+Z23 !s108 1520648507.234928
 Z24 !s107 /home/chaohua2/ece411/mp3/ECE411-MP3/br_ctrl.sv|
 Z25 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/ECE411-MP3|/home/chaohua2/ece411/mp3/ECE411-MP3/br_ctrl.sv|
 R13
@@ -165,7 +165,7 @@ Z26 8/home/chaohua2/ece411/mp3/ECE411-MP3/cccomp.sv
 Z27 F/home/chaohua2/ece411/mp3/ECE411-MP3/cccomp.sv
 L0 3
 R9
-Z28 !s108 1520644912.592190
+Z28 !s108 1520648507.099603
 Z29 !s107 /home/chaohua2/ece411/mp3/ECE411-MP3/cccomp.sv|
 Z30 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/ECE411-MP3|/home/chaohua2/ece411/mp3/ECE411-MP3/cccomp.sv|
 R13
@@ -202,35 +202,35 @@ R14
 vcontrol_rom
 R1
 R2
-DXx4 work 15 control_sv_unit 0 22 ^Wd`>MSI<JifNO6QHCGZP3
+DXx4 work 15 control_sv_unit 0 22 >i;>Mn[bl;7XXa@bVRgQ82
 VCU_=e[k`UoiAbAzCPzZhM0
 r1
 31
-IAGmOFPPV^c;G<;i356h4G3
+IkI[`@8cW7Z^6eQ>Q6]`@M2
 S1
 R5
-Z31 w1520639986
+Z31 w1520646474
 Z32 8/home/chaohua2/ece411/mp3/ECE411-MP3/control.sv
 Z33 F/home/chaohua2/ece411/mp3/ECE411-MP3/control.sv
 L0 4
 R9
-Z34 !s108 1520644912.178686
+Z34 !s108 1520648506.678980
 Z35 !s107 /home/chaohua2/ece411/mp3/ECE411-MP3/control.sv|
 Z36 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/ECE411-MP3|/home/chaohua2/ece411/mp3/ECE411-MP3/control.sv|
 R13
 R14
 !s85 0
 !i10b 1
-!s100 N@R?NG>Jh6H^OVJ9Zz5Gf2
+!s100 JDIOkE?:[dVD3>edV84z83
 !s105 control_sv_unit
 !s101 -O0
 Xcontrol_sv_unit
 R1
 R2
-V^Wd`>MSI<JifNO6QHCGZP3
+V>i;>Mn[bl;7XXa@bVRgQ82
 r1
 31
-I^Wd`>MSI<JifNO6QHCGZP3
+I>i;>Mn[bl;7XXa@bVRgQ82
 S1
 R5
 R31
@@ -245,7 +245,7 @@ R13
 R14
 !s85 0
 !i10b 1
-!s100 HbkX<adjb5`ZO[g[;ToRa1
+!s100 EZCeZ9=Q?0=:ha;8Nm8ZL3
 !i103 1
 !s101 -O0
 vdatapath
@@ -255,22 +255,22 @@ DXx4 work 16 datapath_sv_unit 0 22 GULzG@V]h:KAkz13aTejC1
 Voj006ZY;T^A>9;G;B]]eh3
 r1
 31
-IaY7?=IPJaK>zY1Pcjff2_3
+IcKFk;m<X>;PQgSdXT=`UV3
 S1
 R5
-Z37 w1520644888
+Z37 w1520648481
 Z38 8/home/chaohua2/ece411/mp3/ECE411-MP3/datapath.sv
 Z39 F/home/chaohua2/ece411/mp3/ECE411-MP3/datapath.sv
 L0 3
 R9
-Z40 !s108 1520644912.848092
+Z40 !s108 1520648507.383150
 Z41 !s107 /home/chaohua2/ece411/mp3/ECE411-MP3/datapath.sv|
 Z42 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/ECE411-MP3|/home/chaohua2/ece411/mp3/ECE411-MP3/datapath.sv|
 R13
 R14
 !s85 0
 !i10b 1
-!s100 3mRO?eoF_EhR;NjVRh7;40
+!s100 R?R[h0EM@`AcRaI@ZA^gc3
 !s105 datapath_sv_unit
 !s101 -O0
 Xdatapath_sv_unit
@@ -312,7 +312,7 @@ Z44 8/home/chaohua2/ece411/mp3/ECE411-MP3/gencc.sv
 Z45 F/home/chaohua2/ece411/mp3/ECE411-MP3/gencc.sv
 L0 3
 R9
-Z46 !s108 1520644912.320418
+Z46 !s108 1520648506.795416
 Z47 !s107 /home/chaohua2/ece411/mp3/ECE411-MP3/gencc.sv|
 Z48 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/ECE411-MP3|/home/chaohua2/ece411/mp3/ECE411-MP3/gencc.sv|
 R13
@@ -364,7 +364,7 @@ R14
 !i10b 1
 !s100 CZMXCO947joQRmm`;<0bW2
 !s85 0
-!s108 1520644911.199770
+!s108 1520648505.809757
 !s107 /home/chaohua2/ece411/mp3/ECE411-MP3/lc3b_types.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/ECE411-MP3|/home/chaohua2/ece411/mp3/ECE411-MP3/lc3b_types.sv|
 !s101 -O0
@@ -385,7 +385,7 @@ R9
 r1
 !s85 0
 31
-!s108 1520644913.313865
+!s108 1520648507.799493
 !s107 /home/chaohua2/ece411/mp3/ECE411-MP3/magic_memory_dual_port.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/ECE411-MP3|/home/chaohua2/ece411/mp3/ECE411-MP3/magic_memory_dual_port.sv|
 !s101 -O0
@@ -435,7 +435,7 @@ R14
 !s100 Y;@Qo^?nfTmZ_XJ;0a28X2
 !s105 memory_sv_unit
 !s85 0
-!s108 1520644913.231089
+!s108 1520648507.716176
 !s107 /home/chaohua2/ece411/mp3/ECE411-MP3/memory.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/ECE411-MP3|/home/chaohua2/ece411/mp3/ECE411-MP3/memory.sv|
 !s101 -O0
@@ -454,7 +454,7 @@ Z50 8/home/chaohua2/ece411/mp3/ECE411-MP3/mp3.sv
 Z51 F/home/chaohua2/ece411/mp3/ECE411-MP3/mp3.sv
 L0 3
 R9
-Z52 !s108 1520644913.009511
+Z52 !s108 1520648507.512755
 Z53 !s107 /home/chaohua2/ece411/mp3/ECE411-MP3/mp3.sv|
 Z54 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/ECE411-MP3|/home/chaohua2/ece411/mp3/ECE411-MP3/mp3.sv|
 R13
@@ -507,7 +507,7 @@ R14
 !s100 AKRDJkkiUHfJDXliL38>10
 !s105 mp3_tb_sv_unit
 !s85 0
-!s108 1520644913.140175
+!s108 1520648507.644629
 !s107 /home/chaohua2/ece411/mp3/ECE411-MP3/mp3_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/ECE411-MP3|/home/chaohua2/ece411/mp3/ECE411-MP3/mp3_tb.sv|
 !s101 -O0
@@ -525,7 +525,7 @@ L0 1
 R9
 r1
 31
-Z59 !s108 1520644911.447341
+Z59 !s108 1520648506.077778
 Z60 !s107 /home/chaohua2/ece411/mp3/ECE411-MP3/mux.sv|
 Z61 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/ECE411-MP3|/home/chaohua2/ece411/mp3/ECE411-MP3/mux.sv|
 R13
@@ -599,7 +599,7 @@ R14
 !s100 YMkQRAE<[oMB7@VDm:MMM0
 !s105 plus2_sv_unit
 !s85 0
-!s108 1520644911.288094
+!s108 1520648505.928537
 !s107 /home/chaohua2/ece411/mp3/ECE411-MP3/plus2.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/ECE411-MP3|/home/chaohua2/ece411/mp3/ECE411-MP3/plus2.sv|
 !s101 -O0
@@ -618,7 +618,7 @@ Z63 8/home/chaohua2/ece411/mp3/ECE411-MP3/regfile.sv
 Z64 F/home/chaohua2/ece411/mp3/ECE411-MP3/regfile.sv
 L0 3
 R9
-Z65 !s108 1520644912.448354
+Z65 !s108 1520648506.930779
 Z66 !s107 /home/chaohua2/ece411/mp3/ECE411-MP3/regfile.sv|
 Z67 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/ECE411-MP3|/home/chaohua2/ece411/mp3/ECE411-MP3/regfile.sv|
 R13
@@ -671,7 +671,7 @@ R14
 !s100 zlk>Tk8zDSTY5L3F^[V151
 !s105 register_sv_unit
 !s85 0
-!s108 1520644911.366202
+!s108 1520648506.008483
 !s107 /home/chaohua2/ece411/mp3/ECE411-MP3/register.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/ECE411-MP3|/home/chaohua2/ece411/mp3/ECE411-MP3/register.sv|
 !s101 -O0
@@ -744,7 +744,7 @@ R14
 !s100 76^Kn_gz_O?15NV?cl;c>0
 !s105 wishbone_sv_unit
 !s85 0
-!s108 1520644911.110626
+!s108 1520648505.730137
 !s107 /home/chaohua2/ece411/mp3/ECE411-MP3/wishbone.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/ECE411-MP3|/home/chaohua2/ece411/mp3/ECE411-MP3/wishbone.sv|
 !s101 -O0

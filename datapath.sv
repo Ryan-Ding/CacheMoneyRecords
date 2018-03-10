@@ -102,7 +102,7 @@ lc3b_word mem_address;
 
 
 
-assign ifetch.ADR = pc_out;
+assign ifetch.ADR = pc_out[15:4];
 assign instruction_mem_in = ifetch.DAT_S;
 assign ifetch.WE = 0;
 assign ifetch.STB = 1;
@@ -162,7 +162,7 @@ assign load_mem_wb_reg = 1'b1;
 mux4 pcmux(
 	.sel(br_ctrl_out),
 	.a(pc_plus2_out),
-	.b(aluout_ex_mem_out),
+	.b(aluout_mem_wb_out),
 	.c(wbmux_out),
 	.d(),
 	.f(pcmux_out)
@@ -206,8 +206,8 @@ control_rom control_rom
 //store mux
 mux2 #(.width(3)) storemux(
 	.sel(control_out.storemux_sel),
-	.a(ir_if_id_out[8:6]),
-	.b(ir_if_id_out[11:9]),
+	.a(ir_if_id_out[11:9]),
+	.b(ir_if_id_out[8:6]),
 	.f(storemux_out)
 );
 

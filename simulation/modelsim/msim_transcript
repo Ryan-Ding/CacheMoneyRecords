@@ -217,7 +217,7 @@ do wave.do; restart -f; run 1000ns
 # Loading work.br_ctrl_sv_unit
 # Loading work.br_ctrl
 # Loading work.magic_memory
-do wave.do; restart -f; run 1000ns
+do wave.do; restart -f; run 5000ns
 # Loading sv_std.std
 # Loading work.mp3_tb
 # Loading work.wishbone
