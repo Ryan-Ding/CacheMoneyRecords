@@ -64,7 +64,7 @@ lc3b_word alumux2_out;
 logic[87:0] ex_mem_reg_out;
 lc3b_control_word crtl_reg_ex_mem_out;
 lc3b_word pc_reg_ex_mem_out;
-lc3b_word sr1_ex_mem_out ;
+lc3b_word sr2_ex_mem_out ;
 lc3b_word aluout_ex_mem_out ;
 lc3b_word ir_ex_mem_out ;
 logic load_ex_mem_reg ;
@@ -108,6 +108,7 @@ assign ifetch.WE = 0;
 assign ifetch.STB = 1;
 assign ifetch.CYC = 1;
 
+assign mem_byte_enable = 2'b11;
 assign data_mem_in = memory.DAT_S;
 assign memory.DAT_M = wdata;
 assign memory.ADR = mem_address[15:4];
@@ -140,7 +141,7 @@ assign load_id_ex_reg = 1'b1;
 
 // ex_mem pipeline register out
 assign pc_reg_ex_mem_out = ex_mem_reg_out[15:0];
-assign sr1_ex_mem_out = ex_mem_reg_out[31:16];
+assign sr2_ex_mem_out = ex_mem_reg_out[31:16];
 assign aluout_ex_mem_out = ex_mem_reg_out[47:32];
 assign ir_ex_mem_out = ex_mem_reg_out[63:48];
 assign crtl_reg_ex_mem_out = ex_mem_reg_out[87:64];
@@ -148,7 +149,7 @@ assign load_ex_mem_reg = 1'b1;
 
 //memory stage assign
 // expanded from 16 to 128 bits
-assign wdata = sr1_ex_mem_out << (16 * aluout_ex_mem_out[3:1]);
+assign wdata = sr2_ex_mem_out << (16 * aluout_ex_mem_out[3:1]);
 assign mem_address = aluout_ex_mem_out;
 
 // mem_wb pipleline register out
@@ -206,8 +207,8 @@ control_rom control_rom
 //store mux
 mux2 #(.width(3)) storemux(
 	.sel(control_out.storemux_sel),
-	.a(ir_if_id_out[11:9]),
-	.b(ir_if_id_out[8:6]),
+	.a(ir_if_id_out[2:0]),
+	.b(ir_if_id_out[11:9]),
 	.f(storemux_out)
 );
 
@@ -225,8 +226,8 @@ regfile regfile
     .clk,
     .load(crtl_reg_mem_wb_out.load_regfile),
     .in(wbmux_out),
-    .src_a(storemux_out), 
-	 .src_b(ir_if_id_out[2:0]),
+    .src_a(ir_if_id_out[8:6]), 
+	 .src_b(storemux_out),
 	 .dest(destmux_out),
     .reg_a(sr1_out), 
 	 .reg_b(sr2_out)
@@ -325,12 +326,12 @@ zext_shift #(.width(8)) zextshf_8
    .out(zextshf_8_out)
 );
 
-// piaapsfasj
+// execute memory pipeline register
 register #(.width(88)) ex_mem_reg
 (
 	.clk,
 	.load(load_ex_mem_reg),
-	.in({ crtl_reg_id_ex_out,ir_id_ex_out ,aluoutmux_out, sr1_id_ex_out, pc_reg_if_id_out}),
+	.in({ crtl_reg_id_ex_out,ir_id_ex_out ,aluoutmux_out, sr2_id_ex_out, pc_reg_if_id_out}),
 	.out(ex_mem_reg_out)
 );
 
