@@ -1,0 +1,28 @@
+import lc3b_types::*;
+
+module address_comp
+(
+	//L1 wdata SEL address rdata
+	input lc3b_word icache_wdata,
+	input lc3b_word dcache_wdata,
+	input lc3b_word icache_address,
+	input lc3b_word dcache_address,
+	input lc3b_word icache_sel,
+	input lc3b_word dcache_sel,
+	output lc3b_word l1cache_rdata,
+	//L2 wdata SEL address rdata
+	output lc3b_word l2cache_wdata,
+	output lc3b_word l2cache_sel,
+	output lc3b_word l2cache_address,
+	input lc3b_word l2cache_rdata,
+	//physical memory rdata
+	input lc3b_word pmem_rdata,
+	//control signal
+	input l2wdatamux_sel,
+	input l2selmux_sel,
+	input l2adrmux_sel,
+	input l1rdatamux_sel,
+	
+);
+
+endmodule address_comp

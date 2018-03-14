@@ -1,0 +1,11 @@
+import lc3b_types::*;
+
+module cache_interconnect
+(
+	wishbone.master ifetch,
+	wishbone.master memory
+
+    /* declare more ports here */
+);
+
+endmodule cache_interconnect

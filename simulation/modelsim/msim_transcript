@@ -1,40 +1,60 @@
-# do mp3_run_msim_rtl_verilog.do 
+# do mp3_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Copying /software/altera/13.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Model Technology ModelSim LE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying /software/quartus-15.0/modelsim_ae/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied /software/altera/13.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied /software/quartus-15.0/modelsim_ae/linuxaloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/ECE411-MP3 {/home/chaohua2/ece411/mp3/ECE411-MP3/wishbone.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/wishbone.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:18 on Mar 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords" /home/chaohua2/ece411/mp3/cachemoneyrecords/wishbone.sv 
 # -- Compiling interface wishbone
 # 
 # Top level modules:
 # 	--none--
-# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/ECE411-MP3 {/home/chaohua2/ece411/mp3/ECE411-MP3/lc3b_types.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 15:32:18 on Mar 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:18 on Mar 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords" /home/chaohua2/ece411/mp3/cachemoneyrecords/lc3b_types.sv 
 # -- Compiling package lc3b_types
 # 
 # Top level modules:
 # 	--none--
-# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/ECE411-MP3 {/home/chaohua2/ece411/mp3/ECE411-MP3/plus2.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 15:32:18 on Mar 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/plus2.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:18 on Mar 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords" /home/chaohua2/ece411/mp3/cachemoneyrecords/plus2.sv 
 # -- Compiling module plus2
 # 
 # Top level modules:
 # 	plus2
-# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/ECE411-MP3 {/home/chaohua2/ece411/mp3/ECE411-MP3/register.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 15:32:18 on Mar 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/register.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:18 on Mar 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords" /home/chaohua2/ece411/mp3/cachemoneyrecords/register.sv 
 # -- Compiling module register
 # 
 # Top level modules:
 # 	register
-# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/ECE411-MP3 {/home/chaohua2/ece411/mp3/ECE411-MP3/mux.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 15:32:18 on Mar 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:18 on Mar 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords" /home/chaohua2/ece411/mp3/cachemoneyrecords/mux.sv 
 # -- Compiling module mux2
 # -- Compiling module mux4
 # -- Compiling module mux8
@@ -43,8 +63,12 @@
 # 	mux2
 # 	mux4
 # 	mux8
-# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/ECE411-MP3 {/home/chaohua2/ece411/mp3/ECE411-MP3/adj.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 15:32:18 on Mar 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/adj.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:18 on Mar 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords" /home/chaohua2/ece411/mp3/cachemoneyrecords/adj.sv 
 # -- Compiling package adj_sv_unit
 # -- Importing package lc3b_types
 # -- Compiling module adj
@@ -61,92 +85,148 @@
 # 	zext_shift
 # 	mdrmask
 # 	srmask
-# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/ECE411-MP3 {/home/chaohua2/ece411/mp3/ECE411-MP3/alu.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 15:32:18 on Mar 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/alu.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:18 on Mar 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords" /home/chaohua2/ece411/mp3/cachemoneyrecords/alu.sv 
 # -- Compiling package alu_sv_unit
 # -- Importing package lc3b_types
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/ECE411-MP3 {/home/chaohua2/ece411/mp3/ECE411-MP3/control.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 15:32:18 on Mar 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/control.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:18 on Mar 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords" /home/chaohua2/ece411/mp3/cachemoneyrecords/control.sv 
 # -- Compiling package control_sv_unit
 # -- Importing package lc3b_types
 # -- Compiling module control_rom
 # 
 # Top level modules:
 # 	control_rom
-# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/ECE411-MP3 {/home/chaohua2/ece411/mp3/ECE411-MP3/gencc.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 15:32:18 on Mar 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/gencc.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:18 on Mar 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords" /home/chaohua2/ece411/mp3/cachemoneyrecords/gencc.sv 
 # -- Compiling package gencc_sv_unit
 # -- Importing package lc3b_types
 # -- Compiling module gencc
 # 
 # Top level modules:
 # 	gencc
-# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/ECE411-MP3 {/home/chaohua2/ece411/mp3/ECE411-MP3/regfile.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 15:32:18 on Mar 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/regfile.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:18 on Mar 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords" /home/chaohua2/ece411/mp3/cachemoneyrecords/regfile.sv 
 # -- Compiling package regfile_sv_unit
 # -- Importing package lc3b_types
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/ECE411-MP3 {/home/chaohua2/ece411/mp3/ECE411-MP3/cccomp.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 15:32:18 on Mar 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/cccomp.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:18 on Mar 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords" /home/chaohua2/ece411/mp3/cachemoneyrecords/cccomp.sv 
 # -- Compiling package cccomp_sv_unit
 # -- Importing package lc3b_types
 # -- Compiling module cccomp
 # 
 # Top level modules:
 # 	cccomp
-# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/ECE411-MP3 {/home/chaohua2/ece411/mp3/ECE411-MP3/br_ctrl.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 15:32:18 on Mar 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/br_ctrl.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:18 on Mar 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords" /home/chaohua2/ece411/mp3/cachemoneyrecords/br_ctrl.sv 
 # -- Compiling package br_ctrl_sv_unit
 # -- Importing package lc3b_types
 # -- Compiling module br_ctrl
 # 
 # Top level modules:
 # 	br_ctrl
-# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/ECE411-MP3 {/home/chaohua2/ece411/mp3/ECE411-MP3/datapath.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 15:32:18 on Mar 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:18 on Mar 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords" /home/chaohua2/ece411/mp3/cachemoneyrecords/datapath.sv 
 # -- Compiling package datapath_sv_unit
 # -- Importing package lc3b_types
 # -- Compiling module datapath
 # 
 # Top level modules:
 # 	datapath
-# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/ECE411-MP3 {/home/chaohua2/ece411/mp3/ECE411-MP3/mp3.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 15:32:19 on Mar 13,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/mp3.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:19 on Mar 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords" /home/chaohua2/ece411/mp3/cachemoneyrecords/mp3.sv 
 # -- Compiling package mp3_sv_unit
 # -- Importing package lc3b_types
 # -- Compiling module mp3
 # 
 # Top level modules:
 # 	mp3
+# End time: 15:32:19 on Mar 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/ECE411-MP3 {/home/chaohua2/ece411/mp3/ECE411-MP3/mp3_tb.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/mp3_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:19 on Mar 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords" /home/chaohua2/ece411/mp3/cachemoneyrecords/mp3_tb.sv 
 # -- Compiling module mp3_tb
 # 
 # Top level modules:
 # 	mp3_tb
-# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/ECE411-MP3 {/home/chaohua2/ece411/mp3/ECE411-MP3/memory.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 15:32:19 on Mar 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/memory.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:19 on Mar 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords" /home/chaohua2/ece411/mp3/cachemoneyrecords/memory.sv 
 # -- Compiling module memory
 # 
 # Top level modules:
 # 	memory
-# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/ECE411-MP3 {/home/chaohua2/ece411/mp3/ECE411-MP3/magic_memory_dual_port.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 15:32:19 on Mar 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/magic_memory_dual_port.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:32:19 on Mar 13,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords" /home/chaohua2/ece411/mp3/cachemoneyrecords/magic_memory_dual_port.sv 
 # -- Compiling module magic_memory
 # 
 # Top level modules:
 # 	magic_memory
+# End time: 15:32:19 on Mar 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  mp3_tb
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps mp3_tb 
+# vsim -i -l msim_transcript -do "mp3_run_msim_rtl_verilog.do" 
+# Start time: 15:32:19 on Mar 13,2018
+# //  ModelSim ALTERA 10.3d Oct  7 2014 Linux 3.10.0-693.21.1.el7.x86_64
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
 # Loading sv_std.std
 # Loading work.mp3_tb
 # Loading work.wishbone
@@ -185,7 +265,8 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 100000 ns
-do wave.do; restart -f; run 1000ns
+do wave.do
+restart -f; run 5000ns
 # Loading sv_std.std
 # Loading work.mp3_tb
 # Loading work.wishbone
@@ -217,35 +298,5 @@ do wave.do; restart -f; run 1000ns
 # Loading work.br_ctrl_sv_unit
 # Loading work.br_ctrl
 # Loading work.magic_memory
-do wave.do; restart -f; run 5000ns
-# Loading sv_std.std
-# Loading work.mp3_tb
-# Loading work.wishbone
-# Loading work.lc3b_types
-# Loading work.mp3_sv_unit
-# Loading work.mp3
-# Loading work.datapath_sv_unit
-# Loading work.datapath
-# Loading work.mux4
-# Loading work.register
-# Loading work.plus2
-# Loading work.control_sv_unit
-# Loading work.control_rom
-# Loading work.mux2
-# Loading work.regfile_sv_unit
-# Loading work.regfile
-# Loading work.adj_sv_unit
-# Loading work.adj
-# Loading work.sext
-# Loading work.zext
-# Loading work.mux8
-# Loading work.alu_sv_unit
-# Loading work.alu
-# Loading work.zext_shift
-# Loading work.cccomp_sv_unit
-# Loading work.cccomp
-# Loading work.gencc_sv_unit
-# Loading work.gencc
-# Loading work.br_ctrl_sv_unit
-# Loading work.br_ctrl
-# Loading work.magic_memory
+# End time: 19:06:16 on Mar 13,2018, Elapsed time: 3:33:57
+# Errors: 0, Warnings: 0

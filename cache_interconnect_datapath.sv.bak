@@ -1,0 +1,18 @@
+import lc3b_types::*;
+
+module cache_interconnect_datapath
+(
+	//wishbone from icache and dcache
+	wishbone.master icache,
+	wishbone.master dcaceh,
+	//wishbone between L1 cache and L2 cache 
+	wishbone.slave l1l2cache,
+	//wishbone between physical memory and L2 cache
+	wishbone
+
+    /* declare more ports here */
+);
+
+
+
+endmodule cache_interconnect
