@@ -29,7 +29,6 @@ case(opcode)
 	op_add: begin
 		ctrl.aluop = alu_add;
 		ctrl.load_cc = 1'b1;
-		ctrl.storemux_sel = 1'b1;
 		ctrl.destmux_sel = 1'b0;
 		if (bit5 == 0)
 			ctrl.alumux8_sel = 2'b00;
@@ -41,7 +40,6 @@ case(opcode)
 	op_and: begin
 		ctrl.aluop = alu_and;
 		ctrl.load_cc = 1'b1;
-		ctrl.storemux_sel = 1'b1;
 		ctrl.destmux_sel = 1'b0;
 		if (bit5 == 0)
 			ctrl.alumux8_sel = 2'b00;
@@ -57,7 +55,6 @@ case(opcode)
 	end
 	op_ldr: begin
 		ctrl.aluop = alu_add;
-		ctrl.storemux_sel = 1'b1;
 		ctrl.alumux8_sel = 3'b110;
 
 		ctrl.aluoutmux_sel = 2'b00;
@@ -68,7 +65,6 @@ case(opcode)
 	end
 	op_not: begin
 		ctrl.aluop = alu_not;
-		ctrl.storemux_sel = 1'b1;
 
 		ctrl.aluoutmux_sel = 2'b00;
 		ctrl.load_cc = 1'b1;
@@ -77,12 +73,11 @@ case(opcode)
 	end
 	op_str:begin
 		ctrl.aluop = alu_add;
-		ctrl.storemux_sel = 1'b1;
 		ctrl.alumux8_sel = 3'b110;
-
 		ctrl.wbmux_sel = 'b00;
 		ctrl.mem_byte_enable = 2'b11;
-		ctrl.mem_read = 1'b1;
+		ctrl.mem_write = 1'b1;
+		ctrl.storemux_sel = 1'b1;
 	end
 	
 	default: begin

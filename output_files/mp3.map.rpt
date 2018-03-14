@@ -1,5 +1,9 @@
 Analysis & Synthesis report for mp3
+<<<<<<< HEAD
 Tue Mar 13 23:57:08 2018
+=======
+Tue Mar 13 17:24:22 2018
+>>>>>>> 47814160f3a3c9ecc2a46a267f420b9d801c86a3
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Full Version
 
 
@@ -10,7 +14,50 @@ Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Full Version
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
+<<<<<<< HEAD
   5. Analysis & Synthesis Messages
+=======
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: datapath:datapath|mux4:pcmux
+ 12. Parameter Settings for User Entity Instance: datapath:datapath|register:pc
+ 13. Parameter Settings for User Entity Instance: datapath:datapath|plus2:pc_plus2
+ 14. Parameter Settings for User Entity Instance: datapath:datapath|register:if_id_reg
+ 15. Parameter Settings for User Entity Instance: datapath:datapath|mux2:storemux
+ 16. Parameter Settings for User Entity Instance: datapath:datapath|mux2:destmux
+ 17. Parameter Settings for User Entity Instance: datapath:datapath|register:id_ex_reg
+ 18. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj6
+ 19. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj9
+ 20. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj11
+ 21. Parameter Settings for User Entity Instance: datapath:datapath|sext:sext6
+ 22. Parameter Settings for User Entity Instance: datapath:datapath|sext:sext5
+ 23. Parameter Settings for User Entity Instance: datapath:datapath|zext:zext4
+ 24. Parameter Settings for User Entity Instance: datapath:datapath|mux8:alumux8
+ 25. Parameter Settings for User Entity Instance: datapath:datapath|mux2:alumux2
+ 26. Parameter Settings for User Entity Instance: datapath:datapath|mux4:aluoutmux
+ 27. Parameter Settings for User Entity Instance: datapath:datapath|zext_shift:zextshf_8
+ 28. Parameter Settings for User Entity Instance: datapath:datapath|register:ex_mem_reg
+ 29. Parameter Settings for User Entity Instance: datapath:datapath|register:mem_wb_reg
+ 30. Parameter Settings for User Entity Instance: datapath:datapath|mux4:wbmux
+ 31. Parameter Settings for User Entity Instance: datapath:datapath|register:cc
+ 32. Port Connectivity Checks: "datapath:datapath|mux4:wbmux"
+ 33. Port Connectivity Checks: "datapath:datapath|register:mem_wb_reg"
+ 34. Port Connectivity Checks: "datapath:datapath|register:ex_mem_reg"
+ 35. Port Connectivity Checks: "datapath:datapath|mux4:aluoutmux"
+ 36. Port Connectivity Checks: "datapath:datapath|mux8:alumux8"
+ 37. Port Connectivity Checks: "datapath:datapath|register:id_ex_reg"
+ 38. Port Connectivity Checks: "datapath:datapath|mux2:destmux"
+ 39. Port Connectivity Checks: "datapath:datapath|register:if_id_reg"
+ 40. Port Connectivity Checks: "datapath:datapath|register:pc"
+ 41. Port Connectivity Checks: "datapath:datapath|mux4:pcmux"
+ 42. Post-Synthesis Netlist Statistics for Top Partition
+ 43. Elapsed Time Per Partition
+ 44. Analysis & Synthesis Messages
+>>>>>>> 47814160f3a3c9ecc2a46a267f420b9d801c86a3
 
 
 
@@ -34,6 +81,7 @@ agreement for further details.
 
 
 
+<<<<<<< HEAD
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
@@ -50,6 +98,29 @@ agreement for further details.
 ; Total PLLs                  ; N/A until Partition Merge                   ;
 ; Total DLLs                  ; N/A until Partition Merge                   ;
 +-----------------------------+---------------------------------------------+
+=======
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Tue Mar 13 17:24:22 2018       ;
+; Quartus II 64-Bit Version       ; 15.0.2 Build 153 07/15/2015 SJ Full Version ;
+; Revision Name                   ; mp3                                         ;
+; Top-level Entity Name           ; mp3                                         ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 354                                         ;
+; Total pins                      ; 580                                         ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+>>>>>>> 47814160f3a3c9ecc2a46a267f420b9d801c86a3
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -157,13 +228,504 @@ agreement for further details.
 +----------------------------+-------------+
 
 
+<<<<<<< HEAD
+=======
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                            ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                        ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
+; wishbone.sv                      ; yes             ; User SystemVerilog HDL File  ; /home/rding4/ece411/cachemoneyrecords/wishbone.sv   ;         ;
+; lc3b_types.sv                    ; yes             ; User SystemVerilog HDL File  ; /home/rding4/ece411/cachemoneyrecords/lc3b_types.sv ;         ;
+; adj.sv                           ; yes             ; User SystemVerilog HDL File  ; /home/rding4/ece411/cachemoneyrecords/adj.sv        ;         ;
+; alu.sv                           ; yes             ; User SystemVerilog HDL File  ; /home/rding4/ece411/cachemoneyrecords/alu.sv        ;         ;
+; control.sv                       ; yes             ; User SystemVerilog HDL File  ; /home/rding4/ece411/cachemoneyrecords/control.sv    ;         ;
+; datapath.sv                      ; yes             ; User SystemVerilog HDL File  ; /home/rding4/ece411/cachemoneyrecords/datapath.sv   ;         ;
+; gencc.sv                         ; yes             ; User SystemVerilog HDL File  ; /home/rding4/ece411/cachemoneyrecords/gencc.sv      ;         ;
+; mp3.sv                           ; yes             ; User SystemVerilog HDL File  ; /home/rding4/ece411/cachemoneyrecords/mp3.sv        ;         ;
+; plus2.sv                         ; yes             ; User SystemVerilog HDL File  ; /home/rding4/ece411/cachemoneyrecords/plus2.sv      ;         ;
+; regfile.sv                       ; yes             ; User SystemVerilog HDL File  ; /home/rding4/ece411/cachemoneyrecords/regfile.sv    ;         ;
+; register.sv                      ; yes             ; User SystemVerilog HDL File  ; /home/rding4/ece411/cachemoneyrecords/register.sv   ;         ;
+; cccomp.sv                        ; yes             ; User SystemVerilog HDL File  ; /home/rding4/ece411/cachemoneyrecords/cccomp.sv     ;         ;
+; mux.sv                           ; yes             ; User SystemVerilog HDL File  ; /home/rding4/ece411/cachemoneyrecords/mux.sv        ;         ;
+; br_ctrl.sv                       ; yes             ; User SystemVerilog HDL File  ; /home/rding4/ece411/cachemoneyrecords/br_ctrl.sv    ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
+
+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimate of Logic utilization (ALMs needed) ; 323              ;
+;                                             ;                  ;
+; Combinational ALUT usage for logic          ; 451              ;
+;     -- 7 input functions                    ; 69               ;
+;     -- 6 input functions                    ; 81               ;
+;     -- 5 input functions                    ; 61               ;
+;     -- 4 input functions                    ; 160              ;
+;     -- <=3 input functions                  ; 80               ;
+;                                             ;                  ;
+; Dedicated logic registers                   ; 354              ;
+;                                             ;                  ;
+; I/O pins                                    ; 580              ;
+;                                             ;                  ;
+; Total DSP Blocks                            ; 0                ;
+;                                             ;                  ;
+; Maximum fan-out node                        ; ifetch.CLK~input ;
+; Maximum fan-out                             ; 354              ;
+; Total fan-out                               ; 3734             ;
+; Average fan-out                             ; 1.90             ;
++---------------------------------------------+------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                       ;
++---------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------------+--------------+
+; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                            ; Library Name ;
++---------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------------+--------------+
+; |mp3                            ; 451 (0)           ; 354 (0)      ; 0                 ; 0          ; 580  ; 0            ; |mp3                                           ; work         ;
+;    |datapath:datapath|          ; 451 (233)         ; 354 (0)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath                         ; work         ;
+;       |alu:alu|                 ; 41 (41)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|alu:alu                 ; work         ;
+;       |br_ctrl:br_ctrl|         ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|br_ctrl:br_ctrl         ; work         ;
+;       |cccomp:cccomp|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|cccomp:cccomp           ; work         ;
+;       |control_rom:control_rom| ; 13 (13)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|control_rom:control_rom ; work         ;
+;       |gencc:gencc|             ; 5 (5)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|gencc:gencc             ; work         ;
+;       |mux2:alumux2|            ; 12 (12)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux2:alumux2            ; work         ;
+;       |mux2:storemux|           ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux2:storemux           ; work         ;
+;       |mux4:pcmux|              ; 15 (15)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux4:pcmux              ; work         ;
+;       |mux4:wbmux|              ; 16 (16)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux4:wbmux              ; work         ;
+;       |mux8:alumux8|            ; 22 (22)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux8:alumux8            ; work         ;
+;       |plus2:pc_plus2|          ; 15 (15)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|plus2:pc_plus2          ; work         ;
+;       |regfile:regfile|         ; 72 (72)           ; 128 (128)    ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|regfile:regfile         ; work         ;
+;       |register:cc|             ; 0 (0)             ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:cc             ; work         ;
+;       |register:ex_mem_reg|     ; 0 (0)             ; 59 (59)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:ex_mem_reg     ; work         ;
+;       |register:id_ex_reg|      ; 0 (0)             ; 58 (58)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:id_ex_reg      ; work         ;
+;       |register:if_id_reg|      ; 0 (0)             ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:if_id_reg      ; work         ;
+;       |register:mem_wb_reg|     ; 0 (0)             ; 58 (58)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:mem_wb_reg     ; work         ;
+;       |register:pc|             ; 1 (1)             ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:pc             ; work         ;
++---------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                  ;
++--------------------------------------------------------+------------------------------------------------------------+
+; Register name                                          ; Reason for Removal                                         ;
++--------------------------------------------------------+------------------------------------------------------------+
+; datapath:datapath|register:id_ex_reg|data[70,71,82,83] ; Stuck at GND due to stuck port data_in                     ;
+; datapath:datapath|register:id_ex_reg|data[15]          ; Merged with datapath:datapath|register:ex_mem_reg|data[15] ;
+; datapath:datapath|register:id_ex_reg|data[14]          ; Merged with datapath:datapath|register:ex_mem_reg|data[14] ;
+; datapath:datapath|register:id_ex_reg|data[13]          ; Merged with datapath:datapath|register:ex_mem_reg|data[13] ;
+; datapath:datapath|register:id_ex_reg|data[12]          ; Merged with datapath:datapath|register:ex_mem_reg|data[12] ;
+; datapath:datapath|register:id_ex_reg|data[11]          ; Merged with datapath:datapath|register:ex_mem_reg|data[11] ;
+; datapath:datapath|register:id_ex_reg|data[10]          ; Merged with datapath:datapath|register:ex_mem_reg|data[10] ;
+; datapath:datapath|register:id_ex_reg|data[9]           ; Merged with datapath:datapath|register:ex_mem_reg|data[9]  ;
+; datapath:datapath|register:id_ex_reg|data[8]           ; Merged with datapath:datapath|register:ex_mem_reg|data[8]  ;
+; datapath:datapath|register:id_ex_reg|data[7]           ; Merged with datapath:datapath|register:ex_mem_reg|data[7]  ;
+; datapath:datapath|register:id_ex_reg|data[6]           ; Merged with datapath:datapath|register:ex_mem_reg|data[6]  ;
+; datapath:datapath|register:id_ex_reg|data[5]           ; Merged with datapath:datapath|register:ex_mem_reg|data[5]  ;
+; datapath:datapath|register:id_ex_reg|data[4]           ; Merged with datapath:datapath|register:ex_mem_reg|data[4]  ;
+; datapath:datapath|register:id_ex_reg|data[3]           ; Merged with datapath:datapath|register:ex_mem_reg|data[3]  ;
+; datapath:datapath|register:id_ex_reg|data[2]           ; Merged with datapath:datapath|register:ex_mem_reg|data[2]  ;
+; datapath:datapath|register:id_ex_reg|data[1]           ; Merged with datapath:datapath|register:ex_mem_reg|data[1]  ;
+; datapath:datapath|register:id_ex_reg|data[0]           ; Merged with datapath:datapath|register:ex_mem_reg|data[0]  ;
+; datapath:datapath|register:id_ex_reg|data[68]          ; Merged with datapath:datapath|register:id_ex_reg|data[65]  ;
+; datapath:datapath|register:id_ex_reg|data[79]          ; Merged with datapath:datapath|register:id_ex_reg|data[78]  ;
+; datapath:datapath|register:ex_mem_reg|data[68]         ; Merged with datapath:datapath|register:ex_mem_reg|data[65] ;
+; datapath:datapath|register:ex_mem_reg|data[79]         ; Merged with datapath:datapath|register:ex_mem_reg|data[78] ;
+; datapath:datapath|register:mem_wb_reg|data[79]         ; Merged with datapath:datapath|register:mem_wb_reg|data[78] ;
+; Total Number of Removed Registers = 25                 ;                                                            ;
++--------------------------------------------------------+------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 354   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 131   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; Yes        ; |mp3|datapath:datapath|register:pc|data[10]         ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |mp3|datapath:datapath|register:ex_mem_reg|data[37] ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |mp3|datapath:datapath|register:mem_wb_reg|data[31] ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |mp3|datapath:datapath|register:if_id_reg|data[18]  ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |mp3|datapath:datapath|mux4:wbmux|f[3]              ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 21 LEs               ; 0 LEs                  ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[15]         ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[8]          ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[3]          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|mux4:pcmux ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; width          ; 16    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|register:pc ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; width          ; 16    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|plus2:pc_plus2 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|register:if_id_reg ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; width          ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|mux2:storemux ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; width          ; 3     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|mux2:destmux ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; width          ; 3     ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|register:id_ex_reg ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; width          ; 88    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|adj:adj6 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; width          ; 6     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|adj:adj9 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; width          ; 9     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|adj:adj11 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; width          ; 11    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|sext:sext6 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; width          ; 6     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|sext:sext5 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; width          ; 5     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|zext:zext4 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; width          ; 4     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|mux8:alumux8 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; width          ; 16    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|mux2:alumux2 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; width          ; 16    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|mux4:aluoutmux ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|zext_shift:zextshf_8 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; width          ; 8     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|register:ex_mem_reg ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; width          ; 88    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|register:mem_wb_reg ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; width          ; 88    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|mux4:wbmux ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; width          ; 16    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|register:cc ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; width          ; 3     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "datapath:datapath|mux4:wbmux" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; d    ; Input ; Info     ; Explicitly unconnected         ;
++------+-------+----------+--------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:datapath|register:mem_wb_reg"                                                     ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; load        ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; out[83..80] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; out[77..70] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; out[67..60] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; out[56..48] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:datapath|register:ex_mem_reg" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; load ; Input ; Info     ; Stuck at VCC                            ;
++------+-------+----------+-----------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:datapath|mux4:aluoutmux" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; d    ; Input ; Info     ; Explicitly unconnected             ;
++------+-------+----------+------------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:datapath|mux8:alumux8" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; h    ; Input ; Info     ; Explicitly unconnected           ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:datapath|register:id_ex_reg" ;
++------+-------+----------+----------------------------------------+
+; Port ; Type  ; Severity ; Details                                ;
++------+-------+----------+----------------------------------------+
+; load ; Input ; Info     ; Stuck at VCC                           ;
++------+-------+----------+----------------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:datapath|mux2:destmux" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; b    ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:datapath|register:if_id_reg" ;
++------+-------+----------+----------------------------------------+
+; Port ; Type  ; Severity ; Details                                ;
++------+-------+----------+----------------------------------------+
+; load ; Input ; Info     ; Stuck at VCC                           ;
++------+-------+----------+----------------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "datapath:datapath|register:pc" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; load ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "datapath:datapath|mux4:pcmux" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; d    ; Input ; Info     ; Explicitly unconnected         ;
++------+-------+----------+--------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 354                         ;
+;     ENA               ; 131                         ;
+;     plain             ; 223                         ;
+; arriav_lcell_comb     ; 455                         ;
+;     arith             ; 31                          ;
+;         1 data inputs ; 15                          ;
+;         2 data inputs ; 3                           ;
+;         4 data inputs ; 4                           ;
+;         5 data inputs ; 9                           ;
+;     extend            ; 69                          ;
+;         7 data inputs ; 69                          ;
+;     normal            ; 355                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 56                          ;
+;         4 data inputs ; 156                         ;
+;         5 data inputs ; 52                          ;
+;         6 data inputs ; 81                          ;
+; boundary_port         ; 580                         ;
+;                       ;                             ;
+; Max LUT depth         ; 4.50                        ;
+; Average LUT depth     ; 2.09                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
+>>>>>>> 47814160f3a3c9ecc2a46a267f420b9d801c86a3
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.2 Build 153 07/15/2015 SJ Full Version
+<<<<<<< HEAD
     Info: Processing started: Tue Mar 13 23:56:57 2018
+=======
+    Info: Processing started: Tue Mar 13 17:24:09 2018
+>>>>>>> 47814160f3a3c9ecc2a46a267f420b9d801c86a3
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mp3 -c mp3
 Info (20034): Auto device selection is not supported for Cyclone V device family. The default device, 5CGXFC7C7F23C8, is set.
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
@@ -208,6 +770,7 @@ Info (12021): Found 3 design units, including 3 entities, in source file mux.sv
     Info (12023): Found entity 3: mux8
 Info (12021): Found 1 design units, including 1 entities, in source file br_ctrl.sv
     Info (12023): Found entity 1: br_ctrl
+<<<<<<< HEAD
 Info (12021): Found 1 design units, including 1 entities, in source file cache_interconnect.sv
     Info (12023): Found entity 1: cache_interconnect
 Info (12021): Found 1 design units, including 1 entities, in source file cache_interconnect_datapath.sv
@@ -229,5 +792,205 @@ Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 1 warni
     Error: Processing ended: Tue Mar 13 23:57:08 2018
     Error: Elapsed time: 00:00:11
     Error: Total CPU time (on all processors): 00:00:23
+=======
+Info (12127): Elaborating entity "mp3" for the top level hierarchy
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:datapath"
+Warning (10230): Verilog HDL assignment warning at datapath.sv(115): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at datapath.sv(123): truncated value with size 128 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at datapath.sv(124): truncated value with size 128 to match size of target (16)
+Warning (10034): Output port "ifetch.DAT_M" at datapath.sv(5) has no driver
+Warning (10034): Output port "ifetch.SEL" at datapath.sv(5) has no driver
+Info (12128): Elaborating entity "mux4" for hierarchy "datapath:datapath|mux4:pcmux"
+Info (12128): Elaborating entity "register" for hierarchy "datapath:datapath|register:pc"
+Info (12128): Elaborating entity "plus2" for hierarchy "datapath:datapath|plus2:pc_plus2"
+Info (12128): Elaborating entity "register" for hierarchy "datapath:datapath|register:if_id_reg"
+Info (12128): Elaborating entity "control_rom" for hierarchy "datapath:datapath|control_rom:control_rom"
+Info (12128): Elaborating entity "mux2" for hierarchy "datapath:datapath|mux2:storemux"
+Info (12128): Elaborating entity "regfile" for hierarchy "datapath:datapath|regfile:regfile"
+Info (12128): Elaborating entity "register" for hierarchy "datapath:datapath|register:id_ex_reg"
+Info (12128): Elaborating entity "adj" for hierarchy "datapath:datapath|adj:adj6"
+Info (12128): Elaborating entity "adj" for hierarchy "datapath:datapath|adj:adj9"
+Info (12128): Elaborating entity "adj" for hierarchy "datapath:datapath|adj:adj11"
+Info (12128): Elaborating entity "sext" for hierarchy "datapath:datapath|sext:sext6"
+Info (12128): Elaborating entity "sext" for hierarchy "datapath:datapath|sext:sext5"
+Info (12128): Elaborating entity "zext" for hierarchy "datapath:datapath|zext:zext4"
+Info (12128): Elaborating entity "mux8" for hierarchy "datapath:datapath|mux8:alumux8"
+Info (12128): Elaborating entity "mux2" for hierarchy "datapath:datapath|mux2:alumux2"
+Info (12128): Elaborating entity "alu" for hierarchy "datapath:datapath|alu:alu"
+Info (12128): Elaborating entity "zext_shift" for hierarchy "datapath:datapath|zext_shift:zextshf_8"
+Info (12128): Elaborating entity "register" for hierarchy "datapath:datapath|register:cc"
+Info (12128): Elaborating entity "cccomp" for hierarchy "datapath:datapath|cccomp:cccomp"
+Info (12128): Elaborating entity "gencc" for hierarchy "datapath:datapath|gencc:gencc"
+Info (12128): Elaborating entity "br_ctrl" for hierarchy "datapath:datapath|br_ctrl:br_ctrl"
+Warning (10270): Verilog HDL Case Statement warning at br_ctrl.sv(13): incomplete case statement has no default case item
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276006): RAM logic "datapath:datapath|regfile:regfile|data" is uninferred due to "logic" being set as ramstyle synthesis attribute
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "ifetch.SEL[0]" is stuck at GND
+    Warning (13410): Pin "ifetch.SEL[1]" is stuck at GND
+    Warning (13410): Pin "ifetch.SEL[2]" is stuck at GND
+    Warning (13410): Pin "ifetch.SEL[3]" is stuck at GND
+    Warning (13410): Pin "ifetch.SEL[4]" is stuck at GND
+    Warning (13410): Pin "ifetch.SEL[5]" is stuck at GND
+    Warning (13410): Pin "ifetch.SEL[6]" is stuck at GND
+    Warning (13410): Pin "ifetch.SEL[7]" is stuck at GND
+    Warning (13410): Pin "ifetch.SEL[8]" is stuck at GND
+    Warning (13410): Pin "ifetch.SEL[9]" is stuck at GND
+    Warning (13410): Pin "ifetch.SEL[10]" is stuck at GND
+    Warning (13410): Pin "ifetch.SEL[11]" is stuck at GND
+    Warning (13410): Pin "ifetch.SEL[12]" is stuck at GND
+    Warning (13410): Pin "ifetch.SEL[13]" is stuck at GND
+    Warning (13410): Pin "ifetch.SEL[14]" is stuck at GND
+    Warning (13410): Pin "ifetch.SEL[15]" is stuck at GND
+    Warning (13410): Pin "ifetch.WE" is stuck at GND
+    Warning (13410): Pin "ifetch.STB" is stuck at VCC
+    Warning (13410): Pin "ifetch.CYC" is stuck at VCC
+    Warning (13410): Pin "ifetch.DAT_M[0]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[1]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[2]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[3]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[4]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[5]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[6]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[7]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[8]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[9]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[10]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[11]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[12]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[13]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[14]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[15]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[16]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[17]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[18]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[19]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[20]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[21]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[22]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[23]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[24]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[25]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[26]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[27]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[28]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[29]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[30]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[31]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[32]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[33]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[34]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[35]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[36]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[37]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[38]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[39]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[40]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[41]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[42]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[43]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[44]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[45]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[46]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[47]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[48]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[49]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[50]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[51]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[52]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[53]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[54]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[55]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[56]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[57]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[58]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[59]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[60]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[61]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[62]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[63]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[64]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[65]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[66]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[67]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[68]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[69]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[70]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[71]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[72]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[73]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[74]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[75]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[76]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[77]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[78]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[79]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[80]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[81]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[82]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[83]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[84]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[85]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[86]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[87]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[88]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[89]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[90]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[91]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[92]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[93]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[94]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[95]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[96]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[97]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[98]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[99]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[100]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[101]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[102]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[103]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[104]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[105]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[106]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[107]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[108]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[109]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[110]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[111]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[112]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[113]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[114]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[115]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[116]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[117]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[118]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[119]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[120]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[121]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[122]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[123]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[124]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[125]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[126]" is stuck at GND
+    Warning (13410): Pin "ifetch.DAT_M[127]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 5 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "ifetch.RTY"
+    Warning (15610): No output dependent on input pin "ifetch.ACK"
+    Warning (15610): No output dependent on input pin "memory.RTY"
+    Warning (15610): No output dependent on input pin "memory.ACK"
+    Warning (15610): No output dependent on input pin "memory.CLK"
+Info (21057): Implemented 1279 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 262 input pins
+    Info (21059): Implemented 318 output pins
+    Info (21061): Implemented 699 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 160 warnings
+    Info: Peak virtual memory: 1207 megabytes
+    Info: Processing ended: Tue Mar 13 17:24:22 2018
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:24
+>>>>>>> 47814160f3a3c9ecc2a46a267f420b9d801c86a3
 
 
