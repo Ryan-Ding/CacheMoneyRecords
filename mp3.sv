@@ -2,15 +2,15 @@ import lc3b_types::*;
 
 module mp3
 (
-		wishbone.master pmem
+		wishbone.master pmem_master
 );
 
-wishbone ifetch(pmem.CLK);
-wishbone memory(pmem.CLK);
-wishbone icache(pmem.CLK);
-wishbone dcache(pmem.CLK);
-wishbone l2cache(pmem.CLK);
-
+wishbone ifetch(pmem_master.CLK);
+wishbone memory(pmem_master.CLK);
+wishbone icache(pmem_master.CLK);
+wishbone dcache(pmem_master.CLK);
+wishbone l1l2cache(pmem_master.CLK);
+wishbone l2cachepmem(pmem_master.CLK);
 
 /* Instantiate MP 0 top level blocks here */
 datapath datapath
@@ -20,6 +20,12 @@ datapath datapath
 
     /* declare more ports here */
 );
+
+//cpu cpu
+//(
+//	.wb(ifetch),
+//
+//);
 
 cache icache1
 (
@@ -41,17 +47,17 @@ cache_interconnect cache_interconnect
 	.icache(icache),
 	.dcache(dcache),
 	//wishbone between L1 cache and L2 cache 
-	.l2cache_slave(l2cache),
+	.l1l2cache(l1l2cache),
 	//wishbone between physical memory and L2 cache
-	.pmem_master(pmem),
-	.pmem_slave(pmem)
+	.l2cachepmem(l2cachepmem),
+	.pmem_master(pmem_master)
 	
 );
 
 cache l2cache1
 (
-		.wb_cpu_cache(l2cache),
-		.wb_cache_mem(pmem)
+		.wb_cpu_cache(l1l2cache),
+		.wb_cache_mem(l2cachepmem)
 );
 
 endmodule : mp3

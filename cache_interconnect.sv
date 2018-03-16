@@ -3,13 +3,13 @@ import lc3b_types::*;
 module cache_interconnect
 (
 	//wishbone from icache and dcache
-	wishbone.master icache,
-	wishbone.master dcache,
+	wishbone.slave icache,
+	wishbone.slave dcache,
 	//wishbone between L1 cache and L2 cache 
-	wishbone.slave l2cache_slave,
+	wishbone.master l1l2cache,
 	//wishbone between physical memory and L2 cache
-	wishbone.master pmem_master,
-	wishbone.slave pmem_slave
+	wishbone.slave l2cachepmem,
+	wishbone.master pmem_master
 	
 );
 
@@ -58,9 +58,9 @@ assign icache_sel = icache.SEL;
 assign icache_address = icache.ADR;
 assign icache_wdata = icache.DAT_M;
 //master input
-assign icache.DAT_S = l2cache_slave.DTA_S;
+assign icache.DAT_S = l1l2cache.DAT_S;
 assign icache.ACK = icache_ack;
-assign icache.RTY = l2cache_slave.RTY;
+assign icache.RTY = l1l2cache.RTY;
 
 //dcache master
 //dcache output ctrl input
@@ -71,39 +71,39 @@ assign dcache_sel = dcache.SEL;
 assign dcache_address = dcache.ADR;
 assign dcache_wdata = dcache.DAT_M;
 //dcache input 
-assign dcache.DAT_S = l2cache_slave.DTA_S;
+assign dcache.DAT_S = l1l2cache.DAT_S;
 assign dcache.ACK = dcache_ack;
-assign dcache.RTY = l2cache_slave.RTY;
+assign dcache.RTY = l1l2cache.RTY;
 
-//L2 cache slave l2cache_slave
-//l2cache_slave output
-assign l2cache_rdata = l2cache_slave.DAT_S;
-assign l2cache_ack = l2cache_slave.ACK;
-//l2cache_slave input
-assign l2cache_slave.WE = l2cache_we;
-assign l2cache_slave.DAT_M = l2cache_wdata;
-assign l2cache_slave.CYC = l2cache_cyc;
-assign l2cache_slave.STB = l2cache_stb;
-assign l2cache_slave.SEL = l2cache_sel;
-assign l2cache_slave.ADR = l2cache_address;
+//L2 cache slave l1l2cache
+//l1l2cache output
+assign l2cache_rdata = l1l2cache.DAT_S;
+assign l2cache_ack = l1l2cache.ACK;
+//l1l2cache input
+assign l1l2cache.WE = l2cache_we;
+assign l1l2cache.DAT_M = l2cache_wdata;
+assign l1l2cache.CYC = l2cache_cyc;
+assign l1l2cache.STB = l2cache_stb;
+assign l1l2cache.SEL = l2cache_sel;
+assign l1l2cache.ADR = l2cache_address;
 
-//L2 cache master pmem_master
-//pmem_master output
-assign pmem_slave.DAT_M = pmem_master.DAT_M;
-assign pmem_slave.CYC = pmem_master.CYC;
-assign pmem_slave.STB = pmem_master.STB;
-assign pmem_slave.WE = pmem_master.WE;
-assign pmem_slave.SEL = pmem_master.SEL;
-assign pmem_slave.ADR = pmem_master.ADR;
-//pmem_master input
-assign pmem_master.DAT_S = pmem_slave.DAT_S;
-assign pmem_master.ACK = pmem_slave.ACK;
-assign pmem_master.RTY = pmem_slave.RTY;
+//L2 cache master l2cachepmem
+//l2cachepmem output
+assign pmem_master.DAT_M = l2cachepmem.DAT_M;
+assign pmem_master.CYC = l2cachepmem.CYC;
+assign pmem_master.STB = l2cachepmem.STB;
+assign pmem_master.WE = l2cachepmem.WE;
+assign pmem_master.SEL = l2cachepmem.SEL;
+assign pmem_master.ADR = l2cachepmem.ADR;
+//l2cachepmem input
+assign l2cachepmem.DAT_S = pmem_master.DAT_S;
+assign l2cachepmem.ACK = pmem_master.ACK;
+assign l2cachepmem.RTY = pmem_master.RTY;
 
-//pmem slave pmem_slave
-assign pmem_ack = pmem_slave.ACK;
-assign pmem_address = pmem_master.ADR;
-assign pmem_rdata = pmem_slave.DAT_S;
+//pmem slave pmem_master
+assign pmem_ack = pmem_master.ACK;
+assign pmem_address = l2cachepmem.ADR;
+assign pmem_rdata = pmem_master.DAT_S;
 
 
 cache_interconnect_control cache_interconnect_control

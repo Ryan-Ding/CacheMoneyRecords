@@ -133,7 +133,8 @@ array #(.width(9)) tag1
 );
 
 array #(.width(1)) valid1
-(
+(sim:/mp2_tb/dut/l1l2cache/STB
+
     .clk(clk),
     .write(v1_write),
     .index(adr_i_cpu[6:4]),

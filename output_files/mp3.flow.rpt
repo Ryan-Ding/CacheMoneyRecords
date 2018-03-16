@@ -1,9 +1,5 @@
 Flow report for mp3
-<<<<<<< HEAD
-Tue Mar 13 23:57:08 2018
-=======
-Tue Mar 13 17:24:22 2018
->>>>>>> 47814160f3a3c9ecc2a46a267f420b9d801c86a3
+Thu Mar 15 20:11:58 2018
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Full Version
 
 
@@ -42,30 +38,10 @@ agreement for further details.
 
 
 
-<<<<<<< HEAD
-+---------------------------------------------------------------------------+
-; Flow Summary                                                              ;
-+-----------------------------+---------------------------------------------+
-; Flow Status                 ; Flow Failed - Tue Mar 13 23:57:08 2018      ;
-; Quartus II 64-Bit Version   ; 15.0.2 Build 153 07/15/2015 SJ Full Version ;
-; Revision Name               ; mp3                                         ;
-; Top-level Entity Name       ; mp3                                         ;
-; Family                      ; Cyclone V                                   ;
-; Device                      ; 5CGXFC7C7F23C8                              ;
-; Timing Models               ; Final                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
-=======
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Mar 13 17:24:22 2018       ;
+; Flow Status                     ; Successful - Thu Mar 15 20:11:58 2018       ;
 ; Quartus II 64-Bit Version       ; 15.0.2 Build 153 07/15/2015 SJ Full Version ;
 ; Revision Name                   ; mp3                                         ;
 ; Top-level Entity Name           ; mp3                                         ;
@@ -73,10 +49,10 @@ agreement for further details.
 ; Device                          ; 5CGXFC7C7F23C8                              ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 354                                         ;
-; Total pins                      ; 580                                         ;
+; Total registers                 ; 3815                                        ;
+; Total pins                      ; 290                                         ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
+; Total block memory bits         ; 4,384                                       ;
 ; Total DSP Blocks                ; 0                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -85,7 +61,6 @@ agreement for further details.
 ; Total PLLs                      ; 0                                           ;
 ; Total DLLs                      ; 0                                           ;
 +---------------------------------+---------------------------------------------+
->>>>>>> 47814160f3a3c9ecc2a46a267f420b9d801c86a3
 
 
 +-----------------------------------------+
@@ -93,11 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-<<<<<<< HEAD
-; Start date & time ; 03/13/2018 23:56:58 ;
-=======
-; Start date & time ; 03/13/2018 17:24:10 ;
->>>>>>> 47814160f3a3c9ecc2a46a267f420b9d801c86a3
+; Start date & time ; 03/15/2018 20:11:34 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mp3                 ;
 +-------------------+---------------------+
@@ -108,19 +79,14 @@ agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-<<<<<<< HEAD
-; COMPILER_SIGNATURE_ID                ; 215729418922467.152100341840032       ; --            ; --          ; --             ;
-=======
-; COMPILER_SIGNATURE_ID                ; 176231578740918.152097985032059       ; --            ; --          ; --             ;
->>>>>>> 47814160f3a3c9ecc2a46a267f420b9d801c86a3
+; COMPILER_SIGNATURE_ID                ; 176231578740918.152116269437338       ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; mp3_tb         ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; mp3_tb                                ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)       ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_FILE                  ; mp3_tb.sv                             ; --            ; --          ; mp3_tb         ;
-; EDA_TEST_BENCH_FILE                  ; memory.sv                             ; --            ; --          ; mp3_tb         ;
-; EDA_TEST_BENCH_FILE                  ; magic_memory_dual_port.sv             ; --            ; --          ; mp3_tb         ;
+; EDA_TEST_BENCH_FILE                  ; physical_memory.sv                    ; --            ; --          ; mp3_tb         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; mp3_tb                                ; --            ; --          ; mp3_tb         ;
 ; EDA_TEST_BENCH_NAME                  ; mp3_tb                                ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 100000 ns                             ; --            ; --          ; mp3_tb         ;
@@ -140,13 +106,8 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-<<<<<<< HEAD
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 1090 MB             ; 00:00:23                           ;
-; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:23                           ;
-=======
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 1158 MB             ; 00:00:24                           ;
-; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:24                           ;
->>>>>>> 47814160f3a3c9ecc2a46a267f420b9d801c86a3
+; Analysis & Synthesis ; 00:00:23     ; 1.0                     ; 1234 MB             ; 00:00:33                           ;
+; Total                ; 00:00:23     ; --                      ; --                  ; 00:00:33                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -155,11 +116,7 @@ agreement for further details.
 +----------------------+------------------------------+--------------+--------------+----------------+
 ; Module Name          ; Machine Hostname             ; OS Name      ; OS Version   ; Processor type ;
 +----------------------+------------------------------+--------------+--------------+----------------+
-<<<<<<< HEAD
-; Analysis & Synthesis ; dcl-l520-20.ews.illinois.edu ; CentOS Linux ; CentOS Linux ; x86_64         ;
-=======
 ; Analysis & Synthesis ; dcl-l520-19.ews.illinois.edu ; CentOS Linux ; CentOS Linux ; x86_64         ;
->>>>>>> 47814160f3a3c9ecc2a46a267f420b9d801c86a3
 +----------------------+------------------------------+--------------+--------------+----------------+
 
 
