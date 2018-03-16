@@ -55,9 +55,11 @@ logic [2:0] alumux8_sel;
 logic alumux2_sel;
 logic [1:0] aluoutmux_sel;
 logic [1:0] wbmux_sel;
+logic ldbmux_sel;
 logic [1:0] mem_byte_enable;
 logic mem_read;
 logic mem_write;
+logic sr2mux_sel;
 } lc3b_control_word;
 
 endpackage : lc3b_types

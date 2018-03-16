@@ -7,7 +7,10 @@ module ldi_sti_control
 	 input mem_resp,
 	 input lc3b_opcode opcode,
 
-	 output logic proceed
+	 output logic proceed,
+	 output logic ldi_addr_register_load,
+	 output logic memaddrmux_sel,
+	 output logic sti_WE
 );
 
 logic ldi_sti;
@@ -19,22 +22,31 @@ enum int unsigned {
 } state, next_state;
 
 always_comb
-begin :
+begin
     /* Default output assignments */
 	 /* Default assignments */
-		proceed = 1'b0;
+		proceed = 1'b1;
 		ldi_sti = 1'b0;
+		ldi_addr_register_load = 1'b0;
+		memaddrmux_sel = 1'b0;
+		sti_WE = 1'b1;
 		next_state = state;
 		
-		if(opcode == op_sti || op_ldi)
+		if(opcode == op_sti || opcode == op_ldi)
 			ldi_sti = 1'b1;
-		else if (opcode == op_str || op_ldr || op_str || op_ldb || op_stb)
+		else if (opcode == op_str || opcode == op_ldr || opcode == op_ldb || opcode == op_stb)
 			ldi_sti = 1'b0;
 		
     /* Actions for each state */
 	 case(state)
 	 
 			first_access: begin
+			if(ldi_sti)
+			begin
+				ldi_addr_register_load = 1'b1;
+				proceed = 1'b0;
+				sti_WE = 1'b0;
+			end
 			if(!ldi_sti && mem_resp)
 				proceed = 1'b1;
 			else if (ldi_sti && mem_resp)
@@ -42,6 +54,7 @@ begin :
 			end
 			
 			second_access:begin
+			memaddrmux_sel = 1'b1;
 			if(mem_resp)
 			begin
 				proceed = 1'b1;

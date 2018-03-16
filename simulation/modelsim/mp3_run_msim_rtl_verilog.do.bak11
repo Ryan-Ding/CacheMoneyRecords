@@ -17,6 +17,10 @@ vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/
 vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/regfile.sv}
 vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/cccomp.sv}
 vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/br_ctrl.sv}
+vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/mdrmask.sv}
+vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/srmask.sv}
+vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/mem_enable_ctrl.sv}
+vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/ldi_sti_control.sv}
 vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/datapath.sv}
 vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/mp3.sv}
 
@@ -26,7 +30,8 @@ vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/
 
 vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  mp3_tb
 
-add wave *
-view structure
-view signals
+#add wave *
+#view structure
+#view signals
 run 100000 ns
+quit -f

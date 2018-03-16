@@ -1,0 +1,221 @@
+# do /tmp/tmp.bP5l5FtsQt/do.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/wishbone.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling interface wishbone
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/plus2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module plus2
+# 
+# Top level modules:
+# 	plus2
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/register.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module register
+# 
+# Top level modules:
+# 	register
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module mux8
+# 
+# Top level modules:
+# 	mux2
+# 	mux4
+# 	mux8
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/adj.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package adj_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module adj
+# -- Compiling module sext
+# -- Compiling module zext
+# -- Compiling module zext_shift
+# 
+# Top level modules:
+# 	adj
+# 	sext
+# 	zext
+# 	zext_shift
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/alu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package alu_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module control_rom
+# 
+# Top level modules:
+# 	control_rom
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/gencc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package gencc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module gencc
+# 
+# Top level modules:
+# 	gencc
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/regfile.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package regfile_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/cccomp.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package cccomp_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module cccomp
+# 
+# Top level modules:
+# 	cccomp
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/br_ctrl.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package br_ctrl_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module br_ctrl
+# 
+# Top level modules:
+# 	br_ctrl
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/mdrmask.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mdrmask_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mdrmask
+# 
+# Top level modules:
+# 	mdrmask
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/srmask.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package srmask_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module srmask
+# 
+# Top level modules:
+# 	srmask
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/mem_enable_ctrl.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mem_enable_ctrl_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mem_enable_ctrl
+# 
+# Top level modules:
+# 	mem_enable_ctrl
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/ldi_sti_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package ldi_sti_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module ldi_sti_control
+# 
+# Top level modules:
+# 	ldi_sti_control
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/mp3.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mp3_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mp3
+# 
+# Top level modules:
+# 	mp3
+# 
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/mp3_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mp3_tb
+# 
+# Top level modules:
+# 	mp3_tb
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/memory.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/magic_memory_dual_port.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module magic_memory
+# 
+# Top level modules:
+# 	magic_memory
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  mp3_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps mp3_tb 
+# Loading sv_std.std
+# Loading work.mp3_tb
+# Loading work.wishbone
+# Loading work.lc3b_types
+# Loading work.mp3_sv_unit
+# Loading work.mp3
+# Loading work.datapath_sv_unit
+# Loading work.datapath
+# Loading work.mux4
+# Loading work.register
+# Loading work.plus2
+# Loading work.control_sv_unit
+# Loading work.control_rom
+# Loading work.mux2
+# Loading work.regfile_sv_unit
+# Loading work.regfile
+# Loading work.adj_sv_unit
+# Loading work.adj
+# Loading work.sext
+# Loading work.zext
+# Loading work.mux8
+# Loading work.alu_sv_unit
+# Loading work.alu
+# Loading work.srmask_sv_unit
+# Loading work.srmask
+# Loading work.mdrmask_sv_unit
+# Loading work.mdrmask
+# Loading work.ldi_sti_control_sv_unit
+# Loading work.ldi_sti_control
+# Loading work.zext_shift
+# Loading work.cccomp_sv_unit
+# Loading work.cccomp
+# Loading work.gencc_sv_unit
+# Loading work.gencc
+# Loading work.br_ctrl_sv_unit
+# Loading work.br_ctrl
+# Loading work.mem_enable_ctrl_sv_unit
+# Loading work.mem_enable_ctrl
+# Loading work.magic_memory
+# 
+#add wave *
+#view structure
+#view signals
+# add list -radix hexadecimal [concat [string range [find instances -r regfile] 0 [expr [string first " " [find instances -r regfile]] - 1]] "/data}"]
+# run 10000000ns
+# write list /tmp/tmp.bP5l5FtsQt/test_list.lst
+# exit

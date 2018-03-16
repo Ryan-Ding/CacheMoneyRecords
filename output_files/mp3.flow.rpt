@@ -1,5 +1,5 @@
 Flow report for mp3
-Tue Mar 13 17:24:22 2018
+Fri Mar 16 05:30:27 2018
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Full Version
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Mar 13 17:24:22 2018       ;
+; Flow Status                     ; Successful - Fri Mar 16 05:30:27 2018       ;
 ; Quartus II 64-Bit Version       ; 15.0.2 Build 153 07/15/2015 SJ Full Version ;
 ; Revision Name                   ; mp3                                         ;
 ; Top-level Entity Name           ; mp3                                         ;
@@ -49,7 +49,7 @@ agreement for further details.
 ; Device                          ; 5CGXFC7C7F23C8                              ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 354                                         ;
+; Total registers                 ; 401                                         ;
 ; Total pins                      ; 580                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/13/2018 17:24:10 ;
+; Start date & time ; 03/16/2018 05:30:13 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mp3                 ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 176231578740918.152097985032059       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 176831338140775.152119621338594       ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; mp3_tb         ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; mp3_tb                                ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                     ; --            ; --          ; eda_simulation ;
@@ -107,18 +107,18 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 1158 MB             ; 00:00:24                           ;
-; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:24                           ;
+; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 1161 MB             ; 00:00:24                           ;
+; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:24                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                                    ;
-+----------------------+------------------------------+--------------+--------------+----------------+
-; Module Name          ; Machine Hostname             ; OS Name      ; OS Version   ; Processor type ;
-+----------------------+------------------------------+--------------+--------------+----------------+
-; Analysis & Synthesis ; dcl-l520-19.ews.illinois.edu ; CentOS Linux ; CentOS Linux ; x86_64         ;
-+----------------------+------------------------------+--------------+--------------+----------------+
++-----------------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                                     ;
++----------------------+-------------------------------+--------------+--------------+----------------+
+; Module Name          ; Machine Hostname              ; OS Name      ; OS Version   ; Processor type ;
++----------------------+-------------------------------+--------------+--------------+----------------+
+; Analysis & Synthesis ; eceb-2022-24.ews.illinois.edu ; CentOS Linux ; CentOS Linux ; x86_64         ;
++----------------------+-------------------------------+--------------+--------------+----------------+
 
 
 ------------

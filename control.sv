@@ -19,11 +19,13 @@ ctrl.storemux_sel = 1'b0;
 ctrl.destmux_sel = 1'b0;
 ctrl.alumux8_sel = 3'b000;
 ctrl.alumux2_sel = 1'b0;
+ctrl.ldbmux_sel = 1'b0;
 ctrl.aluoutmux_sel = 2'b00;
-ctrl.wbmux_sel = 'b00;
+ctrl.wbmux_sel = 2'b00;
 ctrl.mem_byte_enable = 2'b11;
 ctrl.mem_read = 1'b0;
 ctrl.mem_write = 1'b0;
+ctrl.sr2mux_sel = 1'b0;
 /* Assign control signals based on opcode */
 case(opcode)
 	op_add: begin
@@ -58,7 +60,7 @@ case(opcode)
 		ctrl.alumux8_sel = 3'b110;
 
 		ctrl.aluoutmux_sel = 2'b00;
-		ctrl.wbmux_sel = 'b01;
+		ctrl.wbmux_sel = 2'b01;
 		ctrl.load_cc = 1'b1;
 		ctrl.mem_read = 1'b1;
 		ctrl.load_regfile = 1'b1;
@@ -74,11 +76,89 @@ case(opcode)
 	op_str:begin
 		ctrl.aluop = alu_add;
 		ctrl.alumux8_sel = 3'b110;
-		ctrl.wbmux_sel = 'b00;
-		ctrl.mem_byte_enable = 2'b11;
+		ctrl.wbmux_sel = 2'b00;
+		//ctrl.mem_byte_enable = 2'b11;
 		ctrl.mem_write = 1'b1;
 		ctrl.storemux_sel = 1'b1;
 	end
+	op_shf:begin
+		ctrl.alumux8_sel = 3'b010;
+		ctrl.load_regfile = 1'b1;
+		ctrl.load_cc = 1'b1;
+		ctrl.wbmux_sel = 2'b10;
+		if (bit4)
+			begin
+			if(!bit5)
+				ctrl.aluop = alu_srl;
+			else 
+				ctrl.aluop = alu_sra;
+			end
+		else
+			ctrl.aluop = alu_sll;
+	end
+	op_jmp:begin
+		ctrl.aluop = alu_pass;
+		end
+	op_jsr:begin
+		ctrl.destmux_sel = 1'b1;
+		ctrl.load_regfile = 1'b1;
+		if(bit11)
+		begin
+			ctrl.alumux2_sel = 1'b1;
+			ctrl.alumux8_sel = 3'b100;
+		end
+		else
+			ctrl.aluoutmux_sel = 2'b01;
+	end
+	op_lea:begin
+		ctrl.alumux2_sel = 1'b1;
+		ctrl.alumux8_sel = 3'b011;
+		ctrl.wbmux_sel = 2'b10;
+		ctrl.load_regfile = 1'b1;
+		ctrl.load_cc = 1'b1;
+	end
+	op_ldb: begin
+		ctrl.aluop = alu_add;
+		ctrl.alumux8_sel = 3'b101;
+		ctrl.ldbmux_sel = 1'b1;
+		ctrl.aluoutmux_sel = 2'b00;
+		ctrl.wbmux_sel = 2'b01;
+		ctrl.load_cc = 1'b1;
+		ctrl.mem_read = 1'b1;
+		ctrl.load_regfile = 1'b1;
+	end
+	op_stb:begin
+		ctrl.aluop = alu_add;
+		ctrl.alumux8_sel = 3'b101;
+		//ctrl.mem_byte_enable = 2'b11;
+		ctrl.mem_write = 1'b1;
+		ctrl.storemux_sel = 1'b1;
+		ctrl.sr2mux_sel = 1'b1;
+	end
+	
+	op_ldi: begin
+		ctrl.aluop = alu_add;
+		ctrl.alumux8_sel = 3'b110;
+		ctrl.wbmux_sel = 2'b01;
+		ctrl.load_cc = 1'b1;
+		ctrl.mem_read = 1'b1;
+		ctrl.load_regfile = 1'b1;
+	end
+	op_sti:begin
+		ctrl.aluop = alu_add;
+		ctrl.alumux8_sel = 3'b110;
+		//ctrl.mem_byte_enable = 2'b11;
+		ctrl.mem_write = 1'b1;
+		ctrl.storemux_sel = 1'b1;
+	end
+	op_trap:begin
+		ctrl.destmux_sel = 1'b1;
+		ctrl.load_regfile = 1'b1;
+		ctrl.aluoutmux_sel = 2'b10;
+		ctrl.mem_read = 1'b1;
+		end
+	
+		
 	
 	default: begin
 	ctrl = 0; /* Unknown opcode, set control word to zero */

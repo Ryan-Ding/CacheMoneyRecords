@@ -1,3 +1,5 @@
+import lc3b_types::*;
+
 module mdrmask
 (
     input [15:0] in,

@@ -1,3 +1,5 @@
+import lc3b_types::*;
+
 module srmask
 (
     input [15:0] in,
@@ -5,12 +7,7 @@ module srmask
     output lc3b_word out
 );
 
-always_comb
-begin
-    if(is_even)
-		out = {8'bXXXXXXXX, in[7:0]};
-	else
-		out = {in[7:0], 8'bXXXXXXXX};
-end
+assign out = {in[7:0], in[7:0]};
+
 
 endmodule : srmask

@@ -1,0 +1,5 @@
+
+State Machine - |mp3|datapath:datapath|ldi_sti_control:ldi_sti_control0|state
+Name state.second_access 
+state.first_access 0 
+state.second_access 1 

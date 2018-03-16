@@ -12,6 +12,9 @@ module datapath
 logic clk;
 assign clk= ifetch.CLK;
 logic [1:0] mem_byte_enable;
+logic mem_resp;
+assign mem_resp = memory.ACK;
+logic proceed;
 lc3b_word temp_address;
 
 /* declare internal signals */
@@ -38,7 +41,7 @@ lc3b_reg storemux_out;
 lc3b_control_word control_out;
 
 //id_ex signals
-logic[87:0] id_ex_reg_out;
+logic[89:0] id_ex_reg_out;
 lc3b_control_word crtl_reg_id_ex_out;
 lc3b_word pc_reg_id_ex_out;
 lc3b_word sr1_id_ex_out ;
@@ -59,20 +62,29 @@ lc3b_word sext6_out;
 lc3b_word zextshf_8_out;
 lc3b_word alumux8_out;
 lc3b_word alumux2_out;
+lc3b_word sr2mux_out;
 
 //ex_mem signals
-logic[87:0] ex_mem_reg_out;
+logic[89:0] ex_mem_reg_out;
 lc3b_control_word crtl_reg_ex_mem_out;
 lc3b_word pc_reg_ex_mem_out;
 lc3b_word sr2_ex_mem_out ;
 lc3b_word aluout_ex_mem_out ;
 lc3b_word ir_ex_mem_out ;
 logic load_ex_mem_reg ;
-//
+
+//MEMORY stage signals
 lc3b_word mem_rdata;
+lc3b_word ldbmux_out;
+lc3b_word srmask_out;
+lc3b_word mdrmask_out;
+lc3b_word ldi_addr_register_out;
+logic ldi_addr_register_load;
+logic memaddrmux_sel;
+logic sti_WE;
 
 //mem_wb signals
-logic[87:0] mem_wb_reg_out;
+logic[89:0] mem_wb_reg_out;
 lc3b_control_word crtl_reg_mem_wb_out;
 lc3b_word pc_reg_mem_wb_out ;
 lc3b_word mem_data_mem_wb_out ;
@@ -86,6 +98,7 @@ lc3b_nzp gencc_out;
 lc3b_nzp cc_out;
 logic branch_enable;
 logic[1:0] br_ctrl_out;
+logic is_even;
 
 
 
@@ -100,7 +113,8 @@ lc3b_line wdata;
 
 lc3b_word mem_address;
 
-
+logic pipeline_reg_load;
+assign pipeline_reg_load = proceed;
 
 assign ifetch.ADR = pc_out[15:4];
 assign instruction_mem_in = ifetch.DAT_S;
@@ -108,63 +122,63 @@ assign ifetch.WE = 0;
 assign ifetch.STB = 1;
 assign ifetch.CYC = 1;
 
-assign mem_byte_enable = 2'b11;
 assign data_mem_in = memory.DAT_S;
 assign memory.DAT_M = wdata;
 assign memory.ADR = mem_address[15:4];
 assign temp_address = 2 * (mem_address[3:1]);
 assign memory.SEL = (16'b0000000000000011 & mem_byte_enable) << temp_address;
-assign memory.WE = crtl_reg_ex_mem_out.mem_write;
+assign memory.WE = crtl_reg_ex_mem_out.mem_write & sti_WE;
 assign memory.STB = crtl_reg_ex_mem_out.mem_write | crtl_reg_ex_mem_out.mem_read;
 assign memory.CYC = crtl_reg_ex_mem_out.mem_write | crtl_reg_ex_mem_out.mem_read;
+
+assign is_even = !mem_address[0];
 
 // ifetch
 // get instruction from 128 bits memory output
 assign instruction_data = instruction_mem_in >> (16 * pc_out[3:1]);
 assign mem_rdata = data_mem_in >> (16 * mem_address[3:1]);
-assign load_pc = 1'b1;
+assign load_pc = proceed;
 
 
 
 //if_id pipeline register out
 assign pc_reg_if_id_out = if_id_reg_out[15:0];
 assign ir_if_id_out = if_id_reg_out[31:16];
-assign load_if_id_reg = 1'b1;
+assign load_if_id_reg = pipeline_reg_load;
 
 //id_ex pipeline register out
 assign pc_reg_id_ex_out = id_ex_reg_out[15:0];
 assign sr1_id_ex_out = id_ex_reg_out[31:16];
 assign sr2_id_ex_out = id_ex_reg_out[47:32];
 assign ir_id_ex_out = id_ex_reg_out[63:48];
-assign crtl_reg_id_ex_out = id_ex_reg_out[87:64];
-assign load_id_ex_reg = 1'b1;
+assign crtl_reg_id_ex_out = id_ex_reg_out[89:64];
+assign load_id_ex_reg = pipeline_reg_load;
 
 // ex_mem pipeline register out
 assign pc_reg_ex_mem_out = ex_mem_reg_out[15:0];
 assign sr2_ex_mem_out = ex_mem_reg_out[31:16];
 assign aluout_ex_mem_out = ex_mem_reg_out[47:32];
 assign ir_ex_mem_out = ex_mem_reg_out[63:48];
-assign crtl_reg_ex_mem_out = ex_mem_reg_out[87:64];
-assign load_ex_mem_reg = 1'b1;
+assign crtl_reg_ex_mem_out = ex_mem_reg_out[89:64];
+assign load_ex_mem_reg = pipeline_reg_load;
 
 //memory stage assign
 // expanded from 16 to 128 bits
-assign wdata = sr2_ex_mem_out << (16 * aluout_ex_mem_out[3:1]);
-assign mem_address = aluout_ex_mem_out;
+assign wdata = sr2_ex_mem_out << (16 * mem_address[3:1]);
 
 // mem_wb pipleline register out
 assign pc_reg_mem_wb_out = mem_wb_reg_out[15:0];
 assign mem_data_mem_wb_out = mem_wb_reg_out[31:16];
 assign aluout_mem_wb_out = mem_wb_reg_out[47:32];
 assign ir_mem_wb_out = mem_wb_reg_out[63:48];
-assign crtl_reg_mem_wb_out = mem_wb_reg_out[87:64];
-assign load_mem_wb_reg = 1'b1;
+assign crtl_reg_mem_wb_out = mem_wb_reg_out[89:64];
+assign load_mem_wb_reg = pipeline_reg_load;
 
 mux4 pcmux(
 	.sel(br_ctrl_out),
 	.a(pc_plus2_out),
 	.b(aluout_mem_wb_out),
-	.c(wbmux_out),
+	.c(mem_data_mem_wb_out),
 	.d(),
 	.f(pcmux_out)
 );
@@ -205,7 +219,8 @@ control_rom control_rom
 );
 
 //store mux
-mux2 #(.width(3)) storemux(
+mux2 #(.width(3)) storemux
+(
 	.sel(control_out.storemux_sel),
 	.a(ir_if_id_out[2:0]),
 	.b(ir_if_id_out[11:9]),
@@ -213,8 +228,9 @@ mux2 #(.width(3)) storemux(
 );
 
 //dest mux
-mux2 #(.width(3)) destmux(
-	.sel(control_out.destmux_sel),
+mux2 #(.width(3)) destmux
+(
+	.sel(crtl_reg_mem_wb_out.destmux_sel),
 	.a(ir_mem_wb_out[11:9]),
 	.b(3'b111),
 	.f(destmux_out)
@@ -234,7 +250,7 @@ regfile regfile
 );
 
 //id_ex pipeline register
-register #(.width(88)) id_ex_reg
+register #(.width(90)) id_ex_reg
 (
 	.clk,
 	.load(load_id_ex_reg),
@@ -310,6 +326,21 @@ alu alu
     .f(alu_out)
 ); 
 
+srmask srmask
+(
+	.in(sr2_id_ex_out),
+	.is_even(is_even),
+	.out(srmask_out)
+);
+
+mux2 sr2mux
+(
+	.sel(crtl_reg_id_ex_out.sr2mux_sel),
+	.a(sr2_id_ex_out),
+	.b(srmask_out),
+	.f(sr2mux_out)
+);
+
 mux4 #(.width(16)) aluoutmux
 (
 	.sel(crtl_reg_id_ex_out.aluoutmux_sel),
@@ -320,6 +351,48 @@ mux4 #(.width(16)) aluoutmux
 	.f(aluoutmux_out)
 );
 
+mdrmask mdrmask
+(
+	.in(mem_rdata),
+	.is_even(is_even),
+	.out(mdrmask_out)
+);
+
+mux2 #(.width(16)) memaddrmux
+(
+	.sel(memaddrmux_sel),
+	.a(aluout_ex_mem_out),
+	.b(ldi_addr_register_out),
+	.f(mem_address)
+);
+
+ldi_sti_control ldi_sti_control0
+(
+	 .clk,
+	 .mem_resp,
+	 .opcode(crtl_reg_ex_mem_out.opcode),
+	 .proceed,
+	 .ldi_addr_register_load,
+	 .memaddrmux_sel,
+	 .sti_WE
+);
+
+register #(.width(16)) ldi_addr_register
+(
+	.clk,
+	.load(ldi_addr_register_load),
+	.in(mem_rdata),
+	.out(ldi_addr_register_out)
+);
+
+mux2 #(.width(16)) ldbmux
+(
+	.sel(crtl_reg_ex_mem_out.ldbmux_sel),
+	.a(mem_rdata),
+	.b(mdrmask_out),
+	.f(ldbmux_out)
+);
+
 zext_shift #(.width(8)) zextshf_8
 (
 	.in(ir_id_ex_out[7:0]),
@@ -327,20 +400,20 @@ zext_shift #(.width(8)) zextshf_8
 );
 
 // execute memory pipeline register
-register #(.width(88)) ex_mem_reg
+register #(.width(90)) ex_mem_reg
 (
 	.clk,
 	.load(load_ex_mem_reg),
-	.in({ crtl_reg_id_ex_out,ir_id_ex_out ,aluoutmux_out, sr2_id_ex_out, pc_reg_if_id_out}),
+	.in({ crtl_reg_id_ex_out,ir_id_ex_out ,aluoutmux_out, sr2mux_out, pc_reg_id_ex_out}),
 	.out(ex_mem_reg_out)
 );
 
 // memory write back pipeline register
-register #(.width(88)) mem_wb_reg
+register #(.width(90)) mem_wb_reg
 (
 	.clk,
 	.load(load_mem_wb_reg),
-	.in({crtl_reg_ex_mem_out,ir_ex_mem_out,aluout_ex_mem_out, mem_rdata, pc_reg_ex_mem_out}),
+	.in({crtl_reg_ex_mem_out,ir_ex_mem_out,aluout_ex_mem_out, ldbmux_out, pc_reg_ex_mem_out}),
 	.out(mem_wb_reg_out)
 );
 
@@ -380,6 +453,13 @@ br_ctrl br_ctrl
     .branch_enable(branch_enable),
 	 .opcode(crtl_reg_mem_wb_out.opcode),
     .out(br_ctrl_out)
+);
+
+mem_enable_ctrl mem_enable_ctrl
+(
+	 .opcode(crtl_reg_ex_mem_out.opcode),
+	 .is_even(is_even),
+    .out(mem_byte_enable)
 );
 
 endmodule : datapath
