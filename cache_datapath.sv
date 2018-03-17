@@ -179,7 +179,7 @@ mux2 #(.width (128)) memdatamux
 	.sel(lru_out),
 	.a(data0_out), 
 	.b(data1_out),
-	.f(memdatamux_out)
+	.f(dat_o_mem)
 );
 
 mux2 #(.width (9)) tagmux
@@ -195,8 +195,9 @@ mux2 #(.width (16)) memaddrmux
 	.sel(memaddrmux_sel),
 	.a(adr_i_cpu), 
 	.b(write_back_addr),
-	.f(memaddrmux_out)
+	.f(adr_o_mem)
 );
+
 
 mux2 #(.width (1)) dirtymux
 (
@@ -223,20 +224,38 @@ cpudatainmux cpudatainmux1
 	.cpudatainmux_out
 );
 
-register #(.width(16)) mar
-(
-    .clk(clk),
-    .load(load_mar),
-    .in(memaddrmux_out),
-    .out(adr_o_mem)
-);
-
-register #(.width(128)) mdr
-(
-    .clk(clk),
-    .load(load_mdr),
-    .in(memdatamux_out),
-    .out(dat_o_mem)
-);
+//mux2 #(.width (16)) memaddrmux
+//(
+//	.sel(memaddrmux_sel),
+//	.a(adr_i_cpu), 
+//	.b(write_back_addr),
+//	.f(memaddrmux_out)
+//);
+//
+//
+//mux2 #(.width (128)) memdatamux
+//(
+//	.sel(lru_out),
+//	.a(data0_out), 
+//	.b(data1_out),
+//	.f(memdatamux_out)
+//);
+//
+//
+//register #(.width(16)) mar
+//(
+//    .clk(clk),
+//    .load(load_mar),
+//    .in(memaddrmux_out),
+//    .out(adr_o_mem)
+//);
+//
+//register #(.width(128)) mdr
+//(
+//    .clk(clk),
+//    .load(load_mdr),
+//    .in(memdatamux_out),
+//    .out(dat_o_mem)
+//);
  
 endmodule : cache_datapath

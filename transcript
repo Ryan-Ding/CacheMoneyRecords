@@ -1,4 +1,4 @@
-# do /tmp/tmp.Hcwh4CkUGK/do.do 
+# do /tmp/tmp.nMs5esk3UY/do.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -281,11 +281,11 @@
 # Loading work.alu
 # Loading work.srmask_sv_unit
 # Loading work.srmask
+# Loading work.zext_shift
 # Loading work.mdrmask_sv_unit
 # Loading work.mdrmask
 # Loading work.ldi_sti_control_sv_unit
 # Loading work.ldi_sti_control
-# Loading work.zext_shift
 # Loading work.cccomp_sv_unit
 # Loading work.cccomp
 # Loading work.gencc_sv_unit
@@ -316,23 +316,11 @@
 # Loading work.l2array_sv_unit
 # Loading work.l2array
 # Loading work.physical_memory
-# ** Warning: (vsim-3015) /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_datapath.sv(182): [PCDPC] - Port size (128 or 128) does not match connection size (1) for port 'f'. The port definition is at: /home/chaohua2/ece411/mp3/cachemoneyrecords/mux.sv(5).
-#         Region: /mp3_tb/dut/icache1/cache_datapath1/memdatamux
-# ** Warning: (vsim-3015) /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_datapath.sv(239): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: /home/chaohua2/ece411/mp3/cachemoneyrecords/register.sv(5).
-#         Region: /mp3_tb/dut/icache1/cache_datapath1/mdr
-# ** Warning: (vsim-3015) /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_datapath.sv(239): [PCDPC] - Port size (16 or 16) does not match connection size (128) for port 'out'. The port definition is at: /home/chaohua2/ece411/mp3/cachemoneyrecords/register.sv(6).
-#         Region: /mp3_tb/dut/icache1/cache_datapath1/mdr
-# ** Warning: (vsim-3015) /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_datapath.sv(182): [PCDPC] - Port size (128 or 128) does not match connection size (1) for port 'f'. The port definition is at: /home/chaohua2/ece411/mp3/cachemoneyrecords/mux.sv(5).
-#         Region: /mp3_tb/dut/dcache1/cache_datapath1/memdatamux
-# ** Warning: (vsim-3015) /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_datapath.sv(239): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: /home/chaohua2/ece411/mp3/cachemoneyrecords/register.sv(5).
-#         Region: /mp3_tb/dut/dcache1/cache_datapath1/mdr
-# ** Warning: (vsim-3015) /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_datapath.sv(239): [PCDPC] - Port size (16 or 16) does not match connection size (128) for port 'out'. The port definition is at: /home/chaohua2/ece411/mp3/cachemoneyrecords/register.sv(6).
-#         Region: /mp3_tb/dut/dcache1/cache_datapath1/mdr
 # 
 #add wave *
 #view structure
 #view signals
 # add list -radix hexadecimal {/mp3_tb/dut/datapath/regfile/data}
 # run 10000000ns
-# write list /tmp/tmp.Hcwh4CkUGK/test_list.lst
+# write list /tmp/tmp.nMs5esk3UY/test_list.lst
 # exit

@@ -25,6 +25,10 @@ lc3b_word pc_plus2_out;
 lc3b_word instruction_data;
 logic load_pc;
 lc3b_word pcreg_out;
+lc3b_word icache_memrdata;
+lc3b_word instruction_mdr_out;
+logic load_instruction_mdr;
+lc3b_word pc_plus_reg_out;
 
 //if_id signals
 logic [31:0] if_id_reg_out;
@@ -42,7 +46,7 @@ lc3b_reg storemux_out;
 lc3b_control_word control_out;
 
 //id_ex signals
-logic[89:0] id_ex_reg_out;
+logic[90:0] id_ex_reg_out;
 lc3b_control_word crtl_reg_id_ex_out;
 lc3b_word pc_reg_id_ex_out;
 lc3b_word sr1_id_ex_out ;
@@ -66,7 +70,7 @@ lc3b_word alumux2_out;
 lc3b_word sr2mux_out;
 
 //ex_mem signals
-logic[89:0] ex_mem_reg_out;
+logic[90:0] ex_mem_reg_out;
 lc3b_control_word crtl_reg_ex_mem_out;
 lc3b_word pc_reg_ex_mem_out;
 lc3b_word sr2_ex_mem_out ;
@@ -79,14 +83,14 @@ lc3b_word mem_rdata;
 lc3b_word ldbmux_out;
 lc3b_word srmask_out;
 lc3b_word mdrmask_out;
-//lc3b_word ldi_addr_register_out;
+lc3b_word ldi_addr_register_out;
 logic ldi_addr_register_load;
 logic memaddrmux_sel;
 logic sti_WE;
 lc3b_word memaddrmux_out;
 
 //mem_wb signals
-logic[89:0] mem_wb_reg_out;
+logic[90:0] mem_wb_reg_out;
 lc3b_control_word crtl_reg_mem_wb_out;
 lc3b_word pc_reg_mem_wb_out ;
 lc3b_word mem_data_mem_wb_out ;
@@ -137,11 +141,13 @@ assign is_even = !mem_address[0];
 
 // ifetch
 // get instruction from 128 bits memory output
-assign instruction_data = instruction_mem_in >> (16 * pc_out[3:1]);
+assign icache_memrdata = instruction_mem_in >> (16 * pc_out[3:1]);
+//assign instruction_data = {16{ifetch.ACK}} & instruction_mdr_out;
 assign mem_rdata = data_mem_in >> (16 * mem_address[3:1]);
+//assign load_pc = (proceed  & ifetch.ACK) |br_ctrl_out;
 assign load_pc = proceed  & (br_ctrl_out|ifetch.ACK);
 assign load_pcmar = ifetch.ACK;
-
+assign load_instruction_mdr = ifetch.ACK;
 
 
 //if_id pipeline register out
@@ -154,7 +160,7 @@ assign pc_reg_id_ex_out = id_ex_reg_out[15:0];
 assign sr1_id_ex_out = id_ex_reg_out[31:16];
 assign sr2_id_ex_out = id_ex_reg_out[47:32];
 assign ir_id_ex_out = id_ex_reg_out[63:48];
-assign crtl_reg_id_ex_out = id_ex_reg_out[89:64];
+assign crtl_reg_id_ex_out = id_ex_reg_out[90:64];
 assign load_id_ex_reg = pipeline_reg_load;
 
 // ex_mem pipeline register out
@@ -162,7 +168,7 @@ assign pc_reg_ex_mem_out = ex_mem_reg_out[15:0];
 assign sr2_ex_mem_out = ex_mem_reg_out[31:16];
 assign aluout_ex_mem_out = ex_mem_reg_out[47:32];
 assign ir_ex_mem_out = ex_mem_reg_out[63:48];
-assign crtl_reg_ex_mem_out = ex_mem_reg_out[89:64];
+assign crtl_reg_ex_mem_out = ex_mem_reg_out[90:64];
 assign load_ex_mem_reg = pipeline_reg_load;
 
 //memory stage assign
@@ -174,7 +180,7 @@ assign pc_reg_mem_wb_out = mem_wb_reg_out[15:0];
 assign mem_data_mem_wb_out = mem_wb_reg_out[31:16];
 assign aluout_mem_wb_out = mem_wb_reg_out[47:32];
 assign ir_mem_wb_out = mem_wb_reg_out[63:48];
-assign crtl_reg_mem_wb_out = mem_wb_reg_out[89:64];
+assign crtl_reg_mem_wb_out = mem_wb_reg_out[90:64];
 assign load_mem_wb_reg = pipeline_reg_load;
 
 mux4 pcmux(
@@ -191,23 +197,47 @@ register pc
     .clk,
     .load(load_pc),
     .in(pcmux_out),
-    .out(pcreg_out)
-);
-
-register pcmar
-(
-    .clk,
-    .load(load_pcmar),
-    .in(pcreg_out),
     .out(pc_out)
 );
+
+//register pcmar
+//(
+//    .clk,
+//    .load(load_pcmar),
+//    .in(pcreg_out),
+//    .out(pc_out)
+//);
 
 
 plus2 pc_plus2
 (
-    .in(pcreg_out),
+    .in(pc_out),
     .out(pc_plus2_out)
 );
+
+mux2 instructionmux
+(
+	.sel(ifetch.ACK),
+	.a(16'b0),
+	.b(icache_memrdata),
+	.f(instruction_data)
+); 
+
+//register pc_plus_reg
+//(
+//    .clk,
+//    .load(load_instruction_mdr),
+//    .in(pc_plus2_out),
+//    .out(pc_plus_reg_out)
+//);
+
+//register instruction_mdr
+//(
+//    .clk,
+//    .load(load_instruction_mdr),
+//    .in(icache_memrdata),
+//    .out(instruction_mdr_out)
+//);
 
 //if_id pipeline register
 register #(.width(32)) if_id_reg
@@ -262,7 +292,7 @@ regfile regfile
 );
 
 //id_ex pipeline register
-register #(.width(90)) id_ex_reg
+register #(.width(91)) id_ex_reg
 (
 	.clk,
 	.load(load_id_ex_reg),
@@ -370,7 +400,7 @@ zext_shift #(.width(8)) zextshf_8
 );
 
 // execute memory pipeline register
-register #(.width(90)) ex_mem_reg
+register #(.width(91)) ex_mem_reg
 (
 	.clk,
 	.load(load_ex_mem_reg),
@@ -390,9 +420,17 @@ mux2 #(.width(16)) memaddrmux
 (
 	.sel(memaddrmux_sel),
 	.a(aluout_ex_mem_out),
-	.b(mem_rdata),
-	.f(memaddrmux_out)
+	.b(ldi_addr_register_out),
+	.f(mem_address)
 );
+
+//mux2 #(.width(16)) memaddrmux
+//(
+//	.sel(memaddrmux_sel),
+//	.a(aluout_ex_mem_out),
+//	.b(mem_rdata),
+//	.f(memaddrmux_out)
+//);
 
 ldi_sti_control ldi_sti_control0
 (
@@ -409,9 +447,17 @@ register #(.width(16)) ldi_addr_register
 (
 	.clk,
 	.load(ldi_addr_register_load),
-	.in(memaddrmux_out),
-	.out(mem_address)
+	.in(mem_rdata),
+	.out(ldi_addr_register_out)
 );
+
+//register #(.width(16)) mem_mar
+//(
+//	.clk,
+//	.load(crtl_reg_ex_mem_out.mem_mar_sel),
+//	.in(memaddrmux_out),
+//	.out(mem_address)
+//);
 
 mux2 #(.width(16)) ldbmux
 (
@@ -423,7 +469,7 @@ mux2 #(.width(16)) ldbmux
 
 
 // memory write back pipeline register
-register #(.width(90)) mem_wb_reg
+register #(.width(91)) mem_wb_reg
 (
 	.clk,
 	.load(load_mem_wb_reg),
