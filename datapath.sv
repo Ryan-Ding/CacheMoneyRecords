@@ -24,6 +24,7 @@ lc3b_word pcmux_out;
 lc3b_word pc_plus2_out;
 lc3b_word instruction_data;
 logic load_pc;
+lc3b_word pcreg_out;
 
 //if_id signals
 logic [31:0] if_id_reg_out;
@@ -78,10 +79,11 @@ lc3b_word mem_rdata;
 lc3b_word ldbmux_out;
 lc3b_word srmask_out;
 lc3b_word mdrmask_out;
-lc3b_word ldi_addr_register_out;
+//lc3b_word ldi_addr_register_out;
 logic ldi_addr_register_load;
 logic memaddrmux_sel;
 logic sti_WE;
+lc3b_word memaddrmux_out;
 
 //mem_wb signals
 logic[89:0] mem_wb_reg_out;
@@ -137,7 +139,8 @@ assign is_even = !mem_address[0];
 // get instruction from 128 bits memory output
 assign instruction_data = instruction_mem_in >> (16 * pc_out[3:1]);
 assign mem_rdata = data_mem_in >> (16 * mem_address[3:1]);
-assign load_pc = proceed;
+assign load_pc = proceed  & (br_ctrl_out|ifetch.ACK);
+assign load_pcmar = ifetch.ACK;
 
 
 
@@ -188,12 +191,21 @@ register pc
     .clk,
     .load(load_pc),
     .in(pcmux_out),
+    .out(pcreg_out)
+);
+
+register pcmar
+(
+    .clk,
+    .load(load_pcmar),
+    .in(pcreg_out),
     .out(pc_out)
 );
 
+
 plus2 pc_plus2
 (
-    .in(pc_out),
+    .in(pcreg_out),
     .out(pc_plus2_out)
 );
 
@@ -351,6 +363,22 @@ mux4 #(.width(16)) aluoutmux
 	.f(aluoutmux_out)
 );
 
+zext_shift #(.width(8)) zextshf_8
+(
+	.in(ir_id_ex_out[7:0]),
+   .out(zextshf_8_out)
+);
+
+// execute memory pipeline register
+register #(.width(90)) ex_mem_reg
+(
+	.clk,
+	.load(load_ex_mem_reg),
+	.in({ crtl_reg_id_ex_out,ir_id_ex_out ,aluoutmux_out, sr2mux_out, pc_reg_id_ex_out}),
+	.out(ex_mem_reg_out)
+);
+
+//memory
 mdrmask mdrmask
 (
 	.in(mem_rdata),
@@ -362,8 +390,8 @@ mux2 #(.width(16)) memaddrmux
 (
 	.sel(memaddrmux_sel),
 	.a(aluout_ex_mem_out),
-	.b(ldi_addr_register_out),
-	.f(mem_address)
+	.b(mem_rdata),
+	.f(memaddrmux_out)
 );
 
 ldi_sti_control ldi_sti_control0
@@ -381,8 +409,8 @@ register #(.width(16)) ldi_addr_register
 (
 	.clk,
 	.load(ldi_addr_register_load),
-	.in(mem_rdata),
-	.out(ldi_addr_register_out)
+	.in(memaddrmux_out),
+	.out(mem_address)
 );
 
 mux2 #(.width(16)) ldbmux
@@ -393,20 +421,6 @@ mux2 #(.width(16)) ldbmux
 	.f(ldbmux_out)
 );
 
-zext_shift #(.width(8)) zextshf_8
-(
-	.in(ir_id_ex_out[7:0]),
-   .out(zextshf_8_out)
-);
-
-// execute memory pipeline register
-register #(.width(90)) ex_mem_reg
-(
-	.clk,
-	.load(load_ex_mem_reg),
-	.in({ crtl_reg_id_ex_out,ir_id_ex_out ,aluoutmux_out, sr2mux_out, pc_reg_id_ex_out}),
-	.out(ex_mem_reg_out)
-);
 
 // memory write back pipeline register
 register #(.width(90)) mem_wb_reg

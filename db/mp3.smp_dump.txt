@@ -1,4 +1,31 @@
 
+State Machine - |mp3|l2cache:l2cache1|l2cache_control:l2cache_controller|state
+Name state.strobe state.write_back state.allocate state.hit_idle 
+state.hit_idle 0 0 0 0 
+state.allocate 0 0 1 1 
+state.write_back 0 1 0 1 
+state.strobe 1 0 0 1 
+
+State Machine - |mp3|cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state
+Name state.idle state.dmiss state.imiss 
+state.idle 0 0 0 
+state.imiss 1 0 1 
+state.dmiss 1 1 0 
+
+State Machine - |mp3|cache:dcache1|cache_control:cache_controller|state
+Name state.strobe state.write_back state.allocate state.hit_idle 
+state.hit_idle 0 0 0 0 
+state.allocate 0 0 1 1 
+state.write_back 0 1 0 1 
+state.strobe 1 0 0 1 
+
+State Machine - |mp3|cache:icache1|cache_control:cache_controller|state
+Name state.strobe state.write_back state.allocate state.hit_idle 
+state.hit_idle 0 0 0 0 
+state.allocate 0 0 1 1 
+state.write_back 0 1 0 1 
+state.strobe 1 0 0 1 
+
 State Machine - |mp3|datapath:datapath|ldi_sti_control:ldi_sti_control0|state
 Name state.second_access 
 state.first_access 0 

@@ -1,4 +1,4 @@
-import lc3b_types::*; /* Import types defined in lc3b_types.sv */
+
 
 module l2cache_control
 (

@@ -33,7 +33,9 @@ module cache_datapath
 	 //mem signals
 	 output lc3b_8words dat_o_mem,
 	 output lc3b_word adr_o_mem,
-	 input lc3b_8words dat_i_mem
+	 input lc3b_8words dat_i_mem,
+	 input load_mar,
+	 input load_mdr
 	 
 	 
 	 
@@ -56,6 +58,8 @@ logic comp1_out;
 logic hit1;
 lc3b_word write_back_addr;
 lc3b_8words cpudatainmux_out;
+lc3b_word memaddrmux_out;
+lc3b_8words memdatamux_out;
 //logic lru_out;
 
 
@@ -133,7 +137,7 @@ array #(.width(9)) tag1
 );
 
 array #(.width(1)) valid1
-(sim:/mp2_tb/dut/l1l2cache/STB
+(
 
     .clk(clk),
     .write(v1_write),
@@ -175,7 +179,7 @@ mux2 #(.width (128)) memdatamux
 	.sel(lru_out),
 	.a(data0_out), 
 	.b(data1_out),
-	.f(dat_o_mem)
+	.f(memdatamux_out)
 );
 
 mux2 #(.width (9)) tagmux
@@ -191,7 +195,7 @@ mux2 #(.width (16)) memaddrmux
 	.sel(memaddrmux_sel),
 	.a(adr_i_cpu), 
 	.b(write_back_addr),
-	.f(adr_o_mem)
+	.f(memaddrmux_out)
 );
 
 mux2 #(.width (1)) dirtymux
@@ -217,6 +221,22 @@ cpudatainmux cpudatainmux1
 	.dat_o_cpu,
 	.dat_i_cpu,
 	.cpudatainmux_out
+);
+
+register #(.width(16)) mar
+(
+    .clk(clk),
+    .load(load_mar),
+    .in(memaddrmux_out),
+    .out(adr_o_mem)
+);
+
+register #(.width(128)) mdr
+(
+    .clk(clk),
+    .load(load_mdr),
+    .in(memdatamux_out),
+    .out(dat_o_mem)
 );
  
 endmodule : cache_datapath

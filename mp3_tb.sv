@@ -9,17 +9,11 @@ logic clk;
 initial clk = 0;
 always #5 clk = ~clk;
 
-wishbone ifetch(clk);
-wishbone memory(clk);
+wishbone wb(clk);
 
-mp3 dut(.ifetch,
-	.memory);
+mp3 dut(wb);
 
-magic_memory magic_memory
-(
-    .ifetch, // instruction fetch stage, assumed to never write
-	 .memory // memory stage
-);
+physical_memory memory(wb);
 
 
 endmodule : mp3_tb

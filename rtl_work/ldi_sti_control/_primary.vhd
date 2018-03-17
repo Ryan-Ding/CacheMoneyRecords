@@ -8,6 +8,7 @@ entity ldi_sti_control is
         opcode          : in     work.lc3b_types.lc3b_opcode;
         proceed         : out    vl_logic;
         ldi_addr_register_load: out    vl_logic;
-        memaddrmux_sel  : out    vl_logic
+        memaddrmux_sel  : out    vl_logic;
+        sti_WE          : out    vl_logic
     );
 end ldi_sti_control;

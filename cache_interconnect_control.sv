@@ -80,45 +80,45 @@ begin : next_state_logic
 	next_states = state;
 	  
 	//imiss has priority
-//	case(state)
-//		idle:	begin
-//			if(icache_stb & icache_cyc) 
-//				next_states = imiss;
-//			if(dcache_stb & dcache_cyc & !(icache_stb & icache_cyc))
-//				next_states = dmiss;
-//		end
-//		imiss: begin
-//			if(l2cache_ack & !(dcache_stb & dcache_cyc))
-//				next_states = idle;
-//			if (l2cache_ack & dcache_stb & dcache_cyc)
-//				next_states = dmiss;
-//		end
-//		dmiss: begin
-//			if(l2cache_ack)
-//				next_states = idle;
-//		end
-//	endcase
-	
-	//dmiss has priority
 	case(state)
 		idle:	begin
-			if(dcache_stb & dcache_cyc) 
+			if(icache_stb & icache_cyc) 
+				next_states = imiss;
+			if(dcache_stb & dcache_cyc & !(icache_stb & icache_cyc))
 				next_states = dmiss;
-			if(icache_stb & icache_cyc & !(dcache_stb & dcache_cyc))
-				next_states = imiss;
-		end
-		dmiss: begin
-			if(l2cache_ack & !(icache_stb & icache_cyc))
-				next_states = idle;
-			if (l2cache_ack & icache_stb & icache_cyc)
-				next_states = imiss;
 		end
 		imiss: begin
+			if(l2cache_ack & !(dcache_stb & dcache_cyc))
+				next_states = idle;
+			if (l2cache_ack & dcache_stb & dcache_cyc)
+				next_states = dmiss;
+		end
+		dmiss: begin
 			if(l2cache_ack)
 				next_states = idle;
 		end
 	endcase
 	
+	//dmiss has priority
+//	case(state)
+//		idle:	begin
+//			if(dcache_stb & dcache_cyc) 
+//				next_states = dmiss;
+//			if(icache_stb & icache_cyc & !(dcache_stb & dcache_cyc))
+//				next_states = imiss;
+//		end
+//		dmiss: begin
+//			if(l2cache_ack & !(icache_stb & icache_cyc))
+//				next_states = idle;
+//			if (l2cache_ack & icache_stb & icache_cyc)
+//				next_states = imiss;
+//		end
+//		imiss: begin
+//			if(l2cache_ack)
+//				next_states = idle;
+//		end
+//	endcase
+//	
 end
 
 always_ff @(posedge clk)

@@ -52,6 +52,8 @@ lc3b_8words dat_i_cpu;
 lc3b_8words dat_o_mem;
 lc3b_word adr_o_mem;
 lc3b_8words dat_i_mem;
+logic load_mar;
+logic load_mdr;
 
 
 
@@ -114,7 +116,9 @@ cache_control cache_controller
 	 .cpu_cyc,
 	 .cpu_stb,
 	 .cpu_we,
-	 .cpu_ack
+	 .cpu_ack,
+	 .load_mar,
+	 .load_mdr
 //	 .cpu_rty
 	 
 	 
@@ -154,7 +158,9 @@ cache_datapath cache_datapath1
 	 //mem signals
 	 .dat_o_mem,
 	 .adr_o_mem,
-	 .dat_i_mem
+	 .dat_i_mem,
+	 .load_mar,
+	 .load_mdr
 	 
 	 
 	 

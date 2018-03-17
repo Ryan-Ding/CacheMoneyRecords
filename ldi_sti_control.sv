@@ -32,10 +32,14 @@ begin
 		sti_WE = 1'b1;
 		next_state = state;
 		
-		if(opcode == op_sti || opcode == op_ldi)
+		if(opcode == op_sti || opcode == op_ldi) begin
 			ldi_sti = 1'b1;
-		else if (opcode == op_str || opcode == op_ldr || opcode == op_ldb || opcode == op_stb)
+			ldi_addr_register_load = 1'b1;
+			end
+		else if (opcode == op_str || opcode == op_ldr || opcode == op_ldb || opcode == op_stb) begin
 			ldi_sti = 1'b0;
+			ldi_addr_register_load = 1'b1;
+			end
 		
     /* Actions for each state */
 	 case(state)

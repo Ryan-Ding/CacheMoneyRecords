@@ -1,4 +1,4 @@
-import lc3b_types::*; /* Import types defined in lc3b_types.sv */
+
 
 module cache_control
 (
@@ -35,7 +35,9 @@ module cache_control
 	 input cpu_cyc,
 	 input cpu_stb,
 	 input cpu_we,
-	 output logic cpu_ack
+	 output logic cpu_ack,
+	 output logic load_mar,
+	 output logic load_mdr
 //	 output logic cpu_rty
 	 
 );
@@ -74,6 +76,8 @@ begin : state_actions
 	 //
 	 cpu_ack = 1'b0;
 //	 cpu_rty = 1'b0;
+	load_mar = 1'b0;
+	load_mdr = 1'b0;
 	
 	 
 	 /*et cetera*/
@@ -115,10 +119,12 @@ begin : state_actions
 			
 		end
 		allocate: begin
+//			if (cpu_cyc & cpu_stb) begin
 			//load mem into cache way0
 			mem_cyc = 1;
 			mem_stb = 1;
 			mem_we = 0;
+			load_mar = 1;
 			
 			if(lru_out == 0) begin
 				way0_write = 1;
@@ -134,14 +140,19 @@ begin : state_actions
 				dirty1_write= 1;
 				dirty1_in= 0;
 			end
+//			end
 			
 		end
 		write_back: begin
+//		if (cpu_cyc & cpu_stb) begin
 			memaddrmux_sel = 1;
 			mem_we = 1;
 			mem_cyc = 1;
 			mem_stb = 1;
+			load_mar = 1;
+			load_mdr = 1;
 		end
+//		end
 		strobe: begin
 			mem_cyc = 0;
 			mem_stb = 0;
