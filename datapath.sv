@@ -24,6 +24,7 @@ lc3b_word pcmux_out;
 lc3b_word pc_plus2_out;
 lc3b_word instruction_data;
 logic load_pc;
+logic load_pcmar;
 lc3b_word pcreg_out;
 lc3b_word icache_memrdata;
 lc3b_word instruction_mdr_out;
@@ -120,8 +121,9 @@ lc3b_line wdata;
 lc3b_word mem_address;
 
 logic pipeline_reg_load;
-assign pipeline_reg_load = proceed;
+assign pipeline_reg_load = proceed & ifetch.ACK;
 
+lc3b_word pcoutmux_out;
 assign ifetch.ADR = pc_out[15:4];
 assign instruction_mem_in = ifetch.DAT_S;
 assign ifetch.WE = 0;
@@ -144,9 +146,9 @@ assign is_even = !mem_address[0];
 assign icache_memrdata = instruction_mem_in >> (16 * pc_out[3:1]);
 //assign instruction_data = {16{ifetch.ACK}} & instruction_mdr_out;
 assign mem_rdata = data_mem_in >> (16 * mem_address[3:1]);
-//assign load_pc = (proceed  & ifetch.ACK) |br_ctrl_out;
-assign load_pc = proceed  & (br_ctrl_out|ifetch.ACK);
-assign load_pcmar = ifetch.ACK;
+assign load_pcmar = (proceed  & ifetch.ACK) | br_ctrl_out;
+//assign load_pc = (proceed | br_ctrl_out)  & ifetch.ACK;
+assign load_pc = proceed & ifetch.ACK;
 assign load_instruction_mdr = ifetch.ACK;
 
 
@@ -192,6 +194,7 @@ mux4 pcmux(
 	.f(pcmux_out)
 );
 
+
 register pc
 (
     .clk,
@@ -204,9 +207,20 @@ register pc
 //(
 //    .clk,
 //    .load(load_pcmar),
-//    .in(pcreg_out),
-//    .out(pc_out)
+//    .in(pcmux_out),
+//    .out(pcreg_out)
 //);
+//
+//logic pcoutmux_sel;
+//assign pcoutmux_sel = (pcreg_out != pc_out) & ifetch.ACK;
+//
+//mux2 pcoutmux
+//(
+//	.sel(pcoutmux_sel),
+//	.a(pc_out),
+//	.b(pcreg_out),
+//	.f(pcoutmux_out)
+//); 
 
 
 plus2 pc_plus2

@@ -160,12 +160,16 @@ begin : next_state_logic
     /* Next state information and conditions (if any)
      * for transitioning between states */
 	  next_states = state;
+
 	  case(state)
-		hit_idle:	if(hit == 1) next_states = hit_idle;
+		hit_idle:	
+			if(cpu_cyc & cpu_stb) begin
+					if(hit == 1) next_states = hit_idle;
 						else begin 
 							if(dirty == 0) next_states = allocate;
 							else next_states = write_back;
 						end
+			end
 		allocate: if (mem_ack == 0) next_states = allocate;
 						else next_states = hit_idle;
 		write_back: if (mem_ack == 0) next_states = write_back;
