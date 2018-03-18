@@ -35,77 +35,77 @@ ModelSim-Altera Info: #          Updated modelsim.ini.
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/l2cache_control.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:11 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:39 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/l2cache_control.sv 
 ModelSim-Altera Info: # -- Compiling module l2cache_control
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	l2cache_control
-ModelSim-Altera Info: # End time: 19:18:11 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:39 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/cache_interconnect_control.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:11 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:39 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/cache_interconnect_control.sv 
 ModelSim-Altera Info: # -- Compiling module cache_interconnect_control
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	cache_interconnect_control
-ModelSim-Altera Info: # End time: 19:18:11 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:39 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/cache_control.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:11 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:39 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/cache_control.sv 
 ModelSim-Altera Info: # -- Compiling module cache_control
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	cache_control
-ModelSim-Altera Info: # End time: 19:18:11 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:40 on Mar 18,2018, Elapsed time: 0:00:01
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/wishbone.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:11 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:40 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/wishbone.sv 
 ModelSim-Altera Info: # -- Compiling interface wishbone
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	--none--
-ModelSim-Altera Info: # End time: 19:18:11 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:40 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/lc3b_types.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:11 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:40 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/lc3b_types.sv 
 ModelSim-Altera Info: # -- Compiling package lc3b_types
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	--none--
-ModelSim-Altera Info: # End time: 19:18:11 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:40 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/plus2.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:11 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:40 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/plus2.sv 
 ModelSim-Altera Info: # -- Compiling module plus2
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	plus2
-ModelSim-Altera Info: # End time: 19:18:12 on Mar 17,2018, Elapsed time: 0:00:01
+ModelSim-Altera Info: # End time: 14:03:40 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/register.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:12 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:40 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/register.sv 
 ModelSim-Altera Info: # -- Compiling module register
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	register
-ModelSim-Altera Info: # End time: 19:18:12 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:40 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/mux.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:12 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:40 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/mux.sv 
 ModelSim-Altera Info: # -- Compiling module mux2
 ModelSim-Altera Info: # -- Compiling module mux4
@@ -115,11 +115,11 @@ ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	mux2
 ModelSim-Altera Info: # 	mux4
 ModelSim-Altera Info: # 	mux8
-ModelSim-Altera Info: # End time: 19:18:12 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:40 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/l2array.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:12 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:40 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/l2array.sv 
 ModelSim-Altera Info: # -- Compiling package l2array_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -127,11 +127,11 @@ ModelSim-Altera Info: # -- Compiling module l2array
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	l2array
-ModelSim-Altera Info: # End time: 19:18:12 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:40 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/cpudatainmux.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:12 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:40 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/cpudatainmux.sv 
 ModelSim-Altera Info: # -- Compiling package cpudatainmux_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -139,11 +139,11 @@ ModelSim-Altera Info: # -- Compiling module cpudatainmux
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	cpudatainmux
-ModelSim-Altera Info: # End time: 19:18:12 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:40 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/cache_interconnect_datapath.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:12 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:40 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/cache_interconnect_datapath.sv 
 ModelSim-Altera Info: # -- Compiling package cache_interconnect_datapath_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -151,11 +151,11 @@ ModelSim-Altera Info: # -- Compiling module cache_interconnect_datapath
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	cache_interconnect_datapath
-ModelSim-Altera Info: # End time: 19:18:12 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:40 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/adj.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:12 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:40 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/adj.sv 
 ModelSim-Altera Info: # -- Compiling package adj_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -169,11 +169,11 @@ ModelSim-Altera Info: # 	adj
 ModelSim-Altera Info: # 	sext
 ModelSim-Altera Info: # 	zext
 ModelSim-Altera Info: # 	zext_shift
-ModelSim-Altera Info: # End time: 19:18:12 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:40 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/alu.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:12 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:40 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/alu.sv 
 ModelSim-Altera Info: # -- Compiling package alu_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -181,11 +181,11 @@ ModelSim-Altera Info: # -- Compiling module alu
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	alu
-ModelSim-Altera Info: # End time: 19:18:12 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:40 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/control.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:12 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:40 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/control.sv 
 ModelSim-Altera Info: # -- Compiling package control_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -193,11 +193,11 @@ ModelSim-Altera Info: # -- Compiling module control_rom
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	control_rom
-ModelSim-Altera Info: # End time: 19:18:12 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:40 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/gencc.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:12 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:40 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/gencc.sv 
 ModelSim-Altera Info: # -- Compiling package gencc_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -205,11 +205,11 @@ ModelSim-Altera Info: # -- Compiling module gencc
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	gencc
-ModelSim-Altera Info: # End time: 19:18:12 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:40 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/mp3.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:12 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:40 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/mp3.sv 
 ModelSim-Altera Info: # -- Compiling package mp3_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -217,11 +217,11 @@ ModelSim-Altera Info: # -- Compiling module mp3
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	mp3
-ModelSim-Altera Info: # End time: 19:18:12 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:40 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/regfile.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:12 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:40 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/regfile.sv 
 ModelSim-Altera Info: # -- Compiling package regfile_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -229,11 +229,11 @@ ModelSim-Altera Info: # -- Compiling module regfile
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	regfile
-ModelSim-Altera Info: # End time: 19:18:12 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:40 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/cccomp.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:12 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:40 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/cccomp.sv 
 ModelSim-Altera Info: # -- Compiling package cccomp_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -241,11 +241,11 @@ ModelSim-Altera Info: # -- Compiling module cccomp
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	cccomp
-ModelSim-Altera Info: # End time: 19:18:12 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:40 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/br_ctrl.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:12 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:40 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/br_ctrl.sv 
 ModelSim-Altera Info: # -- Compiling package br_ctrl_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -253,11 +253,11 @@ ModelSim-Altera Info: # -- Compiling module br_ctrl
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	br_ctrl
-ModelSim-Altera Info: # End time: 19:18:12 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:40 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/mdrmask.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:12 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:40 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/mdrmask.sv 
 ModelSim-Altera Info: # -- Compiling package mdrmask_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -265,11 +265,11 @@ ModelSim-Altera Info: # -- Compiling module mdrmask
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	mdrmask
-ModelSim-Altera Info: # End time: 19:18:12 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:41 on Mar 18,2018, Elapsed time: 0:00:01
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/srmask.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:12 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:41 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/srmask.sv 
 ModelSim-Altera Info: # -- Compiling package srmask_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -277,11 +277,11 @@ ModelSim-Altera Info: # -- Compiling module srmask
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	srmask
-ModelSim-Altera Info: # End time: 19:18:12 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:41 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/mem_enable_ctrl.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:12 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:41 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/mem_enable_ctrl.sv 
 ModelSim-Altera Info: # -- Compiling package mem_enable_ctrl_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -289,11 +289,11 @@ ModelSim-Altera Info: # -- Compiling module mem_enable_ctrl
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	mem_enable_ctrl
-ModelSim-Altera Info: # End time: 19:18:12 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:41 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/ldi_sti_control.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:12 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:41 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/ldi_sti_control.sv 
 ModelSim-Altera Info: # -- Compiling package ldi_sti_control_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -301,11 +301,11 @@ ModelSim-Altera Info: # -- Compiling module ldi_sti_control
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	ldi_sti_control
-ModelSim-Altera Info: # End time: 19:18:12 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:41 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/array.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:13 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:41 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/array.sv 
 ModelSim-Altera Info: # -- Compiling package array_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -313,11 +313,11 @@ ModelSim-Altera Info: # -- Compiling module array
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	array
-ModelSim-Altera Info: # End time: 19:18:13 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:41 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/l2cache_datapath.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:13 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:41 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/l2cache_datapath.sv 
 ModelSim-Altera Info: # -- Compiling package l2cache_datapath_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -325,11 +325,11 @@ ModelSim-Altera Info: # -- Compiling module l2cache_datapath
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	l2cache_datapath
-ModelSim-Altera Info: # End time: 19:18:13 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:41 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/cache_datapath.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:13 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:41 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/cache_datapath.sv 
 ModelSim-Altera Info: # -- Compiling package cache_datapath_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -337,11 +337,11 @@ ModelSim-Altera Info: # -- Compiling module cache_datapath
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	cache_datapath
-ModelSim-Altera Info: # End time: 19:18:13 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:41 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/cache_interconnect.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:13 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:41 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/cache_interconnect.sv 
 ModelSim-Altera Info: # -- Compiling package cache_interconnect_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -349,11 +349,11 @@ ModelSim-Altera Info: # -- Compiling module cache_interconnect
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	cache_interconnect
-ModelSim-Altera Info: # End time: 19:18:13 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:41 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/datapath.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:13 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:41 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/datapath.sv 
 ModelSim-Altera Info: # -- Compiling package datapath_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -361,11 +361,11 @@ ModelSim-Altera Info: # -- Compiling module datapath
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	datapath
-ModelSim-Altera Info: # End time: 19:18:13 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:41 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/l2cache.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:13 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:41 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/l2cache.sv 
 ModelSim-Altera Info: # -- Compiling package l2cache_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -373,11 +373,11 @@ ModelSim-Altera Info: # -- Compiling module l2cache
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	l2cache
-ModelSim-Altera Info: # End time: 19:18:13 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:41 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/cache.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:13 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:41 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/cache.sv 
 ModelSim-Altera Info: # -- Compiling package cache_sv_unit
 ModelSim-Altera Info: # -- Importing package lc3b_types
@@ -385,34 +385,34 @@ ModelSim-Altera Info: # -- Compiling module cache
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	cache
-ModelSim-Altera Info: # End time: 19:18:13 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:41 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/mp3_tb.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:13 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:41 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/mp3_tb.sv 
 ModelSim-Altera Info: # -- Compiling module mp3_tb
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	mp3_tb
-ModelSim-Altera Info: # End time: 19:18:13 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:41 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/rding4/ece411/cachemoneyrecords {/home/rding4/ece411/cachemoneyrecords/physical_memory.sv}
 ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-ModelSim-Altera Info: # Start time: 19:18:13 on Mar 17,2018
+ModelSim-Altera Info: # Start time: 14:03:41 on Mar 18,2018
 ModelSim-Altera Info: # vlog -sv -work work "+incdir+/home/rding4/ece411/cachemoneyrecords" /home/rding4/ece411/cachemoneyrecords/physical_memory.sv 
 ModelSim-Altera Info: # -- Compiling module physical_memory
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	physical_memory
-ModelSim-Altera Info: # End time: 19:18:13 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:41 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  mp3_tb
 ModelSim-Altera Info: # vsim -c -l msim_transcript -do "mp3_run_msim_rtl_verilog.do" 
-ModelSim-Altera Info: # Start time: 19:18:13 on Mar 17,2018
-ModelSim-Altera Info: # //  ModelSim ALTERA 10.3d Oct  7 2014 Linux 3.10.0-693.17.1.el7.x86_64
+ModelSim-Altera Info: # Start time: 14:03:41 on Mar 18,2018
+ModelSim-Altera Info: # //  ModelSim ALTERA 10.3d Oct  7 2014 Linux 3.10.0-693.21.1.el7.x86_64
 ModelSim-Altera Info: # //
 ModelSim-Altera Info: # //  Copyright 1991-2014 Mentor Graphics Corporation
 ModelSim-Altera Info: # //  All Rights Reserved.
@@ -487,6 +487,6 @@ ModelSim-Altera Info: #view structure
 ModelSim-Altera Info: #view signals
 ModelSim-Altera Info: # run 20000 ns
 ModelSim-Altera Info: # quit -f
-ModelSim-Altera Info: # End time: 19:18:13 on Mar 17,2018, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 14:03:41 on Mar 18,2018, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 Info: NativeLink simulation flow was successful

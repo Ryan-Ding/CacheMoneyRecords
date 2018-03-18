@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mp3
-Sat Mar 17 19:18:08 2018
+Sun Mar 18 14:03:36 2018
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Full Version
 
 
@@ -197,7 +197,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Mar 17 19:18:07 2018       ;
+; Analysis & Synthesis Status     ; Successful - Sun Mar 18 14:03:36 2018       ;
 ; Quartus II 64-Bit Version       ; 15.0.2 Build 153 07/15/2015 SJ Full Version ;
 ; Revision Name                   ; mp3                                         ;
 ; Top-level Entity Name           ; mp3                                         ;
@@ -379,14 +379,14 @@ agreement for further details.
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Estimate of Logic utilization (ALMs needed) ; 5564                  ;
+; Estimate of Logic utilization (ALMs needed) ; 5566                  ;
 ;                                             ;                       ;
-; Combinational ALUT usage for logic          ; 3703                  ;
-;     -- 7 input functions                    ; 763                   ;
-;     -- 6 input functions                    ; 1787                  ;
-;     -- 5 input functions                    ; 490                   ;
-;     -- 4 input functions                    ; 352                   ;
-;     -- <=3 input functions                  ; 311                   ;
+; Combinational ALUT usage for logic          ; 3708                  ;
+;     -- 7 input functions                    ; 762                   ;
+;     -- 6 input functions                    ; 1790                  ;
+;     -- 5 input functions                    ; 499                   ;
+;     -- 4 input functions                    ; 343                   ;
+;     -- <=3 input functions                  ; 314                   ;
 ;                                             ;                       ;
 ; Dedicated logic registers                   ; 7678                  ;
 ;                                             ;                       ;
@@ -398,7 +398,7 @@ agreement for further details.
 ;                                             ;                       ;
 ; Maximum fan-out node                        ; pmem_master.CLK~input ;
 ; Maximum fan-out                             ; 7952                  ;
-; Total fan-out                               ; 46174                 ;
+; Total fan-out                               ; 46205                 ;
 ; Average fan-out                             ; 3.77                  ;
 +---------------------------------------------+-----------------------+
 
@@ -408,7 +408,7 @@ agreement for further details.
 +-----------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                      ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                ; Library Name ;
 +-----------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------+--------------+
-; |mp3                                                            ; 3703 (10)         ; 7678 (0)     ; 2192              ; 0          ; 290  ; 0            ; |mp3                                                                                                               ; work         ;
+; |mp3                                                            ; 3708 (10)         ; 7678 (0)     ; 2192              ; 0          ; 290  ; 0            ; |mp3                                                                                                               ; work         ;
 ;    |cache:dcache1|                                              ; 850 (0)           ; 2236 (0)     ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1                                                                                                 ; work         ;
 ;       |cache_control:cache_controller|                          ; 15 (15)           ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_control:cache_controller                                                                  ; work         ;
 ;       |cache_datapath:cache_datapath1|                          ; 835 (18)          ; 2232 (0)     ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1                                                                  ; work         ;
@@ -424,20 +424,20 @@ agreement for further details.
 ;          |mux2:cpudatamux|                                      ; 64 (64)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:cpudatamux                                                  ; work         ;
 ;          |mux2:datainmux|                                       ; 162 (162)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux                                                   ; work         ;
 ;          |mux2:dirtymux|                                        ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:dirtymux                                                    ; work         ;
-;    |cache:icache1|                                              ; 330 (0)           ; 602 (0)      ; 2192              ; 0          ; 0    ; 0            ; |mp3|cache:icache1                                                                                                 ; work         ;
-;       |cache_control:cache_controller|                          ; 4 (4)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_control:cache_controller                                                                  ; work         ;
-;       |cache_datapath:cache_datapath1|                          ; 326 (20)          ; 600 (0)      ; 2192              ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1                                                                  ; work         ;
+;    |cache:icache1|                                              ; 335 (0)           ; 602 (0)      ; 2192              ; 0          ; 0    ; 0            ; |mp3|cache:icache1                                                                                                 ; work         ;
+;       |cache_control:cache_controller|                          ; 7 (7)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_control:cache_controller                                                                  ; work         ;
+;       |cache_datapath:cache_datapath1|                          ; 328 (22)          ; 600 (0)      ; 2192              ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1                                                                  ; work         ;
 ;          |array:data0|                                          ; 130 (130)         ; 263 (263)    ; 1024              ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:data0                                                      ; work         ;
 ;             |altsyncram:data_rtl_0|                             ; 0 (0)             ; 0 (0)        ; 1024              ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:data0|altsyncram:data_rtl_0                                ; work         ;
 ;                |altsyncram_vvn1:auto_generated|                 ; 0 (0)             ; 0 (0)        ; 1024              ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:data0|altsyncram:data_rtl_0|altsyncram_vvn1:auto_generated ; work         ;
 ;          |array:data1|                                          ; 130 (130)         ; 263 (263)    ; 1024              ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:data1                                                      ; work         ;
 ;             |altsyncram:data_rtl_0|                             ; 0 (0)             ; 0 (0)        ; 1024              ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:data1|altsyncram:data_rtl_0                                ; work         ;
 ;                |altsyncram_vvn1:auto_generated|                 ; 0 (0)             ; 0 (0)        ; 1024              ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:data1|altsyncram:data_rtl_0|altsyncram_vvn1:auto_generated ; work         ;
-;          |array:lru|                                            ; 14 (14)           ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:lru                                                        ; work         ;
-;          |array:tag0|                                           ; 8 (8)             ; 25 (25)      ; 72                ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:tag0                                                       ; work         ;
+;          |array:lru|                                            ; 13 (13)           ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:lru                                                        ; work         ;
+;          |array:tag0|                                           ; 7 (7)             ; 25 (25)      ; 72                ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:tag0                                                       ; work         ;
 ;             |altsyncram:data_rtl_0|                             ; 0 (0)             ; 0 (0)        ; 72                ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:tag0|altsyncram:data_rtl_0                                 ; work         ;
 ;                |altsyncram_ern1:auto_generated|                 ; 0 (0)             ; 0 (0)        ; 72                ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:tag0|altsyncram:data_rtl_0|altsyncram_ern1:auto_generated  ; work         ;
-;          |array:tag1|                                           ; 4 (4)             ; 25 (25)      ; 72                ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:tag1                                                       ; work         ;
+;          |array:tag1|                                           ; 6 (6)             ; 25 (25)      ; 72                ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:tag1                                                       ; work         ;
 ;             |altsyncram:data_rtl_0|                             ; 0 (0)             ; 0 (0)        ; 72                ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:tag1|altsyncram:data_rtl_0                                 ; work         ;
 ;                |altsyncram_ern1:auto_generated|                 ; 0 (0)             ; 0 (0)        ; 72                ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:tag1|altsyncram:data_rtl_0|altsyncram_ern1:auto_generated  ; work         ;
 ;          |array:valid0|                                         ; 10 (10)           ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:valid0                                                     ; work         ;
@@ -446,12 +446,12 @@ agreement for further details.
 ;       |cache_interconnect_control:cache_interconnect_control|   ; 8 (8)             ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control                   ; work         ;
 ;       |cache_interconnect_datapath:cache_interconnect_datapath| ; 30 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath                 ; work         ;
 ;          |mux2:l2adrmux|                                        ; 30 (30)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath|mux2:l2adrmux   ; work         ;
-;    |datapath:datapath|                                          ; 602 (129)         ; 401 (0)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath                                                                                             ; work         ;
+;    |datapath:datapath|                                          ; 602 (126)         ; 401 (0)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath                                                                                             ; work         ;
 ;       |alu:alu|                                                 ; 82 (82)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|alu:alu                                                                                     ; work         ;
 ;       |cccomp:cccomp|                                           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|cccomp:cccomp                                                                               ; work         ;
 ;       |control_rom:control_rom|                                 ; 19 (19)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|control_rom:control_rom                                                                     ; work         ;
 ;       |gencc:gencc|                                             ; 5 (5)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|gencc:gencc                                                                                 ; work         ;
-;       |ldi_sti_control:ldi_sti_control0|                        ; 3 (3)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|ldi_sti_control:ldi_sti_control0                                                            ; work         ;
+;       |ldi_sti_control:ldi_sti_control0|                        ; 6 (6)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|ldi_sti_control:ldi_sti_control0                                                            ; work         ;
 ;       |mux2:alumux2|                                            ; 16 (16)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux2:alumux2                                                                                ; work         ;
 ;       |mux2:instructionmux|                                     ; 80 (80)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux2:instructionmux                                                                         ; work         ;
 ;       |mux2:memaddrmux|                                         ; 16 (16)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux2:memaddrmux                                                                             ; work         ;
@@ -779,24 +779,24 @@ Encoding Type:  One-Hot
 +--------------------------------------------------------------------------------+---------+
 ; Inverted Register                                                              ; Fan out ;
 +--------------------------------------------------------------------------------+---------+
-; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[10]  ; 1       ;
+; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[24]  ; 1       ;
+; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[8]   ; 2       ;
+; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[10]  ; 2       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[12]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[14]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[16]  ; 1       ;
-; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[8]   ; 2       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[18]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[20]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[22]  ; 2       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[24]  ; 1       ;
+; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[8]   ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[10]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[12]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[14]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[16]  ; 1       ;
-; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[8]   ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[18]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[20]  ; 1       ;
-; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[22]  ; 1       ;
-; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[24]  ; 1       ;
+; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[22]  ; 2       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:data1|data_rtl_0_bypass[8]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:data0|data_rtl_0_bypass[8]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:data1|data_rtl_0_bypass[10] ; 1       ;
@@ -3196,27 +3196,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SCLR          ; 32                          ;
 ;     ENA SLD           ; 16                          ;
 ;     plain             ; 627                         ;
-; arriav_lcell_comb     ; 3705                        ;
+; arriav_lcell_comb     ; 3710                        ;
 ;     arith             ; 31                          ;
 ;         1 data inputs ; 15                          ;
 ;         2 data inputs ; 3                           ;
 ;         4 data inputs ; 4                           ;
 ;         5 data inputs ; 9                           ;
-;     extend            ; 763                         ;
-;         7 data inputs ; 763                         ;
-;     normal            ; 2911                        ;
+;     extend            ; 762                         ;
+;         7 data inputs ; 762                         ;
+;     normal            ; 2917                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 46                          ;
-;         3 data inputs ; 247                         ;
-;         4 data inputs ; 348                         ;
-;         5 data inputs ; 481                         ;
-;         6 data inputs ; 1787                        ;
+;         2 data inputs ; 44                          ;
+;         3 data inputs ; 252                         ;
+;         4 data inputs ; 339                         ;
+;         5 data inputs ; 490                         ;
+;         6 data inputs ; 1790                        ;
 ; boundary_port         ; 290                         ;
 ; stratixv_ram_block    ; 274                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.00                       ;
-; Average LUT depth     ; 4.98                        ;
+; Average LUT depth     ; 4.97                        ;
 +-----------------------+-----------------------------+
 
 
@@ -3225,7 +3225,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:13     ;
+; Top            ; 00:00:11     ;
 +----------------+--------------+
 
 
@@ -3249,7 +3249,7 @@ Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: devices manufactured by Altera and sold by Altera or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Sat Mar 17 19:17:40 2018
+    Info: Processing started: Sun Mar 18 14:03:10 2018
 Info: Command: quartus_map mp3 -c mp3
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file l2cache_datapath.sv
@@ -3327,10 +3327,10 @@ Info (12128): Elaborating entity "wishbone" for hierarchy "wishbone:ifetch"
 Info (12128): Elaborating entity "datapath" for hierarchy "datapath:datapath"
 Warning (10036): Verilog HDL or VHDL warning at datapath.sv(27): object "load_pcmar" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at datapath.sv(31): object "load_instruction_mdr" assigned a value but never read
-Warning (10230): Verilog HDL assignment warning at datapath.sv(136): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at datapath.sv(146): truncated value with size 128 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at datapath.sv(148): truncated value with size 128 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at datapath.sv(149): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at datapath.sv(137): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at datapath.sv(147): truncated value with size 128 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at datapath.sv(149): truncated value with size 128 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at datapath.sv(150): truncated value with size 2 to match size of target (1)
 Warning (10034): Output port "ifetch.DAT_M" at datapath.sv(5) has no driver
 Warning (10034): Output port "ifetch.SEL" at datapath.sv(5) has no driver
 Info (12128): Elaborating entity "mux4" for hierarchy "datapath:datapath|mux4:pcmux"
@@ -3539,15 +3539,15 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "pmem_master.RTY"
-Info (21057): Implemented 11787 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 11792 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 131 input pins
     Info (21059): Implemented 159 output pins
-    Info (21061): Implemented 11223 logic cells
+    Info (21061): Implemented 11228 logic cells
     Info (21064): Implemented 274 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 36 warnings
-    Info: Peak virtual memory: 1291 megabytes
-    Info: Processing ended: Sat Mar 17 19:18:08 2018
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:00:38
+    Info: Peak virtual memory: 1293 megabytes
+    Info: Processing ended: Sun Mar 18 14:03:36 2018
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:36
 
 

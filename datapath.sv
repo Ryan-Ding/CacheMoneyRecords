@@ -121,7 +121,8 @@ lc3b_line wdata;
 lc3b_word mem_address;
 
 logic pipeline_reg_load;
-assign pipeline_reg_load = proceed & ifetch.ACK;
+assign pipeline_reg_load = proceed & (!br_ctrl_out | ifetch.ACK);
+
 
 lc3b_word pcoutmux_out;
 assign ifetch.ADR = pc_out[15:4];

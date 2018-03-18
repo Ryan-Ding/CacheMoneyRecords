@@ -1,11 +1,12 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /mp3_tb/clk
+add wave -noupdate /mp3_tb/clk
 add wave -noupdate /mp3_tb/dut/datapath/pc/in
 add wave -noupdate /mp3_tb/dut/datapath/pc/out
-add wave -noupdate /mp3_tb/dut/datapath/pcmar/load
-add wave -noupdate /mp3_tb/dut/datapath/pcmar/in
-add wave -noupdate /mp3_tb/dut/datapath/pcmar/out
+add wave -noupdate /mp3_tb/dut/datapath/load_pc
+add wave -noupdate /mp3_tb/dut/datapath/proceed
+add wave -noupdate /mp3_tb/dut/datapath/icache_memrdata
 add wave -noupdate -expand /mp3_tb/dut/datapath/regfile/data
 add wave -noupdate /mp3_tb/dut/datapath/control_out
 add wave -noupdate /mp3_tb/dut/cache_interconnect/cache_interconnect_control/state
@@ -85,7 +86,7 @@ add wave -noupdate /mp3_tb/dut/pmem_master/WE
 add wave -noupdate /mp3_tb/dut/pmem_master/ADR
 add wave -noupdate /mp3_tb/dut/pmem_master/SEL
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {1028984 ps} 0}
+WaveRestoreCursors {{Cursor 1} {1141304 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 270
 configure wave -valuecolwidth 266
@@ -101,4 +102,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {652380 ps} {1196032 ps}
+WaveRestoreZoom {0 ps} {8400 ns}
