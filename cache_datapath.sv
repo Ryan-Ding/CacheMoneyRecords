@@ -5,7 +5,7 @@ module cache_datapath
     input clk,
 
     /* control signals */
-    input lc3b_word adr_i_cpu,
+    input lc3b_word adr_i_cpu_in,
 	 input way0_write,
 	 input v0_write,
 	 input v0_in,
@@ -28,7 +28,7 @@ module cache_datapath
 	 //cpu signals
 	 output lc3b_8words dat_o_cpu,
 	 input [15:0] cpu_sel,
-	 input lc3b_8words dat_i_cpu,
+	 input lc3b_8words dat_i_cpu_in,
 	 
 	 //mem signals
 	 output lc3b_8words dat_o_mem,
@@ -61,7 +61,8 @@ lc3b_8words cpudatainmux_out;
 lc3b_word memaddrmux_out;
 lc3b_8words memdatamux_out;
 //logic lru_out;
-
+lc3b_word adr_i_cpu;
+lc3b_8words dat_i_cpu;
 
 
 assign hit0 = (adr_i_cpu[15:7] == tag0_out) & valid0_out;
@@ -242,20 +243,22 @@ cpudatainmux cpudatainmux1
 //);
 //
 //
+assign adr_i_cpu = adr_i_cpu_in;
+assign dat_i_cpu = dat_i_cpu_in;
 //register #(.width(16)) mar
 //(
 //    .clk(clk),
 //    .load(load_mar),
-//    .in(memaddrmux_out),
-//    .out(adr_o_mem)
+//    .in(adr_i_cpu_in),
+//    .out(adr_i_cpu)
 //);
 //
 //register #(.width(128)) mdr
 //(
 //    .clk(clk),
 //    .load(load_mdr),
-//    .in(memdatamux_out),
-//    .out(dat_o_mem)
+//    .in(dat_i_cpu_in),
+//    .out(dat_i_cpu)
 //);
  
 endmodule : cache_datapath

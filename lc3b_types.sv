@@ -70,6 +70,8 @@ logic mem_read;
 logic mem_write;
 logic sr2mux_sel;
 logic mem_mar_sel;
+logic sr1use;
+logic sr2use;
 } lc3b_control_word;
 
 endpackage : lc3b_types

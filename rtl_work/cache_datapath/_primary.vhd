@@ -3,7 +3,7 @@ use verilog.vl_types.all;
 entity cache_datapath is
     port(
         clk             : in     vl_logic;
-        adr_i_cpu       : in     vl_logic_vector(15 downto 0);
+        adr_i_cpu_in    : in     vl_logic_vector(15 downto 0);
         way0_write      : in     vl_logic;
         v0_write        : in     vl_logic;
         v0_in           : in     vl_logic;
@@ -24,7 +24,7 @@ entity cache_datapath is
         hit0            : out    vl_logic;
         dat_o_cpu       : out    vl_logic_vector(127 downto 0);
         cpu_sel         : in     vl_logic_vector(15 downto 0);
-        dat_i_cpu       : in     vl_logic_vector(127 downto 0);
+        dat_i_cpu_in    : in     vl_logic_vector(127 downto 0);
         dat_o_mem       : out    vl_logic_vector(127 downto 0);
         adr_o_mem       : out    vl_logic_vector(15 downto 0);
         dat_i_mem       : in     vl_logic_vector(127 downto 0);

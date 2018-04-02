@@ -1,0 +1,7 @@
+Fri Mar 30 23:27:31 CDT 2018
+Trace back: can't read "_btnInfo(x)": no such variable
+    while executing
+"{namespace inscope :: {.main_pane.dataflow.interior.cs.body.pw.df.c _mouse_motion}} .main_pane.dataflow.interior.cs.body.pw.df.c.nlv 2 1009 211 3440 4..."
+    (command bound to event)
+  <2:/software/quartus-15.0/modelsim_ae/linuxaloem/tk8.5/bgerror.tcl:92: ::tkerror {can't read "_btnInfo(x)": no such variable}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't read "_btnInfo(x)": no such variable}

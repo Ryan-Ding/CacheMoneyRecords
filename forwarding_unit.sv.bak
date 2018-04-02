@@ -1,0 +1,11 @@
+import lc3b_types::*;
+
+module forwarding_unit
+(
+
+		wishbone.slave wb_cpu_cache,
+		wishbone.master wb_cache_mem
+);
+
+
+endmodule: forwarding_unit

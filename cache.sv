@@ -130,7 +130,7 @@ cache_datapath cache_datapath1
     .clk(wb_cache_mem.CLK),
 
     /* control signals */
-    .adr_i_cpu,
+    .adr_i_cpu_in(adr_i_cpu),
 	 .way0_write,
 	 .v0_write,
 	 .v0_in,
@@ -153,7 +153,7 @@ cache_datapath cache_datapath1
 	 //cpu signals
 	 .dat_o_cpu,
 	 .cpu_sel,
-	 .dat_i_cpu,
+	 .dat_i_cpu_in(dat_i_cpu),
 	 
 	 //mem signals
 	 .dat_o_mem,

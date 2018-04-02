@@ -27,15 +27,23 @@ ctrl.mem_read = 1'b0;
 ctrl.mem_write = 1'b0;
 ctrl.sr2mux_sel = 1'b0;
 ctrl.mem_mar_sel=1'b0;
+ctrl.sr1use = 1'b0;
+ctrl.sr2use = 1'b0;
 /* Assign control signals based on opcode */
 case(opcode)
 	op_add: begin
 		ctrl.aluop = alu_add;
 		ctrl.load_cc = 1'b1;
 		ctrl.destmux_sel = 1'b0;
-		if (bit5 == 0)
+		if (bit5 == 0) begin
 			ctrl.alumux8_sel = 2'b00;
-		else ctrl.alumux8_sel = 3'b001;
+			ctrl.sr1use = 1'b1;
+			ctrl.sr2use = 1'b1;
+		end
+		else begin
+			ctrl.alumux8_sel = 3'b001;
+			ctrl.sr1use = 1'b1;
+		end
 
 		ctrl.wbmux_sel = 2'b10;
 		ctrl.load_regfile = 1'b1;
@@ -44,9 +52,15 @@ case(opcode)
 		ctrl.aluop = alu_and;
 		ctrl.load_cc = 1'b1;
 		ctrl.destmux_sel = 1'b0;
-		if (bit5 == 0)
+		if (bit5 == 0) begin
 			ctrl.alumux8_sel = 2'b00;
-		else ctrl.alumux8_sel = 3'b001;
+			ctrl.sr1use = 1'b1;
+			ctrl.sr2use = 1'b1;
+		end
+		else begin
+			ctrl.alumux8_sel = 3'b001;
+			ctrl.sr1use = 1'b1;
+		end
 	
 		ctrl.wbmux_sel = 2'b10;
 		ctrl.load_regfile = 1'b1;
@@ -66,6 +80,7 @@ case(opcode)
 		ctrl.mem_read = 1'b1;
 		ctrl.load_regfile = 1'b1;
 		ctrl.mem_mar_sel=1'b1;
+		ctrl.sr1use = 1'b1;
 	end
 	op_not: begin
 		ctrl.aluop = alu_not;
@@ -74,6 +89,7 @@ case(opcode)
 		ctrl.load_cc = 1'b1;
 		ctrl.wbmux_sel = 2'b10;
 		ctrl.load_regfile = 1'b1;
+		ctrl.sr1use = 1'b1;
 	end
 	op_str:begin
 		ctrl.aluop = alu_add;
@@ -83,12 +99,15 @@ case(opcode)
 		ctrl.mem_write = 1'b1;
 		ctrl.storemux_sel = 1'b1;
 		ctrl.mem_mar_sel=1'b1;
+		ctrl.sr1use = 1'b1;
+		ctrl.sr2use = 1'b1;
 	end
 	op_shf:begin
 		ctrl.alumux8_sel = 3'b010;
 		ctrl.load_regfile = 1'b1;
 		ctrl.load_cc = 1'b1;
 		ctrl.wbmux_sel = 2'b10;
+		ctrl.sr1use = 1'b1;
 		if (bit4)
 			begin
 			if(!bit5)
@@ -101,6 +120,7 @@ case(opcode)
 	end
 	op_jmp:begin
 		ctrl.aluop = alu_pass;
+		ctrl.sr1use = 1'b1;
 		end
 	op_jsr:begin
 		ctrl.destmux_sel = 1'b1;
@@ -110,8 +130,10 @@ case(opcode)
 			ctrl.alumux2_sel = 1'b1;
 			ctrl.alumux8_sel = 3'b100;
 		end
-		else
+		else begin
 			ctrl.aluoutmux_sel = 2'b01;
+			ctrl.sr1use = 1'b1;
+		end
 	end
 	op_lea:begin
 		ctrl.alumux2_sel = 1'b1;
@@ -130,6 +152,7 @@ case(opcode)
 		ctrl.mem_read = 1'b1;
 		ctrl.load_regfile = 1'b1;
 		ctrl.mem_mar_sel=1'b1;
+		ctrl.sr1use = 1'b1;
 	end
 	op_stb:begin
 		ctrl.aluop = alu_add;
@@ -139,6 +162,7 @@ case(opcode)
 		ctrl.storemux_sel = 1'b1;
 		ctrl.sr2mux_sel = 1'b1;
 		ctrl.mem_mar_sel=1'b1;
+		ctrl.sr1use = 1'b1;
 	end
 	
 	op_ldi: begin
@@ -149,6 +173,7 @@ case(opcode)
 		ctrl.mem_read = 1'b1;
 		ctrl.load_regfile = 1'b1;
 		ctrl.mem_mar_sel=1'b1;
+		ctrl.sr1use = 1'b1;
 	end
 	op_sti:begin
 		ctrl.aluop = alu_add;
@@ -157,6 +182,7 @@ case(opcode)
 		ctrl.mem_write = 1'b1;
 		ctrl.storemux_sel = 1'b1;
 		ctrl.mem_mar_sel=1'b1;
+		ctrl.sr1use = 1'b1;
 	end
 	op_trap:begin
 		ctrl.destmux_sel = 1'b1;
@@ -164,7 +190,7 @@ case(opcode)
 		ctrl.aluoutmux_sel = 2'b10;
 		ctrl.mem_read = 1'b1;
 		ctrl.mem_mar_sel=1'b1;
-		end
+	end
 	
 		
 	

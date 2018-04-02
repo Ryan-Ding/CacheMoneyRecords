@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mp3
-Sun Mar 18 14:03:36 2018
+Sun Apr  1 23:34:33 2018
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Full Version
 
 
@@ -36,141 +36,150 @@ Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Full Version
  28. Parameter Settings for User Entity Instance: datapath:datapath|register:if_id_reg
  29. Parameter Settings for User Entity Instance: datapath:datapath|mux2:storemux
  30. Parameter Settings for User Entity Instance: datapath:datapath|mux2:destmux
- 31. Parameter Settings for User Entity Instance: datapath:datapath|register:id_ex_reg
- 32. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj6
- 33. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj9
- 34. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj11
- 35. Parameter Settings for User Entity Instance: datapath:datapath|sext:sext6
- 36. Parameter Settings for User Entity Instance: datapath:datapath|sext:sext5
- 37. Parameter Settings for User Entity Instance: datapath:datapath|zext:zext4
- 38. Parameter Settings for User Entity Instance: datapath:datapath|mux8:alumux8
- 39. Parameter Settings for User Entity Instance: datapath:datapath|mux2:alumux2
- 40. Parameter Settings for User Entity Instance: datapath:datapath|mux2:sr2mux
- 41. Parameter Settings for User Entity Instance: datapath:datapath|mux4:aluoutmux
- 42. Parameter Settings for User Entity Instance: datapath:datapath|zext_shift:zextshf_8
- 43. Parameter Settings for User Entity Instance: datapath:datapath|register:ex_mem_reg
- 44. Parameter Settings for User Entity Instance: datapath:datapath|mux2:memaddrmux
- 45. Parameter Settings for User Entity Instance: datapath:datapath|register:ldi_addr_register
- 46. Parameter Settings for User Entity Instance: datapath:datapath|mux2:ldbmux
- 47. Parameter Settings for User Entity Instance: datapath:datapath|register:mem_wb_reg
- 48. Parameter Settings for User Entity Instance: datapath:datapath|mux4:wbmux
- 49. Parameter Settings for User Entity Instance: datapath:datapath|register:cc
- 50. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:data0
- 51. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:tag0
- 52. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:valid0
- 53. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:dirty0
- 54. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:data1
- 55. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:tag1
- 56. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:valid1
- 57. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:dirty1
- 58. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:lru
- 59. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:cpudatamux
- 60. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:memdatamux
- 61. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:tagmux
- 62. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:memaddrmux
- 63. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:dirtymux
- 64. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux
- 65. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux0
- 66. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux1
- 67. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux2
- 68. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux3
- 69. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux4
- 70. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux5
- 71. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux6
- 72. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux7
- 73. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux8
- 74. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux9
- 75. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux10
- 76. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux11
- 77. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux12
- 78. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux13
- 79. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux14
- 80. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux15
- 81. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:data0
- 82. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:tag0
- 83. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:valid0
- 84. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:dirty0
- 85. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:data1
- 86. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:tag1
- 87. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:valid1
- 88. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:dirty1
- 89. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:lru
- 90. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:cpudatamux
- 91. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:memdatamux
- 92. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:tagmux
- 93. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:memaddrmux
- 94. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:dirtymux
- 95. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux
- 96. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux0
- 97. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux1
- 98. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux2
- 99. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux3
-100. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux4
-101. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux5
-102. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux6
-103. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux7
-104. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux8
-105. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux9
-106. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux10
-107. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux11
-108. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux12
-109. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux13
-110. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux14
-111. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux15
-112. Parameter Settings for User Entity Instance: cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath|mux2:l2wdatamux
-113. Parameter Settings for User Entity Instance: cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath|mux2:l2selmux
-114. Parameter Settings for User Entity Instance: cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath|mux2:l2adrmux
-115. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:data0
-116. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:tag0
-117. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:valid0
-118. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:dirty0
-119. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:data1
-120. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:tag1
-121. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:valid1
-122. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:dirty1
-123. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:lru
-124. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:cpudatamux
-125. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:memdatamux
-126. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:tagmux
-127. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:memaddrmux
-128. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:dirtymux
-129. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux
-130. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux0
-131. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux1
-132. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux2
-133. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux3
-134. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux4
-135. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux5
-136. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux6
-137. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux7
-138. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux8
-139. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux9
-140. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux10
-141. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux11
-142. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux12
-143. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux13
-144. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux14
-145. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux15
-146. Parameter Settings for Inferred Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:tag1|altsyncram:data_rtl_0
-147. Parameter Settings for Inferred Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:data1|altsyncram:data_rtl_0
-148. Parameter Settings for Inferred Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:tag0|altsyncram:data_rtl_0
-149. Parameter Settings for Inferred Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:data0|altsyncram:data_rtl_0
-150. altsyncram Parameter Settings by Entity Instance
-151. Port Connectivity Checks: "l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:memaddrmux"
-152. Port Connectivity Checks: "l2cache:l2cache1|l2cache_datapath:l2cache_datapath1"
-153. Port Connectivity Checks: "cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath"
-154. Port Connectivity Checks: "cache:icache1|cache_datapath:cache_datapath1|mux2:memaddrmux"
-155. Port Connectivity Checks: "cache:icache1|cache_datapath:cache_datapath1"
-156. Port Connectivity Checks: "datapath:datapath|mux4:wbmux"
-157. Port Connectivity Checks: "datapath:datapath|register:mem_wb_reg"
-158. Port Connectivity Checks: "datapath:datapath|mux4:aluoutmux"
-159. Port Connectivity Checks: "datapath:datapath|mux8:alumux8"
-160. Port Connectivity Checks: "datapath:datapath|mux2:destmux"
-161. Port Connectivity Checks: "datapath:datapath|mux2:instructionmux"
-162. Port Connectivity Checks: "datapath:datapath|mux4:pcmux"
-163. Post-Synthesis Netlist Statistics for Top Partition
-164. Elapsed Time Per Partition
-165. Analysis & Synthesis Messages
+ 31. Parameter Settings for User Entity Instance: datapath:datapath|mux2:ir_id_mux
+ 32. Parameter Settings for User Entity Instance: datapath:datapath|mux2:ctrl_id_mux
+ 33. Parameter Settings for User Entity Instance: datapath:datapath|register:id_ex_reg
+ 34. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj6
+ 35. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj9
+ 36. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj11
+ 37. Parameter Settings for User Entity Instance: datapath:datapath|sext:sext6
+ 38. Parameter Settings for User Entity Instance: datapath:datapath|sext:sext5
+ 39. Parameter Settings for User Entity Instance: datapath:datapath|zext:zext4
+ 40. Parameter Settings for User Entity Instance: datapath:datapath|mux4:forwardmuxsr2
+ 41. Parameter Settings for User Entity Instance: datapath:datapath|mux8:alumux8
+ 42. Parameter Settings for User Entity Instance: datapath:datapath|mux4:forwardmuxsr1
+ 43. Parameter Settings for User Entity Instance: datapath:datapath|mux2:alumux2
+ 44. Parameter Settings for User Entity Instance: datapath:datapath|mux2:sr2mux
+ 45. Parameter Settings for User Entity Instance: datapath:datapath|mux4:aluoutmux
+ 46. Parameter Settings for User Entity Instance: datapath:datapath|zext_shift:zextshf_8
+ 47. Parameter Settings for User Entity Instance: datapath:datapath|register:ex_mem_reg
+ 48. Parameter Settings for User Entity Instance: datapath:datapath|mux2:memaddrmux
+ 49. Parameter Settings for User Entity Instance: datapath:datapath|register:ldi_addr_register
+ 50. Parameter Settings for User Entity Instance: datapath:datapath|mux2:ldbmux
+ 51. Parameter Settings for User Entity Instance: datapath:datapath|register:mem_wb_reg
+ 52. Parameter Settings for User Entity Instance: datapath:datapath|mux4:wbmux
+ 53. Parameter Settings for User Entity Instance: datapath:datapath|register:cc
+ 54. Parameter Settings for User Entity Instance: datapath:datapath|mux2:storemuxex
+ 55. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:data0
+ 56. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:tag0
+ 57. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:valid0
+ 58. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:dirty0
+ 59. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:data1
+ 60. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:tag1
+ 61. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:valid1
+ 62. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:dirty1
+ 63. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:lru
+ 64. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:cpudatamux
+ 65. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:memdatamux
+ 66. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:tagmux
+ 67. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:memaddrmux
+ 68. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:dirtymux
+ 69. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux
+ 70. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux0
+ 71. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux1
+ 72. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux2
+ 73. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux3
+ 74. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux4
+ 75. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux5
+ 76. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux6
+ 77. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux7
+ 78. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux8
+ 79. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux9
+ 80. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux10
+ 81. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux11
+ 82. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux12
+ 83. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux13
+ 84. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux14
+ 85. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux15
+ 86. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:data0
+ 87. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:tag0
+ 88. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:valid0
+ 89. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:dirty0
+ 90. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:data1
+ 91. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:tag1
+ 92. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:valid1
+ 93. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:dirty1
+ 94. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:lru
+ 95. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:cpudatamux
+ 96. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:memdatamux
+ 97. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:tagmux
+ 98. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:memaddrmux
+ 99. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:dirtymux
+100. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux
+101. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux0
+102. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux1
+103. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux2
+104. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux3
+105. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux4
+106. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux5
+107. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux6
+108. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux7
+109. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux8
+110. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux9
+111. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux10
+112. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux11
+113. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux12
+114. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux13
+115. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux14
+116. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux15
+117. Parameter Settings for User Entity Instance: cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath|mux2:l2wdatamux
+118. Parameter Settings for User Entity Instance: cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath|mux2:l2selmux
+119. Parameter Settings for User Entity Instance: cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath|mux2:l2adrmux
+120. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:data0
+121. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:tag0
+122. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:valid0
+123. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:dirty0
+124. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:data1
+125. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:tag1
+126. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:valid1
+127. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:dirty1
+128. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:lru
+129. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:cpudatamux
+130. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:memdatamux
+131. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:tagmux
+132. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:memaddrmux
+133. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:dirtymux
+134. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux
+135. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux0
+136. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux1
+137. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux2
+138. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux3
+139. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux4
+140. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux5
+141. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux6
+142. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux7
+143. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux8
+144. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux9
+145. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux10
+146. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux11
+147. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux12
+148. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux13
+149. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux14
+150. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux15
+151. Parameter Settings for Inferred Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:tag1|altsyncram:data_rtl_0
+152. Parameter Settings for Inferred Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:data1|altsyncram:data_rtl_0
+153. Parameter Settings for Inferred Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:tag0|altsyncram:data_rtl_0
+154. Parameter Settings for Inferred Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:data0|altsyncram:data_rtl_0
+155. altsyncram Parameter Settings by Entity Instance
+156. Port Connectivity Checks: "l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:memaddrmux"
+157. Port Connectivity Checks: "l2cache:l2cache1|l2cache_datapath:l2cache_datapath1"
+158. Port Connectivity Checks: "cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath"
+159. Port Connectivity Checks: "cache:icache1|cache_datapath:cache_datapath1|mux2:memaddrmux"
+160. Port Connectivity Checks: "cache:icache1|cache_datapath:cache_datapath1"
+161. Port Connectivity Checks: "datapath:datapath|mux4:wbmux"
+162. Port Connectivity Checks: "datapath:datapath|register:mem_wb_reg"
+163. Port Connectivity Checks: "datapath:datapath|mux4:aluoutmux"
+164. Port Connectivity Checks: "datapath:datapath|mux4:forwardmuxsr1"
+165. Port Connectivity Checks: "datapath:datapath|mux8:alumux8"
+166. Port Connectivity Checks: "datapath:datapath|mux4:forwardmuxsr2"
+167. Port Connectivity Checks: "datapath:datapath|mux2:ctrl_id_mux"
+168. Port Connectivity Checks: "datapath:datapath|mux2:ir_id_mux"
+169. Port Connectivity Checks: "datapath:datapath|mux2:destmux"
+170. Port Connectivity Checks: "datapath:datapath|mux2:instructionmux"
+171. Port Connectivity Checks: "datapath:datapath|mux4:pcmux"
+172. Post-Synthesis Netlist Statistics for Top Partition
+173. Elapsed Time Per Partition
+174. Analysis & Synthesis Messages
 
 
 
@@ -197,13 +206,13 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Mar 18 14:03:36 2018       ;
+; Analysis & Synthesis Status     ; Successful - Sun Apr  1 23:34:33 2018       ;
 ; Quartus II 64-Bit Version       ; 15.0.2 Build 153 07/15/2015 SJ Full Version ;
 ; Revision Name                   ; mp3                                         ;
 ; Top-level Entity Name           ; mp3                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 7678                                        ;
+; Total registers                 ; 7680                                        ;
 ; Total pins                      ; 290                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 2,192                                       ;
@@ -310,7 +319,7 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
+; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -319,59 +328,59 @@ agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processors 2-4         ; < 0.1%      ;
-;     Processors 5-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                ;
-+------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path   ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                 ; Library ;
-+------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------+---------+
-; l2cache_datapath.sv                ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/l2cache_datapath.sv                    ;         ;
-; l2cache_control.sv                 ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/l2cache_control.sv                     ;         ;
-; l2cache.sv                         ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/l2cache.sv                             ;         ;
-; l2array.sv                         ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/l2array.sv                             ;         ;
-; cpudatainmux.sv                    ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/cpudatainmux.sv                        ;         ;
-; cache_interconnect_datapath.sv     ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/cache_interconnect_datapath.sv         ;         ;
-; cache_interconnect_control.sv      ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/cache_interconnect_control.sv          ;         ;
-; cache_datapath.sv                  ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/cache_datapath.sv                      ;         ;
-; cache_interconnect.sv              ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/cache_interconnect.sv                  ;         ;
-; cache.sv                           ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/cache.sv                               ;         ;
-; cache_control.sv                   ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/cache_control.sv                       ;         ;
-; wishbone.sv                        ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/wishbone.sv                            ;         ;
-; lc3b_types.sv                      ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/lc3b_types.sv                          ;         ;
-; adj.sv                             ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/adj.sv                                 ;         ;
-; alu.sv                             ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/alu.sv                                 ;         ;
-; control.sv                         ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/control.sv                             ;         ;
-; datapath.sv                        ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/datapath.sv                            ;         ;
-; gencc.sv                           ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/gencc.sv                               ;         ;
-; mp3.sv                             ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/mp3.sv                                 ;         ;
-; plus2.sv                           ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/plus2.sv                               ;         ;
-; regfile.sv                         ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/regfile.sv                             ;         ;
-; register.sv                        ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/register.sv                            ;         ;
-; cccomp.sv                          ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/cccomp.sv                              ;         ;
-; mux.sv                             ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/mux.sv                                 ;         ;
-; br_ctrl.sv                         ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/br_ctrl.sv                             ;         ;
-; mdrmask.sv                         ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/mdrmask.sv                             ;         ;
-; srmask.sv                          ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/srmask.sv                              ;         ;
-; mem_enable_ctrl.sv                 ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/mem_enable_ctrl.sv                     ;         ;
-; ldi_sti_control.sv                 ; yes             ; User SystemVerilog HDL File                           ; /home/rding4/ece411/cachemoneyrecords/ldi_sti_control.sv                     ;         ;
-; array.sv                           ; yes             ; Auto-Found SystemVerilog HDL File                     ; /home/rding4/ece411/cachemoneyrecords/array.sv                               ;         ;
-; altsyncram.tdf                     ; yes             ; Megafunction                                          ; /software/quartus-15.0/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc              ; yes             ; Megafunction                                          ; /software/quartus-15.0/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                        ; yes             ; Megafunction                                          ; /software/quartus-15.0/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                     ; yes             ; Megafunction                                          ; /software/quartus-15.0/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal150.inc                     ; yes             ; Megafunction                                          ; /software/quartus-15.0/quartus/libraries/megafunctions/aglobal150.inc        ;         ;
-; a_rdenreg.inc                      ; yes             ; Megafunction                                          ; /software/quartus-15.0/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                         ; yes             ; Megafunction                                          ; /software/quartus-15.0/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                         ; yes             ; Megafunction                                          ; /software/quartus-15.0/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                       ; yes             ; Megafunction                                          ; /software/quartus-15.0/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_ern1.tdf             ; yes             ; Auto-Generated Megafunction                           ; /home/rding4/ece411/cachemoneyrecords/db/altsyncram_ern1.tdf                 ;         ;
-; db/mp3.ram0_array_9c3c632f.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; /home/rding4/ece411/cachemoneyrecords/db/mp3.ram0_array_9c3c632f.hdl.mif     ;         ;
-; db/altsyncram_vvn1.tdf             ; yes             ; Auto-Generated Megafunction                           ; /home/rding4/ece411/cachemoneyrecords/db/altsyncram_vvn1.tdf                 ;         ;
-; db/mp3.ram0_array_533d4e44.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; /home/rding4/ece411/cachemoneyrecords/db/mp3.ram0_array_533d4e44.hdl.mif     ;         ;
-+------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                  ;
++------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path   ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                   ; Library ;
++------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------+---------+
+; l2cache_datapath.sv                ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache_datapath.sv                ;         ;
+; l2cache_control.sv                 ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache_control.sv                 ;         ;
+; l2cache.sv                         ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache.sv                         ;         ;
+; l2array.sv                         ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/l2array.sv                         ;         ;
+; cpudatainmux.sv                    ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/cpudatainmux.sv                    ;         ;
+; cache_interconnect_datapath.sv     ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_interconnect_datapath.sv     ;         ;
+; cache_interconnect_control.sv      ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_interconnect_control.sv      ;         ;
+; cache_datapath.sv                  ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_datapath.sv                  ;         ;
+; cache_interconnect.sv              ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_interconnect.sv              ;         ;
+; cache.sv                           ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/cache.sv                           ;         ;
+; cache_control.sv                   ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_control.sv                   ;         ;
+; wishbone.sv                        ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/wishbone.sv                        ;         ;
+; lc3b_types.sv                      ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/lc3b_types.sv                      ;         ;
+; adj.sv                             ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/adj.sv                             ;         ;
+; alu.sv                             ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/alu.sv                             ;         ;
+; control.sv                         ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/control.sv                         ;         ;
+; datapath.sv                        ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/datapath.sv                        ;         ;
+; gencc.sv                           ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/gencc.sv                           ;         ;
+; mp3.sv                             ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/mp3.sv                             ;         ;
+; plus2.sv                           ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/plus2.sv                           ;         ;
+; regfile.sv                         ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/regfile.sv                         ;         ;
+; register.sv                        ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/register.sv                        ;         ;
+; cccomp.sv                          ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/cccomp.sv                          ;         ;
+; mux.sv                             ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/mux.sv                             ;         ;
+; br_ctrl.sv                         ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/br_ctrl.sv                         ;         ;
+; mdrmask.sv                         ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/mdrmask.sv                         ;         ;
+; srmask.sv                          ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/srmask.sv                          ;         ;
+; mem_enable_ctrl.sv                 ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/mem_enable_ctrl.sv                 ;         ;
+; ldi_sti_control.sv                 ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/ldi_sti_control.sv                 ;         ;
+; forwarding_unit.sv                 ; yes             ; User SystemVerilog HDL File                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/forwarding_unit.sv                 ;         ;
+; array.sv                           ; yes             ; Auto-Found SystemVerilog HDL File                     ; /home/chaohua2/ece411/mp3/cachemoneyrecords/array.sv                           ;         ;
+; altsyncram.tdf                     ; yes             ; Megafunction                                          ; /software/quartus-15.0/quartus/libraries/megafunctions/altsyncram.tdf          ;         ;
+; stratix_ram_block.inc              ; yes             ; Megafunction                                          ; /software/quartus-15.0/quartus/libraries/megafunctions/stratix_ram_block.inc   ;         ;
+; lpm_mux.inc                        ; yes             ; Megafunction                                          ; /software/quartus-15.0/quartus/libraries/megafunctions/lpm_mux.inc             ;         ;
+; lpm_decode.inc                     ; yes             ; Megafunction                                          ; /software/quartus-15.0/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
+; aglobal150.inc                     ; yes             ; Megafunction                                          ; /software/quartus-15.0/quartus/libraries/megafunctions/aglobal150.inc          ;         ;
+; a_rdenreg.inc                      ; yes             ; Megafunction                                          ; /software/quartus-15.0/quartus/libraries/megafunctions/a_rdenreg.inc           ;         ;
+; altrom.inc                         ; yes             ; Megafunction                                          ; /software/quartus-15.0/quartus/libraries/megafunctions/altrom.inc              ;         ;
+; altram.inc                         ; yes             ; Megafunction                                          ; /software/quartus-15.0/quartus/libraries/megafunctions/altram.inc              ;         ;
+; altdpram.inc                       ; yes             ; Megafunction                                          ; /software/quartus-15.0/quartus/libraries/megafunctions/altdpram.inc            ;         ;
+; db/altsyncram_ern1.tdf             ; yes             ; Auto-Generated Megafunction                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/db/altsyncram_ern1.tdf             ;         ;
+; db/mp3.ram0_array_9c3c632f.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; /home/chaohua2/ece411/mp3/cachemoneyrecords/db/mp3.ram0_array_9c3c632f.hdl.mif ;         ;
+; db/altsyncram_vvn1.tdf             ; yes             ; Auto-Generated Megafunction                           ; /home/chaohua2/ece411/mp3/cachemoneyrecords/db/altsyncram_vvn1.tdf             ;         ;
+; db/mp3.ram0_array_533d4e44.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; /home/chaohua2/ece411/mp3/cachemoneyrecords/db/mp3.ram0_array_533d4e44.hdl.mif ;         ;
++------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------+
@@ -379,16 +388,16 @@ agreement for further details.
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Estimate of Logic utilization (ALMs needed) ; 5566                  ;
+; Estimate of Logic utilization (ALMs needed) ; 5588                  ;
 ;                                             ;                       ;
-; Combinational ALUT usage for logic          ; 3708                  ;
-;     -- 7 input functions                    ; 762                   ;
-;     -- 6 input functions                    ; 1790                  ;
-;     -- 5 input functions                    ; 499                   ;
-;     -- 4 input functions                    ; 343                   ;
-;     -- <=3 input functions                  ; 314                   ;
+; Combinational ALUT usage for logic          ; 3897                  ;
+;     -- 7 input functions                    ; 668                   ;
+;     -- 6 input functions                    ; 2005                  ;
+;     -- 5 input functions                    ; 504                   ;
+;     -- 4 input functions                    ; 356                   ;
+;     -- <=3 input functions                  ; 364                   ;
 ;                                             ;                       ;
-; Dedicated logic registers                   ; 7678                  ;
+; Dedicated logic registers                   ; 7680                  ;
 ;                                             ;                       ;
 ; I/O pins                                    ; 290                   ;
 ; Total MLAB memory bits                      ; 0                     ;
@@ -397,9 +406,9 @@ agreement for further details.
 ; Total DSP Blocks                            ; 0                     ;
 ;                                             ;                       ;
 ; Maximum fan-out node                        ; pmem_master.CLK~input ;
-; Maximum fan-out                             ; 7952                  ;
-; Total fan-out                               ; 46205                 ;
-; Average fan-out                             ; 3.77                  ;
+; Maximum fan-out                             ; 7954                  ;
+; Total fan-out                               ; 47101                 ;
+; Average fan-out                             ; 3.79                  ;
 +---------------------------------------------+-----------------------+
 
 
@@ -408,36 +417,36 @@ agreement for further details.
 +-----------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                      ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                ; Library Name ;
 +-----------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------+--------------+
-; |mp3                                                            ; 3708 (10)         ; 7678 (0)     ; 2192              ; 0          ; 290  ; 0            ; |mp3                                                                                                               ; work         ;
-;    |cache:dcache1|                                              ; 850 (0)           ; 2236 (0)     ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1                                                                                                 ; work         ;
-;       |cache_control:cache_controller|                          ; 15 (15)           ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_control:cache_controller                                                                  ; work         ;
-;       |cache_datapath:cache_datapath1|                          ; 835 (18)          ; 2232 (0)     ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1                                                                  ; work         ;
+; |mp3                                                            ; 3897 (10)         ; 7680 (0)     ; 2192              ; 0          ; 290  ; 0            ; |mp3                                                                                                               ; work         ;
+;    |cache:dcache1|                                              ; 943 (0)           ; 2236 (0)     ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1                                                                                                 ; work         ;
+;       |cache_control:cache_controller|                          ; 17 (17)           ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_control:cache_controller                                                                  ; work         ;
+;       |cache_datapath:cache_datapath1|                          ; 926 (17)          ; 2232 (0)     ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1                                                                  ; work         ;
 ;          |array:data0|                                          ; 256 (256)         ; 1024 (1024)  ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|array:data0                                                      ; work         ;
 ;          |array:data1|                                          ; 256 (256)         ; 1024 (1024)  ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|array:data1                                                      ; work         ;
 ;          |array:dirty0|                                         ; 2 (2)             ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|array:dirty0                                                     ; work         ;
 ;          |array:dirty1|                                         ; 2 (2)             ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|array:dirty1                                                     ; work         ;
-;          |array:lru|                                            ; 12 (12)           ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|array:lru                                                        ; work         ;
+;          |array:lru|                                            ; 10 (10)           ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|array:lru                                                        ; work         ;
 ;          |array:tag0|                                           ; 26 (26)           ; 72 (72)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|array:tag0                                                       ; work         ;
-;          |array:tag1|                                           ; 32 (32)           ; 72 (72)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|array:tag1                                                       ; work         ;
+;          |array:tag1|                                           ; 30 (30)           ; 72 (72)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|array:tag1                                                       ; work         ;
 ;          |array:valid0|                                         ; 2 (2)             ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|array:valid0                                                     ; work         ;
 ;          |array:valid1|                                         ; 2 (2)             ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|array:valid1                                                     ; work         ;
 ;          |mux2:cpudatamux|                                      ; 64 (64)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:cpudatamux                                                  ; work         ;
-;          |mux2:datainmux|                                       ; 162 (162)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux                                                   ; work         ;
+;          |mux2:datainmux|                                       ; 258 (258)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux                                                   ; work         ;
 ;          |mux2:dirtymux|                                        ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:dirtymux                                                    ; work         ;
-;    |cache:icache1|                                              ; 335 (0)           ; 602 (0)      ; 2192              ; 0          ; 0    ; 0            ; |mp3|cache:icache1                                                                                                 ; work         ;
-;       |cache_control:cache_controller|                          ; 7 (7)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_control:cache_controller                                                                  ; work         ;
-;       |cache_datapath:cache_datapath1|                          ; 328 (22)          ; 600 (0)      ; 2192              ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1                                                                  ; work         ;
+;    |cache:icache1|                                              ; 331 (0)           ; 602 (0)      ; 2192              ; 0          ; 0    ; 0            ; |mp3|cache:icache1                                                                                                 ; work         ;
+;       |cache_control:cache_controller|                          ; 5 (5)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_control:cache_controller                                                                  ; work         ;
+;       |cache_datapath:cache_datapath1|                          ; 326 (20)          ; 600 (0)      ; 2192              ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1                                                                  ; work         ;
 ;          |array:data0|                                          ; 130 (130)         ; 263 (263)    ; 1024              ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:data0                                                      ; work         ;
 ;             |altsyncram:data_rtl_0|                             ; 0 (0)             ; 0 (0)        ; 1024              ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:data0|altsyncram:data_rtl_0                                ; work         ;
 ;                |altsyncram_vvn1:auto_generated|                 ; 0 (0)             ; 0 (0)        ; 1024              ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:data0|altsyncram:data_rtl_0|altsyncram_vvn1:auto_generated ; work         ;
 ;          |array:data1|                                          ; 130 (130)         ; 263 (263)    ; 1024              ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:data1                                                      ; work         ;
 ;             |altsyncram:data_rtl_0|                             ; 0 (0)             ; 0 (0)        ; 1024              ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:data1|altsyncram:data_rtl_0                                ; work         ;
 ;                |altsyncram_vvn1:auto_generated|                 ; 0 (0)             ; 0 (0)        ; 1024              ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:data1|altsyncram:data_rtl_0|altsyncram_vvn1:auto_generated ; work         ;
-;          |array:lru|                                            ; 13 (13)           ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:lru                                                        ; work         ;
+;          |array:lru|                                            ; 15 (15)           ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:lru                                                        ; work         ;
 ;          |array:tag0|                                           ; 7 (7)             ; 25 (25)      ; 72                ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:tag0                                                       ; work         ;
 ;             |altsyncram:data_rtl_0|                             ; 0 (0)             ; 0 (0)        ; 72                ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:tag0|altsyncram:data_rtl_0                                 ; work         ;
 ;                |altsyncram_ern1:auto_generated|                 ; 0 (0)             ; 0 (0)        ; 72                ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:tag0|altsyncram:data_rtl_0|altsyncram_ern1:auto_generated  ; work         ;
-;          |array:tag1|                                           ; 6 (6)             ; 25 (25)      ; 72                ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:tag1                                                       ; work         ;
+;          |array:tag1|                                           ; 4 (4)             ; 25 (25)      ; 72                ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:tag1                                                       ; work         ;
 ;             |altsyncram:data_rtl_0|                             ; 0 (0)             ; 0 (0)        ; 72                ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:tag1|altsyncram:data_rtl_0                                 ; work         ;
 ;                |altsyncram_ern1:auto_generated|                 ; 0 (0)             ; 0 (0)        ; 72                ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:tag1|altsyncram:data_rtl_0|altsyncram_ern1:auto_generated  ; work         ;
 ;          |array:valid0|                                         ; 10 (10)           ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache:icache1|cache_datapath:cache_datapath1|array:valid0                                                     ; work         ;
@@ -446,38 +455,43 @@ agreement for further details.
 ;       |cache_interconnect_control:cache_interconnect_control|   ; 8 (8)             ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control                   ; work         ;
 ;       |cache_interconnect_datapath:cache_interconnect_datapath| ; 30 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath                 ; work         ;
 ;          |mux2:l2adrmux|                                        ; 30 (30)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath|mux2:l2adrmux   ; work         ;
-;    |datapath:datapath|                                          ; 602 (126)         ; 401 (0)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath                                                                                             ; work         ;
-;       |alu:alu|                                                 ; 82 (82)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|alu:alu                                                                                     ; work         ;
+;    |datapath:datapath|                                          ; 699 (123)         ; 403 (0)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath                                                                                             ; work         ;
+;       |alu:alu|                                                 ; 91 (91)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|alu:alu                                                                                     ; work         ;
 ;       |cccomp:cccomp|                                           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|cccomp:cccomp                                                                               ; work         ;
-;       |control_rom:control_rom|                                 ; 19 (19)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|control_rom:control_rom                                                                     ; work         ;
+;       |control_rom:control_rom|                                 ; 20 (20)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|control_rom:control_rom                                                                     ; work         ;
+;       |forwarding_unit:forwarding_unit|                         ; 10 (10)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|forwarding_unit:forwarding_unit                                                             ; work         ;
 ;       |gencc:gencc|                                             ; 5 (5)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|gencc:gencc                                                                                 ; work         ;
 ;       |ldi_sti_control:ldi_sti_control0|                        ; 6 (6)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|ldi_sti_control:ldi_sti_control0                                                            ; work         ;
+;       |mem_enable_ctrl:mem_enable_ctrl|                         ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mem_enable_ctrl:mem_enable_ctrl                                                             ; work         ;
 ;       |mux2:alumux2|                                            ; 16 (16)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux2:alumux2                                                                                ; work         ;
+;       |mux2:ctrl_id_mux|                                        ; 6 (6)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux2:ctrl_id_mux                                                                            ; work         ;
 ;       |mux2:instructionmux|                                     ; 80 (80)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux2:instructionmux                                                                         ; work         ;
 ;       |mux2:memaddrmux|                                         ; 16 (16)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux2:memaddrmux                                                                             ; work         ;
 ;       |mux2:storemux|                                           ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux2:storemux                                                                               ; work         ;
-;       |mux4:aluoutmux|                                          ; 90 (90)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux4:aluoutmux                                                                              ; work         ;
-;       |mux4:pcmux|                                              ; 18 (18)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux4:pcmux                                                                                  ; work         ;
+;       |mux4:aluoutmux|                                          ; 88 (88)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux4:aluoutmux                                                                              ; work         ;
+;       |mux4:forwardmuxsr1|                                      ; 34 (34)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux4:forwardmuxsr1                                                                          ; work         ;
+;       |mux4:forwardmuxsr2|                                      ; 28 (28)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux4:forwardmuxsr2                                                                          ; work         ;
+;       |mux4:pcmux|                                              ; 19 (19)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux4:pcmux                                                                                  ; work         ;
 ;       |mux4:wbmux|                                              ; 16 (16)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux4:wbmux                                                                                  ; work         ;
-;       |mux8:alumux8|                                            ; 26 (26)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux8:alumux8                                                                                ; work         ;
+;       |mux8:alumux8|                                            ; 35 (35)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|mux8:alumux8                                                                                ; work         ;
 ;       |plus2:pc_plus2|                                          ; 15 (15)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|plus2:pc_plus2                                                                              ; work         ;
 ;       |regfile:regfile|                                         ; 72 (72)           ; 128 (128)    ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|regfile:regfile                                                                             ; work         ;
 ;       |register:cc|                                             ; 0 (0)             ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:cc                                                                                 ; work         ;
-;       |register:ex_mem_reg|                                     ; 9 (9)             ; 63 (63)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:ex_mem_reg                                                                         ; work         ;
-;       |register:id_ex_reg|                                      ; 0 (0)             ; 82 (82)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:id_ex_reg                                                                          ; work         ;
+;       |register:ex_mem_reg|                                     ; 11 (11)           ; 63 (63)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:ex_mem_reg                                                                         ; work         ;
+;       |register:id_ex_reg|                                      ; 0 (0)             ; 84 (84)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:id_ex_reg                                                                          ; work         ;
 ;       |register:if_id_reg|                                      ; 0 (0)             ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:if_id_reg                                                                          ; work         ;
 ;       |register:ldi_addr_register|                              ; 0 (0)             ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:ldi_addr_register                                                                  ; work         ;
 ;       |register:mem_wb_reg|                                     ; 1 (1)             ; 60 (60)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:mem_wb_reg                                                                         ; work         ;
 ;       |register:pc|                                             ; 1 (1)             ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|datapath:datapath|register:pc                                                                                 ; work         ;
-;    |l2cache:l2cache1|                                           ; 1873 (0)          ; 4436 (0)     ; 0                 ; 0          ; 0    ; 0            ; |mp3|l2cache:l2cache1                                                                                              ; work         ;
+;    |l2cache:l2cache1|                                           ; 1876 (0)          ; 4436 (0)     ; 0                 ; 0          ; 0    ; 0            ; |mp3|l2cache:l2cache1                                                                                              ; work         ;
 ;       |l2cache_control:l2cache_controller|                      ; 14 (14)           ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |mp3|l2cache:l2cache1|l2cache_control:l2cache_controller                                                           ; work         ;
-;       |l2cache_datapath:l2cache_datapath1|                      ; 1859 (30)         ; 4432 (0)     ; 0                 ; 0          ; 0    ; 0            ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1                                                           ; work         ;
+;       |l2cache_datapath:l2cache_datapath1|                      ; 1862 (30)         ; 4432 (0)     ; 0                 ; 0          ; 0    ; 0            ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1                                                           ; work         ;
 ;          |l2array:data0|                                        ; 640 (640)         ; 2048 (2048)  ; 0                 ; 0          ; 0    ; 0            ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:data0                                             ; work         ;
 ;          |l2array:data1|                                        ; 640 (640)         ; 2048 (2048)  ; 0                 ; 0          ; 0    ; 0            ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:data1                                             ; work         ;
 ;          |l2array:dirty0|                                       ; 5 (5)             ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:dirty0                                            ; work         ;
 ;          |l2array:dirty1|                                       ; 5 (5)             ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:dirty1                                            ; work         ;
 ;          |l2array:lru|                                          ; 21 (21)           ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:lru                                               ; work         ;
-;          |l2array:tag0|                                         ; 59 (59)           ; 128 (128)    ; 0                 ; 0          ; 0    ; 0            ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:tag0                                              ; work         ;
+;          |l2array:tag0|                                         ; 62 (62)           ; 128 (128)    ; 0                 ; 0          ; 0    ; 0            ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:tag0                                              ; work         ;
 ;          |l2array:tag1|                                         ; 56 (56)           ; 128 (128)    ; 0                 ; 0          ; 0    ; 0            ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:tag1                                              ; work         ;
 ;          |l2array:valid0|                                       ; 5 (5)             ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:valid0                                            ; work         ;
 ;          |l2array:valid1|                                       ; 5 (5)             ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:valid1                                            ; work         ;
@@ -564,189 +578,190 @@ Encoding Type:  One-Hot
 +---------------------+---------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                            ;
-+------------------------------------------------------------------------------------------------------+----------------------------------------+
-; Register name                                                                                        ; Reason for Removal                     ;
-+------------------------------------------------------------------------------------------------------+----------------------------------------+
-; datapath:datapath|register:id_ex_reg|data[86]                                                        ; Stuck at GND due to stuck port data_in ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~2                                          ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~3                                          ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~4                                          ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~5                                          ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~6                                          ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~7                                          ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~8                                          ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~9                                          ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~10                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~11                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~12                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~13                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~14                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~15                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~16                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~17                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~18                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~19                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~20                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~21                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~22                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~23                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~24                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~25                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~26                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~27                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~28                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~29                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~30                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~31                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~32                                         ; Lost fanout                            ;
-; l2cache:l2cache1|l2cache_control:l2cache_controller|state~33                                         ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~4  ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~5  ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~6  ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~7  ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~8  ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~9  ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~10 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~11 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~12 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~13 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~14 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~15 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~16 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~17 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~18 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~19 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~20 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~21 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~22 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~23 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~24 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~25 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~26 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~27 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~28 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~29 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~30 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~31 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~32 ; Lost fanout                            ;
-; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~33 ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~2                                                 ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~3                                                 ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~4                                                 ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~5                                                 ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~6                                                 ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~7                                                 ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~8                                                 ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~9                                                 ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~10                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~11                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~12                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~13                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~14                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~15                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~16                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~17                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~18                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~19                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~20                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~21                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~22                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~23                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~24                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~25                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~26                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~27                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~28                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~29                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~30                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~31                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~32                                                ; Lost fanout                            ;
-; cache:dcache1|cache_control:cache_controller|state~33                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~2                                                 ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~3                                                 ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~4                                                 ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~5                                                 ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~6                                                 ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~7                                                 ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~8                                                 ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~9                                                 ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~10                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~11                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~12                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~13                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~14                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~15                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~16                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~17                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~18                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~19                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~20                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~21                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~22                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~23                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~24                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~25                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~26                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~27                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~28                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~29                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~30                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~31                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~32                                                ; Lost fanout                            ;
-; cache:icache1|cache_control:cache_controller|state~33                                                ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~3                                           ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~4                                           ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~5                                           ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~6                                           ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~7                                           ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~8                                           ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~9                                           ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~10                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~11                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~12                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~13                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~14                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~15                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~16                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~17                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~18                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~19                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~20                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~21                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~22                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~23                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~24                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~25                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~26                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~27                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~28                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~29                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~30                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~31                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~32                                          ; Lost fanout                            ;
-; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~33                                          ; Lost fanout                            ;
-; cache:icache1|cache_datapath:cache_datapath1|array:dirty0|data~0                                     ; Stuck at GND due to stuck port data_in ;
-; cache:icache1|cache_datapath:cache_datapath1|array:dirty0|data~1                                     ; Stuck at GND due to stuck port data_in ;
-; cache:icache1|cache_datapath:cache_datapath1|array:dirty0|data~2                                     ; Stuck at GND due to stuck port data_in ;
-; cache:icache1|cache_datapath:cache_datapath1|array:dirty0|data~3                                     ; Stuck at GND due to stuck port data_in ;
-; cache:icache1|cache_datapath:cache_datapath1|array:dirty0|data~4                                     ; Stuck at GND due to stuck port data_in ;
-; cache:icache1|cache_datapath:cache_datapath1|array:dirty0|data~5                                     ; Stuck at GND due to stuck port data_in ;
-; cache:icache1|cache_datapath:cache_datapath1|array:dirty0|data~6                                     ; Stuck at GND due to stuck port data_in ;
-; cache:icache1|cache_datapath:cache_datapath1|array:dirty0|data~7                                     ; Stuck at GND due to stuck port data_in ;
-; cache:icache1|cache_datapath:cache_datapath1|array:dirty1|data~0                                     ; Stuck at GND due to stuck port data_in ;
-; cache:icache1|cache_datapath:cache_datapath1|array:dirty1|data~1                                     ; Stuck at GND due to stuck port data_in ;
-; cache:icache1|cache_datapath:cache_datapath1|array:dirty1|data~2                                     ; Stuck at GND due to stuck port data_in ;
-; cache:icache1|cache_datapath:cache_datapath1|array:dirty1|data~3                                     ; Stuck at GND due to stuck port data_in ;
-; cache:icache1|cache_datapath:cache_datapath1|array:dirty1|data~4                                     ; Stuck at GND due to stuck port data_in ;
-; cache:icache1|cache_datapath:cache_datapath1|array:dirty1|data~5                                     ; Stuck at GND due to stuck port data_in ;
-; cache:icache1|cache_datapath:cache_datapath1|array:dirty1|data~6                                     ; Stuck at GND due to stuck port data_in ;
-; cache:icache1|cache_datapath:cache_datapath1|array:dirty1|data~7                                     ; Stuck at GND due to stuck port data_in ;
-; cache:icache1|cache_control:cache_controller|state.write_back                                        ; Stuck at GND due to stuck port data_in ;
-; cache:icache1|cache_control:cache_controller|state.strobe                                            ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 176                                                              ;                                        ;
-+------------------------------------------------------------------------------------------------------+----------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                               ;
++------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+
+; Register name                                                                                        ; Reason for Removal                                        ;
++------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+
+; datapath:datapath|register:id_ex_reg|data[88]                                                        ; Stuck at GND due to stuck port data_in                    ;
+; datapath:datapath|register:id_ex_reg|data[82]                                                        ; Merged with datapath:datapath|register:id_ex_reg|data[68] ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~2                                          ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~3                                          ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~4                                          ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~5                                          ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~6                                          ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~7                                          ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~8                                          ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~9                                          ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~10                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~11                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~12                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~13                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~14                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~15                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~16                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~17                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~18                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~19                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~20                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~21                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~22                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~23                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~24                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~25                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~26                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~27                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~28                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~29                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~30                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~31                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~32                                         ; Lost fanout                                               ;
+; l2cache:l2cache1|l2cache_control:l2cache_controller|state~33                                         ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~4  ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~5  ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~6  ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~7  ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~8  ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~9  ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~10 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~11 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~12 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~13 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~14 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~15 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~16 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~17 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~18 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~19 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~20 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~21 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~22 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~23 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~24 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~25 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~26 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~27 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~28 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~29 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~30 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~31 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~32 ; Lost fanout                                               ;
+; cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|state~33 ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~2                                                 ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~3                                                 ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~4                                                 ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~5                                                 ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~6                                                 ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~7                                                 ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~8                                                 ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~9                                                 ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~10                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~11                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~12                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~13                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~14                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~15                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~16                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~17                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~18                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~19                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~20                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~21                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~22                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~23                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~24                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~25                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~26                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~27                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~28                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~29                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~30                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~31                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~32                                                ; Lost fanout                                               ;
+; cache:dcache1|cache_control:cache_controller|state~33                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~2                                                 ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~3                                                 ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~4                                                 ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~5                                                 ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~6                                                 ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~7                                                 ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~8                                                 ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~9                                                 ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~10                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~11                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~12                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~13                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~14                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~15                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~16                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~17                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~18                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~19                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~20                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~21                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~22                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~23                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~24                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~25                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~26                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~27                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~28                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~29                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~30                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~31                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~32                                                ; Lost fanout                                               ;
+; cache:icache1|cache_control:cache_controller|state~33                                                ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~3                                           ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~4                                           ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~5                                           ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~6                                           ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~7                                           ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~8                                           ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~9                                           ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~10                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~11                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~12                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~13                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~14                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~15                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~16                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~17                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~18                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~19                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~20                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~21                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~22                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~23                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~24                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~25                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~26                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~27                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~28                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~29                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~30                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~31                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~32                                          ; Lost fanout                                               ;
+; datapath:datapath|ldi_sti_control:ldi_sti_control0|state~33                                          ; Lost fanout                                               ;
+; cache:icache1|cache_datapath:cache_datapath1|array:dirty0|data~0                                     ; Stuck at GND due to stuck port data_in                    ;
+; cache:icache1|cache_datapath:cache_datapath1|array:dirty0|data~1                                     ; Stuck at GND due to stuck port data_in                    ;
+; cache:icache1|cache_datapath:cache_datapath1|array:dirty0|data~2                                     ; Stuck at GND due to stuck port data_in                    ;
+; cache:icache1|cache_datapath:cache_datapath1|array:dirty0|data~3                                     ; Stuck at GND due to stuck port data_in                    ;
+; cache:icache1|cache_datapath:cache_datapath1|array:dirty0|data~4                                     ; Stuck at GND due to stuck port data_in                    ;
+; cache:icache1|cache_datapath:cache_datapath1|array:dirty0|data~5                                     ; Stuck at GND due to stuck port data_in                    ;
+; cache:icache1|cache_datapath:cache_datapath1|array:dirty0|data~6                                     ; Stuck at GND due to stuck port data_in                    ;
+; cache:icache1|cache_datapath:cache_datapath1|array:dirty0|data~7                                     ; Stuck at GND due to stuck port data_in                    ;
+; cache:icache1|cache_datapath:cache_datapath1|array:dirty1|data~0                                     ; Stuck at GND due to stuck port data_in                    ;
+; cache:icache1|cache_datapath:cache_datapath1|array:dirty1|data~1                                     ; Stuck at GND due to stuck port data_in                    ;
+; cache:icache1|cache_datapath:cache_datapath1|array:dirty1|data~2                                     ; Stuck at GND due to stuck port data_in                    ;
+; cache:icache1|cache_datapath:cache_datapath1|array:dirty1|data~3                                     ; Stuck at GND due to stuck port data_in                    ;
+; cache:icache1|cache_datapath:cache_datapath1|array:dirty1|data~4                                     ; Stuck at GND due to stuck port data_in                    ;
+; cache:icache1|cache_datapath:cache_datapath1|array:dirty1|data~5                                     ; Stuck at GND due to stuck port data_in                    ;
+; cache:icache1|cache_datapath:cache_datapath1|array:dirty1|data~6                                     ; Stuck at GND due to stuck port data_in                    ;
+; cache:icache1|cache_datapath:cache_datapath1|array:dirty1|data~7                                     ; Stuck at GND due to stuck port data_in                    ;
+; cache:icache1|cache_control:cache_controller|state.write_back                                        ; Stuck at GND due to stuck port data_in                    ;
+; cache:icache1|cache_control:cache_controller|state.strobe                                            ; Stuck at GND due to stuck port data_in                    ;
+; Total Number of Removed Registers = 177                                                              ;                                                           ;
++------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -764,12 +779,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 7678  ;
-; Number of registers using Synchronous Clear  ; 32    ;
+; Total registers                              ; 7680  ;
+; Number of registers using Synchronous Clear  ; 62    ;
 ; Number of registers using Synchronous Load   ; 16    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 7051  ;
+; Number of registers using Clock Enable       ; 7053  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -779,7 +794,7 @@ Encoding Type:  One-Hot
 +--------------------------------------------------------------------------------+---------+
 ; Inverted Register                                                              ; Fan out ;
 +--------------------------------------------------------------------------------+---------+
-; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[24]  ; 1       ;
+; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[24]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[8]   ; 2       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[10]  ; 2       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[12]  ; 1       ;
@@ -787,8 +802,7 @@ Encoding Type:  One-Hot
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[16]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[18]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[20]  ; 1       ;
-; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[22]  ; 2       ;
-; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[24]  ; 1       ;
+; cache:icache1|cache_datapath:cache_datapath1|array:tag0|data_rtl_0_bypass[22]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[8]   ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[10]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[12]  ; 1       ;
@@ -796,7 +810,8 @@ Encoding Type:  One-Hot
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[16]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[18]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[20]  ; 1       ;
-; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[22]  ; 2       ;
+; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[22]  ; 1       ;
+; cache:icache1|cache_datapath:cache_datapath1|array:tag1|data_rtl_0_bypass[24]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:data1|data_rtl_0_bypass[8]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:data0|data_rtl_0_bypass[8]  ; 1       ;
 ; cache:icache1|cache_datapath:cache_datapath1|array:data1|data_rtl_0_bypass[10] ; 1       ;
@@ -1468,52 +1483,55 @@ Encoding Type:  One-Hot
 +---------------------------------------------------------------------------------+---------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |mp3|datapath:datapath|register:mem_wb_reg|data[22]                                                                   ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |mp3|datapath:datapath|register:pc|data[8]                                                                            ;
-; 17:1               ; 16 bits   ; 176 LEs       ; 160 LEs              ; 16 LEs                 ; Yes        ; |mp3|datapath:datapath|register:if_id_reg|data[18]                                                                    ;
-; 19:1               ; 2 bits    ; 24 LEs        ; 22 LEs               ; 2 LEs                  ; Yes        ; |mp3|datapath:datapath|register:ex_mem_reg|data[41]                                                                   ;
-; 20:1               ; 2 bits    ; 26 LEs        ; 24 LEs               ; 2 LEs                  ; Yes        ; |mp3|datapath:datapath|register:ex_mem_reg|data[46]                                                                   ;
-; 22:1               ; 2 bits    ; 28 LEs        ; 24 LEs               ; 4 LEs                  ; Yes        ; |mp3|datapath:datapath|register:ex_mem_reg|data[37]                                                                   ;
-; 22:1               ; 2 bits    ; 28 LEs        ; 24 LEs               ; 4 LEs                  ; Yes        ; |mp3|datapath:datapath|register:ex_mem_reg|data[33]                                                                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mp3|l2cache:l2cache1|l2cache_control:l2cache_controller|datainmux_sel                                                ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_control:cache_controller|lru_in                                                              ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mp3|datapath:datapath|alu:alu|ShiftRight0                                                                            ;
-; 4:1                ; 17 bits   ; 34 LEs        ; 34 LEs               ; 0 LEs                  ; No         ; |mp3|datapath:datapath|alu:alu|ShiftRight1                                                                            ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_control:cache_controller|way0_write                                                          ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mp3|l2cache:l2cache1|l2cache_control:l2cache_controller|way0_write                                                   ;
-; 3:1                ; 128 bits  ; 256 LEs       ; 256 LEs              ; 0 LEs                  ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[56]                                         ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:memaddrmux|f[10]                                        ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |mp3|datapath:datapath|mux4:pcmux|f[4]                                                                                ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[4]                                                 ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[15]                                                ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[16]                                                ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[26]                                                ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[39]                                                ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[46]                                                ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[49]                                                ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[57]                                                ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[64]                                                ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[73]                                                ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[82]                                                ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[91]                                                ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[101]                                               ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[104]                                               ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[118]                                               ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[123]                                               ;
-; 5:1                ; 7 bits    ; 21 LEs        ; 21 LEs               ; 0 LEs                  ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[10]                                                                           ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |mp3|datapath:datapath|mux4:wbmux|f[13]                                                                               ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |mp3|datapath:datapath|ldi_sti_control:ldi_sti_control0|next_state.second_access                                      ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |mp3|datapath:datapath|ShiftRight1                                                                                    ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[2]                                                                            ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[8]                                                                            ;
-; 6:1                ; 9 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |mp3|cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath|mux2:l2adrmux|f[3] ;
-; 8:1                ; 3 bits    ; 15 LEs        ; 9 LEs                ; 6 LEs                  ; No         ; |mp3|cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|Selector2            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |mp3|datapath:datapath|register:mem_wb_reg|data[20]                                                                    ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |mp3|datapath:datapath|register:id_ex_reg|data[91]                                                                     ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |mp3|datapath:datapath|register:pc|data[15]                                                                            ;
+; 17:1               ; 16 bits   ; 176 LEs       ; 160 LEs              ; 16 LEs                 ; Yes        ; |mp3|datapath:datapath|register:if_id_reg|data[19]                                                                     ;
+; 19:1               ; 2 bits    ; 24 LEs        ; 22 LEs               ; 2 LEs                  ; Yes        ; |mp3|datapath:datapath|register:ex_mem_reg|data[42]                                                                    ;
+; 20:1               ; 2 bits    ; 26 LEs        ; 24 LEs               ; 2 LEs                  ; Yes        ; |mp3|datapath:datapath|register:ex_mem_reg|data[45]                                                                    ;
+; 22:1               ; 2 bits    ; 28 LEs        ; 24 LEs               ; 4 LEs                  ; Yes        ; |mp3|datapath:datapath|register:ex_mem_reg|data[37]                                                                    ;
+; 22:1               ; 2 bits    ; 28 LEs        ; 24 LEs               ; 4 LEs                  ; Yes        ; |mp3|datapath:datapath|register:ex_mem_reg|data[33]                                                                    ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mp3|l2cache:l2cache1|l2cache_control:l2cache_controller|datainmux_sel                                                 ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_control:cache_controller|lru_in                                                               ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mp3|datapath:datapath|alu:alu|ShiftLeft0                                                                              ;
+; 4:1                ; 17 bits   ; 34 LEs        ; 34 LEs               ; 0 LEs                  ; No         ; |mp3|datapath:datapath|alu:alu|ShiftRight1                                                                             ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_control:cache_controller|way1_write                                                           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mp3|l2cache:l2cache1|l2cache_control:l2cache_controller|way1_write                                                    ;
+; 3:1                ; 128 bits  ; 256 LEs       ; 256 LEs              ; 0 LEs                  ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[53]                                          ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:memaddrmux|f[10]                                         ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |mp3|datapath:datapath|mux4:pcmux|f[4]                                                                                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[4]                                                  ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[13]                                                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[18]                                                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[25]                                                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[39]                                                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[41]                                                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[48]                                                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[63]                                                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[64]                                                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[78]                                                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[82]                                                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[91]                                                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[96]                                                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[104]                                                ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[113]                                                ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[124]                                                ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |mp3|datapath:datapath|mux4:wbmux|f[13]                                                                                ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 21 LEs               ; 0 LEs                  ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[9]                                                                             ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |mp3|datapath:datapath|mux4:forwardmuxsr1|f[12]                                                                        ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |mp3|datapath:datapath|mux4:forwardmuxsr2|f[10]                                                                        ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |mp3|datapath:datapath|ldi_sti_control:ldi_sti_control0|next_state.first_access                                        ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |mp3|datapath:datapath|ShiftRight1                                                                                     ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[2]                                                                             ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[7]                                                                             ;
+; 6:1                ; 9 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |mp3|cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath|mux2:l2adrmux|f[11] ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 9 LEs                ; 6 LEs                  ; No         ; |mp3|cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|Selector2             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
@@ -1622,12 +1640,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|mux2:ir_id_mux ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|mux2:ctrl_id_mux ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; width          ; 29    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: datapath:datapath|register:id_ex_reg ;
 +----------------+-------+----------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                     ;
 +----------------+-------+----------------------------------------------------------+
-; width          ; 91    ; Signed Integer                                           ;
+; width          ; 93    ; Signed Integer                                           ;
 +----------------+-------+----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1692,6 +1730,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|mux4:forwardmuxsr2 ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: datapath:datapath|mux8:alumux8 ;
 +----------------+-------+----------------------------------------------------+
@@ -1699,6 +1747,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------+
 ; width          ; 16    ; Signed Integer                                     ;
 +----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|mux4:forwardmuxsr1 ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1747,7 +1805,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                      ;
 +----------------+-------+-----------------------------------------------------------+
-; width          ; 91    ; Signed Integer                                            ;
+; width          ; 93    ; Signed Integer                                            ;
 +----------------+-------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1787,7 +1845,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                      ;
 +----------------+-------+-----------------------------------------------------------+
-; width          ; 91    ; Signed Integer                                            ;
+; width          ; 93    ; Signed Integer                                            ;
 +----------------+-------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1809,6 +1867,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------------------------+
 ; width          ; 3     ; Signed Integer                                    ;
 +----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|mux2:storemuxex ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; width          ; 3     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -3109,14 +3177,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+-------+----------+-------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "cache:icache1|cache_datapath:cache_datapath1"                                                  ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port            ; Type   ; Severity ; Details                                                                             ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
-; adr_i_cpu[3..0] ; Input  ; Info     ; Stuck at GND                                                                        ;
-; adr_o_mem[3..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cache:icache1|cache_datapath:cache_datapath1"                                                     ;
++--------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port               ; Type   ; Severity ; Details                                                                             ;
++--------------------+--------+----------+-------------------------------------------------------------------------------------+
+; adr_i_cpu_in[3..0] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; adr_o_mem[3..0]    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------+
@@ -3133,11 +3201,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port        ; Type   ; Severity ; Details                                                                             ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
-; out[86..83] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; out[78..73] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; out[70..60] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; out[88..85] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; out[80..75] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; out[72..60] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; out[56..48] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; out[80]     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; out[82]     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -3150,6 +3218,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+------------------------------------+
 
 
++------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:datapath|mux4:forwardmuxsr1" ;
++------+-------+----------+----------------------------------------+
+; Port ; Type  ; Severity ; Details                                ;
++------+-------+----------+----------------------------------------+
+; d    ; Input ; Info     ; Explicitly unconnected                 ;
++------+-------+----------+----------------------------------------+
+
+
 +------------------------------------------------------------+
 ; Port Connectivity Checks: "datapath:datapath|mux8:alumux8" ;
 +------+-------+----------+----------------------------------+
@@ -3157,6 +3234,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+----------------------------------+
 ; h    ; Input ; Info     ; Explicitly unconnected           ;
 +------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:datapath|mux4:forwardmuxsr2" ;
++------+-------+----------+----------------------------------------+
+; Port ; Type  ; Severity ; Details                                ;
++------+-------+----------+----------------------------------------+
+; d    ; Input ; Info     ; Explicitly unconnected                 ;
++------+-------+----------+----------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:datapath|mux2:ctrl_id_mux" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:datapath|mux2:ir_id_mux" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
 
 
 +------------------------------------------------------------+
@@ -3191,32 +3295,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 7678                        ;
-;     ENA               ; 7003                        ;
-;     ENA SCLR          ; 32                          ;
+; arriav_ff             ; 7680                        ;
+;     ENA               ; 6975                        ;
+;     ENA SCLR          ; 62                          ;
 ;     ENA SLD           ; 16                          ;
 ;     plain             ; 627                         ;
-; arriav_lcell_comb     ; 3710                        ;
+; arriav_lcell_comb     ; 3899                        ;
 ;     arith             ; 31                          ;
 ;         1 data inputs ; 15                          ;
 ;         2 data inputs ; 3                           ;
 ;         4 data inputs ; 4                           ;
 ;         5 data inputs ; 9                           ;
-;     extend            ; 762                         ;
-;         7 data inputs ; 762                         ;
-;     normal            ; 2917                        ;
+;     extend            ; 668                         ;
+;         7 data inputs ; 668                         ;
+;     normal            ; 3200                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 44                          ;
-;         3 data inputs ; 252                         ;
-;         4 data inputs ; 339                         ;
-;         5 data inputs ; 490                         ;
-;         6 data inputs ; 1790                        ;
+;         2 data inputs ; 43                          ;
+;         3 data inputs ; 303                         ;
+;         4 data inputs ; 352                         ;
+;         5 data inputs ; 495                         ;
+;         6 data inputs ; 2005                        ;
 ; boundary_port         ; 290                         ;
 ; stratixv_ram_block    ; 274                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.00                       ;
-; Average LUT depth     ; 4.97                        ;
+; Average LUT depth     ; 5.12                        ;
 +-----------------------+-----------------------------+
 
 
@@ -3225,7 +3329,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:11     ;
+; Top            ; 00:00:13     ;
 +----------------+--------------+
 
 
@@ -3249,9 +3353,9 @@ Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: devices manufactured by Altera and sold by Altera or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Sun Mar 18 14:03:10 2018
+    Info: Processing started: Sun Apr  1 23:34:03 2018
 Info: Command: quartus_map mp3 -c mp3
-Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file l2cache_datapath.sv
     Info (12023): Found entity 1: l2cache_datapath
 Info (12021): Found 1 design units, including 1 entities, in source file l2cache_control.sv
@@ -3321,16 +3425,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file mem_ena
     Info (12023): Found entity 1: mem_enable_ctrl
 Info (12021): Found 1 design units, including 1 entities, in source file ldi_sti_control.sv
     Info (12023): Found entity 1: ldi_sti_control
+Info (12021): Found 1 design units, including 1 entities, in source file forwarding_unit.sv
+    Info (12023): Found entity 1: forwarding_unit
 Warning (10236): Verilog HDL Implicit Net warning at cache_interconnect_datapath.sv(31): created implicit net for "l1wdatamux_sel"
 Info (12127): Elaborating entity "mp3" for the top level hierarchy
 Info (12128): Elaborating entity "wishbone" for hierarchy "wishbone:ifetch"
 Info (12128): Elaborating entity "datapath" for hierarchy "datapath:datapath"
 Warning (10036): Verilog HDL or VHDL warning at datapath.sv(27): object "load_pcmar" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at datapath.sv(31): object "load_instruction_mdr" assigned a value but never read
-Warning (10230): Verilog HDL assignment warning at datapath.sv(137): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at datapath.sv(147): truncated value with size 128 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at datapath.sv(149): truncated value with size 128 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at datapath.sv(150): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at datapath.sv(148): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at datapath.sv(158): truncated value with size 128 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at datapath.sv(160): truncated value with size 128 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at datapath.sv(161): truncated value with size 2 to match size of target (1)
 Warning (10034): Output port "ifetch.DAT_M" at datapath.sv(5) has no driver
 Warning (10034): Output port "ifetch.SEL" at datapath.sv(5) has no driver
 Info (12128): Elaborating entity "mux4" for hierarchy "datapath:datapath|mux4:pcmux"
@@ -3341,6 +3447,7 @@ Info (12128): Elaborating entity "register" for hierarchy "datapath:datapath|reg
 Info (12128): Elaborating entity "control_rom" for hierarchy "datapath:datapath|control_rom:control_rom"
 Info (12128): Elaborating entity "mux2" for hierarchy "datapath:datapath|mux2:storemux"
 Info (12128): Elaborating entity "regfile" for hierarchy "datapath:datapath|regfile:regfile"
+Info (12128): Elaborating entity "mux2" for hierarchy "datapath:datapath|mux2:ctrl_id_mux"
 Info (12128): Elaborating entity "register" for hierarchy "datapath:datapath|register:id_ex_reg"
 Info (12128): Elaborating entity "adj" for hierarchy "datapath:datapath|adj:adj6"
 Info (12128): Elaborating entity "adj" for hierarchy "datapath:datapath|adj:adj9"
@@ -3361,6 +3468,7 @@ Info (12128): Elaborating entity "br_ctrl" for hierarchy "datapath:datapath|br_c
 Warning (10270): Verilog HDL Case Statement warning at br_ctrl.sv(13): incomplete case statement has no default case item
 Info (12128): Elaborating entity "mem_enable_ctrl" for hierarchy "datapath:datapath|mem_enable_ctrl:mem_enable_ctrl"
 Warning (10270): Verilog HDL Case Statement warning at mem_enable_ctrl.sv(13): incomplete case statement has no default case item
+Info (12128): Elaborating entity "forwarding_unit" for hierarchy "datapath:datapath|forwarding_unit:forwarding_unit"
 Info (12128): Elaborating entity "cache" for hierarchy "cache:icache1"
 Info (12128): Elaborating entity "cache_control" for hierarchy "cache:icache1|cache_control:cache_controller"
 Info (12128): Elaborating entity "cache_datapath" for hierarchy "cache:icache1|cache_datapath:cache_datapath1"
@@ -3539,15 +3647,15 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "pmem_master.RTY"
-Info (21057): Implemented 11792 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 11974 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 131 input pins
     Info (21059): Implemented 159 output pins
-    Info (21061): Implemented 11228 logic cells
+    Info (21061): Implemented 11410 logic cells
     Info (21064): Implemented 274 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 36 warnings
-    Info: Peak virtual memory: 1293 megabytes
-    Info: Processing ended: Sun Mar 18 14:03:36 2018
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:36
+    Info: Peak virtual memory: 1289 megabytes
+    Info: Processing ended: Sun Apr  1 23:34:33 2018
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:34
 
 

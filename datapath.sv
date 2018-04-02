@@ -45,9 +45,13 @@ lc3b_word sr2_out;
 lc3b_reg destmux_out;
 lc3b_reg storemux_out;
 lc3b_control_word control_out;
+logic ir_id_mux_sel;
+logic ctrl_id_mux_sel;
+lc3b_word ir_id_mux_out;
+lc3b_control_word ctrl_id_mux_out;
 
 //id_ex signals
-logic[90:0] id_ex_reg_out;
+logic[92:0] id_ex_reg_out;
 lc3b_control_word crtl_reg_id_ex_out;
 lc3b_word pc_reg_id_ex_out;
 lc3b_word sr1_id_ex_out ;
@@ -69,9 +73,14 @@ lc3b_word zextshf_8_out;
 lc3b_word alumux8_out;
 lc3b_word alumux2_out;
 lc3b_word sr2mux_out;
+lc3b_sel2 forwardmuxsr1_sel;
+lc3b_sel2 forwardmuxsr2_sel;
+lc3b_word forwardmuxsr1_out;
+lc3b_word forwardmuxsr2_out;
+lc3b_reg id_ex_sr2;
 
 //ex_mem signals
-logic[90:0] ex_mem_reg_out;
+logic[92:0] ex_mem_reg_out;
 lc3b_control_word crtl_reg_ex_mem_out;
 lc3b_word pc_reg_ex_mem_out;
 lc3b_word sr2_ex_mem_out ;
@@ -91,7 +100,7 @@ logic sti_WE;
 lc3b_word memaddrmux_out;
 
 //mem_wb signals
-logic[90:0] mem_wb_reg_out;
+logic[92:0] mem_wb_reg_out;
 lc3b_control_word crtl_reg_mem_wb_out;
 lc3b_word pc_reg_mem_wb_out ;
 lc3b_word mem_data_mem_wb_out ;
@@ -107,6 +116,8 @@ logic branch_enable;
 logic[1:0] br_ctrl_out;
 logic is_even;
 
+//forward signals
+logic forward_fetch_stall;
 
 
 
@@ -149,21 +160,21 @@ assign icache_memrdata = instruction_mem_in >> (16 * pc_out[3:1]);
 assign mem_rdata = data_mem_in >> (16 * mem_address[3:1]);
 assign load_pcmar = (proceed  & ifetch.ACK) | br_ctrl_out;
 //assign load_pc = (proceed | br_ctrl_out)  & ifetch.ACK;
-assign load_pc = proceed & ifetch.ACK;
+assign load_pc = proceed & ifetch.ACK & (!forward_fetch_stall);
 assign load_instruction_mdr = ifetch.ACK;
 
 
 //if_id pipeline register out
 assign pc_reg_if_id_out = if_id_reg_out[15:0];
 assign ir_if_id_out = if_id_reg_out[31:16];
-assign load_if_id_reg = pipeline_reg_load;
+assign load_if_id_reg = ( pipeline_reg_load & (!forward_fetch_stall) );
 
 //id_ex pipeline register out
 assign pc_reg_id_ex_out = id_ex_reg_out[15:0];
 assign sr1_id_ex_out = id_ex_reg_out[31:16];
 assign sr2_id_ex_out = id_ex_reg_out[47:32];
 assign ir_id_ex_out = id_ex_reg_out[63:48];
-assign crtl_reg_id_ex_out = id_ex_reg_out[90:64];
+assign crtl_reg_id_ex_out = id_ex_reg_out[92:64];
 assign load_id_ex_reg = pipeline_reg_load;
 
 // ex_mem pipeline register out
@@ -171,7 +182,7 @@ assign pc_reg_ex_mem_out = ex_mem_reg_out[15:0];
 assign sr2_ex_mem_out = ex_mem_reg_out[31:16];
 assign aluout_ex_mem_out = ex_mem_reg_out[47:32];
 assign ir_ex_mem_out = ex_mem_reg_out[63:48];
-assign crtl_reg_ex_mem_out = ex_mem_reg_out[90:64];
+assign crtl_reg_ex_mem_out = ex_mem_reg_out[92:64];
 assign load_ex_mem_reg = pipeline_reg_load;
 
 //memory stage assign
@@ -183,7 +194,7 @@ assign pc_reg_mem_wb_out = mem_wb_reg_out[15:0];
 assign mem_data_mem_wb_out = mem_wb_reg_out[31:16];
 assign aluout_mem_wb_out = mem_wb_reg_out[47:32];
 assign ir_mem_wb_out = mem_wb_reg_out[63:48];
-assign crtl_reg_mem_wb_out = mem_wb_reg_out[90:64];
+assign crtl_reg_mem_wb_out = mem_wb_reg_out[92:64];
 assign load_mem_wb_reg = pipeline_reg_load;
 
 mux4 pcmux(
@@ -306,12 +317,28 @@ regfile regfile
 	 .reg_b(sr2_out)
 );
 
+mux2 #(.width(16)) ir_id_mux
+(
+	.sel(ir_id_mux_sel),
+	.a(ir_if_id_out),
+	.b(16'b0),
+	.f(ir_id_mux_out)
+); 
+
+mux2 #(.width(29)) ctrl_id_mux
+(
+	.sel(ctrl_id_mux_sel),
+	.a(control_out),
+	.b(29'b0),
+	.f(ctrl_id_mux_out)
+); 
+
 //id_ex pipeline register
-register #(.width(91)) id_ex_reg
+register #(.width(93)) id_ex_reg
 (
 	.clk,
 	.load(load_id_ex_reg),
-	.in({control_out ,ir_if_id_out ,sr2_out, sr1_out, pc_reg_if_id_out}),
+	.in({ctrl_id_mux_out ,ir_id_mux_out ,sr2_out, sr1_out, pc_reg_if_id_out}),
 	.out(id_ex_reg_out)
 );
 
@@ -353,10 +380,20 @@ zext #(.width(4)) zext4
 	.out(zext4_out)
 );
 
+mux4 #(.width(16)) forwardmuxsr2
+(
+	.sel(forwardmuxsr2_sel),
+   .a(sr2_id_ex_out),
+	.b(aluout_ex_mem_out),
+	.c(wbmux_out),
+	.d(),
+	.f(forwardmuxsr2_out)
+);
+
 mux8 #(.width(16)) alumux8 
 (
 	.sel(crtl_reg_id_ex_out.alumux8_sel),
-   .a(sr2_id_ex_out),
+   .a(forwardmuxsr2_out),
 	.b(sext5_out),
 	.c(zext4_out),
 	.d(adj9_out),
@@ -367,10 +404,20 @@ mux8 #(.width(16)) alumux8
 	.out(alumux8_out)
 );
 
+mux4 #(.width(16)) forwardmuxsr1
+(
+	.sel(forwardmuxsr1_sel),
+   .a(sr1_id_ex_out),
+	.b(aluout_ex_mem_out),
+	.c(wbmux_out),
+	.d(),
+	.f(forwardmuxsr1_out)
+);
+
 mux2 #(.width(16)) alumux2
 (
 	.sel(crtl_reg_id_ex_out.alumux2_sel),
-   .a(sr1_id_ex_out),
+   .a(forwardmuxsr1_out),
 	.b(pc_reg_id_ex_out),
 	.f(alumux2_out)
 );
@@ -385,7 +432,7 @@ alu alu
 
 srmask srmask
 (
-	.in(sr2_id_ex_out),
+	.in(forwardmuxsr2_out),
 	.is_even(is_even),
 	.out(srmask_out)
 );
@@ -393,7 +440,7 @@ srmask srmask
 mux2 sr2mux
 (
 	.sel(crtl_reg_id_ex_out.sr2mux_sel),
-	.a(sr2_id_ex_out),
+	.a(forwardmuxsr2_out),
 	.b(srmask_out),
 	.f(sr2mux_out)
 );
@@ -402,7 +449,7 @@ mux4 #(.width(16)) aluoutmux
 (
 	.sel(crtl_reg_id_ex_out.aluoutmux_sel),
    .a(alu_out),
-	.b(sr1_id_ex_out),
+	.b(forwardmuxsr1_out),
 	.c(zextshf_8_out),
 	.d(),
 	.f(aluoutmux_out)
@@ -415,7 +462,7 @@ zext_shift #(.width(8)) zextshf_8
 );
 
 // execute memory pipeline register
-register #(.width(91)) ex_mem_reg
+register #(.width(93)) ex_mem_reg
 (
 	.clk,
 	.load(load_ex_mem_reg),
@@ -484,7 +531,7 @@ mux2 #(.width(16)) ldbmux
 
 
 // memory write back pipeline register
-register #(.width(91)) mem_wb_reg
+register #(.width(93)) mem_wb_reg
 (
 	.clk,
 	.load(load_mem_wb_reg),
@@ -536,5 +583,38 @@ mem_enable_ctrl mem_enable_ctrl
 	 .is_even(is_even),
     .out(mem_byte_enable)
 );
+
+mux2 #(.width(3)) storemuxex
+(
+	.sel(crtl_reg_id_ex_out.storemux_sel),
+	.a(ir_id_ex_out[2:0]),
+	.b(ir_id_ex_out[11:9]),
+	.f(id_ex_sr2)
+);
+ 
+forwarding_unit forwarding_unit
+(
+	.if_id_sr1(ir_if_id_out[8:6]),
+	.if_id_sr2(ir_if_id_out[2:0]),
+	.id_ex_sr1(ir_id_ex_out[8:6]),
+	.id_ex_sr2,
+	.id_ex_dest(ir_id_ex_out[11:9]),
+	.ex_mem_dest(ir_ex_mem_out[11:9]),
+	.mem_wb_dest(ir_mem_wb_out[11:9]),
+	.ex_mem_load_regfile(crtl_reg_ex_mem_out.load_regfile),
+	.mem_wb_load_regfile(crtl_reg_mem_wb_out.load_regfile),
+	.id_ex_sr1use(crtl_reg_id_ex_out.sr1use),
+	.id_ex_sr2use(crtl_reg_id_ex_out.sr2use),
+	.if_id_sr1use(control_out.sr1use),
+	.if_id_sr2use(control_out.sr2use),
+	.id_ex_opcode(crtl_reg_id_ex_out.opcode),
+	.ir_id_mux_sel,
+	.ctrl_id_mux_sel,
+	.forwardmuxsr1_sel,
+	.forwardmuxsr2_sel,
+	.forward_fetch_stall(forward_fetch_stall)
+
+);
+
 
 endmodule : datapath

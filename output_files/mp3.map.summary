@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sun Mar 18 14:03:36 2018
+Analysis & Synthesis Status : Successful - Sun Apr  1 23:34:33 2018
 Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Full Version
 Revision Name : mp3
 Top-level Entity Name : mp3
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 7678
+Total registers : 7680
 Total pins : 290
 Total virtual pins : 0
 Total block memory bits : 2,192

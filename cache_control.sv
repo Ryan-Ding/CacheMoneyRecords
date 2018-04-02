@@ -76,8 +76,8 @@ begin : state_actions
 	 //
 	 cpu_ack = 1'b0;
 //	 cpu_rty = 1'b0;
-	load_mar = 1'b0;
-	load_mdr = 1'b0;
+	load_mar = (cpu_cyc & cpu_stb);
+	load_mdr = (cpu_cyc & cpu_stb);
 	
 	 
 	 /*et cetera*/
@@ -124,7 +124,7 @@ begin : state_actions
 			mem_cyc = 1;
 			mem_stb = 1;
 			mem_we = 0;
-			load_mar = 1;
+//			load_mar = 1;
 			
 			if(lru_out == 0) begin
 				way0_write = 1;
@@ -149,8 +149,8 @@ begin : state_actions
 			mem_we = 1;
 			mem_cyc = 1;
 			mem_stb = 1;
-			load_mar = 1;
-			load_mdr = 1;
+//			load_mar = 1;
+//			load_mdr = 1;
 		end
 //		end
 		strobe: begin
