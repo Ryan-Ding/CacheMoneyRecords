@@ -29,6 +29,7 @@ vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/c
 vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/mem_enable_ctrl.sv}
 vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/ldi_sti_control.sv}
 vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/forwarding_unit.sv}
+vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/branch_detection..sv}
 vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/array.sv}
 vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache_datapath.sv}
 vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/cache_datapath.sv}

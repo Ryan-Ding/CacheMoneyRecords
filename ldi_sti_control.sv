@@ -72,6 +72,8 @@ begin
 				proceed = 1'b1;
 				next_state = first_access;
 			end
+			else
+				proceed = 1'b0;
 			
 			end
 			

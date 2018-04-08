@@ -1,4 +1,4 @@
-# do /tmp/tmp.xlUupb7OB0/do.do 
+# do /tmp/tmp.LzKvXESV3z/do.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -192,6 +192,14 @@
 # 
 # Top level modules:
 # 	forwarding_unit
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/branch_detection..sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package branch_detection__sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module branch_detection
+# 
+# Top level modules:
+# 	branch_detection
 # vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/array.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling package array_sv_unit
@@ -304,6 +312,8 @@
 # Loading work.mem_enable_ctrl
 # Loading work.forwarding_unit_sv_unit
 # Loading work.forwarding_unit
+# Loading work.branch_detection__sv_unit
+# Loading work.branch_detection
 # Loading work.cache_sv_unit
 # Loading work.cache
 # Loading work.cache_control
@@ -332,5 +342,5 @@
 #view signals
 # add list -radix hexadecimal {/mp3_tb/dut/datapath/regfile/data}
 # run 10000000ns
-# write list /tmp/tmp.xlUupb7OB0/test_list.lst
+# write list /tmp/tmp.LzKvXESV3z/test_list.lst
 # exit
