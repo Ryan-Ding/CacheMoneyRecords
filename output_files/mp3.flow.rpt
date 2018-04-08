@@ -1,5 +1,5 @@
 Flow report for mp3
-Sun Apr  1 23:34:33 2018
+Sun Apr  8 00:10:19 2018
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Full Version
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun Apr  1 23:34:33 2018       ;
+; Flow Status                     ; Successful - Sun Apr  8 00:10:18 2018       ;
 ; Quartus II 64-Bit Version       ; 15.0.2 Build 153 07/15/2015 SJ Full Version ;
 ; Revision Name                   ; mp3                                         ;
 ; Top-level Entity Name           ; mp3                                         ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/01/2018 23:34:03 ;
+; Start date & time ; 04/08/2018 00:09:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mp3                 ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 26830023663879.152264364355799        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 176831338140795.152316419318437       ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; mp3_tb         ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; mp3_tb                                ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                     ; --            ; --          ; eda_simulation ;
@@ -106,24 +106,24 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:28     ; 1.0                     ; 1256 MB             ; 00:00:32                           ;
-; Total                ; 00:00:28     ; --                      ; --                  ; 00:00:32                           ;
+; Analysis & Synthesis ; 00:00:24     ; 1.0                     ; 1257 MB             ; 00:00:35                           ;
+; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:35                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                                    ;
-+----------------------+------------------------------+--------------+--------------+----------------+
-; Module Name          ; Machine Hostname             ; OS Name      ; OS Version   ; Processor type ;
-+----------------------+------------------------------+--------------+--------------+----------------+
-; Analysis & Synthesis ; gelib-4c-44.ews.illinois.edu ; CentOS Linux ; CentOS Linux ; x86_64         ;
-+----------------------+------------------------------+--------------+--------------+----------------+
++-----------------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                                     ;
++----------------------+-------------------------------+--------------+--------------+----------------+
+; Module Name          ; Machine Hostname              ; OS Name      ; OS Version   ; Processor type ;
++----------------------+-------------------------------+--------------+--------------+----------------+
+; Analysis & Synthesis ; eceb-2022-15.ews.illinois.edu ; CentOS Linux ; CentOS Linux ; x86_64         ;
++----------------------+-------------------------------+--------------+--------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map mp3 -c mp3
+quartus_map --read_settings_files=on --write_settings_files=off mp3 -c mp3
 
 
 

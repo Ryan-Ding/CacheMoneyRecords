@@ -80,6 +80,17 @@ assign dat_i_mem = wb_cache_mem.DAT_S;
 assign mem_ack = wb_cache_mem.ACK;
 assign mem_rty = wb_cache_mem.RTY;
 
+lc3b_word cache_miss_counter;
+initial
+begin
+    cache_miss_counter = 0;
+end
+
+always_ff @ (posedge wb_cache_mem.CLK)
+begin
+    if (mem_ack)
+        cache_miss_counter++;
+end
 
 cache_control cache_controller
 (

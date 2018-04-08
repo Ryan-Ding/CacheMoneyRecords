@@ -1,0 +1,24 @@
+import lc3b_types::*;
+
+module incremental_counter
+(
+	 input clk,
+    input increment,
+    output logic [15:0] counet
+);
+
+initial
+begin
+    count = 16'b0;
+end
+
+always_ff @(negedge clk)
+begin
+    if (increment == 1)
+    begin
+       count++;
+    end
+end
+
+
+endmodule : add
