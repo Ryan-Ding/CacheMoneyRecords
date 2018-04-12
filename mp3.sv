@@ -12,11 +12,24 @@ wishbone dcache(pmem_master.CLK);
 wishbone l1l2cache(pmem_master.CLK);
 wishbone l2cachepmem(pmem_master.CLK);
 
+lc3b_word l2_miss_counter;
+lc3b_word l2_hit_counter;
+lc3b_word icache_miss_counter;
+lc3b_word icache_hit_counter;
+lc3b_word dcache_miss_counter;
+lc3b_word dcache_hit_counter;
+
 /* Instantiate MP 0 top level blocks here */
 datapath datapath
 (
 	.ifetch(ifetch),
-	.memory(memory)
+	.memory(memory),
+	.l2_miss_counter,
+	.l2_hit_counter,
+	.icache_miss_counter,
+	.icache_hit_counter,
+	.dcache_miss_counter,
+	.dcache_hit_counter
 
     /* declare more ports here */
 );
@@ -32,14 +45,18 @@ cache icache1
 (
 
 		.wb_cpu_cache(ifetch),
-		.wb_cache_mem(icache)
+		.wb_cache_mem(icache),
+		.l1_miss_counter(icache_miss_counter),
+		.l1_hit_counter(icache_hit_counter)
 );
 
 cache dcache1
 (
 
 		.wb_cpu_cache(memory),
-		.wb_cache_mem(dcache)
+		.wb_cache_mem(dcache),
+		.l1_miss_counter(dcache_miss_counter),
+		.l1_hit_counter(dcache_hit_counter)
 );
 
 cache_interconnect cache_interconnect
@@ -58,7 +75,9 @@ cache_interconnect cache_interconnect
 l2cache l2cache1
 (
 		.wb_cpu_cache(l1l2cache),
-		.wb_cache_mem(l2cachepmem)
+		.wb_cache_mem(l2cachepmem),
+		.l2_miss_counter,
+		.l2_hit_counter
 );
 
 endmodule : mp3

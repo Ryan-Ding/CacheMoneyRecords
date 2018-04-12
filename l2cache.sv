@@ -4,7 +4,9 @@ module l2cache
 (
 
 		wishbone.slave wb_cpu_cache,
-		wishbone.master wb_cache_mem
+		wishbone.master wb_cache_mem,
+		output lc3b_word l2_miss_counter,
+		output lc3b_word l2_hit_counter
 );
 
 
@@ -78,6 +80,21 @@ assign dat_i_mem = wb_cache_mem.DAT_S;
 assign mem_ack = wb_cache_mem.ACK;
 assign mem_rty = wb_cache_mem.RTY;
 
+lc3b_word l2_total_counter;
+assign l2_hit_counter = l2_total_counter - l2_miss_counter;
+initial 
+begin
+	l2_miss_counter = 0;
+	l2_total_counter = 0;
+end
+
+always_ff @ (posedge wb_cache_mem.CLK)
+begin
+    if (mem_ack && mem_cyc && !mem_we)
+        l2_miss_counter++;
+	 if (cpu_ack)
+		  l2_total_counter++;
+end
 
 l2cache_control l2cache_controller
 (

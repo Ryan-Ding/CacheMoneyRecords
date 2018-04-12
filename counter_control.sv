@@ -6,24 +6,37 @@ module counter_control
 	 input clk,
 	 input lc3b_word mem_address,
 	 input load_pc,
+	 input lc3b_word l2_miss_counter,
+	 input lc3b_word l2_hit_counter,
+	 input lc3b_word icache_miss_counter,
+	 input lc3b_word icache_hit_counter,
+	 input lc3b_word dcache_miss_counter,
+	 input lc3b_word dcache_hit_counter,
 	 input [1:0] br_ctrl_out,
 	 output logic counter_read_mux_sel,
 	 output lc3b_word counter_mux_out
 );
 
-logic [1:0] counter_mux_sel;
+logic [3:0] counter_mux_sel;
 
 always_comb
 begin
 	counter_read_mux_sel = 0;
-	counter_mux_sel = 2'b00;
-	if( mem_address > 16'hFFF0)
+	counter_mux_sel = 4'b00;
+	if( mem_address >= 16'hFFF0)
 		counter_read_mux_sel = 1;
-	case(mem_address)
-		16'hFFFF: counter_mux_sel = 2'b11;
-		16'hFFFE: counter_mux_sel = 2'b10;
-		16'hFFFD: counter_mux_sel = 2'b00;
-	endcase
+		case(mem_address)
+			16'hFFFF: counter_mux_sel = 4'b0011;
+			16'hFFFE: counter_mux_sel = 4'b0010;
+			16'hFFFD: counter_mux_sel = 4'b0000;
+			16'hFFF0: counter_mux_sel = 4'b0110;
+			16'hFFF1: counter_mux_sel = 4'b0111;
+			16'hFFF2: counter_mux_sel = 4'b1000;
+			16'hFFF3: counter_mux_sel = 4'b1001;
+			16'hFFF4: counter_mux_sel = 4'b1010;
+			16'hFFF5: counter_mux_sel = 4'b1011;
+			
+		endcase
 end
 
 lc3b_word total_instruction_count;
@@ -55,14 +68,26 @@ incremental_counter stall_counter
 	.count(stall_count)
 );
 
-mux4 #(.width(16)) counter_mux
+mux16 #(.width(16)) counter_mux
 (
 	.sel(counter_mux_sel),
 	.a(total_instruction_count),
 	.b(),
 	.c(total_branch_count),
 	.d(stall_count),
-	.f(counter_mux_out)
+	.e(),
+	.f(),
+	.g(l2_miss_counter),
+	.h(l2_hit_counter),
+	.i(icache_miss_counter),
+	.j(icache_hit_counter),
+	.k(dcache_miss_counter),
+	.l(dcache_hit_counter),
+	.m(),
+	.n(),
+	.o(),
+	.p(),
+	.out(counter_mux_out)
 );
 
 endmodule: counter_control
