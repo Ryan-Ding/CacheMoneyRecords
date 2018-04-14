@@ -1,20 +1,18 @@
-Fitter Status : Failed - Sat Apr  7 15:50:44 2018
-Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Full Version
+Fitter Status : Successful - Sun Apr  8 02:44:45 2018
+Quartus II 32-bit Version : 13.1.4 Build 182 03/12/2014 SJ Full Version
 Revision Name : mp3
 Top-level Entity Name : mp3
-Family : Cyclone V
-Device : 5CGXFC7C7F23C8
+Family : Stratix III
+Device : EP3SE80F1152C2
 Timing Models : Final
-Logic utilization (in ALMs) : 5,470 / 56,480 ( 10 % )
-Total registers : 7680
-Total pins : 290 / 268 ( 108 % )
+Logic utilization : 18 %
+    Combinational ALUTs : 4,335 / 64,000 ( 7 % )
+    Memory ALUTs : 0 / 32,000 ( 0 % )
+    Dedicated logic registers : 9,302 / 64,000 ( 15 % )
+Total registers : 9302
+Total pins : 290 / 744 ( 39 % )
 Total virtual pins : 0
-Total block memory bits : 2,192 / 7,024,640 ( < 1 % )
-Total RAM Blocks : 0 / 686 ( 0 % )
-Total DSP Blocks : 0 / 156 ( 0 % )
-Total HSSI RX PCSs : 0 / 6 ( 0 % )
-Total HSSI PMA RX Deserializers : 0 / 6 ( 0 % )
-Total HSSI TX PCSs : 0 / 6 ( 0 % )
-Total HSSI PMA TX Serializers : 0 / 6 ( 0 % )
-Total PLLs : 0 / 13 ( 0 % )
+Total block memory bits : 0 / 6,331,392 ( 0 % )
+DSP block 18-bit elements : 0 / 672 ( 0 % )
+Total PLLs : 0 / 8 ( 0 % )
 Total DLLs : 0 / 4 ( 0 % )

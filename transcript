@@ -1,4 +1,4 @@
-# do /tmp/tmp.LzKvXESV3z/do.do 
+# do /tmp/tmp.tov7tPhNM0/do.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -58,6 +58,14 @@
 # 	mux2
 # 	mux4
 # 	mux8
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/ewb_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package ewb_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module ewb_control
+# 
+# Top level modules:
+# 	ewb_control
 # vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/l2array.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling package l2array_sv_unit
@@ -200,6 +208,14 @@
 # 
 # Top level modules:
 # 	branch_detection
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/ewb_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package ewb_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module ewb_datapath
+# 
+# Top level modules:
+# 	ewb_datapath
 # vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/array.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling package array_sv_unit
@@ -240,6 +256,14 @@
 # 
 # Top level modules:
 # 	datapath
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/ewb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package ewb_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module ewb
+# 
+# Top level modules:
+# 	ewb
 # vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling package l2cache_sv_unit
@@ -270,8 +294,8 @@
 # Top level modules:
 # 	physical_memory
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  mp3_tb
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps mp3_tb 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiv_hssi_ver -L stratixiv_pcie_hip_ver -L stratixiv_ver -L rtl_work -L work -voptargs="+acc"  mp3_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiv_hssi_ver -L stratixiv_pcie_hip_ver -L stratixiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps mp3_tb 
 # Loading sv_std.std
 # Loading work.mp3_tb
 # Loading work.wishbone
@@ -335,6 +359,12 @@
 # Loading work.l2cache_datapath
 # Loading work.l2array_sv_unit
 # Loading work.l2array
+# Loading work.ewb_sv_unit
+# Loading work.ewb
+# Loading work.ewb_datapath_sv_unit
+# Loading work.ewb_datapath
+# Loading work.ewb_control_sv_unit
+# Loading work.ewb_control
 # Loading work.physical_memory
 # 
 #add wave *
@@ -342,5 +372,5 @@
 #view signals
 # add list -radix hexadecimal {/mp3_tb/dut/datapath/regfile/data}
 # run 10000000ns
-# write list /tmp/tmp.LzKvXESV3z/test_list.lst
+# write list /tmp/tmp.tov7tPhNM0/test_list.lst
 # exit

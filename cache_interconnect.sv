@@ -6,10 +6,10 @@ module cache_interconnect
 	wishbone.slave icache,
 	wishbone.slave dcache,
 	//wishbone between L1 cache and L2 cache 
-	wishbone.master l1l2cache,
+	wishbone.master l1l2cache
 	//wishbone between physical memory and L2 cache
-	wishbone.slave l2cachepmem,
-	wishbone.master pmem_master
+//	wishbone.slave l2cachepmem,
+//	wishbone.master pmem_master
 	
 );
 
@@ -87,23 +87,23 @@ assign l1l2cache.STB = l2cache_stb;
 assign l1l2cache.SEL = l2cache_sel;
 assign l1l2cache.ADR = l2cache_address;
 
-//L2 cache master l2cachepmem
-//l2cachepmem output
-assign pmem_master.DAT_M = l2cachepmem.DAT_M;
-assign pmem_master.CYC = l2cachepmem.CYC;
-assign pmem_master.STB = l2cachepmem.STB;
-assign pmem_master.WE = l2cachepmem.WE;
-assign pmem_master.SEL = l2cachepmem.SEL;
-assign pmem_master.ADR = l2cachepmem.ADR;
-//l2cachepmem input
-assign l2cachepmem.DAT_S = pmem_master.DAT_S;
-assign l2cachepmem.ACK = pmem_master.ACK;
-assign l2cachepmem.RTY = pmem_master.RTY;
-
-//pmem slave pmem_master
-assign pmem_ack = pmem_master.ACK;
-assign pmem_address = l2cachepmem.ADR;
-assign pmem_rdata = pmem_master.DAT_S;
+////L2 cache master l2cachepmem
+////l2cachepmem output
+//assign pmem_master.DAT_M = l2cachepmem.DAT_M;
+//assign pmem_master.CYC = l2cachepmem.CYC;
+//assign pmem_master.STB = l2cachepmem.STB;
+//assign pmem_master.WE = l2cachepmem.WE;
+//assign pmem_master.SEL = l2cachepmem.SEL;
+//assign pmem_master.ADR = l2cachepmem.ADR;
+////l2cachepmem input
+//assign l2cachepmem.DAT_S = pmem_master.DAT_S;
+//assign l2cachepmem.ACK = pmem_master.ACK;
+//assign l2cachepmem.RTY = pmem_master.RTY;
+//
+////pmem slave pmem_master
+//assign pmem_ack = pmem_master.ACK;
+//assign pmem_address = l2cachepmem.ADR;
+//assign pmem_rdata = pmem_master.DAT_S;
 
 
 cache_interconnect_control cache_interconnect_control

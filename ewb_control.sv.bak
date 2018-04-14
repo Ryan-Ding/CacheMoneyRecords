@@ -1,0 +1,28 @@
+import lc3b_types::*;
+
+module ewb_control
+(
+	input lc3b_line data_in,
+	input load_data,
+	input addr_in,
+	output lc3b_line data_out,
+	output lc3b_word addr_out
+);
+
+register #(.width(128)) ewb_data_reg
+(
+	.clk,
+	.load(load_data),
+	.in(data_in),
+	.out(data_out)
+);
+
+register #(.width(16)) ewb_addr_reg
+(
+	.clk,
+	.load(load_data),
+	.in(addr_in),
+	.out(addr_out)
+);
+ 
+endmodule : ewb_control

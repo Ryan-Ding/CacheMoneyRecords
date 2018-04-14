@@ -3,64 +3,57 @@ quietly WaveActivateNextPane {} 0
 add wave -noupdate /mp3_tb/clk
 add wave -noupdate /mp3_tb/clk
 add wave -noupdate /mp3_tb/clk
+add wave -noupdate /mp3_tb/clk
+add wave -noupdate /mp3_tb/clk
+add wave -noupdate /mp3_tb/clk
 add wave -noupdate /mp3_tb/dut/datapath/pc/in
 add wave -noupdate /mp3_tb/dut/datapath/pc/out
 add wave -noupdate /mp3_tb/dut/datapath/load_pc
 add wave -noupdate /mp3_tb/dut/datapath/proceed
 add wave -noupdate /mp3_tb/dut/datapath/icache_memrdata
-add wave -noupdate /mp3_tb/dut/datapath/regfile/data
+add wave -noupdate -expand /mp3_tb/dut/datapath/regfile/data
 add wave -noupdate /mp3_tb/dut/datapath/instruction_data
 add wave -noupdate /mp3_tb/dut/datapath/control_out
-add wave -noupdate /mp3_tb/dut/datapath/crtl_reg_id_ex_out
-add wave -noupdate /mp3_tb/dut/datapath/crtl_reg_ex_mem_out
-add wave -noupdate /mp3_tb/dut/datapath/crtl_reg_mem_wb_out
-add wave -noupdate -expand /mp3_tb/dut/datapath/branch_detection/br_ctrl_out
-add wave -noupdate /mp3_tb/dut/datapath/branch_detection/aluout_mem_wb_out
-add wave -noupdate /mp3_tb/dut/datapath/branch_detection/mem_data_mem_wb_out
-add wave -noupdate /mp3_tb/dut/datapath/branch_detection/predict_addr
-add wave -noupdate /mp3_tb/dut/datapath/branch_detection/flush
-add wave -noupdate /mp3_tb/dut/datapath/instructionmux/sel
-add wave -noupdate /mp3_tb/dut/datapath/instructionmux/a
-add wave -noupdate /mp3_tb/dut/datapath/instructionmux/b
-add wave -noupdate /mp3_tb/dut/datapath/instructionmux/f
-add wave -noupdate /mp3_tb/dut/dcache/DAT_M
-add wave -noupdate /mp3_tb/dut/dcache/DAT_S
-add wave -noupdate /mp3_tb/dut/dcache/ACK
-add wave -noupdate /mp3_tb/dut/datapath/mem_rdata
-add wave -noupdate /mp3_tb/dut/datapath/ldbmux/sel
-add wave -noupdate /mp3_tb/dut/datapath/ldbmux/a
-add wave -noupdate /mp3_tb/dut/datapath/ldbmux/b
-add wave -noupdate /mp3_tb/dut/datapath/ldbmux/f
-add wave -noupdate /mp3_tb/dut/datapath/mem_address
-add wave -noupdate /mp3_tb/dut/datapath/ldi_sti_control0/clk
-add wave -noupdate /mp3_tb/dut/datapath/ldi_sti_control0/mem_resp
-add wave -noupdate /mp3_tb/dut/datapath/ldi_sti_control0/opcode
-add wave -noupdate /mp3_tb/dut/datapath/ldi_sti_control0/proceed
-add wave -noupdate /mp3_tb/dut/datapath/ldi_sti_control0/ldi_addr_register_load
-add wave -noupdate /mp3_tb/dut/datapath/ldi_sti_control0/memaddrmux_sel
-add wave -noupdate /mp3_tb/dut/datapath/ldi_sti_control0/sti_WE
-add wave -noupdate /mp3_tb/dut/datapath/ldi_sti_control0/ldi_sti
-add wave -noupdate /mp3_tb/dut/datapath/ldi_sti_control0/mem_access
-add wave -noupdate /mp3_tb/dut/datapath/ldi_sti_control0/state
-add wave -noupdate /mp3_tb/dut/datapath/ldi_sti_control0/next_state
-add wave -noupdate /mp3_tb/dut/datapath/ldi_addr_register/clk
-add wave -noupdate /mp3_tb/dut/datapath/ldi_addr_register/load
-add wave -noupdate /mp3_tb/dut/datapath/ldi_addr_register/in
-add wave -noupdate /mp3_tb/dut/datapath/ldi_addr_register/out
-add wave -noupdate /mp3_tb/dut/datapath/ldi_addr_register/data
-add wave -noupdate /mp3_tb/dut/datapath/data_mem_in
-add wave -noupdate /mp3_tb/dut/datapath/memory/CLK
-add wave -noupdate /mp3_tb/dut/datapath/memory/DAT_M
-add wave -noupdate /mp3_tb/dut/datapath/memory/DAT_S
-add wave -noupdate /mp3_tb/dut/datapath/memory/ACK
-add wave -noupdate /mp3_tb/dut/datapath/memory/CYC
-add wave -noupdate /mp3_tb/dut/datapath/memory/STB
-add wave -noupdate /mp3_tb/dut/datapath/memory/RTY
-add wave -noupdate /mp3_tb/dut/datapath/memory/WE
-add wave -noupdate /mp3_tb/dut/datapath/memory/ADR
-add wave -noupdate /mp3_tb/dut/datapath/memory/SEL
+add wave -noupdate /mp3_tb/dut/l2cache1/l2cache_controller/state
+add wave -noupdate /mp3_tb/dut/ewb_l2_pmem/ewb_control/clk
+add wave -noupdate /mp3_tb/dut/ewb_l2_pmem/ewb_control/cpu_we
+add wave -noupdate /mp3_tb/dut/ewb_l2_pmem/ewb_control/mem_ack
+add wave -noupdate /mp3_tb/dut/ewb_l2_pmem/ewb_control/cpu_stb
+add wave -noupdate /mp3_tb/dut/ewb_l2_pmem/ewb_control/cpu_cyc
+add wave -noupdate /mp3_tb/dut/ewb_l2_pmem/ewb_control/cpu_ack
+add wave -noupdate /mp3_tb/dut/ewb_l2_pmem/ewb_control/mem_stb
+add wave -noupdate /mp3_tb/dut/ewb_l2_pmem/ewb_control/mem_cyc
+add wave -noupdate /mp3_tb/dut/ewb_l2_pmem/ewb_control/mem_we
+add wave -noupdate /mp3_tb/dut/ewb_l2_pmem/ewb_control/load_data
+add wave -noupdate /mp3_tb/dut/ewb_l2_pmem/ewb_control/datamux_sel
+add wave -noupdate /mp3_tb/dut/ewb_l2_pmem/ewb_control/state
+add wave -noupdate /mp3_tb/dut/ewb_l2_pmem/ewb_control/next_states
+add wave -noupdate /mp3_tb/dut/pmem_master/CLK
+add wave -noupdate /mp3_tb/dut/pmem_master/DAT_M
+add wave -noupdate /mp3_tb/dut/pmem_master/DAT_S
+add wave -noupdate /mp3_tb/dut/pmem_master/ACK
+add wave -noupdate /mp3_tb/dut/pmem_master/CYC
+add wave -noupdate /mp3_tb/dut/pmem_master/STB
+add wave -noupdate /mp3_tb/dut/pmem_master/RTY
+add wave -noupdate /mp3_tb/dut/pmem_master/WE
+add wave -noupdate /mp3_tb/dut/pmem_master/ADR
+add wave -noupdate /mp3_tb/dut/pmem_master/SEL
+add wave -noupdate /mp3_tb/dut/ewb_l2_pmem/ewb_datapath/ewb_data_reg/data
+add wave -noupdate /mp3_tb/dut/ewb_l2_pmem/ewb_datapath/ewb_addr_reg/data
+add wave -noupdate /mp3_tb/dut/l2ewb/CLK
+add wave -noupdate /mp3_tb/dut/l2ewb/DAT_M
+add wave -noupdate /mp3_tb/dut/l2ewb/DAT_S
+add wave -noupdate /mp3_tb/dut/l2ewb/ACK
+add wave -noupdate /mp3_tb/dut/l2ewb/CYC
+add wave -noupdate /mp3_tb/dut/l2ewb/STB
+add wave -noupdate /mp3_tb/dut/l2ewb/RTY
+add wave -noupdate /mp3_tb/dut/l2ewb/WE
+add wave -noupdate /mp3_tb/dut/l2ewb/ADR
+add wave -noupdate /mp3_tb/dut/l2ewb/SEL
+add wave -noupdate /mp3_tb/dut/ewb_l2_pmem/ewb_control/full
+add wave -noupdate /mp3_tb/dut/ewb_l2_pmem/ewb_control/next_full
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {14463235 ps} 0}
+WaveRestoreCursors {{Cursor 1} {1422992 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 417
 configure wave -valuecolwidth 308
@@ -76,4 +69,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {14318996 ps} {15173476 ps}
+WaveRestoreZoom {0 ps} {8203128 ps}

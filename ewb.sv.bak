@@ -1,0 +1,10 @@
+import lc3b_types::*;
+
+module ewb
+(
+	input lc3b_line data_in,
+	input load_data,
+
+);
+
+endmodule : ewb

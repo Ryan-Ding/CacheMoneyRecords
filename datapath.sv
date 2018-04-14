@@ -252,7 +252,7 @@ plus2 pc_plus2
 
 mux2 instructionmux
 (
-	.sel(ifetch.ACK && !br_ctrl_out),
+	.sel(ifetch.ACK && !flush),
 	.a(16'b0),
 	.b(icache_memrdata),
 	.f(instruction_data)
