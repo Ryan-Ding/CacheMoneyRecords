@@ -3,8 +3,14 @@ import lc3b_types::*;
 module datapath
 (
 	wishbone.master ifetch,
-	wishbone.master memory
-
+	wishbone.master memory,
+	input lc3b_word l2_miss_counter,
+	input lc3b_word l2_hit_counter,
+	input lc3b_word icache_miss_counter,
+	input lc3b_word icache_hit_counter,
+	input lc3b_word dcache_miss_counter,
+	input lc3b_word dcache_hit_counter
+	
     /* declare more ports here */
 );
 
@@ -13,7 +19,8 @@ logic clk;
 assign clk= ifetch.CLK;
 logic [1:0] mem_byte_enable;
 logic mem_resp;
-assign mem_resp = memory.ACK;
+logic counter_read_mux_sel;
+assign mem_resp = memory.ACK | counter_read_mux_sel;
 logic proceed;
 lc3b_word temp_address;
 
@@ -104,6 +111,8 @@ logic ldi_addr_register_load;
 logic memaddrmux_sel;
 logic sti_WE;
 lc3b_word memaddrmux_out;
+lc3b_word counter_out;
+lc3b_word counter_read_mux_out;
 lc3b_control_word crtl_reg_ex_mem_out;
 
 //mem_wb signals
@@ -157,8 +166,9 @@ assign memory.ADR = mem_address[15:4];
 assign temp_address = 2 * (mem_address[3:1]);
 assign memory.SEL = (16'b0000000000000011 & mem_byte_enable) << temp_address;
 assign memory.WE = crtl_reg_ex_mem_out.mem_write & sti_WE;
-assign memory.STB = crtl_reg_ex_mem_out.mem_write | crtl_reg_ex_mem_out.mem_read;
-assign memory.CYC = crtl_reg_ex_mem_out.mem_write | crtl_reg_ex_mem_out.mem_read;
+assign memory.STB = (crtl_reg_ex_mem_out.mem_write | crtl_reg_ex_mem_out.mem_read) & (!counter_read_mux_sel);
+assign memory.CYC = (crtl_reg_ex_mem_out.mem_write | crtl_reg_ex_mem_out.mem_read) & (!counter_read_mux_sel);
+
 
 assign is_even = !mem_address[0];
 
@@ -520,13 +530,31 @@ mux2 #(.width(16)) memaddrmux
 	.f(mem_address)
 );
 
-//mux2 #(.width(16)) memaddrmux
-//(
-//	.sel(memaddrmux_sel),
-//	.a(aluout_ex_mem_out),
-//	.b(mem_rdata),
-//	.f(memaddrmux_out)
-//);
+counter_control counter_control
+(
+	.clk,
+	.mem_address,
+	.load_pc,
+	.br_ctrl_out,
+	.flush,
+	.instruction(ir_mem_wb_out),
+	.l2_miss_counter,
+	.l2_hit_counter,
+	.icache_miss_counter,
+	.icache_hit_counter,
+	.dcache_miss_counter,
+	.dcache_hit_counter,
+	.counter_read_mux_sel,
+	.counter_mux_out(counter_out)
+);
+
+mux2 #(.width(16)) counter_read_mux
+(
+	.sel(counter_read_mux_sel),
+	.a(mem_rdata),
+	.b(counter_out),
+	.f(counter_read_mux_out)
+);
 
 ldi_sti_control ldi_sti_control0
 (
@@ -558,7 +586,7 @@ register #(.width(16)) ldi_addr_register
 mux2 #(.width(16)) ldbmux
 (
 	.sel(crtl_reg_ex_mem_out.ldbmux_sel),
-	.a(mem_rdata),
+	.a(counter_read_mux_out),
 	.b(mdrmask_out),
 	.f(ldbmux_out)
 );

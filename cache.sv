@@ -4,7 +4,9 @@ module cache
 (
 
 		wishbone.slave wb_cpu_cache,
-		wishbone.master wb_cache_mem
+		wishbone.master wb_cache_mem,
+		output lc3b_word l1_miss_counter,
+		output lc3b_word l1_hit_counter
 );
 
 
@@ -79,6 +81,22 @@ assign wb_cache_mem.ADR = adr_o_mem[15:4];
 assign dat_i_mem = wb_cache_mem.DAT_S;
 assign mem_ack = wb_cache_mem.ACK;
 assign mem_rty = wb_cache_mem.RTY;
+
+lc3b_word l1_total_counter;
+assign l1_hit_counter = l1_total_counter - l1_miss_counter;
+initial
+begin
+    l1_miss_counter = 0;
+	 l1_total_counter = 0;
+end
+
+always_ff @ (posedge wb_cache_mem.CLK)
+begin
+    if (mem_ack && mem_cyc && !mem_we)
+        l1_miss_counter++;
+	 if (cpu_ack)
+		  l1_total_counter++;
+end
 
 
 cache_control cache_controller
