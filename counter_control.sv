@@ -14,24 +14,55 @@ module counter_control
 	 input lc3b_word dcache_hit_counter,
 	 input [1:0] br_ctrl_out,
 	 input flush,
+	 input write,
 	 input lc3b_word instruction,
 	 output logic counter_read_mux_sel,
 	 output lc3b_word counter_mux_out
 );
 
 logic [3:0] counter_mux_sel;
+logic clear_stall_counter;
+logic clear_total_branch_counter;
+logic clear_total_instruction_counter;
+logic clear_misprediction_counter;
 
 always_comb
 begin
 	counter_read_mux_sel = 0;
 	counter_mux_sel = 4'b00;
+	clear_stall_counter = 0;
+	clear_total_branch_counter = 0;
+	clear_total_instruction_counter = 0;
+	clear_misprediction_counter = 0;
+	
+	
 	if( mem_address >= 16'hFFF0)
 		counter_read_mux_sel = 1;
 		case(mem_address)
-			16'hFFFF: counter_mux_sel = 4'b0011;
-			16'hFFFE: counter_mux_sel = 4'b0010;
-			16'hFFFD: counter_mux_sel = 4'b0000;
-			16'hFFFC: counter_mux_sel = 4'b0001;
+			16'hFFFF:
+			begin
+			if (load_pc && write)
+				clear_stall_counter = 1;
+			counter_mux_sel = 4'b0011;
+			end
+			16'hFFFE:
+			begin
+			if (load_pc && write)
+				clear_total_branch_counter = 1;
+			counter_mux_sel = 4'b0010;
+			end
+			16'hFFFD: 
+			begin
+			if (load_pc && write)
+				clear_total_instruction_counter = 1;
+			counter_mux_sel = 4'b0000;
+			end
+			16'hFFFC:
+			begin
+			if (load_pc && write)
+				clear_misprediction_counter = 1;
+			counter_mux_sel = 4'b0001;
+			end
 			16'hFFF0: counter_mux_sel = 4'b0110;
 			16'hFFF1: counter_mux_sel = 4'b0111;
 			16'hFFF2: counter_mux_sel = 4'b1000;
@@ -51,6 +82,7 @@ incremental_counter total_instruction_counter
 (
 	.clk,
 	.increment(load_pc),
+	.clear(clear_total_instruction_counter),
 	.count(total_instruction_count)
 );
 //incremental_counter misprediction_counter
@@ -63,6 +95,7 @@ incremental_counter total_branch_counter
 (
 	.clk,
 	.increment(load_pc & (flush | ((instruction[15:12] == op_br) & (instruction[11]|instruction[10]|instruction[9])))),
+	.clear(clear_total_branch_counter),
 	.count(total_branch_count)
 );
 
@@ -70,6 +103,7 @@ incremental_counter misprediction_counter
 (
 	.clk,
 	.increment(load_pc && flush),
+	.clear(clear_misprediction_counter),
 	.count(misprediction_count)
 );
 
@@ -77,6 +111,7 @@ incremental_counter stall_counter
 (
 	.clk,
 	.increment(!load_pc),
+	.clear(clear_stall_counter),
 	.count(stall_count)
 );
 

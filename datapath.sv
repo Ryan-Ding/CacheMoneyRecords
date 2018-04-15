@@ -537,6 +537,7 @@ counter_control counter_control
 	.load_pc,
 	.br_ctrl_out,
 	.flush,
+	.write(memory.WE),
 	.instruction(ir_mem_wb_out),
 	.l2_miss_counter,
 	.l2_hit_counter,

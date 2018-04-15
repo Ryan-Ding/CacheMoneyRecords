@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sun Apr 15 02:37:18 2018
+Analysis & Synthesis Status : Successful - Sun Apr 15 13:48:45 2018
 Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Full Version
 Revision Name : mp3
 Top-level Entity Name : mp3
 Family : Stratix IV
 Logic utilization : N/A
-    Combinational ALUTs : 4,870
+    Combinational ALUTs : 4,881
     Memory ALUTs : 0
     Dedicated logic registers : 9,614
 Total registers : 9614

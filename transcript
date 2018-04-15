@@ -1,4 +1,4 @@
-# do /tmp/tmp.EIwfo8410O/do.do 
+# do /tmp/tmp.uwpQeeVWW1/do.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -395,5 +395,5 @@
 #view signals
 # add list -radix hexadecimal {/mp3_tb/dut/datapath/regfile/data}
 # run 10000000ns
-# write list /tmp/tmp.EIwfo8410O/test_list.lst
+# write list /tmp/tmp.uwpQeeVWW1/test_list.lst
 # exit
