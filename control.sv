@@ -163,6 +163,7 @@ case(opcode)
 		ctrl.sr2mux_sel = 1'b1;
 		ctrl.mem_mar_sel=1'b1;
 		ctrl.sr1use = 1'b1;
+		ctrl.sr2use = 1'b1;
 	end
 	
 	op_ldi: begin
@@ -183,6 +184,7 @@ case(opcode)
 		ctrl.storemux_sel = 1'b1;
 		ctrl.mem_mar_sel=1'b1;
 		ctrl.sr1use = 1'b1;
+		ctrl.sr2use = 1'b1;
 	end
 	op_trap:begin
 		ctrl.destmux_sel = 1'b1;

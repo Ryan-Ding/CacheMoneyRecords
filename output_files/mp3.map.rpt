@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mp3
-Sun Apr 15 13:48:45 2018
+Tue Apr 17 19:50:02 2018
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Full Version
 
 
@@ -213,7 +213,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +-----------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status       ; Successful - Sun Apr 15 13:48:45 2018       ;
+; Analysis & Synthesis Status       ; Successful - Tue Apr 17 19:50:02 2018       ;
 ; Quartus II 64-Bit Version         ; 15.0.2 Build 153 07/15/2015 SJ Full Version ;
 ; Revision Name                     ; mp3                                         ;
 ; Top-level Entity Name             ; mp3                                         ;
@@ -328,7 +328,7 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
+; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -337,53 +337,52 @@ agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processors 2-4         ; < 0.1%      ;
-;     Processors 5-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                         ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
-; l2cache_datapath.sv              ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/l2cache_datapath.sv            ;         ;
-; l2cache_control.sv               ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/l2cache_control.sv             ;         ;
-; l2cache.sv                       ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/l2cache.sv                     ;         ;
-; l2array.sv                       ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/l2array.sv                     ;         ;
-; cpudatainmux.sv                  ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/cpudatainmux.sv                ;         ;
-; cache_interconnect_datapath.sv   ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/cache_interconnect_datapath.sv ;         ;
-; cache_interconnect_control.sv    ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/cache_interconnect_control.sv  ;         ;
-; cache_datapath.sv                ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/cache_datapath.sv              ;         ;
-; cache_interconnect.sv            ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/cache_interconnect.sv          ;         ;
-; cache.sv                         ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/cache.sv                       ;         ;
-; cache_control.sv                 ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/cache_control.sv               ;         ;
-; wishbone.sv                      ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/wishbone.sv                    ;         ;
-; lc3b_types.sv                    ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/lc3b_types.sv                  ;         ;
-; adj.sv                           ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/adj.sv                         ;         ;
-; alu.sv                           ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/alu.sv                         ;         ;
-; control.sv                       ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/control.sv                     ;         ;
-; datapath.sv                      ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/datapath.sv                    ;         ;
-; gencc.sv                         ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/gencc.sv                       ;         ;
-; mp3.sv                           ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/mp3.sv                         ;         ;
-; plus2.sv                         ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/plus2.sv                       ;         ;
-; regfile.sv                       ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/regfile.sv                     ;         ;
-; register.sv                      ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/register.sv                    ;         ;
-; cccomp.sv                        ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/cccomp.sv                      ;         ;
-; mux.sv                           ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/mux.sv                         ;         ;
-; br_ctrl.sv                       ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/br_ctrl.sv                     ;         ;
-; mdrmask.sv                       ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/mdrmask.sv                     ;         ;
-; srmask.sv                        ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/srmask.sv                      ;         ;
-; mem_enable_ctrl.sv               ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/mem_enable_ctrl.sv             ;         ;
-; ldi_sti_control.sv               ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/ldi_sti_control.sv             ;         ;
-; forwarding_unit.sv               ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/forwarding_unit.sv             ;         ;
-; branch_detection..sv             ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/branch_detection..sv           ;         ;
-; ewb_datapath.sv                  ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/ewb_datapath.sv                ;         ;
-; ewb_control.sv                   ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/ewb_control.sv                 ;         ;
-; ewb.sv                           ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/ewb.sv                         ;         ;
-; counter_control.sv               ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/counter_control.sv             ;         ;
-; incremental_counter.sv           ; yes             ; User SystemVerilog HDL File        ; /home/rding4/ece411/cachemoneyrecords/incremental_counter.sv         ;         ;
-; array.sv                         ; yes             ; Auto-Found SystemVerilog HDL File  ; /home/rding4/ece411/cachemoneyrecords/array.sv                       ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
+; l2cache_datapath.sv              ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache_datapath.sv            ;         ;
+; l2cache_control.sv               ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache_control.sv             ;         ;
+; l2cache.sv                       ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache.sv                     ;         ;
+; l2array.sv                       ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/l2array.sv                     ;         ;
+; cpudatainmux.sv                  ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/cpudatainmux.sv                ;         ;
+; cache_interconnect_datapath.sv   ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_interconnect_datapath.sv ;         ;
+; cache_interconnect_control.sv    ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_interconnect_control.sv  ;         ;
+; cache_datapath.sv                ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_datapath.sv              ;         ;
+; cache_interconnect.sv            ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_interconnect.sv          ;         ;
+; cache.sv                         ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/cache.sv                       ;         ;
+; cache_control.sv                 ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_control.sv               ;         ;
+; wishbone.sv                      ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/wishbone.sv                    ;         ;
+; lc3b_types.sv                    ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/lc3b_types.sv                  ;         ;
+; adj.sv                           ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/adj.sv                         ;         ;
+; alu.sv                           ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/alu.sv                         ;         ;
+; control.sv                       ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/control.sv                     ;         ;
+; datapath.sv                      ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/datapath.sv                    ;         ;
+; gencc.sv                         ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/gencc.sv                       ;         ;
+; mp3.sv                           ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/mp3.sv                         ;         ;
+; plus2.sv                         ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/plus2.sv                       ;         ;
+; regfile.sv                       ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/regfile.sv                     ;         ;
+; register.sv                      ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/register.sv                    ;         ;
+; cccomp.sv                        ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/cccomp.sv                      ;         ;
+; mux.sv                           ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/mux.sv                         ;         ;
+; br_ctrl.sv                       ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/br_ctrl.sv                     ;         ;
+; mdrmask.sv                       ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/mdrmask.sv                     ;         ;
+; srmask.sv                        ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/srmask.sv                      ;         ;
+; mem_enable_ctrl.sv               ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/mem_enable_ctrl.sv             ;         ;
+; ldi_sti_control.sv               ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/ldi_sti_control.sv             ;         ;
+; forwarding_unit.sv               ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/forwarding_unit.sv             ;         ;
+; branch_detection..sv             ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/branch_detection..sv           ;         ;
+; ewb_datapath.sv                  ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/ewb_datapath.sv                ;         ;
+; ewb_control.sv                   ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/ewb_control.sv                 ;         ;
+; ewb.sv                           ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/ewb.sv                         ;         ;
+; counter_control.sv               ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/counter_control.sv             ;         ;
+; incremental_counter.sv           ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/incremental_counter.sv         ;         ;
+; array.sv                         ; yes             ; Auto-Found SystemVerilog HDL File  ; /home/chaohua2/ece411/mp3/cachemoneyrecords/array.sv                       ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------------------+
@@ -2586,7 +2585,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:13     ;
+; Top            ; 00:00:12     ;
 +----------------+--------------+
 
 
@@ -2610,9 +2609,9 @@ Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: devices manufactured by Altera and sold by Altera or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Sun Apr 15 13:48:15 2018
+    Info: Processing started: Tue Apr 17 19:49:35 2018
 Info: Command: quartus_map mp3 -c mp3
-Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file l2cache_datapath.sv
     Info (12023): Found entity 1: l2cache_datapath
 Info (12021): Found 1 design units, including 1 entities, in source file l2cache_control.sv
@@ -2834,9 +2833,9 @@ Info (21057): Implemented 14311 device resources after synthesis - the final res
     Info (21059): Implemented 159 output pins
     Info (21061): Implemented 14021 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 39 warnings
-    Info: Peak virtual memory: 1276 megabytes
-    Info: Processing ended: Sun Apr 15 13:48:45 2018
-    Info: Elapsed time: 00:00:30
-    Info: Total CPU time (on all processors): 00:00:39
+    Info: Peak virtual memory: 1269 megabytes
+    Info: Processing ended: Tue Apr 17 19:50:02 2018
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:32
 
 
