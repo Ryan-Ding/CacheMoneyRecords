@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mp3
-Tue Apr 17 19:50:02 2018
+Tue Apr 17 23:58:46 2018
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Full Version
 
 
@@ -213,7 +213,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +-----------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status       ; Successful - Tue Apr 17 19:50:02 2018       ;
+; Analysis & Synthesis Status       ; Successful - Tue Apr 17 23:58:46 2018       ;
 ; Quartus II 64-Bit Version         ; 15.0.2 Build 153 07/15/2015 SJ Full Version ;
 ; Revision Name                     ; mp3                                         ;
 ; Top-level Entity Name             ; mp3                                         ;
@@ -328,7 +328,7 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
+; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -337,6 +337,7 @@ agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processors 2-4         ; < 0.1%      ;
+;     Processors 5-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -405,8 +406,8 @@ agreement for further details.
 ;     -- 7 input functions                      ; 1196                  ;
 ;     -- 6 input functions                      ; 2239                  ;
 ;     -- 5 input functions                      ; 622                   ;
-;     -- 4 input functions                      ; 128                   ;
-;     -- <=3 input functions                    ; 696                   ;
+;     -- 4 input functions                      ; 129                   ;
+;     -- <=3 input functions                    ; 695                   ;
 ;                                               ;                       ;
 ; Combinational ALUTs by mode                   ;                       ;
 ;     -- normal mode                            ; 3424                  ;
@@ -428,7 +429,7 @@ agreement for further details.
 ;                                               ;                       ;
 ; Maximum fan-out node                          ; pmem_master.CLK~input ;
 ; Maximum fan-out                               ; 9614                  ;
-; Total fan-out                                 ; 56639                 ;
+; Total fan-out                                 ; 56641                 ;
 ; Average fan-out                               ; 3.76                  ;
 +-----------------------------------------------+-----------------------+
 
@@ -859,88 +860,88 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |mp3|datapath:datapath|counter_control:counter_control|incremental_counter:total_instruction_counter|count[15] ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |mp3|datapath:datapath|counter_control:counter_control|incremental_counter:total_branch_counter|count[5]       ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |mp3|datapath:datapath|counter_control:counter_control|incremental_counter:misprediction_counter|count[13]     ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |mp3|datapath:datapath|counter_control:counter_control|incremental_counter:total_instruction_counter|count[12] ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |mp3|datapath:datapath|counter_control:counter_control|incremental_counter:total_branch_counter|count[13]      ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |mp3|datapath:datapath|counter_control:counter_control|incremental_counter:misprediction_counter|count[0]      ;
 ; 3:1                ; 4 bits    ; 8 ALUTs       ; 8 ALUTs              ; 0 ALUTs                ; Yes        ; |mp3|datapath:datapath|register:id_ex_reg|data[92]                                                             ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |mp3|datapath:datapath|counter_control:counter_control|incremental_counter:stall_counter|count[3]              ;
-; 4:1                ; 15 bits   ; 30 ALUTs      ; 30 ALUTs             ; 0 ALUTs                ; Yes        ; |mp3|datapath:datapath|register:pc|data[5]                                                                     ;
-; 18:1               ; 8 bits    ; 96 ALUTs      ; 48 ALUTs             ; 48 ALUTs               ; Yes        ; |mp3|datapath:datapath|register:mem_wb_reg|data[31]                                                            ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |mp3|datapath:datapath|counter_control:counter_control|incremental_counter:stall_counter|count[1]              ;
+; 4:1                ; 15 bits   ; 30 ALUTs      ; 30 ALUTs             ; 0 ALUTs                ; Yes        ; |mp3|datapath:datapath|register:pc|data[1]                                                                     ;
+; 18:1               ; 8 bits    ; 96 ALUTs      ; 48 ALUTs             ; 48 ALUTs               ; Yes        ; |mp3|datapath:datapath|register:mem_wb_reg|data[25]                                                            ;
 ; 9:1                ; 16 bits   ; 96 ALUTs      ; 80 ALUTs             ; 16 ALUTs               ; Yes        ; |mp3|datapath:datapath|register:if_id_reg|data[29]                                                             ;
-; 19:1               ; 8 bits    ; 96 ALUTs      ; 64 ALUTs             ; 32 ALUTs               ; Yes        ; |mp3|datapath:datapath|register:mem_wb_reg|data[16]                                                            ;
+; 19:1               ; 8 bits    ; 96 ALUTs      ; 64 ALUTs             ; 32 ALUTs               ; Yes        ; |mp3|datapath:datapath|register:mem_wb_reg|data[19]                                                            ;
 ; 19:1               ; 2 bits    ; 24 ALUTs      ; 22 ALUTs             ; 2 ALUTs                ; Yes        ; |mp3|datapath:datapath|register:ex_mem_reg|data[42]                                                            ;
 ; 20:1               ; 2 bits    ; 26 ALUTs      ; 24 ALUTs             ; 2 ALUTs                ; Yes        ; |mp3|datapath:datapath|register:ex_mem_reg|data[46]                                                            ;
 ; 22:1               ; 2 bits    ; 28 ALUTs      ; 24 ALUTs             ; 4 ALUTs                ; Yes        ; |mp3|datapath:datapath|register:ex_mem_reg|data[38]                                                            ;
 ; 22:1               ; 2 bits    ; 28 ALUTs      ; 24 ALUTs             ; 4 ALUTs                ; Yes        ; |mp3|datapath:datapath|register:ex_mem_reg|data[34]                                                            ;
 ; 3:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_control:l2cache_controller|way0_write                                            ;
-; 3:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_control:l2cache_controller|lru_in                                                ;
-; 3:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_control:cache_controller|way1_write                                                   ;
-; 3:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_control:cache_controller|lru_in                                                       ;
+; 3:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_control:l2cache_controller|datainmux_sel                                         ;
+; 3:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_control:cache_controller|way0_write                                                   ;
+; 3:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_control:cache_controller|datainmux_sel                                                ;
 ; 3:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_control:cache_controller|way1_write                                                   ;
 ; 3:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_control:cache_controller|datainmux_sel                                                ;
-; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |mp3|datapath:datapath|alu:alu|ShiftRight0                                                                     ;
-; 4:1                ; 17 bits   ; 34 ALUTs      ; 34 ALUTs             ; 0 ALUTs                ; No         ; |mp3|datapath:datapath|alu:alu|ShiftLeft0                                                                      ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:memaddrmux|f[14]                                 ;
-; 3:1                ; 9 bits    ; 18 ALUTs      ; 18 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:memaddrmux|f[13]                                        ;
-; 3:1                ; 9 bits    ; 18 ALUTs      ; 18 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:memaddrmux|f[15]                                        ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[5]                                   ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[13]                                  ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[18]                                  ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[25]                                  ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[32]                                  ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[44]                                  ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[49]                                  ;
+; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |mp3|datapath:datapath|alu:alu|ShiftLeft0                                                                      ;
+; 4:1                ; 17 bits   ; 34 ALUTs      ; 34 ALUTs             ; 0 ALUTs                ; No         ; |mp3|datapath:datapath|alu:alu|ShiftRight1                                                                     ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:memaddrmux|f[11]                                 ;
+; 3:1                ; 9 bits    ; 18 ALUTs      ; 18 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:memaddrmux|f[7]                                         ;
+; 3:1                ; 9 bits    ; 18 ALUTs      ; 18 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:memaddrmux|f[12]                                        ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[3]                                   ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[15]                                  ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[16]                                  ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[29]                                  ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[33]                                  ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[40]                                  ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[53]                                  ;
 ; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[56]                                  ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[67]                                  ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[66]                                  ;
 ; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[77]                                  ;
 ; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[80]                                  ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[95]                                  ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[103]                                 ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[105]                                 ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[119]                                 ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[126]                                 ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[2]                                          ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[10]                                         ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[88]                                  ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[98]                                  ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[104]                                 ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[112]                                 ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux|f[121]                                 ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[3]                                          ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[13]                                         ;
 ; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[16]                                         ;
 ; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[24]                                         ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[39]                                         ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[32]                                         ;
 ; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[40]                                         ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[49]                                         ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[56]                                         ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[70]                                         ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[79]                                         ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[84]                                         ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[93]                                         ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[96]                                         ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[111]                                        ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[112]                                        ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[125]                                        ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[48]                                         ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[61]                                         ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[64]                                         ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[73]                                         ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[85]                                         ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[88]                                         ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[101]                                        ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[104]                                        ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[117]                                        ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux|f[120]                                        ;
 ; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[1]                                          ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[8]                                          ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[16]                                         ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[30]                                         ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[37]                                         ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[47]                                         ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[48]                                         ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[57]                                         ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[11]                                         ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[21]                                         ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[31]                                         ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[39]                                         ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[45]                                         ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[50]                                         ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[59]                                         ;
 ; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[67]                                         ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[73]                                         ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[80]                                         ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[95]                                         ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[103]                                        ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[104]                                        ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[119]                                        ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[75]                                         ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[82]                                         ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[90]                                         ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[101]                                        ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[109]                                        ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[114]                                        ;
 ; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |mp3|cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux|f[126]                                        ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; No         ; |mp3|datapath:datapath|mux4:wbmux|f[12]                                                                        ;
-; 5:1                ; 7 bits    ; 21 ALUTs      ; 21 ALUTs             ; 0 ALUTs                ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[15]                                                                    ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; No         ; |mp3|datapath:datapath|mux4:forwardmuxsr1|f[4]                                                                 ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; No         ; |mp3|datapath:datapath|mux4:forwardmuxsr2|f[12]                                                                ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; No         ; |mp3|datapath:datapath|mux4:wbmux|f[0]                                                                         ;
+; 5:1                ; 7 bits    ; 21 ALUTs      ; 21 ALUTs             ; 0 ALUTs                ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[9]                                                                     ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; No         ; |mp3|datapath:datapath|mux4:forwardmuxsr1|f[8]                                                                 ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; No         ; |mp3|datapath:datapath|mux4:forwardmuxsr2|f[14]                                                                ;
 ; 6:1                ; 2 bits    ; 8 ALUTs       ; 4 ALUTs              ; 4 ALUTs                ; No         ; |mp3|datapath:datapath|ldi_sti_control:ldi_sti_control0|next_state.second_access                               ;
 ; 8:1                ; 16 bits   ; 80 ALUTs      ; 80 ALUTs             ; 0 ALUTs                ; No         ; |mp3|datapath:datapath|ShiftRight1                                                                             ;
-; 7:1                ; 2 bits    ; 8 ALUTs       ; 4 ALUTs              ; 4 ALUTs                ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[3]                                                                     ;
-; 8:1                ; 2 bits    ; 10 ALUTs      ; 8 ALUTs              ; 2 ALUTs                ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[8]                                                                     ;
-; 8:1                ; 5 bits    ; 25 ALUTs      ; 20 ALUTs             ; 5 ALUTs                ; No         ; |mp3|ewb:ewb_l2_pmem|ewb_control:ewb_control|Selector8                                                         ;
-; 8:1                ; 3 bits    ; 15 ALUTs      ; 9 ALUTs              ; 6 ALUTs                ; No         ; |mp3|cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|Selector0     ;
+; 7:1                ; 2 bits    ; 8 ALUTs       ; 4 ALUTs              ; 4 ALUTs                ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[2]                                                                     ;
+; 8:1                ; 2 bits    ; 10 ALUTs      ; 8 ALUTs              ; 2 ALUTs                ; No         ; |mp3|datapath:datapath|mux8:alumux8|out[7]                                                                     ;
+; 8:1                ; 5 bits    ; 25 ALUTs      ; 20 ALUTs             ; 5 ALUTs                ; No         ; |mp3|ewb:ewb_l2_pmem|ewb_control:ewb_control|Selector4                                                         ;
+; 8:1                ; 3 bits    ; 15 ALUTs      ; 9 ALUTs              ; 6 ALUTs                ; No         ; |mp3|cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control|Selector2     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------+
 
 
@@ -2567,9 +2568,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     normal            ; 3425                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 6                           ;
-;         2 data inputs ; 70                          ;
+;         2 data inputs ; 69                          ;
 ;         3 data inputs ; 375                         ;
-;         4 data inputs ; 128                         ;
+;         4 data inputs ; 129                         ;
 ;         5 data inputs ; 606                         ;
 ;         6 data inputs ; 2239                        ;
 ;     shared            ; 48                          ;
@@ -2585,7 +2586,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:12     ;
+; Top            ; 00:00:14     ;
 +----------------+--------------+
 
 
@@ -2609,9 +2610,9 @@ Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: devices manufactured by Altera and sold by Altera or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Tue Apr 17 19:49:35 2018
+    Info: Processing started: Tue Apr 17 23:58:16 2018
 Info: Command: quartus_map mp3 -c mp3
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file l2cache_datapath.sv
     Info (12023): Found entity 1: l2cache_datapath
 Info (12021): Found 1 design units, including 1 entities, in source file l2cache_control.sv
@@ -2833,9 +2834,9 @@ Info (21057): Implemented 14311 device resources after synthesis - the final res
     Info (21059): Implemented 159 output pins
     Info (21061): Implemented 14021 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 39 warnings
-    Info: Peak virtual memory: 1269 megabytes
-    Info: Processing ended: Tue Apr 17 19:50:02 2018
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:32
+    Info: Peak virtual memory: 1275 megabytes
+    Info: Processing ended: Tue Apr 17 23:58:46 2018
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:41
 
 

@@ -666,7 +666,7 @@ mem_enable_ctrl mem_enable_ctrl
 forwarding_unit forwarding_unit
 (
 	.if_id_sr1(ir_if_id_out[8:6]),
-	.if_id_sr2(ir_if_id_out[2:0]),
+	.if_id_sr2(storemux_out),
 	.id_ex_sr1(ir_id_ex_out[8:6]),
 	.id_ex_sr2,
 	.id_ex_dest(ir_id_ex_out[11:9]),
