@@ -37,6 +37,7 @@ lc3b_word icache_memrdata;
 lc3b_word instruction_mdr_out;
 logic load_instruction_mdr;
 lc3b_word pc_plus_reg_out;
+logic prediction_taken;
 
 //if_id signals
 logic [31:0] if_id_reg_out;
@@ -132,6 +133,7 @@ lc3b_nzp cc_out;
 logic branch_enable;
 logic[1:0] br_ctrl_out;
 logic is_even;
+logic wbisbranch;
 
 //forward signals
 logic forward_fetch_stall;
@@ -216,6 +218,9 @@ assign ir_mem_wb_out = mem_wb_reg_out[63:48];
 assign crtl_reg_mem_wb_out = mem_wb_reg_out[92:64];
 assign load_mem_wb_reg = pipeline_reg_load;
 
+//wb
+assign wbisbranch = (ir_mem_wb_out[15:12] == op_trap)|(ir_mem_wb_out[15:12] == op_jsr)|(ir_mem_wb_out[15:12] == op_jmp)|((ir_mem_wb_out[15:12] == op_br) & (ir_mem_wb_out[11]|ir_mem_wb_out[10]|ir_mem_wb_out[9]));
+
 mux4 pcmux(
 	.sel(br_ctrl_out),
 	.a(pc_plus2_out),
@@ -283,6 +288,18 @@ mux2 instructionmux
 //    .in(icache_memrdata),
 //    .out(instruction_mdr_out)
 //);
+
+//global branch predict
+global_br_predictor global_br_predictor
+(
+    .clk,
+    .if_pc(pc_out),
+	 .wb_pcplus2(pc_reg_mem_wb_out),
+    .wbisbranch,
+	 .actual_taken( (br_ctrl_out!=0) ),
+    .prediction_taken
+);
+
 
 //if_id pipeline register
 register #(.width(32)) if_id_reg

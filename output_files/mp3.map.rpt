@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mp3
-Tue Apr 17 23:58:46 2018
+Wed Apr 18 18:31:10 2018
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Full Version
 
 
@@ -27,166 +27,170 @@ Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Full Version
  19. Parameter Settings for User Entity Instance: datapath:datapath|register:pc
  20. Parameter Settings for User Entity Instance: datapath:datapath|plus2:pc_plus2
  21. Parameter Settings for User Entity Instance: datapath:datapath|mux2:instructionmux
- 22. Parameter Settings for User Entity Instance: datapath:datapath|register:if_id_reg
- 23. Parameter Settings for User Entity Instance: datapath:datapath|mux2:storemux
- 24. Parameter Settings for User Entity Instance: datapath:datapath|mux2:destmux
- 25. Parameter Settings for User Entity Instance: datapath:datapath|mux2:ir_id_mux
- 26. Parameter Settings for User Entity Instance: datapath:datapath|mux2:ctrl_id_mux
- 27. Parameter Settings for User Entity Instance: datapath:datapath|register:id_ex_reg
- 28. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj6
- 29. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj9
- 30. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj11
- 31. Parameter Settings for User Entity Instance: datapath:datapath|sext:sext6
- 32. Parameter Settings for User Entity Instance: datapath:datapath|sext:sext5
- 33. Parameter Settings for User Entity Instance: datapath:datapath|zext:zext4
- 34. Parameter Settings for User Entity Instance: datapath:datapath|mux4:forwardmuxsr2
- 35. Parameter Settings for User Entity Instance: datapath:datapath|mux8:alumux8
- 36. Parameter Settings for User Entity Instance: datapath:datapath|mux4:forwardmuxsr1
- 37. Parameter Settings for User Entity Instance: datapath:datapath|mux2:alumux2
- 38. Parameter Settings for User Entity Instance: datapath:datapath|mux2:sr2mux
- 39. Parameter Settings for User Entity Instance: datapath:datapath|mux4:aluoutmux
- 40. Parameter Settings for User Entity Instance: datapath:datapath|zext_shift:zextshf_8
- 41. Parameter Settings for User Entity Instance: datapath:datapath|mux2:storemuxex
- 42. Parameter Settings for User Entity Instance: datapath:datapath|mux2:ir_ex_mux
- 43. Parameter Settings for User Entity Instance: datapath:datapath|mux2:ctrl_ex_mux
- 44. Parameter Settings for User Entity Instance: datapath:datapath|register:ex_mem_reg
- 45. Parameter Settings for User Entity Instance: datapath:datapath|mux2:memaddrmux
- 46. Parameter Settings for User Entity Instance: datapath:datapath|counter_control:counter_control|mux16:counter_mux
- 47. Parameter Settings for User Entity Instance: datapath:datapath|mux2:counter_read_mux
- 48. Parameter Settings for User Entity Instance: datapath:datapath|register:ldi_addr_register
- 49. Parameter Settings for User Entity Instance: datapath:datapath|mux2:ldbmux
- 50. Parameter Settings for User Entity Instance: datapath:datapath|mux2:ir_mem_mux
- 51. Parameter Settings for User Entity Instance: datapath:datapath|mux2:ctrl_mem_mux
- 52. Parameter Settings for User Entity Instance: datapath:datapath|register:mem_wb_reg
- 53. Parameter Settings for User Entity Instance: datapath:datapath|mux4:wbmux
- 54. Parameter Settings for User Entity Instance: datapath:datapath|register:cc
- 55. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:data0
- 56. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:tag0
- 57. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:valid0
- 58. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:dirty0
- 59. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:data1
- 60. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:tag1
- 61. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:valid1
- 62. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:dirty1
- 63. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:lru
- 64. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:cpudatamux
- 65. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:memdatamux
- 66. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:tagmux
- 67. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:memaddrmux
- 68. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:dirtymux
- 69. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux
- 70. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux0
- 71. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux1
- 72. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux2
- 73. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux3
- 74. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux4
- 75. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux5
- 76. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux6
- 77. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux7
- 78. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux8
- 79. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux9
- 80. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux10
- 81. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux11
- 82. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux12
- 83. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux13
- 84. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux14
- 85. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux15
- 86. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:data0
- 87. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:tag0
- 88. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:valid0
- 89. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:dirty0
- 90. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:data1
- 91. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:tag1
- 92. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:valid1
- 93. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:dirty1
- 94. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:lru
- 95. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:cpudatamux
- 96. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:memdatamux
- 97. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:tagmux
- 98. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:memaddrmux
- 99. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:dirtymux
-100. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux
-101. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux0
-102. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux1
-103. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux2
-104. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux3
-105. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux4
-106. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux5
-107. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux6
-108. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux7
-109. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux8
-110. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux9
-111. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux10
-112. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux11
-113. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux12
-114. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux13
-115. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux14
-116. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux15
-117. Parameter Settings for User Entity Instance: cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath|mux2:l2wdatamux
-118. Parameter Settings for User Entity Instance: cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath|mux2:l2selmux
-119. Parameter Settings for User Entity Instance: cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath|mux2:l2adrmux
-120. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:data0
-121. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:tag0
-122. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:valid0
-123. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:dirty0
-124. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:data1
-125. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:tag1
-126. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:valid1
-127. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:dirty1
-128. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:lru
-129. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:cpudatamux
-130. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:memdatamux
-131. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:tagmux
-132. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:memaddrmux
-133. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:dirtymux
-134. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux
-135. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux0
-136. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux1
-137. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux2
-138. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux3
-139. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux4
-140. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux5
-141. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux6
-142. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux7
-143. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux8
-144. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux9
-145. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux10
-146. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux11
-147. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux12
-148. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux13
-149. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux14
-150. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux15
-151. Parameter Settings for User Entity Instance: ewb:ewb_l2_pmem|ewb_datapath:ewb_datapath|register:ewb_data_reg
-152. Parameter Settings for User Entity Instance: ewb:ewb_l2_pmem|ewb_datapath:ewb_datapath|register:ewb_addr_reg
-153. Parameter Settings for User Entity Instance: ewb:ewb_l2_pmem|ewb_datapath:ewb_datapath|mux2:datamux
-154. Parameter Settings for User Entity Instance: ewb:ewb_l2_pmem|ewb_datapath:ewb_datapath|mux2:addrmux
-155. Port Connectivity Checks: "ewb:ewb_l2_pmem|ewb_datapath:ewb_datapath"
-156. Port Connectivity Checks: "l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:memaddrmux"
-157. Port Connectivity Checks: "l2cache:l2cache1|l2cache_datapath:l2cache_datapath1"
-158. Port Connectivity Checks: "cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath"
-159. Port Connectivity Checks: "cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control"
-160. Port Connectivity Checks: "cache:icache1|cache_datapath:cache_datapath1|mux2:memaddrmux"
-161. Port Connectivity Checks: "cache:icache1|cache_datapath:cache_datapath1"
-162. Port Connectivity Checks: "datapath:datapath|forwarding_unit:forwarding_unit"
-163. Port Connectivity Checks: "datapath:datapath|mux4:wbmux"
-164. Port Connectivity Checks: "datapath:datapath|register:mem_wb_reg"
-165. Port Connectivity Checks: "datapath:datapath|mux2:ctrl_mem_mux"
-166. Port Connectivity Checks: "datapath:datapath|mux2:ir_mem_mux"
-167. Port Connectivity Checks: "datapath:datapath|counter_control:counter_control|mux16:counter_mux"
-168. Port Connectivity Checks: "datapath:datapath|mux2:ctrl_ex_mux"
-169. Port Connectivity Checks: "datapath:datapath|mux2:ir_ex_mux"
-170. Port Connectivity Checks: "datapath:datapath|mux4:aluoutmux"
-171. Port Connectivity Checks: "datapath:datapath|mux4:forwardmuxsr1"
-172. Port Connectivity Checks: "datapath:datapath|mux8:alumux8"
-173. Port Connectivity Checks: "datapath:datapath|mux4:forwardmuxsr2"
-174. Port Connectivity Checks: "datapath:datapath|mux2:ctrl_id_mux"
-175. Port Connectivity Checks: "datapath:datapath|mux2:ir_id_mux"
-176. Port Connectivity Checks: "datapath:datapath|mux2:destmux"
-177. Port Connectivity Checks: "datapath:datapath|mux2:instructionmux"
-178. Port Connectivity Checks: "datapath:datapath|mux4:pcmux"
-179. Post-Synthesis Netlist Statistics for Top Partition
-180. Elapsed Time Per Partition
-181. Analysis & Synthesis Messages
+ 22. Parameter Settings for User Entity Instance: datapath:datapath|global_br_predictor:global_br_predictor|pattern_hist_table:pattern_hist_table
+ 23. Parameter Settings for User Entity Instance: datapath:datapath|global_br_predictor:global_br_predictor|bhr:bhr
+ 24. Parameter Settings for User Entity Instance: datapath:datapath|register:if_id_reg
+ 25. Parameter Settings for User Entity Instance: datapath:datapath|mux2:storemux
+ 26. Parameter Settings for User Entity Instance: datapath:datapath|mux2:destmux
+ 27. Parameter Settings for User Entity Instance: datapath:datapath|mux2:ir_id_mux
+ 28. Parameter Settings for User Entity Instance: datapath:datapath|mux2:ctrl_id_mux
+ 29. Parameter Settings for User Entity Instance: datapath:datapath|register:id_ex_reg
+ 30. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj6
+ 31. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj9
+ 32. Parameter Settings for User Entity Instance: datapath:datapath|adj:adj11
+ 33. Parameter Settings for User Entity Instance: datapath:datapath|sext:sext6
+ 34. Parameter Settings for User Entity Instance: datapath:datapath|sext:sext5
+ 35. Parameter Settings for User Entity Instance: datapath:datapath|zext:zext4
+ 36. Parameter Settings for User Entity Instance: datapath:datapath|mux4:forwardmuxsr2
+ 37. Parameter Settings for User Entity Instance: datapath:datapath|mux8:alumux8
+ 38. Parameter Settings for User Entity Instance: datapath:datapath|mux4:forwardmuxsr1
+ 39. Parameter Settings for User Entity Instance: datapath:datapath|mux2:alumux2
+ 40. Parameter Settings for User Entity Instance: datapath:datapath|mux2:sr2mux
+ 41. Parameter Settings for User Entity Instance: datapath:datapath|mux4:aluoutmux
+ 42. Parameter Settings for User Entity Instance: datapath:datapath|zext_shift:zextshf_8
+ 43. Parameter Settings for User Entity Instance: datapath:datapath|mux2:storemuxex
+ 44. Parameter Settings for User Entity Instance: datapath:datapath|mux2:ir_ex_mux
+ 45. Parameter Settings for User Entity Instance: datapath:datapath|mux2:ctrl_ex_mux
+ 46. Parameter Settings for User Entity Instance: datapath:datapath|register:ex_mem_reg
+ 47. Parameter Settings for User Entity Instance: datapath:datapath|mux2:memaddrmux
+ 48. Parameter Settings for User Entity Instance: datapath:datapath|counter_control:counter_control|mux16:counter_mux
+ 49. Parameter Settings for User Entity Instance: datapath:datapath|mux2:counter_read_mux
+ 50. Parameter Settings for User Entity Instance: datapath:datapath|register:ldi_addr_register
+ 51. Parameter Settings for User Entity Instance: datapath:datapath|mux2:ldbmux
+ 52. Parameter Settings for User Entity Instance: datapath:datapath|mux2:ir_mem_mux
+ 53. Parameter Settings for User Entity Instance: datapath:datapath|mux2:ctrl_mem_mux
+ 54. Parameter Settings for User Entity Instance: datapath:datapath|register:mem_wb_reg
+ 55. Parameter Settings for User Entity Instance: datapath:datapath|mux4:wbmux
+ 56. Parameter Settings for User Entity Instance: datapath:datapath|register:cc
+ 57. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:data0
+ 58. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:tag0
+ 59. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:valid0
+ 60. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:dirty0
+ 61. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:data1
+ 62. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:tag1
+ 63. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:valid1
+ 64. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:dirty1
+ 65. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|array:lru
+ 66. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:cpudatamux
+ 67. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:memdatamux
+ 68. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:tagmux
+ 69. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:memaddrmux
+ 70. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:dirtymux
+ 71. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|mux2:datainmux
+ 72. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux0
+ 73. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux1
+ 74. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux2
+ 75. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux3
+ 76. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux4
+ 77. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux5
+ 78. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux6
+ 79. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux7
+ 80. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux8
+ 81. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux9
+ 82. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux10
+ 83. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux11
+ 84. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux12
+ 85. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux13
+ 86. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux14
+ 87. Parameter Settings for User Entity Instance: cache:icache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux15
+ 88. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:data0
+ 89. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:tag0
+ 90. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:valid0
+ 91. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:dirty0
+ 92. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:data1
+ 93. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:tag1
+ 94. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:valid1
+ 95. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:dirty1
+ 96. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|array:lru
+ 97. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:cpudatamux
+ 98. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:memdatamux
+ 99. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:tagmux
+100. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:memaddrmux
+101. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:dirtymux
+102. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|mux2:datainmux
+103. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux0
+104. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux1
+105. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux2
+106. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux3
+107. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux4
+108. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux5
+109. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux6
+110. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux7
+111. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux8
+112. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux9
+113. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux10
+114. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux11
+115. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux12
+116. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux13
+117. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux14
+118. Parameter Settings for User Entity Instance: cache:dcache1|cache_datapath:cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux15
+119. Parameter Settings for User Entity Instance: cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath|mux2:l2wdatamux
+120. Parameter Settings for User Entity Instance: cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath|mux2:l2selmux
+121. Parameter Settings for User Entity Instance: cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath|mux2:l2adrmux
+122. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:data0
+123. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:tag0
+124. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:valid0
+125. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:dirty0
+126. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:data1
+127. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:tag1
+128. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:valid1
+129. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:dirty1
+130. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|l2array:lru
+131. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:cpudatamux
+132. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:memdatamux
+133. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:tagmux
+134. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:memaddrmux
+135. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:dirtymux
+136. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:datainmux
+137. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux0
+138. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux1
+139. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux2
+140. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux3
+141. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux4
+142. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux5
+143. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux6
+144. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux7
+145. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux8
+146. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux9
+147. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux10
+148. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux11
+149. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux12
+150. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux13
+151. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux14
+152. Parameter Settings for User Entity Instance: l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|cpudatainmux:cpudatainmux1|mux2:cpudatainmux15
+153. Parameter Settings for User Entity Instance: ewb:ewb_l2_pmem|ewb_datapath:ewb_datapath|register:ewb_data_reg
+154. Parameter Settings for User Entity Instance: ewb:ewb_l2_pmem|ewb_datapath:ewb_datapath|register:ewb_addr_reg
+155. Parameter Settings for User Entity Instance: ewb:ewb_l2_pmem|ewb_datapath:ewb_datapath|mux2:datamux
+156. Parameter Settings for User Entity Instance: ewb:ewb_l2_pmem|ewb_datapath:ewb_datapath|mux2:addrmux
+157. Port Connectivity Checks: "ewb:ewb_l2_pmem|ewb_datapath:ewb_datapath"
+158. Port Connectivity Checks: "l2cache:l2cache1|l2cache_datapath:l2cache_datapath1|mux2:memaddrmux"
+159. Port Connectivity Checks: "l2cache:l2cache1|l2cache_datapath:l2cache_datapath1"
+160. Port Connectivity Checks: "cache_interconnect:cache_interconnect|cache_interconnect_datapath:cache_interconnect_datapath"
+161. Port Connectivity Checks: "cache_interconnect:cache_interconnect|cache_interconnect_control:cache_interconnect_control"
+162. Port Connectivity Checks: "cache:icache1|cache_datapath:cache_datapath1|mux2:memaddrmux"
+163. Port Connectivity Checks: "cache:icache1|cache_datapath:cache_datapath1"
+164. Port Connectivity Checks: "datapath:datapath|forwarding_unit:forwarding_unit"
+165. Port Connectivity Checks: "datapath:datapath|mux4:wbmux"
+166. Port Connectivity Checks: "datapath:datapath|register:mem_wb_reg"
+167. Port Connectivity Checks: "datapath:datapath|mux2:ctrl_mem_mux"
+168. Port Connectivity Checks: "datapath:datapath|mux2:ir_mem_mux"
+169. Port Connectivity Checks: "datapath:datapath|counter_control:counter_control|mux16:counter_mux"
+170. Port Connectivity Checks: "datapath:datapath|mux2:ctrl_ex_mux"
+171. Port Connectivity Checks: "datapath:datapath|mux2:ir_ex_mux"
+172. Port Connectivity Checks: "datapath:datapath|mux4:aluoutmux"
+173. Port Connectivity Checks: "datapath:datapath|mux4:forwardmuxsr1"
+174. Port Connectivity Checks: "datapath:datapath|mux8:alumux8"
+175. Port Connectivity Checks: "datapath:datapath|mux4:forwardmuxsr2"
+176. Port Connectivity Checks: "datapath:datapath|mux2:ctrl_id_mux"
+177. Port Connectivity Checks: "datapath:datapath|mux2:ir_id_mux"
+178. Port Connectivity Checks: "datapath:datapath|mux2:destmux"
+179. Port Connectivity Checks: "datapath:datapath|global_br_predictor:global_br_predictor|pattern_hist_table:pattern_hist_table"
+180. Port Connectivity Checks: "datapath:datapath|global_br_predictor:global_br_predictor"
+181. Port Connectivity Checks: "datapath:datapath|mux2:instructionmux"
+182. Port Connectivity Checks: "datapath:datapath|mux4:pcmux"
+183. Post-Synthesis Netlist Statistics for Top Partition
+184. Elapsed Time Per Partition
+185. Analysis & Synthesis Messages
 
 
 
@@ -213,7 +217,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +-----------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status       ; Successful - Tue Apr 17 23:58:46 2018       ;
+; Analysis & Synthesis Status       ; Successful - Wed Apr 18 18:31:10 2018       ;
 ; Quartus II 64-Bit Version         ; 15.0.2 Build 153 07/15/2015 SJ Full Version ;
 ; Revision Name                     ; mp3                                         ;
 ; Top-level Entity Name             ; mp3                                         ;
@@ -382,6 +386,10 @@ agreement for further details.
 ; ewb.sv                           ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/ewb.sv                         ;         ;
 ; counter_control.sv               ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/counter_control.sv             ;         ;
 ; incremental_counter.sv           ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/incremental_counter.sv         ;         ;
+; bhr.sv                           ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/bhr.sv                         ;         ;
+; pattern_hist_table.sv            ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/pattern_hist_table.sv          ;         ;
+; pht_update_ctrl.sv               ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/pht_update_ctrl.sv             ;         ;
+; global_br_predictor.sv           ; yes             ; User SystemVerilog HDL File        ; /home/chaohua2/ece411/mp3/cachemoneyrecords/global_br_predictor.sv         ;         ;
 ; array.sv                         ; yes             ; Auto-Found SystemVerilog HDL File  ; /home/chaohua2/ece411/mp3/cachemoneyrecords/array.sv                       ;         ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
 
@@ -982,6 +990,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------------------------+
 ; width          ; 16    ; Signed Integer                                            ;
 +----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|global_br_predictor:global_br_predictor|pattern_hist_table:pattern_hist_table ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------+
+; entry          ; 8     ; Signed Integer                                                                                                      ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:datapath|global_br_predictor:global_br_predictor|bhr:bhr ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; width          ; 4     ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2528,6 +2556,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+----------------------------------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:datapath|global_br_predictor:global_br_predictor|pattern_hist_table:pattern_hist_table" ;
++------------+--------+----------+--------------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                                    ;
++------------+--------+----------+--------------------------------------------------------------------------------------------+
+; pht_out[0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.        ;
++------------+--------+----------+--------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:datapath|global_br_predictor:global_br_predictor"                                      ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                             ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; prediction_taken ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-------------------------------------------------------------------+
 ; Port Connectivity Checks: "datapath:datapath|mux2:instructionmux" ;
 +------+-------+----------+-----------------------------------------+
@@ -2586,7 +2632,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:14     ;
+; Top            ; 00:00:12     ;
 +----------------+--------------+
 
 
@@ -2610,7 +2656,7 @@ Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: devices manufactured by Altera and sold by Altera or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Tue Apr 17 23:58:16 2018
+    Info: Processing started: Wed Apr 18 18:30:42 2018
 Info: Command: quartus_map mp3 -c mp3
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file l2cache_datapath.sv
@@ -2697,6 +2743,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file counter
     Info (12023): Found entity 1: counter_control
 Info (12021): Found 1 design units, including 1 entities, in source file incremental_counter.sv
     Info (12023): Found entity 1: incremental_counter
+Info (12021): Found 1 design units, including 1 entities, in source file bhr.sv
+    Info (12023): Found entity 1: bhr
+Info (12021): Found 1 design units, including 1 entities, in source file pattern_hist_table.sv
+    Info (12023): Found entity 1: pattern_hist_table
+Info (12021): Found 1 design units, including 1 entities, in source file pht_update_ctrl.sv
+    Info (12023): Found entity 1: pht_update_ctrl
+Info (12021): Found 1 design units, including 1 entities, in source file global_br_predictor.sv
+    Info (12023): Found entity 1: global_br_predictor
 Warning (10236): Verilog HDL Implicit Net warning at cache_interconnect_datapath.sv(31): created implicit net for "l1wdatamux_sel"
 Warning (10236): Verilog HDL Implicit Net warning at ewb.sv(42): created implicit net for "mem_rty"
 Info (12127): Elaborating entity "mp3" for the top level hierarchy
@@ -2704,16 +2758,20 @@ Info (12128): Elaborating entity "wishbone" for hierarchy "wishbone:ifetch"
 Info (12128): Elaborating entity "datapath" for hierarchy "datapath:datapath"
 Warning (10036): Verilog HDL or VHDL warning at datapath.sv(34): object "load_pcmar" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at datapath.sv(38): object "load_instruction_mdr" assigned a value but never read
-Warning (10230): Verilog HDL assignment warning at datapath.sv(166): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at datapath.sv(177): truncated value with size 128 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at datapath.sv(168): truncated value with size 32 to match size of target (16)
 Warning (10230): Verilog HDL assignment warning at datapath.sv(179): truncated value with size 128 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at datapath.sv(180): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at datapath.sv(181): truncated value with size 128 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at datapath.sv(182): truncated value with size 2 to match size of target (1)
 Warning (10034): Output port "ifetch.DAT_M" at datapath.sv(5) has no driver
 Warning (10034): Output port "ifetch.SEL" at datapath.sv(5) has no driver
 Info (12128): Elaborating entity "mux4" for hierarchy "datapath:datapath|mux4:pcmux"
 Info (12128): Elaborating entity "register" for hierarchy "datapath:datapath|register:pc"
 Info (12128): Elaborating entity "plus2" for hierarchy "datapath:datapath|plus2:pc_plus2"
 Info (12128): Elaborating entity "mux2" for hierarchy "datapath:datapath|mux2:instructionmux"
+Info (12128): Elaborating entity "global_br_predictor" for hierarchy "datapath:datapath|global_br_predictor:global_br_predictor"
+Info (12128): Elaborating entity "pattern_hist_table" for hierarchy "datapath:datapath|global_br_predictor:global_br_predictor|pattern_hist_table:pattern_hist_table"
+Info (12128): Elaborating entity "bhr" for hierarchy "datapath:datapath|global_br_predictor:global_br_predictor|bhr:bhr"
+Info (12128): Elaborating entity "pht_update_ctrl" for hierarchy "datapath:datapath|global_br_predictor:global_br_predictor|pht_update_ctrl:pht_update_ctrl"
 Info (12128): Elaborating entity "register" for hierarchy "datapath:datapath|register:if_id_reg"
 Info (12128): Elaborating entity "control_rom" for hierarchy "datapath:datapath|control_rom:control_rom"
 Info (12128): Elaborating entity "mux2" for hierarchy "datapath:datapath|mux2:storemux"
@@ -2834,9 +2892,9 @@ Info (21057): Implemented 14311 device resources after synthesis - the final res
     Info (21059): Implemented 159 output pins
     Info (21061): Implemented 14021 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 39 warnings
-    Info: Peak virtual memory: 1275 megabytes
-    Info: Processing ended: Tue Apr 17 23:58:46 2018
-    Info: Elapsed time: 00:00:30
-    Info: Total CPU time (on all processors): 00:00:41
+    Info: Peak virtual memory: 1280 megabytes
+    Info: Processing ended: Wed Apr 18 18:31:10 2018
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:36
 
 

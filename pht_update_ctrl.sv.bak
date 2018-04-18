@@ -1,0 +1,32 @@
+import lc3b_types::*;
+
+module pht_update_ctrl #(parameter entry = 8)
+(
+    input clk,
+    input pc,
+    input [1:0] in,
+    input [entry-1:0] index,
+    output logic [1:0] prediction_taken
+);
+
+
+
+pattern_hist_table #(.entry (8)) pattern_hist_table
+(
+    .clk,
+    .load,
+    .in(pht_update_taken),
+    .index({pc[3:0],bhrout[3:0]} ),
+    .prediction_taken
+);
+
+bhr #(.width (4) ) bhr
+(
+    .clk,
+    .isbranch,
+    .taken(actual_taken),
+    .bhrout
+);
+
+
+endmodule : pht_update_ctrl
