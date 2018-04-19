@@ -29,7 +29,7 @@ pattern_hist_table #(.entry (8)) meta_table
     .load(wbisbranch),
     .in(meta_update),
     .read_index(if_pc[7:0] ),
-	 .write_index(wb_pc[3:0] ),
+	 .write_index(wb_pc[7:0] ),
     .pht_out(meta_pred), //read
 	 .current_state //write output
 );

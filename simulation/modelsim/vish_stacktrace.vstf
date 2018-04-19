@@ -144,3 +144,36 @@
 # 34   0xf7c21a3e: '_libc_start_main + 0xee' in '/lib/libc.so.6'
 # End of Stack Trace
 
+# Current time Thu Apr 19 00:35:38 2018
+# ModelSim Stack Trace
+# Program = vish
+# Id = "10.3d"
+# Version = "2014.10"
+# Date = "Oct  7 2014"
+# Platform = linuxpe
+# 0    0x0839653e: 'wlfiScan + 0x38e' in '/software/quartus-15.0/modelsim_ae/linuxaloem/vish'
+# 1    0x082ade40: 'wlfiGetDataRange + 0x1a0' in '/software/quartus-15.0/modelsim_ae/linuxaloem/vish'
+# 2    0x082946ec: '<unknown (@0x82946ec)>'
+# 3    0x08218c9a: 'ts_wave_update + 0x49a' in '/software/quartus-15.0/modelsim_ae/linuxaloem/vish'
+# 4    0x08288394: '<unknown (@0x8288394)>'
+# 5    0x0855bc9b: 'TclServiceIdle + 0x3b' in '/software/quartus-15.0/modelsim_ae/linuxaloem/vish'
+# 6    0x0853b9dc: 'Tcl_DoOneEvent + 0x17c' in '/software/quartus-15.0/modelsim_ae/linuxaloem/vish'
+# 7    0x0848e303: '<unknown (@0x848e303)>'
+# 8    0x084bc47d: '<unknown (@0x84bc47d)>'
+# 9    0x084bdf36: '<unknown (@0x84bdf36)>'
+# 10   0x084be525: 'Tcl_EvalEx + 0x35' in '/software/quartus-15.0/modelsim_ae/linuxaloem/vish'
+# 11   0x084be98c: 'TclEvalObjEx + 0x3fc' in '/software/quartus-15.0/modelsim_ae/linuxaloem/vish'
+# 12   0x084c59f2: '<unknown (@0x84c59f2)>'
+# 13   0x084bc47d: '<unknown (@0x84bc47d)>'
+# 14   0x0850509a: '<unknown (@0x850509a)>'
+# 15   0x0854ca85: 'TclObjInterpProcCore + 0x115' in '/software/quartus-15.0/modelsim_ae/linuxaloem/vish'
+# 16   0x0854d022: 'TclObjInterpProc + 0x62' in '/software/quartus-15.0/modelsim_ae/linuxaloem/vish'
+# 17   0x084bc47d: '<unknown (@0x84bc47d)>'
+# 18   0x0850509a: '<unknown (@0x850509a)>'
+# 19   0x0850da3c: '<unknown (@0x850da3c)>'
+# 20   0x084be5fc: 'TclEvalObjEx + 0x6c' in '/software/quartus-15.0/modelsim_ae/linuxaloem/vish'
+# 21   0x084bea96: 'Tcl_EvalObjEx + 0x36' in '/software/quartus-15.0/modelsim_ae/linuxaloem/vish'
+# 22   0xf7604eac: 'Itcl_EvalMemberCode + 0x3cc' in '/software/quartus-15.0/quartus/../modelsim_ae/linuxaloem/itcl3.4/libitcl3.4.so'
+# 23   0x0a764c5b: '<unknown (@0xa764c5b)>'
+# 24   0x09720f9b: '<unknown (@0x9720f9b)>'
+# 25   0x6863725c: '<unknown (@0x6863725c)>'

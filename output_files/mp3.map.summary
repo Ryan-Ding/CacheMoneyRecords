@@ -1,16 +1,16 @@
-Analysis & Synthesis Status : Successful - Wed Apr 18 23:57:08 2018
+Analysis & Synthesis Status : Successful - Thu Apr 19 02:19:14 2018
 Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Full Version
 Revision Name : mp3
 Top-level Entity Name : mp3
 Family : Stratix IV
 Logic utilization : N/A
-    Combinational ALUTs : 4,881
+    Combinational ALUTs : 5,552
     Memory ALUTs : 0
-    Dedicated logic registers : 9,614
-Total registers : 9614
+    Dedicated logic registers : 10,490
+Total registers : 10490
 Total pins : 290
 Total virtual pins : 0
-Total block memory bits : 0
+Total block memory bits : 992
 DSP block 18-bit elements : 0
 Total GXB Receiver Channel PCS : 0
 Total GXB Receiver Channel PMA : 0

@@ -1,4 +1,4 @@
-# do /tmp/tmp.3SmM5NRQlK/do.do 
+# do /tmp/tmp.FwzEv95bP6/do.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -6,6 +6,30 @@
 # vmap work rtl_work
 # Modifying modelsim.ini
 # 
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/comparator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator
+# 
+# Top level modules:
+# 	comparator
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/btb_sel.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module btb_sel
+# 
+# Top level modules:
+# 	btb_sel
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/btb_lru_state.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module btb_lru_state
+# 
+# Top level modules:
+# 	btb_lru_state
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/btb_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module btb_control
+# 
+# Top level modules:
+# 	btb_control
 # vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache_control.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module l2cache_control
@@ -96,6 +120,22 @@
 # 
 # Top level modules:
 # 	pht_update_ctrl
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/btb_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package btb_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module btb_datapath
+# 
+# Top level modules:
+# 	btb_datapath
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/btb_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package btb_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module btb_array
+# 
+# Top level modules:
+# 	btb_array
 # vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/l2array.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling package l2array_sv_unit
@@ -254,6 +294,22 @@
 # 
 # Top level modules:
 # 	global_br_predictor
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/local_br_predictor.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package local_br_predictor_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module local_br_predictor
+# 
+# Top level modules:
+# 	local_br_predictor
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/choice_predictor.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package choice_predictor_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module choice_predictor
+# 
+# Top level modules:
+# 	choice_predictor
 # vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/array.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling package array_sv_unit
@@ -262,6 +318,14 @@
 # 
 # Top level modules:
 # 	array
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/btb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package btb_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module btb
+# 
+# Top level modules:
+# 	btb
 # vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache_datapath.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling package l2cache_datapath_sv_unit
@@ -286,14 +350,6 @@
 # 
 # Top level modules:
 # 	cache_interconnect
-# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/datapath.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package datapath_sv_unit
-# -- Importing package lc3b_types
-# -- Compiling module datapath
-# 
-# Top level modules:
-# 	datapath
 # vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/ewb.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling package ewb_sv_unit
@@ -318,6 +374,14 @@
 # 
 # Top level modules:
 # 	cache
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
 # vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/mp3.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling package mp3_sv_unit
@@ -354,12 +418,26 @@
 # Loading work.register
 # Loading work.plus2
 # Loading work.mux2
+# Loading work.btb_sv_unit
+# Loading work.btb
+# Loading work.btb_datapath_sv_unit
+# Loading work.btb_datapath
+# Loading work.btb_sel
+# Loading work.btb_array_sv_unit
+# Loading work.btb_array
+# Loading work.btb_lru_state
+# Loading work.comparator
+# Loading work.btb_control
 # Loading work.global_br_predictor_sv_unit
 # Loading work.global_br_predictor
 # Loading work.pattern_hist_table
 # Loading work.bhr
 # Loading work.pht_update_ctrl_sv_unit
 # Loading work.pht_update_ctrl
+# Loading work.local_br_predictor_sv_unit
+# Loading work.local_br_predictor
+# Loading work.choice_predictor_sv_unit
+# Loading work.choice_predictor
 # Loading work.control_sv_unit
 # Loading work.control_rom
 # Loading work.regfile_sv_unit
@@ -428,6 +506,6 @@
 #view structure
 #view signals
 # add list -radix hexadecimal {/mp3_tb/dut/datapath/regfile/data}
-# run 50000000ns
-# write list /tmp/tmp.3SmM5NRQlK/test_list.lst
+# run 10000000ns
+# write list /tmp/tmp.FwzEv95bP6/test_list.lst
 # exit

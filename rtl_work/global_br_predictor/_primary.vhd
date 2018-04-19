@@ -7,6 +7,7 @@ entity global_br_predictor is
         wb_pcplus2      : in     vl_logic_vector(15 downto 0);
         wbisbranch      : in     vl_logic;
         actual_taken    : in     vl_logic;
-        prediction_taken: out    vl_logic
+        gl_pred_taken   : out    vl_logic;
+        gl_pred_correct : out    vl_logic
     );
 end global_br_predictor;

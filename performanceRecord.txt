@@ -1,0 +1,15 @@
+performance record
+
+04/19 baseline
+competiton 1:
+1215605ns
+
+
+competition 2:
+
+
+competition 3:
+
+
+
+

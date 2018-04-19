@@ -43,6 +43,9 @@ logic lc_pred_taken;
 logic lc_pred_correct;
 logic gl_pred_correct;
 logic pred_select;
+lc3b_word pred_addr;
+logic btb_hit;
+logic [1:0] pcmux_sel;
 
 //if_id signals
 logic [31:0] if_id_reg_out;
@@ -226,12 +229,24 @@ assign load_mem_wb_reg = pipeline_reg_load;
 //wb
 assign wbisbranch = (ir_mem_wb_out[15:12] == op_trap)|(ir_mem_wb_out[15:12] == op_jsr)|(ir_mem_wb_out[15:12] == op_jmp)|((ir_mem_wb_out[15:12] == op_br) & (ir_mem_wb_out[11]|ir_mem_wb_out[10]|ir_mem_wb_out[9]));
 
+//pcmux selection signals
+always_comb
+begin
+
+if(flush)
+	pcmux_sel = br_ctrl_out;
+else if (gl_pred_taken && btb_hit )
+	pcmux_sel = 2'b11;
+else pcmux_sel = 0;
+
+end
+
 mux4 pcmux(
-	.sel(br_ctrl_out),
+	.sel(pcmux_sel),
 	.a(pc_plus2_out),
 	.b(aluout_mem_wb_out),
 	.c(mem_data_mem_wb_out),
-	.d(),
+	.d(pred_addr),
 	.f(pcmux_out)
 );
 
@@ -243,25 +258,6 @@ register pc
     .in(pcmux_out),
     .out(pc_out)
 );
-
-//register pcmar
-//(
-//    .clk,
-//    .load(load_pcmar),
-//    .in(pcmux_out),
-//    .out(pcreg_out)
-//);
-//
-//logic pcoutmux_sel;
-//assign pcoutmux_sel = (pcreg_out != pc_out) & ifetch.ACK;
-//
-//mux2 pcoutmux
-//(
-//	.sel(pcoutmux_sel),
-//	.a(pc_out),
-//	.b(pcreg_out),
-//	.f(pcoutmux_out)
-//); 
 
 
 plus2 pc_plus2
@@ -278,21 +274,19 @@ mux2 instructionmux
 	.f(instruction_data)
 ); 
 
-//register pc_plus_reg
-//(
-//    .clk,
-//    .load(load_instruction_mdr),
-//    .in(pc_plus2_out),
-//    .out(pc_plus_reg_out)
-//);
+btb btb
+(
+   .clk,
+	.branch_instruction(),
+	.pc_addr(pc_out),
+	.wb_addr(pcmux_out),
+	.old_pc_addr(pc_reg_mem_wb_out - 2'd2),
+	.wb_enable(wbisbranch),
+	.btb_out(pred_addr),
+	.pc_hit(btb_hit)
 
-//register instruction_mdr
-//(
-//    .clk,
-//    .load(load_instruction_mdr),
-//    .in(icache_memrdata),
-//    .out(instruction_mdr_out)
-//);
+    /* declare more ports here */
+);
 
 //global branch predict
 global_br_predictor global_br_predictor
@@ -305,7 +299,7 @@ global_br_predictor global_br_predictor
     .gl_pred_taken,
 	 .gl_pred_correct
 );
-
+//local 
 local_br_predictor local_br_predictor
 (
     .clk,
@@ -316,7 +310,7 @@ local_br_predictor local_br_predictor
     .lc_pred_taken,
 	 .lc_pred_correct
 );
-
+//meta predictor
 choice_predictor choice_predictor
 (
     .clk,
@@ -327,14 +321,15 @@ choice_predictor choice_predictor
 	 .gl_pred_correct,
 	 .pred_select
 );
-
-mux2 br_pred_mux
+//selection 
+mux2 #(.width(1)) br_pred_mux
 (
 	.sel(pred_select),
 	.a(lc_pred_taken),
 	.b(gl_pred_taken),
 	.f(prediction_taken)
 );
+
 
 //if_id pipeline register
 register #(.width(32)) if_id_reg
@@ -741,11 +736,11 @@ forwarding_unit forwarding_unit
 
 branch_detection branch_detection
 (
-    .br_ctrl_out,
     .aluout_mem_wb_out(aluout_mem_wb_out),
 	 .mem_data_mem_wb_out,
 	 .predict_addr(pc_reg_ex_mem_out),
-    .flush
+    .flush,
+	 .wbisbranch
 );
 
 
