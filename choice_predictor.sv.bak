@@ -1,14 +1,15 @@
 import lc3b_types::*;
 
-module global_br_predictor
+module choice_predictor
 (
     input clk,
     input lc3b_word if_pc,
 	 input lc3b_word wb_pcplus2,
     input wbisbranch,
 	 input actual_taken,
-    output logic gl_pred_taken,
-	 output logic gl_pred_correct
+    input lc_pred_correct,
+	 input gl_pred_correct,
+	 output 
 );
 
 lc3b_word wb_pc;
@@ -20,7 +21,6 @@ logic [1:0] pht_out;
 
 assign wb_pc = wb_pcplus2 - 4'h2;
 assign gl_pred_taken = pht_out[1];
-assign gl_pred_correct = (current_state[1] == actual_taken);
 
 pattern_hist_table #(.entry (8)) pattern_hist_table
 (
@@ -50,4 +50,4 @@ pht_update_ctrl pht_update_ctrl
 );
 
 
-endmodule : global_br_predictor
+endmodule : choice_predictor

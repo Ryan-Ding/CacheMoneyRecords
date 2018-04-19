@@ -38,6 +38,11 @@ lc3b_word instruction_mdr_out;
 logic load_instruction_mdr;
 lc3b_word pc_plus_reg_out;
 logic prediction_taken;
+logic gl_pred_taken;
+logic lc_pred_taken;
+logic lc_pred_correct;
+logic gl_pred_correct;
+logic pred_select;
 
 //if_id signals
 logic [31:0] if_id_reg_out;
@@ -297,9 +302,39 @@ global_br_predictor global_br_predictor
 	 .wb_pcplus2(pc_reg_mem_wb_out),
     .wbisbranch,
 	 .actual_taken( (br_ctrl_out!=0) ),
-    .prediction_taken
+    .gl_pred_taken,
+	 .gl_pred_correct
 );
 
+local_br_predictor local_br_predictor
+(
+    .clk,
+    .if_pc(pc_out),
+	 .wb_pcplus2(pc_reg_mem_wb_out),
+    .wbisbranch,
+	 .actual_taken( (br_ctrl_out!=0) ),
+    .lc_pred_taken,
+	 .lc_pred_correct
+);
+
+choice_predictor choice_predictor
+(
+    .clk,
+    .if_pc(pc_out),
+	 .wb_pcplus2(pc_reg_mem_wb_out),
+    .wbisbranch,
+    .lc_pred_correct,
+	 .gl_pred_correct,
+	 .pred_select
+);
+
+mux2 br_pred_mux
+(
+	.sel(pred_select),
+	.a(lc_pred_taken),
+	.b(gl_pred_taken),
+	.f(prediction_taken)
+);
 
 //if_id pipeline register
 register #(.width(32)) if_id_reg

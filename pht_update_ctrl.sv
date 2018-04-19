@@ -4,7 +4,7 @@ module pht_update_ctrl
 (
     input clk,
     input actual_taken,
-	 input [1:0] state,
+	 input [1:0] current_state,
     output logic [1:0] next_states
 );
 
@@ -13,8 +13,8 @@ always_comb
 begin : next_state_logic
     /* Next state information and conditions (if any)
      * for transitioning between states */
-	next_states = state;
-	case(state)
+	next_states = current_state;
+	case(current_state)
 		2'b10: //wt:
 			if(actual_taken) next_states = 2'b11;
 			else next_states = 2'b01;

@@ -52,7 +52,8 @@ vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/c
 
 vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiv_hssi_ver -L stratixiv_pcie_hip_ver -L stratixiv_ver -L rtl_work -L work -voptargs="+acc"  mp3_tb
 
-add wave *
-view structure
-view signals
+#add wave *
+#view structure
+#view signals
 run 20000 ns
+quit -f

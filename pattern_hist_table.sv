@@ -18,11 +18,11 @@ initial
 begin
     for (int i = 0; i < $size(data); i++)
     begin
-        data[i] = 2'b0;
+        data[i] = 2'b01;
     end
 end
 
-always_ff @(negedge clk)
+always_ff @(posedge clk)
 begin
     if (load == 1)
     begin
