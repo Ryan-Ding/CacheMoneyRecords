@@ -1,0 +1,77 @@
+import lc3b_types::*;
+
+module l2cache
+(
+);
+
+array #(.width(16)) data0
+(
+    .clk(clk),
+    .write(way0_write),
+    .index(adr_i_cpu[6:4]),
+    .datain(datainmux_out),
+    .dataout(data0_out)
+);
+
+array #(.width(16)) data1
+(
+    .clk(clk),
+    .write(way1_write),
+    .index(adr_i_cpu[6:4]),
+    .datain(datainmux_out),
+    .dataout(data1_out)
+);
+
+array #(.width(16)) data2
+(
+    .clk(clk),
+    .write(way2_write),
+    .index(adr_i_cpu[6:4]),
+    .datain(datainmux_out),
+    .dataout(data2_out)
+);
+
+array #(.width(16)) data3
+(
+    .clk(clk),
+    .write(way3_write),
+    .index(adr_i_cpu[6:4]),
+    .datain(datainmux_out),
+    .dataout(data3_out)
+);
+
+array #(.width(16)) tag0
+(
+    .clk(clk),
+    .write(way0_write),
+    .index(adr_i_cpu[6:4]),
+    .datain(datainmux_out),
+    .dataout(data0_out)
+);
+
+array #(.width(16)) tag1
+(
+    .clk(clk),
+    .write(way1_write),
+    .index(adr_i_cpu[6:4]),
+    .datain(datainmux_out),
+    .dataout(data1_out)
+);
+
+array #(.width(16)) tag2
+(
+    .clk(clk),
+    .write(way2_write),
+    .index(adr_i_cpu[6:4]),
+    .datain(datainmux_out),
+    .dataout(data2_out)
+);
+
+array #(.width(16)) tag3
+(
+    .clk(clk),
+    .write(way3_write),
+    .index(adr_i_cpu[6:4]),
+    .datain(datainmux_out),
+    .dataout(data3_out)
+);

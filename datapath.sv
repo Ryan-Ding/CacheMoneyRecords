@@ -268,6 +268,18 @@ mux2 instructionmux
 	.f(instruction_data)
 ); 
 
+btb btb0
+(
+   .clk,
+	.branch_instruction(instruction_data[15:12] == 4'b0000),
+	.pc_addr(pc_out),
+	.wb_addr(wbmux_out),
+	.wb_enable(),
+	.btb_out()
+
+    /* declare more ports here */
+);
+
 //register pc_plus_reg
 //(
 //    .clk,

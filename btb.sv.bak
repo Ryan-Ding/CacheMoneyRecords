@@ -1,0 +1,15 @@
+import lc3b_types::*;
+
+module btb
+(
+   input clk,
+	input branch_instruction,
+	input lc3b_word pc_addr,
+	input lc3b_word wb_addr,
+	input wb_enable,
+	output lc3b_word btb_out
+
+    /* declare more ports here */
+);
+
+endmodule : btb

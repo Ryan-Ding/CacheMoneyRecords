@@ -1,0 +1,8 @@
+import lc3b_types::*;
+
+module btb_control
+(
+	input 
+);
+
+endmodule : btb_control
