@@ -26,8 +26,8 @@ pattern_hist_table #(.entry (8)) local_br_hist_table
     .clk,
     .load(wbisbranch),
     .in(pht_update_taken),
-    .read_index(if_pc[7:0] ),
-	 .write_index(wb_pc[7:0] ),
+    .read_index(if_pc[8:1] ),
+	 .write_index(wb_pc[8:1] ),
     .pht_out(pht_out),
 	 .current_state
 );

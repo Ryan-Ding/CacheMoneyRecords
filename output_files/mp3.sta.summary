@@ -2,40 +2,40 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'pmem_master.CLK'
-Slack : -6.031
-TNS   : -47234.718
+Type  : Slow 900mV 85C Model Setup 'clk'
+Slack : -1.194
+TNS   : -86.228
 
-Type  : Slow 1100mV 85C Model Hold 'pmem_master.CLK'
-Slack : 0.282
+Type  : Slow 900mV 85C Model Hold 'clk'
+Slack : 0.244
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pmem_master.CLK'
-Slack : -0.369
-TNS   : -4495.887
-
-Type  : Slow 1100mV 0C Model Setup 'pmem_master.CLK'
-Slack : -5.523
-TNS   : -42900.002
-
-Type  : Slow 1100mV 0C Model Hold 'pmem_master.CLK'
-Slack : 0.260
+Type  : Slow 900mV 85C Model Minimum Pulse Width 'clk'
+Slack : 4.279
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pmem_master.CLK'
-Slack : -0.369
-TNS   : -4589.167
+Type  : Slow 900mV 0C Model Setup 'clk'
+Slack : -0.642
+TNS   : -21.179
 
-Type  : Fast 1100mV 0C Model Setup 'pmem_master.CLK'
-Slack : -3.977
-TNS   : -30127.197
-
-Type  : Fast 1100mV 0C Model Hold 'pmem_master.CLK'
-Slack : 0.183
+Type  : Slow 900mV 0C Model Hold 'clk'
+Slack : 0.235
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pmem_master.CLK'
-Slack : 0.121
+Type  : Slow 900mV 0C Model Minimum Pulse Width 'clk'
+Slack : 4.271
+TNS   : 0.000
+
+Type  : Fast 900mV 0C Model Setup 'clk'
+Slack : 2.250
+TNS   : 0.000
+
+Type  : Fast 900mV 0C Model Hold 'clk'
+Slack : 0.139
+TNS   : 0.000
+
+Type  : Fast 900mV 0C Model Minimum Pulse Width 'clk'
+Slack : 4.183
 TNS   : 0.000
 
 ------------------------------------------------------------

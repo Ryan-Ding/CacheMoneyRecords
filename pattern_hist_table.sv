@@ -5,7 +5,7 @@ module pattern_hist_table #(parameter entry = 8)
     input [1:0] in,
     input [entry-1:0] read_index,
 	 input [entry-1:0] write_index,
-    output logic [1:0] pht_out,
+    output logic [1:0] pht_out, //read output
 	 output logic [1:0] current_state
 );
 
@@ -18,7 +18,7 @@ initial
 begin
     for (int i = 0; i < $size(data); i++)
     begin
-        data[i] = 2'b01;
+        data[i] = 2'b11;
     end
 end
 

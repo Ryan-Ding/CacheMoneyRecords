@@ -37,7 +37,7 @@ lc3b_word icache_memrdata;
 lc3b_word instruction_mdr_out;
 logic load_instruction_mdr;
 lc3b_word pc_plus_reg_out;
-logic prediction_taken;
+logic pred_taken;
 logic gl_pred_taken;
 logic lc_pred_taken;
 logic lc_pred_correct;
@@ -45,7 +45,8 @@ logic gl_pred_correct;
 logic pred_select;
 lc3b_word pred_addr;
 logic btb_hit;
-logic [1:0] pcmux_sel;
+logic [2:0] pcmux_sel;
+lc3b_word btb_updata_pc;
 
 //if_id signals
 logic [31:0] if_id_reg_out;
@@ -233,22 +234,44 @@ assign wbisbranch = (ir_mem_wb_out[15:12] == op_trap)|(ir_mem_wb_out[15:12] == o
 always_comb
 begin
 
-if(flush)
-	pcmux_sel = br_ctrl_out;
-else if (gl_pred_taken && btb_hit )
-	pcmux_sel = 2'b11;
+if(flush && br_ctrl_out== 0)
+	pcmux_sel = 3'b100;
+else if (flush && br_ctrl_out!=0 )
+	pcmux_sel = {1'b0,br_ctrl_out};
+else if (pred_taken && btb_hit )
+	pcmux_sel = 3'b011;
 else pcmux_sel = 0;
+//btb_updata_pc
+if (flush)
+	btb_updata_pc = pcmux_out;
+else
+	btb_updata_pc = pc_reg_ex_mem_out-4'h2;
 
 end
 
-mux4 pcmux(
+//mux4 pcmux(
+//	.sel(pcmux_sel),
+//	.a(pc_plus2_out),
+//	.b(aluout_mem_wb_out),
+//	.c(mem_data_mem_wb_out),
+//	.d(pred_addr),
+//	.f(pcmux_out)
+//);
+
+mux8 #(.width(16)) pcmux 
+(
 	.sel(pcmux_sel),
-	.a(pc_plus2_out),
+   .a(pc_plus2_out),
 	.b(aluout_mem_wb_out),
 	.c(mem_data_mem_wb_out),
 	.d(pred_addr),
-	.f(pcmux_out)
+	.e(pc_reg_mem_wb_out),
+	.f(),
+	.g(),
+	.h(),
+	.out(pcmux_out)
 );
+
 
 
 register pc
@@ -279,7 +302,7 @@ btb btb
    .clk,
 	.branch_instruction(),
 	.pc_addr(pc_out),
-	.wb_addr(pcmux_out),
+	.wb_addr(btb_updata_pc),
 	.old_pc_addr(pc_reg_mem_wb_out - 2'd2),
 	.wb_enable(wbisbranch),
 	.btb_out(pred_addr),
@@ -327,7 +350,7 @@ mux2 #(.width(1)) br_pred_mux
 	.sel(pred_select),
 	.a(lc_pred_taken),
 	.b(gl_pred_taken),
-	.f(prediction_taken)
+	.f(pred_taken)
 );
 
 
@@ -718,7 +741,7 @@ forwarding_unit forwarding_unit
 	.id_ex_sr2,
 	.id_ex_dest(ir_id_ex_out[11:9]),
 	.ex_mem_dest(ir_ex_mem_out[11:9]),
-	.mem_wb_dest(ir_mem_wb_out[11:9]),
+	.mem_wb_dest(destmux_out),
 	.ex_mem_load_regfile(crtl_reg_ex_mem_out.load_regfile),
 	.mem_wb_load_regfile(crtl_reg_mem_wb_out.load_regfile),
 	.id_ex_sr1use(crtl_reg_id_ex_out.sr1use),
@@ -740,6 +763,8 @@ branch_detection branch_detection
 	 .mem_data_mem_wb_out,
 	 .predict_addr(pc_reg_ex_mem_out),
     .flush,
+	 .br_ctrl_out,
+	 .pc_reg_mem_wb_out,
 	 .wbisbranch
 );
 

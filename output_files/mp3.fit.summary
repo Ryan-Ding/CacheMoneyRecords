@@ -1,18 +1,22 @@
-Fitter Status : Successful - Sun Apr  8 02:44:45 2018
-Quartus II 32-bit Version : 13.1.4 Build 182 03/12/2014 SJ Full Version
+Fitter Status : Successful - Thu Apr 19 20:37:39 2018
+Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Full Version
 Revision Name : mp3
 Top-level Entity Name : mp3
-Family : Stratix III
-Device : EP3SE80F1152C2
+Family : Stratix IV
+Device : EP4SGX70HF35C2
 Timing Models : Final
-Logic utilization : 18 %
-    Combinational ALUTs : 4,335 / 64,000 ( 7 % )
-    Memory ALUTs : 0 / 32,000 ( 0 % )
-    Dedicated logic registers : 9,302 / 64,000 ( 15 % )
-Total registers : 9302
-Total pins : 290 / 744 ( 39 % )
+Logic utilization : 36 %
+    Combinational ALUTs : 8,363 / 58,080 ( 14 % )
+    Memory ALUTs : 0 / 29,040 ( 0 % )
+    Dedicated logic registers : 13,052 / 58,080 ( 22 % )
+Total registers : 13052
+Total pins : 290 / 584 ( 50 % )
 Total virtual pins : 0
-Total block memory bits : 0 / 6,331,392 ( 0 % )
-DSP block 18-bit elements : 0 / 672 ( 0 % )
-Total PLLs : 0 / 8 ( 0 % )
+Total block memory bits : 992 / 6,617,088 ( < 1 % )
+DSP block 18-bit elements : 0 / 384 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 16 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 24 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 16 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 24 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
 Total DLLs : 0 / 4 ( 0 % )

@@ -1,4 +1,4 @@
-# do /tmp/tmp.FwzEv95bP6/do.do 
+# do /tmp/tmp.KIeBEbeo22/do.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -414,7 +414,7 @@
 # Loading work.mp3
 # Loading work.datapath_sv_unit
 # Loading work.datapath
-# Loading work.mux4
+# Loading work.mux8
 # Loading work.register
 # Loading work.plus2
 # Loading work.mux2
@@ -423,6 +423,7 @@
 # Loading work.btb_datapath_sv_unit
 # Loading work.btb_datapath
 # Loading work.btb_sel
+# Loading work.mux4
 # Loading work.btb_array_sv_unit
 # Loading work.btb_array
 # Loading work.btb_lru_state
@@ -446,7 +447,6 @@
 # Loading work.adj
 # Loading work.sext
 # Loading work.zext
-# Loading work.mux8
 # Loading work.alu_sv_unit
 # Loading work.alu
 # Loading work.srmask_sv_unit
@@ -506,6 +506,6 @@
 #view structure
 #view signals
 # add list -radix hexadecimal {/mp3_tb/dut/datapath/regfile/data}
-# run 10000000ns
-# write list /tmp/tmp.FwzEv95bP6/test_list.lst
+# run 50000000ns
+# write list /tmp/tmp.KIeBEbeo22/test_list.lst
 # exit

@@ -1,6 +1,9 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /mp3_tb/clk
+add wave -noupdate /mp3_tb/clk
+add wave -noupdate /mp3_tb/clk
+add wave -noupdate /mp3_tb/clk
 add wave -noupdate /mp3_tb/dut/datapath/pc/load
 add wave -noupdate /mp3_tb/dut/datapath/pc/in
 add wave -noupdate /mp3_tb/dut/datapath/pc/out
@@ -11,6 +14,24 @@ add wave -noupdate /mp3_tb/dut/datapath/crtl_reg_id_ex_out
 add wave -noupdate /mp3_tb/dut/datapath/crtl_reg_ex_mem_out
 add wave -noupdate /mp3_tb/dut/datapath/crtl_reg_mem_wb_out
 add wave -noupdate /mp3_tb/dut/datapath/wbisbranch
+add wave -noupdate /mp3_tb/dut/datapath/flush
+add wave -noupdate /mp3_tb/dut/datapath/regfile/reg_b
+add wave -noupdate /mp3_tb/dut/datapath/sr2_id_ex_out
+add wave -noupdate /mp3_tb/dut/datapath/forwardmuxsr2/sel
+add wave -noupdate /mp3_tb/dut/datapath/forwardmuxsr2/a
+add wave -noupdate /mp3_tb/dut/datapath/forwardmuxsr2/b
+add wave -noupdate /mp3_tb/dut/datapath/forwardmuxsr2/c
+add wave -noupdate /mp3_tb/dut/datapath/forwardmuxsr2/d
+add wave -noupdate /mp3_tb/dut/datapath/forwardmuxsr2/f
+add wave -noupdate /mp3_tb/dut/datapath/sr2_ex_mem_out
+add wave -noupdate -expand /mp3_tb/dut/dcache1/cache_datapath1/data0/data
+add wave -noupdate -expand /mp3_tb/dut/dcache1/cache_datapath1/data1/data
+add wave -noupdate /mp3_tb/dut/datapath/pcmux/sel
+add wave -noupdate /mp3_tb/dut/datapath/pcmux/a
+add wave -noupdate /mp3_tb/dut/datapath/pcmux/b
+add wave -noupdate /mp3_tb/dut/datapath/pcmux/c
+add wave -noupdate /mp3_tb/dut/datapath/pcmux/d
+add wave -noupdate /mp3_tb/dut/datapath/pcmux/f
 add wave -noupdate /mp3_tb/dut/datapath/btb/clk
 add wave -noupdate /mp3_tb/dut/datapath/btb/branch_instruction
 add wave -noupdate /mp3_tb/dut/datapath/btb/pc_addr
@@ -45,11 +66,35 @@ add wave -noupdate /mp3_tb/dut/datapath/btb/btb_datapath0/data0/data
 add wave -noupdate /mp3_tb/dut/datapath/btb/btb_datapath0/data1/data
 add wave -noupdate /mp3_tb/dut/datapath/btb/btb_datapath0/data2/data
 add wave -noupdate /mp3_tb/dut/datapath/btb/btb_datapath0/data3/data
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/clk
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/mem_address
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/load_pc
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/l2_miss_counter
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/l2_hit_counter
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/icache_miss_counter
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/icache_hit_counter
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/dcache_miss_counter
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/dcache_hit_counter
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/br_ctrl_out
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/flush
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/write
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/instruction
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/counter_read_mux_sel
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/counter_mux_out
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/counter_mux_sel
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/clear_stall_counter
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/clear_total_branch_counter
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/clear_total_instruction_counter
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/clear_misprediction_counter
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/total_instruction_count
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/misprediction_count
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/total_branch_count
+add wave -noupdate /mp3_tb/dut/datapath/counter_control/stall_count
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {1830000 ps} 0}
+WaveRestoreCursors {{Cursor 1} {352417750 ps} 0}
 quietly wave cursor active 1
-configure wave -namecolwidth 424
-configure wave -valuecolwidth 100
+configure wave -namecolwidth 392
+configure wave -valuecolwidth 265
 configure wave -justifyvalue left
 configure wave -signalnamewidth 0
 configure wave -snapdistance 10
@@ -62,4 +107,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {1532476 ps} {2758460 ps}
+WaveRestoreZoom {352212389 ps} {352566180 ps}

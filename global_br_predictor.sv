@@ -12,7 +12,7 @@ module global_br_predictor
 );
 
 lc3b_word wb_pc;
-logic [3:0] bhrout;
+logic [7:0] bhrout;
 logic [1:0] pht_update_taken;
 logic [1:0] current_state;
 logic [1:0] pht_out;
@@ -22,18 +22,18 @@ assign wb_pc = wb_pcplus2 - 4'h2;
 assign gl_pred_taken = pht_out[1];
 assign gl_pred_correct = (current_state[1] == actual_taken);
 
-pattern_hist_table #(.entry (8)) pattern_hist_table
+pattern_hist_table #(.entry (10)) pattern_hist_table
 (
     .clk,
     .load(wbisbranch),
     .in(pht_update_taken),
-    .read_index({if_pc[3:0],bhrout[3:0]} ),
-	 .write_index({wb_pc[3:0],bhrout[3:0]} ),
+    .read_index({if_pc[7:1],bhrout[2:0]} ),
+	 .write_index({wb_pc[7:1],bhrout[2:0]} ),
     .pht_out(pht_out),
 	 .current_state
 );
 
-bhr #(.width (4) ) bhr
+bhr #(.width (8) ) bhr
 (
     .clk,
     .load(wbisbranch),
