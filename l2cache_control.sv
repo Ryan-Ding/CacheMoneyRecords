@@ -6,24 +6,24 @@ module l2cache_control
 	 input clk,
 	 /* Datapath controls */
 	 output logic way0_write,
-	 output logic v0_write,
 	 output logic v0_in,
-	 output logic dirty0_write,
 	 output logic dirty0_in,
 	 output logic way1_write,
-	 output logic v1_write,
 	 output logic v1_in,
-	 output logic dirty1_write,
 	 output logic dirty1_in,
+	 output logic way2_write,
+	 output logic v2_in,
+	 output logic dirty2_in,
+	 output logic way3_write,
+	 output logic v3_in,
+	 output logic dirty3_in,
 	 output logic lru_write,
-	 output logic lru_in,
-	 input lru_out,
 	 output logic datainmux_sel,
 	 output logic memaddrmux_sel,
 	 input dirty,
 	 input hit,
-	 input hit0,
-	 
+	 input [1:0] way_hit,
+	 input [1:0] wb_way_sel,
 	 // physical memory
 	 input mem_ack,
 	 input mem_rty,
@@ -53,17 +53,18 @@ begin : state_actions
     /* Default output assignments */
     /* Actions for each state */
 	 way0_write = 1'b0;
-	 v0_write = 1'b0;
 	 v0_in = 1'b0;
-	 dirty0_write= 1'b0;
 	 dirty0_in= 1'b0;
 	 way1_write = 1'b0;
-	 v1_write= 1'b0;
 	 v1_in= 1'b0;
-	 dirty1_write= 1'b0;
 	 dirty1_in= 1'b0;
+	 way2_write = 1'b0;
+	 v2_in= 1'b0;
+	 dirty2_in= 1'b0;
+	 way3_write = 1'b0;
+	 v3_in= 1'b0;
+	 dirty3_in= 1'b0;
 	 lru_write= 1'b0;
-	 lru_in = 1'b0;
 	 datainmux_sel= 1'b0;
 	 memaddrmux_sel= 1'b0;
 	 
@@ -82,30 +83,30 @@ begin : state_actions
 		hit_idle: begin
 			
 			if (cpu_cyc & cpu_stb  & hit ) begin
-				// get the lru
-				if (hit0) begin
-					lru_in = 1;
-					lru_write = 1;
-				end
-				else begin
-					lru_in = 0;
-					lru_write = 1;
-				end
+				// get the lru 
+				lru_write = 1;
+
 				if (cpu_we) begin
 					datainmux_sel = 1;
-					if(hit0) begin
+					if(way_hit == 2'b00) begin
 						way0_write = 1;
-						v0_write = 1;
 						v0_in = 1;
-						dirty0_write= 1;
 						dirty0_in= 1;
 					end
-					else begin
+					else if(way_hit == 2'b01)  begin
 						way1_write = 1;
-						v1_write = 1;
 						v1_in = 1;
-						dirty1_write= 1;
 						dirty1_in= 1;
+					end
+					else if(way_hit == 2'b10)  begin
+						way2_write = 1;
+						v2_in = 1;
+						dirty2_in= 1;
+					end
+					else if(way_hit == 2'b11)  begin
+						way3_write = 1;
+						v3_in = 1;
+						dirty3_in= 1;
 					end
 			
 				end
@@ -120,20 +121,33 @@ begin : state_actions
 			mem_stb = 1;
 			mem_we = 0;
 			
-			if(lru_out == 0) begin
+	
+			if(wb_way_sel == 2'b00)
+				begin
 				way0_write = 1;
-				v0_write = 1;
 				v0_in = 1;
-				dirty0_write= 1;
 				dirty0_in= 0;
+				end
+			else if(wb_way_sel == 2'b01)
+				begin
+					way1_write = 1;
+					v1_in = 1;
+					dirty1_in= 0;
+				end
+			else if(wb_way_sel == 2'b10)
+			begin
+					way2_write = 1;
+					v2_in = 1;
+					dirty2_in= 0;
 			end
-			else begin
-				way1_write = 1;
-				v1_write = 1;
-				v1_in = 1;
-				dirty1_write= 1;
-				dirty1_in= 0;
+			else if(wb_way_sel == 2'b11)
+			begin
+				way3_write = 1;
+				v3_in = 1;
+				dirty3_in= 0;
 			end
+
+
 			
 		end
 		write_back: begin

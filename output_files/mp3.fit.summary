@@ -1,15 +1,15 @@
-Fitter Status : Successful - Thu Apr 19 20:37:39 2018
+Fitter Status : Successful - Sat Apr 21 01:41:10 2018
 Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Full Version
 Revision Name : mp3
 Top-level Entity Name : mp3
 Family : Stratix IV
 Device : EP4SGX70HF35C2
 Timing Models : Final
-Logic utilization : 36 %
-    Combinational ALUTs : 8,363 / 58,080 ( 14 % )
+Logic utilization : 38 %
+    Combinational ALUTs : 8,664 / 58,080 ( 15 % )
     Memory ALUTs : 0 / 29,040 ( 0 % )
-    Dedicated logic registers : 13,052 / 58,080 ( 22 % )
-Total registers : 13052
+    Dedicated logic registers : 15,963 / 58,080 ( 27 % )
+Total registers : 15963
 Total pins : 290 / 584 ( 50 % )
 Total virtual pins : 0
 Total block memory bits : 992 / 6,617,088 ( < 1 % )

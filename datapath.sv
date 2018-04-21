@@ -238,7 +238,7 @@ if(flush && br_ctrl_out== 0)
 	pcmux_sel = 3'b100;
 else if (flush && br_ctrl_out!=0 )
 	pcmux_sel = {1'b0,br_ctrl_out};
-else if (pred_taken && btb_hit )
+else if (pred_taken && btb_hit)
 	pcmux_sel = 3'b011;
 else pcmux_sel = 0;
 //btb_updata_pc
@@ -340,16 +340,16 @@ choice_predictor choice_predictor
     .if_pc(pc_out),
 	 .wb_pcplus2(pc_reg_mem_wb_out),
     .wbisbranch,
-    .lc_pred_correct,
-	 .gl_pred_correct,
+    .p0_pred_correct(gl_pred_correct),
+	 .p1_pred_correct(lc_pred_correct),
 	 .pred_select
 );
 //selection 
 mux2 #(.width(1)) br_pred_mux
 (
 	.sel(pred_select),
-	.a(lc_pred_taken),
-	.b(gl_pred_taken),
+	.a(gl_pred_taken),
+	.b(lc_pred_taken),
 	.f(pred_taken)
 );
 

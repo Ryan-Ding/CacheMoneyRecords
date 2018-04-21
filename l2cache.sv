@@ -14,23 +14,25 @@ module l2cache
 /* Instantiate MP 0 top level blocks here */
 
 logic way0_write;
-logic v0_write;
 logic v0_in;
-logic dirty0_write;
 logic dirty0_in;
 logic way1_write;
-logic v1_write;
 logic v1_in;
-logic dirty1_write;
 logic dirty1_in;
+logic way2_write;
+logic v2_in;
+logic dirty2_in;
+logic way3_write;
+logic v3_in;
+logic dirty3_in;
+
 logic lru_write;
-logic lru_in;
-logic lru_out;
 logic datainmux_sel;
 logic memaddrmux_sel;
 logic dirty;
 logic hit;
-logic hit0;
+logic [1:0] way_hit;
+logic [1:0] wb_way_sel;
 
 logic mem_ack;
 logic mem_rty;
@@ -96,31 +98,30 @@ begin
 		  l2_total_counter++;
 end
 
-
-l2cache_control l2cache_controller
+l2cache_control l2cache_control
 (
     /* Input and output port declarations */
 	 .clk(wb_cache_mem.CLK),
 	 /* Datapath controls */
 	 .way0_write,
-	 .v0_write,
 	 .v0_in,
-	 .dirty0_write,
 	 .dirty0_in,
 	 .way1_write,
-	 .v1_write,
 	 .v1_in,
-	 .dirty1_write,
 	 .dirty1_in,
+	 .way2_write,
+	 .v2_in,
+	 .dirty2_in,
+	 .way3_write,
+	 .v3_in,
+	 .dirty3_in,
 	 .lru_write,
-	 .lru_in,
-	 .lru_out,
 	 .datainmux_sel,
 	 .memaddrmux_sel,
 	 .dirty,
 	 .hit,
-	 .hit0,
-	 
+	 .way_hit,
+	 .wb_way_sel,
 	 // physical memory
 	 .mem_ack,
 	 .mem_rty,
@@ -133,36 +134,35 @@ l2cache_control l2cache_controller
 	 .cpu_stb,
 	 .cpu_we,
 	 .cpu_ack
-//	 .cpu_rty
+//	 output logic cpu_rty
 	 
-	 
-
 );
 
-l2cache_datapath l2cache_datapath1
+l2cache_datapath l2cache_datapath
 (
     .clk(wb_cache_mem.CLK),
 
     /* control signals */
     .adr_i_cpu,
 	 .way0_write,
-	 .v0_write,
 	 .v0_in,
-	 .dirty0_write,
-	 .dirty0_in,
+	 . dirty0_in,
 	 .way1_write,
-	 .v1_write,
 	 .v1_in,
-	 .dirty1_write,
 	 .dirty1_in,
-	 .lru_write,
-	 .lru_in,
-	 .lru_out,
+	 .way2_write,
+	 . way3_write,
+	 .v2_in,
+	 .v3_in,
+	 .dirty2_in,
+	 .dirty3_in,
+	 .lru_write, 
 	 .datainmux_sel,
 	 .memaddrmux_sel,
 	 .dirty,
 	 .hit,
-	 .hit0,
+	 .way_hit,
+	 .wb_way_sel,
 	 
 	 //cpu signals
 	 .dat_o_cpu,
@@ -172,8 +172,7 @@ l2cache_datapath l2cache_datapath1
 	 //mem signals
 	 .dat_o_mem,
 	 .adr_o_mem,
-	 .dat_i_mem
-	 
+	 .dat_i_mem	 
 	 
 	 
 );

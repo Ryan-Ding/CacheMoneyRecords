@@ -19,7 +19,7 @@ Z7 8/home/chaohua2/ece411/mp3/cachemoneyrecords/adj.sv
 Z8 F/home/chaohua2/ece411/mp3/cachemoneyrecords/adj.sv
 L0 6
 Z9 OV;L;10.1d;51
-Z10 !s108 1524187332.650099
+Z10 !s108 1524291281.177843
 Z11 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/adj.sv|
 Z12 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/adj.sv|
 Z13 o-sv -work work -O0
@@ -67,7 +67,7 @@ Z16 8/home/chaohua2/ece411/mp3/cachemoneyrecords/alu.sv
 Z17 F/home/chaohua2/ece411/mp3/cachemoneyrecords/alu.sv
 L0 3
 R9
-Z18 !s108 1524187332.966171
+Z18 !s108 1524291281.412772
 Z19 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/alu.sv|
 Z20 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/alu.sv|
 R13
@@ -116,7 +116,7 @@ Z22 8/home/chaohua2/ece411/mp3/cachemoneyrecords/array.sv
 Z23 F/home/chaohua2/ece411/mp3/cachemoneyrecords/array.sv
 L0 3
 R9
-Z24 !s108 1524187336.117302
+Z24 !s108 1524291283.381318
 Z25 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/array.sv|
 Z26 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/array.sv|
 R13
@@ -169,7 +169,7 @@ R14
 !s100 @ZNeWA_9?=hO`^50oHNl43
 !s105 bhr_sv_unit
 !s85 0
-!s108 1524187331.630487
+!s108 1524291280.350852
 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/bhr.sv|
 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/bhr.sv|
 !s101 -O0
@@ -188,7 +188,7 @@ Z28 8/home/chaohua2/ece411/mp3/cachemoneyrecords/br_ctrl.sv
 Z29 F/home/chaohua2/ece411/mp3/cachemoneyrecords/br_ctrl.sv
 L0 3
 R9
-Z30 !s108 1524187333.729401
+Z30 !s108 1524291281.973893
 Z31 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/br_ctrl.sv|
 Z32 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/br_ctrl.sv|
 R13
@@ -237,7 +237,7 @@ Z34 8/home/chaohua2/ece411/mp3/cachemoneyrecords/branch_detection..sv
 Z35 F/home/chaohua2/ece411/mp3/cachemoneyrecords/branch_detection..sv
 L0 3
 R9
-Z36 !s108 1524187335.026232
+Z36 !s108 1524291282.646234
 Z37 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/branch_detection..sv|
 Z38 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/branch_detection..sv|
 R13
@@ -286,7 +286,7 @@ Z40 8/home/chaohua2/ece411/mp3/cachemoneyrecords/btb.sv
 Z41 F/home/chaohua2/ece411/mp3/cachemoneyrecords/btb.sv
 L0 3
 R9
-Z42 !s108 1524187336.302928
+Z42 !s108 1524291283.503499
 Z43 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/btb.sv|
 Z44 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/btb.sv|
 R13
@@ -311,7 +311,7 @@ Z46 8/home/chaohua2/ece411/mp3/cachemoneyrecords/btb_array.sv
 Z47 F/home/chaohua2/ece411/mp3/cachemoneyrecords/btb_array.sv
 L0 3
 R9
-Z48 !s108 1524187332.079779
+Z48 !s108 1524291280.757288
 Z49 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/btb_array.sv|
 Z50 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/btb_array.sv|
 R13
@@ -364,7 +364,7 @@ R14
 !s100 6VoNzDGWi3G9XcAV7YNhX2
 !s105 btb_control_sv_unit
 !s85 0
-!s108 1524187330.442023
+!s108 1524291279.405694
 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/btb_control.sv|
 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/btb_control.sv|
 !s101 -O0
@@ -383,7 +383,7 @@ Z52 8/home/chaohua2/ece411/mp3/cachemoneyrecords/btb_datapath.sv
 Z53 F/home/chaohua2/ece411/mp3/cachemoneyrecords/btb_datapath.sv
 L0 3
 R9
-Z54 !s108 1524187331.939514
+Z54 !s108 1524291280.645852
 Z55 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/btb_datapath.sv|
 Z56 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/btb_datapath.sv|
 R13
@@ -436,7 +436,7 @@ R14
 !s100 c8b7=mfJS2@16P@47K7iO1
 !s105 btb_lru_state_sv_unit
 !s85 0
-!s108 1524187330.344179
+!s108 1524291279.338695
 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/btb_lru_state.sv|
 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/btb_lru_state.sv|
 !s101 -O0
@@ -459,7 +459,7 @@ R14
 !s100 fB7TlZb55U?aWQioHGRPB2
 !s105 btb_sel_sv_unit
 !s85 0
-!s108 1524187330.229493
+!s108 1524291279.273092
 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/btb_sel.sv|
 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/btb_sel.sv|
 !s101 -O0
@@ -502,7 +502,7 @@ Z58 8/home/chaohua2/ece411/mp3/cachemoneyrecords/cache.sv
 Z59 F/home/chaohua2/ece411/mp3/cachemoneyrecords/cache.sv
 L0 3
 R9
-Z60 !s108 1524187337.984238
+Z60 !s108 1524291284.241555
 Z61 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/cache.sv|
 Z62 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/cache.sv|
 R13
@@ -531,7 +531,7 @@ R14
 !s100 mdKTmABO9da2XaVB0@oI;0
 !s105 cache_control_sv_unit
 !s85 0
-!s108 1524187330.698508
+!s108 1524291279.657257
 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_control.sv|
 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/cache_control.sv|
 !s101 -O0
@@ -550,7 +550,7 @@ Z64 8/home/chaohua2/ece411/mp3/cachemoneyrecords/cache_datapath.sv
 Z65 F/home/chaohua2/ece411/mp3/cachemoneyrecords/cache_datapath.sv
 L0 3
 R9
-Z66 !s108 1524187336.665254
+Z66 !s108 1524291283.773525
 Z67 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_datapath.sv|
 Z68 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/cache_datapath.sv|
 R13
@@ -599,7 +599,7 @@ Z70 8/home/chaohua2/ece411/mp3/cachemoneyrecords/cache_interconnect.sv
 Z71 F/home/chaohua2/ece411/mp3/cachemoneyrecords/cache_interconnect.sv
 L0 3
 R9
-Z72 !s108 1524187337.087828
+Z72 !s108 1524291283.887257
 Z73 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_interconnect.sv|
 Z74 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/cache_interconnect.sv|
 R13
@@ -628,7 +628,7 @@ R14
 !s100 Ll5CoD9?4Rjmh^Tc9Me7f1
 !s105 cache_interconnect_control_sv_unit
 !s85 0
-!s108 1524187330.603975
+!s108 1524291279.595991
 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_interconnect_control.sv|
 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/cache_interconnect_control.sv|
 !s101 -O0
@@ -647,7 +647,7 @@ Z76 8/home/chaohua2/ece411/mp3/cachemoneyrecords/cache_interconnect_datapath.sv
 Z77 F/home/chaohua2/ece411/mp3/cachemoneyrecords/cache_interconnect_datapath.sv
 L0 3
 R9
-Z78 !s108 1524187332.509885
+Z78 !s108 1524291281.077952
 Z79 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/cache_interconnect_datapath.sv|
 Z80 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/cache_interconnect_datapath.sv|
 R13
@@ -744,7 +744,7 @@ Z81 8/home/chaohua2/ece411/mp3/cachemoneyrecords/cccomp.sv
 Z82 F/home/chaohua2/ece411/mp3/cachemoneyrecords/cccomp.sv
 L0 3
 R9
-Z83 !s108 1524187333.583541
+Z83 !s108 1524291281.864566
 Z84 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/cccomp.sv|
 Z85 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/cccomp.sv|
 R13
@@ -782,25 +782,25 @@ vchoice_predictor
 R1
 R2
 DXx4 work 24 choice_predictor_sv_unit 0 22 A>Mf^ISo:BQaaDmOE<YWX2
-VkZlkdTLIl]E?9a`h[1E=m1
+VRczMjmmSfn=6mZcb[ho_X3
 r1
 31
-Ii]2eMMUi?P`>VSlM3laf_3
+IVhBAKNa]<iEE8Qi`?2a?z1
 S1
 R5
-Z86 w1524115091
+Z86 w1524276609
 Z87 8/home/chaohua2/ece411/mp3/cachemoneyrecords/choice_predictor.sv
 Z88 F/home/chaohua2/ece411/mp3/cachemoneyrecords/choice_predictor.sv
 L0 3
 R9
-Z89 !s108 1524187335.970874
+Z89 !s108 1524291283.247865
 Z90 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/choice_predictor.sv|
 Z91 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/choice_predictor.sv|
 R13
 R14
 !s85 0
 !i10b 1
-!s100 ^mXO7]JGVL2h_=KjaEHN`1
+!s100 BM:7:5;h[CV>E`hT0CP`e1
 !s105 choice_predictor_sv_unit
 !s101 -O0
 Xchoice_predictor_sv_unit
@@ -846,7 +846,7 @@ R14
 !s100 fRh5Yl>OeH:oEogFh2d743
 !s105 comparator_sv_unit
 !s85 0
-!s108 1524187330.139035
+!s108 1524291279.183108
 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/comparator.sv|
 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/comparator.sv|
 !s101 -O0
@@ -865,7 +865,7 @@ Z93 8/home/chaohua2/ece411/mp3/cachemoneyrecords/control.sv
 Z94 F/home/chaohua2/ece411/mp3/cachemoneyrecords/control.sv
 L0 4
 R9
-Z95 !s108 1524187333.110715
+Z95 !s108 1524291281.533228
 Z96 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/control.sv|
 Z97 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/control.sv|
 R13
@@ -914,7 +914,7 @@ Z98 8/home/chaohua2/ece411/mp3/cachemoneyrecords/counter_control.sv
 Z99 F/home/chaohua2/ece411/mp3/cachemoneyrecords/counter_control.sv
 L0 3
 R9
-Z100 !s108 1524187335.382484
+Z100 !s108 1524291282.872349
 Z101 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/counter_control.sv|
 Z102 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/counter_control.sv|
 R13
@@ -963,7 +963,7 @@ Z103 8/home/chaohua2/ece411/mp3/cachemoneyrecords/cpudatainmux.sv
 Z104 F/home/chaohua2/ece411/mp3/cachemoneyrecords/cpudatainmux.sv
 L0 3
 R9
-Z105 !s108 1524187332.355521
+Z105 !s108 1524291280.967933
 Z106 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/cpudatainmux.sv|
 Z107 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/cpudatainmux.sv|
 R13
@@ -1004,22 +1004,22 @@ DXx4 work 16 datapath_sv_unit 0 22 =W3_]b0dMZESZc7KnHV@o1
 VH47>88TkbESaS^P[9lhBb3
 r1
 31
-InKV>?ecWB5WRcfEi]EOh72
+IFDj[7nlCEa1<=fTOi8^;Z1
 S1
 R5
-Z108 w1524186904
+Z108 w1524280455
 Z109 8/home/chaohua2/ece411/mp3/cachemoneyrecords/datapath.sv
 Z110 F/home/chaohua2/ece411/mp3/cachemoneyrecords/datapath.sv
 L0 3
 R9
-Z111 !s108 1524187338.114575
+Z111 !s108 1524291284.362264
 Z112 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/datapath.sv|
 Z113 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/datapath.sv|
 R13
 R14
 !s85 0
 !i10b 1
-!s100 3YL9en?JJDzaaVfWD[GBC2
+!s100 kN_J;_^`W0Ph2FG<7Fdl31
 !s105 datapath_sv_unit
 !s101 -O0
 Xdatapath_sv_unit
@@ -1061,7 +1061,7 @@ Z115 8/home/chaohua2/ece411/mp3/cachemoneyrecords/ewb.sv
 Z116 F/home/chaohua2/ece411/mp3/cachemoneyrecords/ewb.sv
 L0 3
 R9
-Z117 !s108 1524187337.432629
+Z117 !s108 1524291284.003619
 Z118 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/ewb.sv|
 Z119 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/ewb.sv|
 R13
@@ -1086,7 +1086,7 @@ Z120 8/home/chaohua2/ece411/mp3/cachemoneyrecords/ewb_control.sv
 Z121 F/home/chaohua2/ece411/mp3/cachemoneyrecords/ewb_control.sv
 L0 3
 R9
-Z122 !s108 1524187331.345941
+Z122 !s108 1524291280.126438
 Z123 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/ewb_control.sv|
 Z124 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/ewb_control.sv|
 R13
@@ -1135,7 +1135,7 @@ Z125 8/home/chaohua2/ece411/mp3/cachemoneyrecords/ewb_datapath.sv
 Z126 F/home/chaohua2/ece411/mp3/cachemoneyrecords/ewb_datapath.sv
 L0 3
 R9
-Z127 !s108 1524187335.185276
+Z127 !s108 1524291282.754919
 Z128 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/ewb_datapath.sv|
 Z129 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/ewb_datapath.sv|
 R13
@@ -1208,7 +1208,7 @@ Z131 8/home/chaohua2/ece411/mp3/cachemoneyrecords/forwarding_unit.sv
 Z132 F/home/chaohua2/ece411/mp3/cachemoneyrecords/forwarding_unit.sv
 L0 3
 R9
-Z133 !s108 1524187334.844431
+Z133 !s108 1524291282.540963
 Z134 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/forwarding_unit.sv|
 Z135 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/forwarding_unit.sv|
 R13
@@ -1257,7 +1257,7 @@ Z137 8/home/chaohua2/ece411/mp3/cachemoneyrecords/gencc.sv
 Z138 F/home/chaohua2/ece411/mp3/cachemoneyrecords/gencc.sv
 L0 3
 R9
-Z139 !s108 1524187333.257128
+Z139 !s108 1524291281.646955
 Z140 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/gencc.sv|
 Z141 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/gencc.sv|
 R13
@@ -1298,22 +1298,22 @@ DXx4 work 27 global_br_predictor_sv_unit 0 22 TSFo0g<I30U4<Z`A`05ZZ2
 V9=Dm9O]7n]TUcV8]OcEP01
 r1
 31
-I:T99<6T=_MYb1:gc<41693
+IO^^iLF3AUJK:<R07O^mSR2
 S1
 R5
-Z142 w1524186670
+Z142 w1524280015
 Z143 8/home/chaohua2/ece411/mp3/cachemoneyrecords/global_br_predictor.sv
 Z144 F/home/chaohua2/ece411/mp3/cachemoneyrecords/global_br_predictor.sv
 L0 3
 R9
-Z145 !s108 1524187335.624421
+Z145 !s108 1524291282.986234
 Z146 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/global_br_predictor.sv|
 Z147 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/global_br_predictor.sv|
 R13
 R14
 !s85 0
 !i10b 1
-!s100 6M@R]]XZ7A;JZi5BCViRf0
+!s100 3GO3zQ_@hdgkC<7:?HHET1
 !s105 global_br_predictor_sv_unit
 !s101 -O0
 Xglobal_br_predictor_sv_unit
@@ -1355,7 +1355,7 @@ Z149 8/home/chaohua2/ece411/mp3/cachemoneyrecords/incremental_counter.sv
 Z150 F/home/chaohua2/ece411/mp3/cachemoneyrecords/incremental_counter.sv
 L0 3
 R9
-Z151 !s108 1524187331.495012
+Z151 !s108 1524291280.237316
 Z152 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/incremental_counter.sv|
 Z153 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/incremental_counter.sv|
 R13
@@ -1404,7 +1404,7 @@ Z154 8/home/chaohua2/ece411/mp3/cachemoneyrecords/l2array.sv
 Z155 F/home/chaohua2/ece411/mp3/cachemoneyrecords/l2array.sv
 L0 3
 R9
-Z156 !s108 1524187332.210518
+Z156 !s108 1524291280.863867
 Z157 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/l2array.sv|
 Z158 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/l2array.sv|
 R13
@@ -1445,31 +1445,31 @@ DXx4 work 15 l2cache_sv_unit 0 22 QY_d0<c2SGe5Pm]AD;Sg:0
 V0gV^E86zfb^a?3>0;Onn23
 r1
 31
-IPZ9Y]n]QG=ADD_Bc_C6e[1
+I_31FNUDL@;Yc2eh0N>AcG1
 S1
 R5
-Z159 w1523999354
+Z159 w1524290165
 Z160 8/home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache.sv
 Z161 F/home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache.sv
 L0 3
 R9
-Z162 !s108 1524187337.675417
+Z162 !s108 1524291284.124763
 Z163 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache.sv|
 Z164 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache.sv|
 R13
 R14
 !s85 0
 !i10b 1
-!s100 7ggR;HnG71Pj?bgEL]B<]3
+!s100 o0jDhQiW>Rb2AagIMJ:g;3
 !s105 l2cache_sv_unit
 !s101 -O0
 vl2cache_control
 R1
-IZb7jmfI>DO1JbB4gL7@cT2
-VOVZ]Q6WTFl7m[nQzRKVig2
+IHD`zkFLzC:9KhZeW3JbD03
+V;LE]^ZT1ELP7Y31=^C<F;2
 S1
 R5
-w1522356663
+w1524289865
 8/home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache_control.sv
 F/home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache_control.sv
 L0 3
@@ -1479,10 +1479,10 @@ r1
 R13
 R14
 !i10b 1
-!s100 5Xd=gfMH?I6[o1QBHGK`60
+!s100 AiBN_:R^aY2?TOVI1SOka2
 !s105 l2cache_control_sv_unit
 !s85 0
-!s108 1524187330.522701
+!s108 1524291279.493525
 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache_control.sv|
 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache_control.sv|
 !s101 -O0
@@ -1490,25 +1490,25 @@ vl2cache_datapath
 R1
 R2
 DXx4 work 24 l2cache_datapath_sv_unit 0 22 0^9@:<2dm^@7Kib[OgQdl1
-VNH_P2R;jNDNkllI]bOL]L0
+VKI]fSVn=9RZaLEZL`PdH_1
 r1
 31
-Il`mi]2]<l3lf8c8ZISaCn1
+Ii4n2W[YcPT0oDAfGM<Tf63
 S1
 R5
-Z165 w1524009135
+Z165 w1524290406
 Z166 8/home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache_datapath.sv
 Z167 F/home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache_datapath.sv
 L0 3
 R9
-Z168 !s108 1524187336.467981
+Z168 !s108 1524291283.650017
 Z169 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache_datapath.sv|
 Z170 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/l2cache_datapath.sv|
 R13
 R14
 !s85 0
 !i10b 1
-!s100 O[<[RAB1Nj8FQ>h9Q_<H63
+!s100 dmD;JYO_5cSWRlGGaIC1Y3
 !s105 l2cache_datapath_sv_unit
 !s101 -O0
 Xl2cache_datapath_sv_unit
@@ -1577,7 +1577,7 @@ R14
 !i10b 1
 !s100 ;ZUMTB;735Cm9UUO<=D5b2
 !s85 0
-!s108 1524187330.870099
+!s108 1524291279.785088
 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/lc3b_types.sv|
 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/lc3b_types.sv|
 !s101 -O0
@@ -1596,7 +1596,7 @@ Z171 8/home/chaohua2/ece411/mp3/cachemoneyrecords/ldi_sti_control.sv
 Z172 F/home/chaohua2/ece411/mp3/cachemoneyrecords/ldi_sti_control.sv
 L0 3
 R9
-Z173 !s108 1524187334.701479
+Z173 !s108 1524291282.430995
 Z174 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/ldi_sti_control.sv|
 Z175 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/ldi_sti_control.sv|
 R13
@@ -1645,7 +1645,7 @@ Z177 8/home/chaohua2/ece411/mp3/cachemoneyrecords/local_br_predictor.sv
 Z178 F/home/chaohua2/ece411/mp3/cachemoneyrecords/local_br_predictor.sv
 L0 3
 R9
-Z179 !s108 1524187335.790044
+Z179 !s108 1524291283.123069
 Z180 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/local_br_predictor.sv|
 Z181 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/local_br_predictor.sv|
 R13
@@ -1679,6 +1679,29 @@ R14
 !s100 6BALah9SR@I<njHFFEZG72
 !i103 1
 !s101 -O0
+vlru_replace
+R1
+I9bKd=NK0LNLMiX6gm@:gA2
+VMBUTee=9a9;D5?]TkXTGZ3
+S1
+R5
+w1524289787
+8/home/chaohua2/ece411/mp3/cachemoneyrecords/lru_replace.sv
+F/home/chaohua2/ece411/mp3/cachemoneyrecords/lru_replace.sv
+L0 1
+R9
+r1
+31
+R13
+R14
+!i10b 1
+!s100 7NcOZIB9E7k>W3^[BWFBK1
+!s105 lru_replace_sv_unit
+!s85 0
+!s108 1524291280.582298
+!s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/lru_replace.sv|
+!s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/lru_replace.sv|
+!s101 -O0
 vmdrmask
 R1
 R2
@@ -1694,7 +1717,7 @@ Z183 8/home/chaohua2/ece411/mp3/cachemoneyrecords/mdrmask.sv
 Z184 F/home/chaohua2/ece411/mp3/cachemoneyrecords/mdrmask.sv
 L0 3
 R9
-Z185 !s108 1524187334.241368
+Z185 !s108 1524291282.077626
 Z186 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/mdrmask.sv|
 Z187 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/mdrmask.sv|
 R13
@@ -1743,7 +1766,7 @@ Z188 8/home/chaohua2/ece411/mp3/cachemoneyrecords/mem_enable_ctrl.sv
 Z189 F/home/chaohua2/ece411/mp3/cachemoneyrecords/mem_enable_ctrl.sv
 L0 3
 R9
-Z190 !s108 1524187334.560911
+Z190 !s108 1524291282.323587
 Z191 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/mem_enable_ctrl.sv|
 Z192 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/mem_enable_ctrl.sv|
 R13
@@ -1787,14 +1810,14 @@ r1
 I=O2BB]I5@HX?5IC:Y`akh3
 S1
 R5
-R159
-Z193 8/home/chaohua2/ece411/mp3/cachemoneyrecords/mp3.sv
-Z194 F/home/chaohua2/ece411/mp3/cachemoneyrecords/mp3.sv
+Z193 w1523999354
+Z194 8/home/chaohua2/ece411/mp3/cachemoneyrecords/mp3.sv
+Z195 F/home/chaohua2/ece411/mp3/cachemoneyrecords/mp3.sv
 L0 3
 R9
-Z195 !s108 1524187338.271836
-Z196 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/mp3.sv|
-Z197 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/mp3.sv|
+Z196 !s108 1524291284.477471
+Z197 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/mp3.sv|
+Z198 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/mp3.sv|
 R13
 R14
 !s85 0
@@ -1811,14 +1834,14 @@ r1
 I;>j_`ai5fW3R0:nC5eBXa2
 S1
 R5
-R159
 R193
 R194
+R195
 L0 1
 R9
-R195
 R196
 R197
+R198
 R13
 R14
 !s85 0
@@ -1845,7 +1868,7 @@ R14
 !s100 ?2L502RLQNBZHAe_i:dd?3
 !s105 mp3_tb_sv_unit
 !s85 0
-!s108 1524187338.411397
+!s108 1524291284.585027
 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/mp3_tb.sv|
 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/mp3_tb.sv|
 !s101 -O0
@@ -1853,19 +1876,19 @@ vmux16
 R1
 I0129Bm1`nLC@SKi56OC6D2
 V?<2g7KYEaOaGcnUV?@f5V2
-Z198 !s105 mux_sv_unit
+Z199 !s105 mux_sv_unit
 S1
 R5
-R159
-Z199 8/home/chaohua2/ece411/mp3/cachemoneyrecords/mux.sv
-Z200 F/home/chaohua2/ece411/mp3/cachemoneyrecords/mux.sv
+R193
+Z200 8/home/chaohua2/ece411/mp3/cachemoneyrecords/mux.sv
+Z201 F/home/chaohua2/ece411/mp3/cachemoneyrecords/mux.sv
 L0 63
 R9
 r1
 31
-Z201 !s108 1524187331.119602
-Z202 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/mux.sv|
-Z203 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/mux.sv|
+Z202 !s108 1524291279.969135
+Z203 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/mux.sv|
+Z204 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/mux.sv|
 R13
 R14
 !i10b 1
@@ -1876,19 +1899,19 @@ vmux2
 R1
 IF<UNf<XWULSB18mg8VlZ_0
 V8m]l]_QnJ>bC;o8UdVIPk2
-R198
+R199
 S1
 R5
-R159
-R199
+R193
 R200
+R201
 L0 1
 R9
 r1
 31
-R201
 R202
 R203
+R204
 R13
 R14
 !i10b 1
@@ -1899,19 +1922,19 @@ vmux4
 R1
 Iz3iz[KjC1OGl_aW0JlZ=f2
 VYCkK`QGYSnR6BP^DhRdne0
-R198
+R199
 S1
 R5
-R159
-R199
+R193
 R200
+R201
 L0 16
 R9
 r1
 31
-R201
 R202
 R203
+R204
 R13
 R14
 !i10b 1
@@ -1922,19 +1945,19 @@ vmux8
 R1
 IX35V=c4@]6oAL6inUg?Re3
 VAamg^Wo0Jm38oaD4=IFB30
-R198
+R199
 S1
 R5
-R159
-R199
+R193
 R200
+R201
 L0 35
 R9
 r1
 31
-R201
 R202
 R203
+R204
 R13
 R14
 !i10b 1
@@ -1960,7 +1983,7 @@ R14
 !s100 i7=JZJ1?6cE>V4ZXL`kU@2
 !s105 pattern_hist_table_sv_unit
 !s85 0
-!s108 1524187331.712422
+!s108 1524291280.413991
 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/pattern_hist_table.sv|
 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/pattern_hist_table.sv|
 !s101 -O0
@@ -1974,14 +1997,14 @@ r1
 I4ooG4=iSYf@K94=l9h:<I1
 S1
 R5
-Z204 w1524108232
-Z205 8/home/chaohua2/ece411/mp3/cachemoneyrecords/pht_update_ctrl.sv
-Z206 F/home/chaohua2/ece411/mp3/cachemoneyrecords/pht_update_ctrl.sv
+Z205 w1524108232
+Z206 8/home/chaohua2/ece411/mp3/cachemoneyrecords/pht_update_ctrl.sv
+Z207 F/home/chaohua2/ece411/mp3/cachemoneyrecords/pht_update_ctrl.sv
 L0 3
 R9
-Z207 !s108 1524187331.795929
-Z208 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/pht_update_ctrl.sv|
-Z209 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/pht_update_ctrl.sv|
+Z208 !s108 1524291280.479077
+Z209 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/pht_update_ctrl.sv|
+Z210 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/pht_update_ctrl.sv|
 R13
 R14
 !s85 0
@@ -1998,14 +2021,14 @@ r1
 I[NaJfiiH2MEh>OkOoaA>@2
 S1
 R5
-R204
 R205
 R206
+R207
 L0 1
 R9
-R207
 R208
 R209
+R210
 R13
 R14
 !s85 0
@@ -2030,7 +2053,7 @@ R9
 r1
 !s85 0
 31
-!s108 1524187338.497550
+!s108 1524291284.650469
 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/physical_memory.sv|
 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/physical_memory.sv|
 !s101 -O0
@@ -2055,7 +2078,7 @@ R14
 !s100 W?Xh:kY20fGkfob6WTZS`0
 !s105 plus2_sv_unit
 !s85 0
-!s108 1524187330.952904
+!s108 1524291279.849183
 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/plus2.sv|
 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/plus2.sv|
 !s101 -O0
@@ -2069,14 +2092,14 @@ r1
 IHD_E`7dFoYkcQn5]Qck>D2
 S1
 R5
-Z210 w1522643633
-Z211 8/home/chaohua2/ece411/mp3/cachemoneyrecords/regfile.sv
-Z212 F/home/chaohua2/ece411/mp3/cachemoneyrecords/regfile.sv
+Z211 w1522643633
+Z212 8/home/chaohua2/ece411/mp3/cachemoneyrecords/regfile.sv
+Z213 F/home/chaohua2/ece411/mp3/cachemoneyrecords/regfile.sv
 L0 3
 R9
-Z213 !s108 1524187333.415908
-Z214 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/regfile.sv|
-Z215 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/regfile.sv|
+Z214 !s108 1524291281.754620
+Z215 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/regfile.sv|
+Z216 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/regfile.sv|
 R13
 R14
 !s85 0
@@ -2093,14 +2116,14 @@ r1
 IdLFYFb=k:HMBlcgYWN_`20
 S1
 R5
-R210
 R211
 R212
+R213
 L0 1
 R9
-R213
 R214
 R215
+R216
 R13
 R14
 !s85 0
@@ -2127,7 +2150,7 @@ R14
 !s100 >B7=06A;BA<P^HJCUe=iJ3
 !s105 register_sv_unit
 !s85 0
-!s108 1524187331.038525
+!s108 1524291279.909668
 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/register.sv|
 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/register.sv|
 !s101 -O0
@@ -2166,14 +2189,14 @@ r1
 IM]30hoh^DU]]XMWhHQ2o<1
 S1
 R5
-Z216 w1521197453
-Z217 8/home/chaohua2/ece411/mp3/cachemoneyrecords/srmask.sv
-Z218 F/home/chaohua2/ece411/mp3/cachemoneyrecords/srmask.sv
+Z217 w1521197453
+Z218 8/home/chaohua2/ece411/mp3/cachemoneyrecords/srmask.sv
+Z219 F/home/chaohua2/ece411/mp3/cachemoneyrecords/srmask.sv
 L0 3
 R9
-Z219 !s108 1524187334.405627
-Z220 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/srmask.sv|
-Z221 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/srmask.sv|
+Z220 !s108 1524291282.201604
+Z221 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/srmask.sv|
+Z222 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/srmask.sv|
 R13
 R14
 !s85 0
@@ -2190,14 +2213,14 @@ r1
 IOin6jU30O9[LJg4bY8dko2
 S1
 R5
-R216
 R217
 R218
+R219
 L0 1
 R9
-R219
 R220
 R221
+R222
 R13
 R14
 !s85 0
@@ -2224,7 +2247,7 @@ R14
 !s100 5kzR3E5?GiE6KEk>G8KWQ3
 !s105 wishbone_sv_unit
 !s85 0
-!s108 1524187330.780977
+!s108 1524291279.721061
 !s107 /home/chaohua2/ece411/mp3/cachemoneyrecords/wishbone.sv|
 !s90 -sv|-work|work|+incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords|/home/chaohua2/ece411/mp3/cachemoneyrecords/wishbone.sv|
 !s101 -O0

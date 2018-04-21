@@ -22,13 +22,13 @@ assign wb_pc = wb_pcplus2 - 4'h2;
 assign gl_pred_taken = pht_out[1];
 assign gl_pred_correct = (current_state[1] == actual_taken);
 
-pattern_hist_table #(.entry (10)) pattern_hist_table
+pattern_hist_table #(.entry (8)) pattern_hist_table
 (
     .clk,
     .load(wbisbranch),
     .in(pht_update_taken),
-    .read_index({if_pc[7:1],bhrout[2:0]} ),
-	 .write_index({wb_pc[7:1],bhrout[2:0]} ),
+    .read_index({if_pc[5:1],bhrout[2:0]} ),
+	 .write_index({wb_pc[5:1],bhrout[2:0]} ),
     .pht_out(pht_out),
 	 .current_state
 );

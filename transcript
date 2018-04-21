@@ -1,4 +1,4 @@
-# do /tmp/tmp.KIeBEbeo22/do.do 
+# do /tmp/tmp.u307Pm8Qfx/do.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -120,6 +120,12 @@
 # 
 # Top level modules:
 # 	pht_update_ctrl
+# vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/lru_replace.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lru_replace
+# 
+# Top level modules:
+# 	lru_replace
 # vlog -sv -work work +incdir+/home/chaohua2/ece411/mp3/cachemoneyrecords {/home/chaohua2/ece411/mp3/cachemoneyrecords/btb_datapath.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling package btb_datapath_sv_unit
@@ -494,6 +500,7 @@
 # Loading work.l2cache_datapath
 # Loading work.l2array_sv_unit
 # Loading work.l2array
+# Loading work.lru_replace
 # Loading work.ewb_sv_unit
 # Loading work.ewb
 # Loading work.ewb_datapath_sv_unit
@@ -507,5 +514,5 @@
 #view signals
 # add list -radix hexadecimal {/mp3_tb/dut/datapath/regfile/data}
 # run 50000000ns
-# write list /tmp/tmp.KIeBEbeo22/test_list.lst
+# write list /tmp/tmp.u307Pm8Qfx/test_list.lst
 # exit

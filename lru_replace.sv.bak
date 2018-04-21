@@ -1,0 +1,5 @@
+module lru_replace
+(
+	input lru_out,
+	output wb_sel
+);

@@ -6,8 +6,8 @@ module choice_predictor
     input lc3b_word if_pc,
 	 input lc3b_word wb_pcplus2,
     input wbisbranch,
-    input lc_pred_correct,
-	 input gl_pred_correct,
+    input p0_pred_correct,
+	 input p1_pred_correct,
 	 output logic pred_select
 );
 
@@ -15,12 +15,10 @@ lc3b_word wb_pc;
 logic [1:0] meta_pred;
 logic [1:0] meta_update;
 logic [1:0] current_state;
-logic [1:0] pht_out;
 logic [1:0] inc;
 
 
 assign wb_pc = wb_pcplus2 - 4'h2;
-assign gl_pred_taken = pht_out[1];
 assign pred_select = meta_pred[1];
 
 pattern_hist_table #(.entry (8)) meta_table
@@ -38,10 +36,10 @@ always_comb
 begin
 
 	//p0 local p1 global 0 1 inc 
-	if ( lc_pred_correct && (!gl_pred_correct) )
-		inc = 1;
-	else if ( (!lc_pred_correct) && gl_pred_correct)
+	if ( p0_pred_correct && (!p1_pred_correct) )
 		inc = 0;
+	else if ( (!p0_pred_correct) && p1_pred_correct)
+		inc = 1;
 	else inc = 2;	//no update
 	
 	meta_update = current_state;	

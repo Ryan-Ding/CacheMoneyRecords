@@ -7,7 +7,7 @@ state.write_back 0 1 0 1 0
 state.load_transit 1 0 0 1 0 
 state.strobe 0 0 0 1 1 
 
-State Machine - |mp3|l2cache:l2cache1|l2cache_control:l2cache_controller|state
+State Machine - |mp3|l2cache:l2cache1|l2cache_control:l2cache_control|state
 Name state.strobe state.write_back state.allocate state.hit_idle 
 state.hit_idle 0 0 0 0 
 state.allocate 0 0 1 1 

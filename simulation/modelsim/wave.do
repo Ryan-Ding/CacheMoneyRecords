@@ -15,57 +15,20 @@ add wave -noupdate /mp3_tb/dut/datapath/crtl_reg_ex_mem_out
 add wave -noupdate /mp3_tb/dut/datapath/crtl_reg_mem_wb_out
 add wave -noupdate /mp3_tb/dut/datapath/wbisbranch
 add wave -noupdate /mp3_tb/dut/datapath/flush
-add wave -noupdate /mp3_tb/dut/datapath/regfile/reg_b
-add wave -noupdate /mp3_tb/dut/datapath/sr2_id_ex_out
-add wave -noupdate /mp3_tb/dut/datapath/forwardmuxsr2/sel
-add wave -noupdate /mp3_tb/dut/datapath/forwardmuxsr2/a
-add wave -noupdate /mp3_tb/dut/datapath/forwardmuxsr2/b
-add wave -noupdate /mp3_tb/dut/datapath/forwardmuxsr2/c
-add wave -noupdate /mp3_tb/dut/datapath/forwardmuxsr2/d
-add wave -noupdate /mp3_tb/dut/datapath/forwardmuxsr2/f
-add wave -noupdate /mp3_tb/dut/datapath/sr2_ex_mem_out
-add wave -noupdate -expand /mp3_tb/dut/dcache1/cache_datapath1/data0/data
-add wave -noupdate -expand /mp3_tb/dut/dcache1/cache_datapath1/data1/data
-add wave -noupdate /mp3_tb/dut/datapath/pcmux/sel
-add wave -noupdate /mp3_tb/dut/datapath/pcmux/a
-add wave -noupdate /mp3_tb/dut/datapath/pcmux/b
-add wave -noupdate /mp3_tb/dut/datapath/pcmux/c
-add wave -noupdate /mp3_tb/dut/datapath/pcmux/d
-add wave -noupdate /mp3_tb/dut/datapath/pcmux/f
-add wave -noupdate /mp3_tb/dut/datapath/btb/clk
-add wave -noupdate /mp3_tb/dut/datapath/btb/branch_instruction
-add wave -noupdate /mp3_tb/dut/datapath/btb/pc_addr
-add wave -noupdate /mp3_tb/dut/datapath/btb/wb_addr
-add wave -noupdate /mp3_tb/dut/datapath/btb/wb_enable
-add wave -noupdate /mp3_tb/dut/datapath/btb/btb_out
-add wave -noupdate /mp3_tb/dut/datapath/btb/pc_hit
-add wave -noupdate /mp3_tb/dut/datapath/btb/way0_write
-add wave -noupdate /mp3_tb/dut/datapath/btb/way1_write
-add wave -noupdate /mp3_tb/dut/datapath/btb/way2_write
-add wave -noupdate /mp3_tb/dut/datapath/btb/way3_write
-add wave -noupdate /mp3_tb/dut/datapath/btb/lru_load
-add wave -noupdate /mp3_tb/dut/datapath/btb/wb_comp0_out
-add wave -noupdate /mp3_tb/dut/datapath/btb/wb_comp1_out
-add wave -noupdate /mp3_tb/dut/datapath/btb/wb_comp2_out
-add wave -noupdate /mp3_tb/dut/datapath/btb/wb_comp3_out
-add wave -noupdate /mp3_tb/dut/datapath/btb/wb_hit
-add wave -noupdate /mp3_tb/dut/datapath/btb/lru_out
-add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/clk
-add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/if_pc
-add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/wb_pcplus2
-add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/wbisbranch
-add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/actual_taken
-add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/gl_pred_taken
-add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/gl_pred_correct
-add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/wb_pc
-add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/bhrout
-add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/pht_update_taken
-add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/current_state
-add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/pht_out
-add wave -noupdate /mp3_tb/dut/datapath/btb/btb_datapath0/data0/data
-add wave -noupdate /mp3_tb/dut/datapath/btb/btb_datapath0/data1/data
-add wave -noupdate /mp3_tb/dut/datapath/btb/btb_datapath0/data2/data
-add wave -noupdate /mp3_tb/dut/datapath/btb/btb_datapath0/data3/data
+add wave -noupdate /mp3_tb/dut/l2cache1/way0_write
+add wave -noupdate /mp3_tb/dut/l2cache1/way1_write
+add wave -noupdate /mp3_tb/dut/l2cache1/way2_write
+add wave -noupdate /mp3_tb/dut/l2cache1/way3_write
+add wave -noupdate /mp3_tb/dut/l2cache1/l2cache_datapath/data0/index
+add wave -noupdate -expand -subitemconfig {{/mp3_tb/dut/l2cache1/l2cache_datapath/lru/data[2]} -expand} /mp3_tb/dut/l2cache1/l2cache_datapath/lru/data
+add wave -noupdate -expand /mp3_tb/dut/l2cache1/l2cache_datapath/data0/data
+add wave -noupdate -expand /mp3_tb/dut/l2cache1/l2cache_datapath/data1/data
+add wave -noupdate -expand /mp3_tb/dut/l2cache1/l2cache_datapath/data2/data
+add wave -noupdate -expand /mp3_tb/dut/l2cache1/l2cache_datapath/data3/data
+add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/pattern_hist_table/data
+add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/bhr/data
+add wave -noupdate /mp3_tb/dut/datapath/local_br_predictor/local_br_hist_table/data
+add wave -noupdate /mp3_tb/dut/datapath/choice_predictor/meta_table/data
 add wave -noupdate /mp3_tb/dut/datapath/counter_control/clk
 add wave -noupdate /mp3_tb/dut/datapath/counter_control/mem_address
 add wave -noupdate /mp3_tb/dut/datapath/counter_control/load_pc
@@ -90,10 +53,73 @@ add wave -noupdate /mp3_tb/dut/datapath/counter_control/total_instruction_count
 add wave -noupdate /mp3_tb/dut/datapath/counter_control/misprediction_count
 add wave -noupdate /mp3_tb/dut/datapath/counter_control/total_branch_count
 add wave -noupdate /mp3_tb/dut/datapath/counter_control/stall_count
+add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/clk
+add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/if_pc
+add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/wb_pcplus2
+add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/wbisbranch
+add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/actual_taken
+add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/gl_pred_taken
+add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/gl_pred_correct
+add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/wb_pc
+add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/bhrout
+add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/pht_update_taken
+add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/current_state
+add wave -noupdate /mp3_tb/dut/datapath/global_br_predictor/pht_out
+add wave -noupdate /mp3_tb/dut/datapath/local_br_predictor/clk
+add wave -noupdate /mp3_tb/dut/datapath/local_br_predictor/if_pc
+add wave -noupdate /mp3_tb/dut/datapath/local_br_predictor/wb_pcplus2
+add wave -noupdate /mp3_tb/dut/datapath/local_br_predictor/wbisbranch
+add wave -noupdate /mp3_tb/dut/datapath/local_br_predictor/actual_taken
+add wave -noupdate /mp3_tb/dut/datapath/local_br_predictor/lc_pred_taken
+add wave -noupdate /mp3_tb/dut/datapath/local_br_predictor/lc_pred_correct
+add wave -noupdate /mp3_tb/dut/datapath/local_br_predictor/wb_pc
+add wave -noupdate /mp3_tb/dut/datapath/local_br_predictor/pht_update_taken
+add wave -noupdate /mp3_tb/dut/datapath/local_br_predictor/current_state
+add wave -noupdate /mp3_tb/dut/datapath/local_br_predictor/pht_out
+add wave -noupdate /mp3_tb/dut/datapath/choice_predictor/clk
+add wave -noupdate /mp3_tb/dut/datapath/choice_predictor/if_pc
+add wave -noupdate /mp3_tb/dut/datapath/choice_predictor/wb_pcplus2
+add wave -noupdate /mp3_tb/dut/datapath/choice_predictor/wbisbranch
+add wave -noupdate /mp3_tb/dut/datapath/choice_predictor/p0_pred_correct
+add wave -noupdate /mp3_tb/dut/datapath/choice_predictor/p1_pred_correct
+add wave -noupdate /mp3_tb/dut/datapath/choice_predictor/pred_select
+add wave -noupdate /mp3_tb/dut/datapath/choice_predictor/wb_pc
+add wave -noupdate /mp3_tb/dut/datapath/choice_predictor/meta_pred
+add wave -noupdate /mp3_tb/dut/datapath/choice_predictor/meta_update
+add wave -noupdate /mp3_tb/dut/datapath/choice_predictor/current_state
+add wave -noupdate /mp3_tb/dut/datapath/choice_predictor/inc
+add wave -noupdate /mp3_tb/dut/datapath/pcmux/sel
+add wave -noupdate /mp3_tb/dut/datapath/pcmux/a
+add wave -noupdate /mp3_tb/dut/datapath/pcmux/b
+add wave -noupdate /mp3_tb/dut/datapath/pcmux/c
+add wave -noupdate /mp3_tb/dut/datapath/pcmux/d
+add wave -noupdate /mp3_tb/dut/datapath/pcmux/f
+add wave -noupdate /mp3_tb/dut/datapath/btb/clk
+add wave -noupdate /mp3_tb/dut/datapath/btb/branch_instruction
+add wave -noupdate /mp3_tb/dut/datapath/btb/pc_addr
+add wave -noupdate /mp3_tb/dut/datapath/btb/wb_addr
+add wave -noupdate /mp3_tb/dut/datapath/btb/wb_enable
+add wave -noupdate /mp3_tb/dut/datapath/btb/btb_out
+add wave -noupdate /mp3_tb/dut/datapath/btb/pc_hit
+add wave -noupdate /mp3_tb/dut/datapath/btb/way0_write
+add wave -noupdate /mp3_tb/dut/datapath/btb/way1_write
+add wave -noupdate /mp3_tb/dut/datapath/btb/way2_write
+add wave -noupdate /mp3_tb/dut/datapath/btb/way3_write
+add wave -noupdate /mp3_tb/dut/datapath/btb/lru_load
+add wave -noupdate /mp3_tb/dut/datapath/btb/wb_comp0_out
+add wave -noupdate /mp3_tb/dut/datapath/btb/wb_comp1_out
+add wave -noupdate /mp3_tb/dut/datapath/btb/wb_comp2_out
+add wave -noupdate /mp3_tb/dut/datapath/btb/wb_comp3_out
+add wave -noupdate /mp3_tb/dut/datapath/btb/wb_hit
+add wave -noupdate /mp3_tb/dut/datapath/btb/lru_out
+add wave -noupdate /mp3_tb/dut/datapath/btb/btb_datapath0/data0/data
+add wave -noupdate /mp3_tb/dut/datapath/btb/btb_datapath0/data1/data
+add wave -noupdate /mp3_tb/dut/datapath/btb/btb_datapath0/data2/data
+add wave -noupdate /mp3_tb/dut/datapath/btb/btb_datapath0/data3/data
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {352417750 ps} 0}
+WaveRestoreCursors {{Cursor 1} {3124487 ps} 0}
 quietly wave cursor active 1
-configure wave -namecolwidth 392
+configure wave -namecolwidth 478
 configure wave -valuecolwidth 265
 configure wave -justifyvalue left
 configure wave -signalnamewidth 0
@@ -107,4 +133,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {352212389 ps} {352566180 ps}
+WaveRestoreZoom {0 ps} {4148478 ps}
