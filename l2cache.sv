@@ -24,13 +24,16 @@ logic v1_in;
 logic dirty1_write;
 logic dirty1_in;
 logic lru_write;
-logic lru_in;
-logic lru_out;
+logic [2:0] lru_in;
+logic [2:0] lru_out;
 logic datainmux_sel;
 logic memaddrmux_sel;
 logic dirty;
 logic hit;
 logic hit0;
+logic hit1;
+logic hit2;
+logic hit3;
 
 logic mem_ack;
 logic mem_rty;
@@ -112,6 +115,19 @@ l2cache_control l2cache_controller
 	 .v1_in,
 	 .dirty1_write,
 	 .dirty1_in,
+	 
+	 .way2_write,
+	 .v2_write,
+	 .v2_in,
+	 .dirty2_write,
+	 .dirty2_in,
+	 
+	 .way3_write,
+	 .v3_write,
+	 .v3_in,
+	 .dirty3_write,
+	 .dirty3_in,
+	 
 	 .lru_write,
 	 .lru_in,
 	 .lru_out,
@@ -119,7 +135,11 @@ l2cache_control l2cache_controller
 	 .memaddrmux_sel,
 	 .dirty,
 	 .hit,
+	 
 	 .hit0,
+	 .hit1,
+	 .hit2,
+	 .hit3,
 	 
 	 // physical memory
 	 .mem_ack,
@@ -145,16 +165,31 @@ l2cache_datapath l2cache_datapath1
 
     /* control signals */
     .adr_i_cpu,
+	 
 	 .way0_write,
 	 .v0_write,
 	 .v0_in,
 	 .dirty0_write,
 	 .dirty0_in,
+	 
 	 .way1_write,
 	 .v1_write,
 	 .v1_in,
 	 .dirty1_write,
 	 .dirty1_in,
+	 
+	 .way2_write,
+	 .v2_write,
+	 .v2_in,
+	 .dirty2_write,
+	 .dirty2_in,
+	 
+	 .way3_write,
+	 .v3_write,
+	 .v3_in,
+	 .dirty3_write,
+	 .dirty3_in,	 
+	 
 	 .lru_write,
 	 .lru_in,
 	 .lru_out,
@@ -162,7 +197,11 @@ l2cache_datapath l2cache_datapath1
 	 .memaddrmux_sel,
 	 .dirty,
 	 .hit,
+	 
 	 .hit0,
+	 .hit1,
+	 .hit2,
+	 .hit3,
 	 
 	 //cpu signals
 	 .dat_o_cpu,
@@ -172,10 +211,7 @@ l2cache_datapath l2cache_datapath1
 	 //mem signals
 	 .dat_o_mem,
 	 .adr_o_mem,
-	 .dat_i_mem
-	 
-	 
-	 
+	 .dat_i_mem	 
 );
 
 

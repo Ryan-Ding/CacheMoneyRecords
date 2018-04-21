@@ -18,6 +18,10 @@ module l2cache_datapath
 	 input dirty1_in,
 	 input lru_write,
 	 input lru_in,
+	 
+	 input way2_write,
+	 input way3_write, 
+	 
 	 output logic lru_out,
 	 input datainmux_sel,
 	 input memaddrmux_sel,
@@ -58,15 +62,30 @@ lc3b_word write_back_addr;
 lc3b_8words cpudatainmux_out;
 //logic lru_out;
 
-
-
 assign hit0 = (adr_i_cpu[15:8] == tag0_out) & valid0_out;
 assign hit1 = (adr_i_cpu[15:8] == tag1_out) & valid1_out;
-assign hit = hit0 | hit1;
+assign hit2 = (adr_i_cpu[15:8] == tag1_out) & valid2_out;
+assign hit3 = (adr_i_cpu[15:8] == tag3_out) & valid3_out;
+
+assign hit = hit0 | hit1 | hit2 | hit3;
+
 assign write_back_addr = {tagmux_out,adr_i_cpu[7:4],4'b0000};
 
+always_comb
+begin 
+   dataout_mux_sel = 2'b00;
+	 if(hit0)
+		dataout_mux_sel = 2'b00;
+	 else if(hit1)
+		dataout_mux_sel = 2'b01;
+	 else if(hit2)
+		dataout_mux_sel = 2'b10;
+	 else if(hit3)
+		dataout_mux_sel = 2'b11;
+end
 
 //way0
+
 //data
 l2array #(.width(128)) data0
 (
@@ -149,84 +168,86 @@ l2array #(.width(1)) dirty1
     .datain(dirty1_in),
     .dataout(dirty1_out)
 );
-//way2
+
+// way2
+
 //data
-//l2array #(.width(128)) data2
-//(
-//    .clk(clk),
-//    .write(way0_write),
-//    .index(adr_i_cpu[7:4]),
-//    .datain(datainmux_out),
-//    .dataout(data0_out)
-//);
-////tag
-//l2array #(.width(8)) tag2
-//(
-//    .clk(clk),
-//    .write(way0_write),
-//    .index(adr_i_cpu[7:4]),
-//    .datain(adr_i_cpu[15:8]),
-//    .dataout(tag0_out)
-//);
-//
-//l2array #(.width(1)) valid2
-//(
-//    .clk(clk),
-//    .write(v0_write),
-//    .index(adr_i_cpu[7:4]),
-//    .datain(v0_in),
-//    .dataout(valid0_out)
-//);
-//
-//l2array #(.width(1)) dirty2
-//(
-//    .clk(clk),
-//    .write(dirty0_write),
-//    .index(adr_i_cpu[7:4]),
-//    .datain(dirty0_in),
-//    .dataout(dirty0_out)
-//);
-//
-////way3
-////data
-//l2array #(.width(128)) data3
-//(
-//    .clk(clk),
-//    .write(way0_write),
-//    .index(adr_i_cpu[7:4]),
-//    .datain(datainmux_out),
-//    .dataout(data0_out)
-//);
-////tag
-//l2array #(.width(8)) tag3
-//(
-//    .clk(clk),
-//    .write(way0_write),
-//    .index(adr_i_cpu[7:4]),
-//    .datain(adr_i_cpu[15:8]),
-//    .dataout(tag0_out)
-//);
-//
-//l2array #(.width(1)) valid3
-//(
-//    .clk(clk),
-//    .write(v0_write),
-//    .index(adr_i_cpu[7:4]),
-//    .datain(v0_in),
-//    .dataout(valid0_out)
-//);
-//
-//l2array #(.width(1)) dirty3
-//(
-//    .clk(clk),
-//    .write(dirty0_write),
-//    .index(adr_i_cpu[7:4]),
-//    .datain(dirty0_in),
-//    .dataout(dirty0_out)
-//);
+l2array #(.width(128)) data2
+(
+    .clk(clk),
+    .write(way2_write),
+    .index(adr_i_cpu[7:4]),
+    .datain(datainmux_out),
+    .dataout(data2_out)
+);
+//tag
+l2array #(.width(8)) tag2
+(
+    .clk(clk),
+    .write(way2_write),
+    .index(adr_i_cpu[7:4]),
+    .datain(adr_i_cpu[15:8]),
+    .dataout(tag2_out)
+);
+
+l2array #(.width(1)) valid2
+(
+    .clk(clk),
+    .write(v2_write),
+    .index(adr_i_cpu[7:4]),
+    .datain(v2_in),
+    .dataout(valid2_out)
+);
+
+l2array #(.width(1)) dirty2
+(
+    .clk(clk),
+    .write(dirty2_write),
+    .index(adr_i_cpu[7:4]),
+    .datain(dirty2_in),
+    .dataout(dirty2_out)
+);
+
+// way3
+
+//data
+l2array #(.width(128)) data3
+(
+    .clk(clk),
+    .write(way3_write),
+    .index(adr_i_cpu[7:4]),
+    .datain(datainmux_out),
+    .dataout(data3_out)
+);
+//tag
+l2array #(.width(8)) tag3
+(
+    .clk(clk),
+    .write(way3_write),
+    .index(adr_i_cpu[7:4]),
+    .datain(adr_i_cpu[15:8]),
+    .dataout(tag3_out)
+);
+
+l2array #(.width(1)) valid3
+(
+    .clk(clk),
+    .write(v3_write),
+    .index(adr_i_cpu[7:4]),
+    .datain(v3_in),
+    .dataout(valid3_out)
+);
+
+l2array #(.width(1)) dirty3
+(
+    .clk(clk),
+    .write(dirty3_write),
+    .index(adr_i_cpu[7:4]),
+    .datain(dirty3_in),
+    .dataout(dirty3_out)
+);
 
 
-//
 l2array #(.width(1)) lru
 (
     .clk(clk),
@@ -238,27 +259,33 @@ l2array #(.width(1)) lru
 
 
 
-mux2 #(.width (128)) cpudatamux
+mux4 #(.width (128)) cpudatamux
 (
 	.sel(hit0),
-	.a(data1_out), 
-	.b(data0_out),
+	.a(data0_out), 
+	.b(data1_out),
+	.c(data2_out),
+	.d(data3_out),
 	.f(dat_o_cpu)
 );
 
-mux2 #(.width (128)) memdatamux
+mux4 #(.width (128)) memdatamux
 (
 	.sel(lru_out),
 	.a(data0_out), 
 	.b(data1_out),
+	.c(data2_out),
+	.d(data4_out),
 	.f(dat_o_mem)
 );
 
-mux2 #(.width (8)) tagmux
+mux4 #(.width (8)) tagmux
 (
 	.sel(lru_out),
 	.a(tag0_out), 
 	.b(tag1_out),
+	.c(tag2_out),
+	.d(tag3_out),
 	.f(tagmux_out)
 );
 
@@ -270,11 +297,13 @@ mux2 #(.width (16)) memaddrmux
 	.f(adr_o_mem)
 );
 
-mux2 #(.width (1)) dirtymux
+mux4 #(.width (1)) dirtymux
 (
 	.sel(lru_out),
 	.a(dirty0_out), 
 	.b(dirty1_out),
+	.c(dirty2_out),
+	.d(dirty3_out),
 	.f(dirty)
 );
 
@@ -293,6 +322,14 @@ cpudatainmux cpudatainmux1
 	.dat_o_cpu,
 	.dat_i_cpu,
 	.cpudatainmux_out
+);
+
+// Pseudo LRU algorithm
+psuedo_lru pseudo_lru 
+(
+	.lru_in(lru_out),
+	.way_hit(way_hit),
+	.lru_out(lru_write)
 );
  
 endmodule : l2cache_datapath

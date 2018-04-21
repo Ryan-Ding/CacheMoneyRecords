@@ -1,5 +1,3 @@
-
-
 module l2cache_control
 (
     /* Input and output port declarations */
@@ -10,19 +8,42 @@ module l2cache_control
 	 output logic v0_in,
 	 output logic dirty0_write,
 	 output logic dirty0_in,
+	 
 	 output logic way1_write,
 	 output logic v1_write,
 	 output logic v1_in,
 	 output logic dirty1_write,
 	 output logic dirty1_in,
+	 
+	 output logic way2_write,
+	 output logic v2_write,
+	 output logic v2_in,
+	 output logic dirty2_write,
+	 output logic dirty2_in,
+	 
+	 output logic way3_write,
+	 output logic v3_write,
+	 output logic v3_in,
+	 output logic dirty3_write,
+	 output logic dirty3_in,
+	 
 	 output logic lru_write,
-	 output logic lru_in,
-	 input lru_out,
-	 output logic datainmux_sel,
+	 
+	 output logic [2:0] lru_in,
+	 
+	 output logic [1:0] datainmux_sel,
+	 
 	 output logic memaddrmux_sel,
+	 
+	 input [2:0] lru_out,
+	 
 	 input dirty,
 	 input hit,
+	 
 	 input hit0,
+	 input hit1,
+	 input hit2,
+	 input hit3,
 	 
 	 // physical memory
 	 input mem_ack,
@@ -57,13 +78,27 @@ begin : state_actions
 	 v0_in = 1'b0;
 	 dirty0_write= 1'b0;
 	 dirty0_in= 1'b0;
+	 
 	 way1_write = 1'b0;
 	 v1_write= 1'b0;
 	 v1_in= 1'b0;
 	 dirty1_write= 1'b0;
 	 dirty1_in= 1'b0;
+	 
+	 way2_write = 1'b0;
+	 v2_write = 1'b0;
+	 v2_in = 1'b0;
+	 dirty2_write 1'b0;
+	 dirty2_in = 1'b0;
+	 
+	 way3_write = 1'b0;	 
+	 v3_write = 1'b0;
+	 v3_in = 1'b0;
+	 dirty3_write = 1'b0;
+	 dirty3_in = 1'b0;	 
+	 
 	 lru_write= 1'b0;
-	 lru_in = 1'b0;
+	 lru_in = 3'b000;
 	 datainmux_sel= 1'b0;
 	 memaddrmux_sel= 1'b0;
 	 
@@ -71,7 +106,7 @@ begin : state_actions
 	 mem_cyc = 1'b0;
 	 mem_stb = 1'b0;
 	 mem_we = 1'b0;
-	 //
+	 
 	 cpu_ack = 1'b0;
 //	 cpu_rty = 1'b0;
 	
@@ -81,16 +116,25 @@ begin : state_actions
 	 case(state)
 		hit_idle: begin
 			
-			if (cpu_cyc & cpu_stb  & hit ) begin
+			if (cpu_cyc & cpu_stb & hit) begin
 				// get the lru
 				if (hit0) begin
-					lru_in = 1;
+					lru_in = {2'b00,lru_out[2]};
 					lru_write = 1;
 				end
-				else begin
-					lru_in = 0;
+				else if (hit1) begin
+					lru_in = {2'b01,lru_out[2]};
 					lru_write = 1;
 				end
+				else if (hit2) begin
+					lru_in = {1'b1,lru_out[1],1'b0};
+					lru_write = 1;
+				end
+				else if (hit3) begin
+					lru_in = {1'b1,lru_out[1],1'b1};
+					lru_write = 1;
+				end
+				
 				if (cpu_we) begin
 					datainmux_sel = 1;
 					if(hit0) begin
@@ -98,16 +142,29 @@ begin : state_actions
 						v0_write = 1;
 						v0_in = 1;
 						dirty0_write= 1;
-						dirty0_in= 1;
+						dirty0_in = 1;
 					end
-					else begin
+					else if(hit1) begin
 						way1_write = 1;
 						v1_write = 1;
 						v1_in = 1;
 						dirty1_write= 1;
-						dirty1_in= 1;
+						dirty1_in = 1;
 					end
-			
+					else if(hit2) begin
+						way2_write = 1;
+						v2_write = 1;
+						v2_in = 1;
+						dirty2_write = 1;
+						dirty2_in = 1;
+					end
+					else if(hit3) begin
+						way3_write = 1;
+						v3_write = 1;
+						v3_in = 1;
+						dirty3_write = 1;
+						dirty3_in = 1;
+					end
 				end
 				//set ack
 				cpu_ack = 1'b1;
@@ -120,20 +177,37 @@ begin : state_actions
 			mem_stb = 1;
 			mem_we = 0;
 			
-			if(lru_out == 0) begin
+			if(lru_out[0] == 0 && lru_out[1] == 0) begin
 				way0_write = 1;
 				v0_write = 1;
 				v0_in = 1;
 				dirty0_write= 1;
 				dirty0_in= 0;
 			end
-			else begin
+			
+			else if(lru_out[0] == 0 && lru_out[1] == 1) begin
 				way1_write = 1;
 				v1_write = 1;
 				v1_in = 1;
 				dirty1_write= 1;
 				dirty1_in= 0;
 			end
+			
+			else if(lru_out[0] == 1 && lru_out[2] == 0) begin
+				way2_write = 1;
+				v2_write = 1;
+				v2_in = 1;
+				dirty2_write= 1;
+				dirty2_in= 0;
+			end
+			
+			else if(lru_out[0] == 1 && lru_out[2] == 1) begin
+				way2_write = 1;
+				v2_write = 1;
+				v2_in = 1;
+				dirty2_write= 1;
+				dirty2_in= 0;
+			end			
 			
 		end
 		write_back: begin
