@@ -82,6 +82,11 @@ assign dat_i_mem = wb_cache_mem.DAT_S;
 assign mem_ack = wb_cache_mem.ACK;
 assign mem_rty = wb_cache_mem.RTY;
 
+
+
+logic reginmux_sel;
+logic addrregmux_sel;	 
+
 lc3b_word l1_total_counter;
 assign l1_hit_counter = l1_total_counter - l1_miss_counter;
 initial
@@ -136,9 +141,11 @@ cache_control cache_controller
 	 .cpu_we,
 	 .cpu_ack,
 	 .load_mar,
-	 .load_mdr
+	 .load_mdr,
 //	 .cpu_rty
 	 
+	 .reginmux_sel,
+	 .addrregmux_sel
 	 
 
 );
@@ -178,10 +185,11 @@ cache_datapath cache_datapath1
 	 .adr_o_mem,
 	 .dat_i_mem,
 	 .load_mar,
-	 .load_mdr
+	 .load_mdr,
 	 
 	 
-	 
+	 .reginmux_sel,
+	 .addrregmux_sel
 );
 
 

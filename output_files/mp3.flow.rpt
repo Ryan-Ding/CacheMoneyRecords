@@ -1,6 +1,6 @@
 Flow report for mp3
-Sat Apr 21 19:00:35 2018
-Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Full Version
+Sun Apr 22 01:56:37 2018
+Quartus II 32-bit Version 13.1.4 Build 182 03/12/2014 SJ Full Version
 
 
 ---------------------
@@ -21,47 +21,44 @@ Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Full Version
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Copyright (C) 1991-2014 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus II License Agreement,
-the Altera MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Flow Summary                                                                    ;
-+-----------------------------------+---------------------------------------------+
-; Flow Status                       ; Successful - Sat Apr 21 19:00:34 2018       ;
-; Quartus II 64-Bit Version         ; 15.0.2 Build 153 07/15/2015 SJ Full Version ;
-; Revision Name                     ; mp3                                         ;
-; Top-level Entity Name             ; mp3                                         ;
-; Family                            ; Stratix IV                                  ;
-; Logic utilization                 ; N/A                                         ;
-;     Combinational ALUTs           ; 8,385                                       ;
-;     Memory ALUTs                  ; 0                                           ;
-;     Dedicated logic registers     ; 15,961                                      ;
-; Total registers                   ; 15961                                       ;
-; Total pins                        ; 290                                         ;
-; Total virtual pins                ; 0                                           ;
-; Total block memory bits           ; 992                                         ;
-; DSP block 18-bit elements         ; 0                                           ;
-; Total GXB Receiver Channel PCS    ; 0                                           ;
-; Total GXB Receiver Channel PMA    ; 0                                           ;
-; Total GXB Transmitter Channel PCS ; 0                                           ;
-; Total GXB Transmitter Channel PMA ; 0                                           ;
-; Total PLLs                        ; 0                                           ;
-; Total DLLs                        ; 0                                           ;
-+-----------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------+
+; Flow Summary                                                                ;
++-------------------------------+---------------------------------------------+
+; Flow Status                   ; Successful - Sun Apr 22 01:56:36 2018       ;
+; Quartus II 32-bit Version     ; 13.1.4 Build 182 03/12/2014 SJ Full Version ;
+; Revision Name                 ; mp3                                         ;
+; Top-level Entity Name         ; mp3                                         ;
+; Family                        ; Stratix III                                 ;
+; Device                        ; EP3SE110F1152C2                             ;
+; Timing Models                 ; Final                                       ;
+; Logic utilization             ; N/A                                         ;
+;     Combinational ALUTs       ; 8,436                                       ;
+;     Memory ALUTs              ; 0                                           ;
+;     Dedicated logic registers ; 15,985                                      ;
+; Total registers               ; 15985                                       ;
+; Total pins                    ; 290                                         ;
+; Total virtual pins            ; 0                                           ;
+; Total block memory bits       ; 992                                         ;
+; DSP block 18-bit elements     ; 0                                           ;
+; Total PLLs                    ; 0                                           ;
+; Total DLLs                    ; 0                                           ;
++-------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -69,7 +66,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/21/2018 18:57:14 ;
+; Start date & time ; 04/22/2018 01:55:57 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mp3                 ;
 +-------------------+---------------------+
@@ -80,7 +77,7 @@ agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 345049504258.152435503308479          ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 176831338140758.152438015752000       ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; mp3_tb         ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; mp3_tb                                ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                     ; --            ; --          ; eda_simulation ;
@@ -92,6 +89,8 @@ agreement for further details.
 ; EDA_TEST_BENCH_NAME                  ; mp3_tb                                ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 20000 ns                              ; --            ; --          ; mp3_tb         ;
 ; EDA_TIME_SCALE                       ; 1 ps                                  ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --          ; --             ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                     ; --            ; --          ; --             ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                     ; --            ; --          ; --             ;
 ; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                            ; --            ; --          ; --             ;
@@ -110,24 +109,24 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:03:07     ; 1.0                     ; 1412 MB             ; 00:03:45                           ;
-; Total                ; 00:03:07     ; --                      ; --                  ; 00:03:45                           ;
+; Analysis & Synthesis ; 00:00:36     ; 1.0                     ; 568 MB              ; 00:00:34                           ;
+; Total                ; 00:00:36     ; --                      ; --                  ; 00:00:34                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                                 ;
-+----------------------+---------------------------+--------------+--------------+----------------+
-; Module Name          ; Machine Hostname          ; OS Name      ; OS Version   ; Processor type ;
-+----------------------+---------------------------+--------------+--------------+----------------+
-; Analysis & Synthesis ; linux-14.ews.illinois.edu ; CentOS Linux ; CentOS Linux ; x86_64         ;
-+----------------------+---------------------------+--------------+--------------+----------------+
++-----------------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                                     ;
++----------------------+-------------------------------+--------------+--------------+----------------+
+; Module Name          ; Machine Hostname              ; OS Name      ; OS Version   ; Processor type ;
++----------------------+-------------------------------+--------------+--------------+----------------+
+; Analysis & Synthesis ; eceb-2022-18.ews.illinois.edu ; CentOS Linux ; CentOS Linux ; x86_64         ;
++----------------------+-------------------------------+--------------+--------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off mp3 -c mp3
+quartus_map mp3 -c mp3
 
 
 

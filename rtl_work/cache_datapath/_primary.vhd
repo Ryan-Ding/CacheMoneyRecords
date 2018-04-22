@@ -29,6 +29,8 @@ entity cache_datapath is
         adr_o_mem       : out    vl_logic_vector(15 downto 0);
         dat_i_mem       : in     vl_logic_vector(127 downto 0);
         load_mar        : in     vl_logic;
-        load_mdr        : in     vl_logic
+        load_mdr        : in     vl_logic;
+        reginmux_sel    : in     vl_logic;
+        addrregmux_sel  : in     vl_logic
     );
 end cache_datapath;

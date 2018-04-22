@@ -1,5 +1,13 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="mp3">
+		<CBX_INST_ENTRY INSTANCE_NAME="|mp3|datapath:datapath|btb:btb|btb_datapath:btb_datapath0|btb_array:data0|altsyncram:data_rtl_0" CBX_FILE_NAME="altsyncram_9io1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mp3|datapath:datapath|btb:btb|btb_datapath:btb_datapath0|btb_array:data2|altsyncram:data_rtl_0" CBX_FILE_NAME="altsyncram_9io1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mp3|datapath:datapath|btb:btb|btb_datapath:btb_datapath0|btb_array:tag0|altsyncram:data_rtl_0" CBX_FILE_NAME="altsyncram_hjo1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mp3|datapath:datapath|btb:btb|btb_datapath:btb_datapath0|btb_array:tag2|altsyncram:data_rtl_0" CBX_FILE_NAME="altsyncram_hjo1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mp3|datapath:datapath|btb:btb|btb_datapath:btb_datapath0|btb_array:data1|altsyncram:data_rtl_0" CBX_FILE_NAME="altsyncram_9io1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mp3|datapath:datapath|btb:btb|btb_datapath:btb_datapath0|btb_array:data3|altsyncram:data_rtl_0" CBX_FILE_NAME="altsyncram_9io1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mp3|datapath:datapath|btb:btb|btb_datapath:btb_datapath0|btb_array:tag1|altsyncram:data_rtl_0" CBX_FILE_NAME="altsyncram_hjo1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mp3|datapath:datapath|btb:btb|btb_datapath:btb_datapath0|btb_array:tag3|altsyncram:data_rtl_0" CBX_FILE_NAME="altsyncram_hjo1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

@@ -36,9 +36,13 @@ module cache_control
 	 input cpu_stb,
 	 input cpu_we,
 	 output logic cpu_ack,
-	 output logic load_mar,
-	 output logic load_mdr
+	 output logic load_mdr,
 //	 output logic cpu_rty
+	 
+	 
+	 output logic reginmux_sel,
+	 output logic addrregmux_sel,
+	 output logic load_mar
 	 
 );
 
@@ -68,7 +72,6 @@ begin : state_actions
 	 lru_in = 1'b0;
 	 datainmux_sel= 1'b0;
 	 memaddrmux_sel= 1'b0;
-	 
 	 //memory wishbone
 	 mem_cyc = 1'b0;
 	 mem_stb = 1'b0;
@@ -76,15 +79,14 @@ begin : state_actions
 	 //
 	 cpu_ack = 1'b0;
 //	 cpu_rty = 1'b0;
-	load_mar = (cpu_cyc & cpu_stb);
+	//load_mar = (cpu_cyc & cpu_stb);
 	load_mdr = (cpu_cyc & cpu_stb);
 	
-	 
+	addrregmux_sel = 1'b0;
 	 /*et cetera*/
 	 
 	 case(state)
 		hit_idle: begin
-			
 			if (cpu_cyc & cpu_stb  & hit ) begin
 				// get the lru
 				if (hit0) begin
@@ -125,6 +127,8 @@ begin : state_actions
 			mem_stb = 1;
 			mem_we = 0;
 //			load_mar = 1;
+
+			addrregmux_sel = 1;
 			
 			if(lru_out == 0) begin
 				way0_write = 1;
@@ -144,6 +148,7 @@ begin : state_actions
 			
 		end
 		write_back: begin
+		addrregmux_sel = 1;
 //		if (cpu_cyc & cpu_stb) begin
 			memaddrmux_sel = 1;
 			mem_we = 1;
@@ -171,13 +176,25 @@ begin : next_state_logic
     /* Next state information and conditions (if any)
      * for transitioning between states */
 	  next_states = state;
+	  reginmux_sel = 0;
+	  load_mar = 0;
 	  case(state)
 		hit_idle:	
 			if(cpu_cyc & cpu_stb) begin
 					if(hit == 1) next_states = hit_idle;
 						else begin 
-							if(dirty == 0) next_states = allocate;
-							else next_states = write_back;
+							load_mar = 1;
+							if(dirty == 0) 
+							begin
+								next_states = allocate;
+							end
+
+							else 
+							begin
+								next_states = write_back;
+								reginmux_sel = 1;
+							end
+							
 						end
 			end
 		allocate: if (mem_ack == 0) next_states = allocate;

@@ -35,8 +35,10 @@ module cache_datapath
 	 output lc3b_word adr_o_mem,
 	 input lc3b_8words dat_i_mem,
 	 input load_mar,
-	 input load_mdr
+	 input load_mdr,
 	 
+	 input reginmux_sel,
+	 input addrregmux_sel
 	 
 	 
 );
@@ -65,11 +67,15 @@ lc3b_word adr_i_cpu;
 lc3b_8words dat_i_cpu;
 
 
-assign hit0 = (adr_i_cpu[15:7] == tag0_out) & valid0_out;
-assign hit1 = (adr_i_cpu[15:7] == tag1_out) & valid1_out;
-assign hit = hit0 | hit1;
-assign write_back_addr = {tagmux_out,adr_i_cpu[6:4],4'b0000};
+lc3b_word mar_in;
+lc3b_word mar_out;
 
+assign hit0 = (adr_i_cpu_in[15:7] == tag0_out) & valid0_out;
+assign hit1 = (adr_i_cpu_in[15:7] == tag1_out) & valid1_out;
+assign hit = hit0 | hit1;
+assign write_back_addr = {tagmux_out,adr_i_cpu_in[6:4],4'b0000};
+
+assign adr_o_mem = mar_out;
 
 //way0
 //data
@@ -191,13 +197,13 @@ mux2 #(.width (9)) tagmux
 	.f(tagmux_out)
 );
 
-mux2 #(.width (16)) memaddrmux
-(
-	.sel(memaddrmux_sel),
-	.a(adr_i_cpu), 
-	.b(write_back_addr),
-	.f(adr_o_mem)
-);
+//mux2 #(.width (16)) memaddrmux
+//(
+//	.sel(memaddrmux_sel),
+//	.a(adr_i_cpu), 
+//	.b(write_back_addr),
+//	.f(adr_o_mem)
+//);
 
 
 mux2 #(.width (1)) dirtymux
@@ -243,16 +249,31 @@ cpudatainmux cpudatainmux1
 //);
 //
 //
-assign adr_i_cpu = adr_i_cpu_in;
+//assign adr_i_cpu = adr_i_cpu_in;
 assign dat_i_cpu = dat_i_cpu_in;
-//register #(.width(16)) mar
-//(
-//    .clk(clk),
-//    .load(load_mar),
-//    .in(adr_i_cpu_in),
-//    .out(adr_i_cpu)
-//);
-//
+register #(.width(16)) mar
+(
+    .clk(clk),
+    .load(load_mar),
+    .in(mar_in),
+    .out(mar_out)
+);
+mux2 #(.width (16)) addrregmux
+(
+	.sel(addrregmux_sel),
+	.a(adr_i_cpu_in), 
+	.b(mar_out),
+	.f(adr_i_cpu)
+);
+
+mux2 #(.width (16)) reginmux
+(
+	.sel(reginmux_sel),
+	.a(adr_i_cpu_in), 
+	.b(write_back_addr),
+	.f(mar_in)
+);
+
 //register #(.width(128)) mdr
 //(
 //    .clk(clk),

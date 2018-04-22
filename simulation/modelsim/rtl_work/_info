@@ -27,7 +27,7 @@ Z7 8/home/rding4/ece411/cachemoneyrecords/adj.sv
 Z8 F/home/rding4/ece411/cachemoneyrecords/adj.sv
 L0 6
 Z9 OV;L;10.3d;59
-Z10 !s108 1524355099.397732
+Z10 !s108 1524378129.091679
 Z11 !s107 /home/rding4/ece411/cachemoneyrecords/adj.sv|
 Z12 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/adj.sv|
 !i113 1
@@ -76,7 +76,7 @@ Z16 8/home/rding4/ece411/cachemoneyrecords/alu.sv
 Z17 F/home/rding4/ece411/cachemoneyrecords/alu.sv
 L0 3
 R9
-Z18 !s108 1524355099.598412
+Z18 !s108 1524378129.158679
 Z19 !s107 /home/rding4/ece411/cachemoneyrecords/alu.sv|
 Z20 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/alu.sv|
 !i113 1
@@ -125,7 +125,7 @@ Z22 8/home/rding4/ece411/cachemoneyrecords/array.sv
 Z23 F/home/rding4/ece411/cachemoneyrecords/array.sv
 L0 3
 R9
-Z24 !s108 1524355105.198980
+Z24 !s108 1524378130.216076
 Z25 !s107 /home/rding4/ece411/cachemoneyrecords/array.sv|
 Z26 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/array.sv|
 !i113 1
@@ -157,7 +157,7 @@ R13
 R14
 vbhr
 R1
-Z27 !s110 1524355097
+Z27 !s110 1524378128
 !i10b 1
 !s100 ocX8hQ;I>[PWlS?3902QX0
 IZe2[=0HmO]H6nl4ij>_Sl0
@@ -173,7 +173,7 @@ R9
 r1
 !s85 0
 31
-!s108 1524355097.495765
+!s108 1524378128.505327
 !s107 /home/rding4/ece411/cachemoneyrecords/bhr.sv|
 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/bhr.sv|
 !i113 1
@@ -198,7 +198,7 @@ Z29 8/home/rding4/ece411/cachemoneyrecords/br_ctrl.sv
 Z30 F/home/rding4/ece411/cachemoneyrecords/br_ctrl.sv
 L0 3
 R9
-Z31 !s108 1524355100.884987
+Z31 !s108 1524378129.459181
 Z32 !s107 /home/rding4/ece411/cachemoneyrecords/br_ctrl.sv|
 Z33 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/br_ctrl.sv|
 !i113 1
@@ -247,7 +247,7 @@ Z34 8/home/rding4/ece411/cachemoneyrecords/branch_detection..sv
 Z35 F/home/rding4/ece411/cachemoneyrecords/branch_detection..sv
 L0 3
 R9
-Z36 !s108 1524355102.178547
+Z36 !s108 1524378129.813844
 Z37 !s107 /home/rding4/ece411/cachemoneyrecords/branch_detection..sv|
 Z38 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/branch_detection..sv|
 !i113 1
@@ -296,7 +296,7 @@ Z39 8/home/rding4/ece411/cachemoneyrecords/btb.sv
 Z40 F/home/rding4/ece411/cachemoneyrecords/btb.sv
 L0 3
 R9
-Z41 !s108 1524355105.308824
+Z41 !s108 1524378130.283108
 Z42 !s107 /home/rding4/ece411/cachemoneyrecords/btb.sv|
 Z43 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/btb.sv|
 !i113 1
@@ -321,7 +321,7 @@ Z44 8/home/rding4/ece411/cachemoneyrecords/btb_array.sv
 Z45 F/home/rding4/ece411/cachemoneyrecords/btb_array.sv
 L0 3
 R9
-Z46 !s108 1524355098.524152
+Z46 !s108 1524378128.850745
 Z47 !s107 /home/rding4/ece411/cachemoneyrecords/btb_array.sv|
 Z48 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/btb_array.sv|
 !i113 1
@@ -353,7 +353,7 @@ R13
 R14
 vbtb_control
 R1
-Z49 !s110 1524355095
+Z49 !s110 1524378127
 !i10b 1
 !s100 U2CEnIJ5YJCd>7biXdJKg3
 I1US<O_3@1M[GbW?;cnC]D1
@@ -369,7 +369,7 @@ R9
 r1
 !s85 0
 31
-!s108 1524355095.207473
+!s108 1524378127.793642
 !s107 /home/rding4/ece411/cachemoneyrecords/btb_control.sv|
 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/btb_control.sv|
 !i113 1
@@ -394,7 +394,7 @@ Z51 8/home/rding4/ece411/cachemoneyrecords/btb_datapath.sv
 Z52 F/home/rding4/ece411/cachemoneyrecords/btb_datapath.sv
 L0 3
 R9
-Z53 !s108 1524355098.342890
+Z53 !s108 1524378128.768543
 Z54 !s107 /home/rding4/ece411/cachemoneyrecords/btb_datapath.sv|
 Z55 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/btb_datapath.sv|
 !i113 1
@@ -442,7 +442,7 @@ R9
 r1
 !s85 0
 31
-!s108 1524355095.070451
+!s108 1524378127.738185
 !s107 /home/rding4/ece411/cachemoneyrecords/btb_lru_state.sv|
 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/btb_lru_state.sv|
 !i113 1
@@ -450,7 +450,7 @@ R13
 R14
 vbtb_sel
 R1
-Z56 !s110 1524355094
+R49
 !i10b 1
 !s100 RN>ff`Jhc^DVeW>j1o^8c1
 I8g3eJaALZD2Ro=`CTZ_H^0
@@ -466,7 +466,7 @@ R9
 r1
 !s85 0
 31
-!s108 1524355094.938155
+!s108 1524378127.682738
 !s107 /home/rding4/ece411/cachemoneyrecords/btb_sel.sv|
 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/btb_sel.sv|
 !i113 1
@@ -505,33 +505,33 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 djl@6cZ^9lUi60`OPE13c2
-I03>2PJW9YMd0cVDkNk6U=3
+!s100 DEkiGLRUI446h4<38U<NI2
+I1H=E9^R<4L6eGIKHIA^gh3
 !s105 cache_sv_unit
 S1
 R0
-Z57 w1523766952
-Z58 8/home/rding4/ece411/cachemoneyrecords/cache.sv
-Z59 F/home/rding4/ece411/cachemoneyrecords/cache.sv
+Z56 w1524375994
+Z57 8/home/rding4/ece411/cachemoneyrecords/cache.sv
+Z58 F/home/rding4/ece411/cachemoneyrecords/cache.sv
 L0 3
 R9
-Z60 !s108 1524355106.186016
-Z61 !s107 /home/rding4/ece411/cachemoneyrecords/cache.sv|
-Z62 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/cache.sv|
+Z59 !s108 1524378130.710777
+Z60 !s107 /home/rding4/ece411/cachemoneyrecords/cache.sv|
+Z61 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/cache.sv|
 !i113 1
 R13
 R14
 vcache_control
 R1
-R49
+R27
 !i10b 1
-!s100 P7>nQXz<mUKl]EE8hdkMK3
-IdI4bnJAmWTEJ24h4z@l@>3
+!s100 WKWd:YQRl7A=jghoe2X4[0
+ILL3QfQ>f?Xe6ZAc];OY9l3
 R4
 !s105 cache_control_sv_unit
 S1
 R0
-Z63 w1522961063
+w1524376219
 8/home/rding4/ece411/cachemoneyrecords/cache_control.sv
 F/home/rding4/ece411/cachemoneyrecords/cache_control.sv
 L0 3
@@ -539,7 +539,7 @@ R9
 r1
 !s85 0
 31
-!s108 1524355095.697157
+!s108 1524378128.010639
 !s107 /home/rding4/ece411/cachemoneyrecords/cache_control.sv|
 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/cache_control.sv|
 !i113 1
@@ -554,19 +554,19 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 Q]QDi9RczC]oXJ[6D93a11
-Iec7=ezihCh]efhUH<26L;1
+!s100 J^R_QCePmNKhlRN[]nWQR2
+IFLVTmHZJ``Fb?f[L]l09T0
 !s105 cache_datapath_sv_unit
 S1
 R0
-R63
-Z64 8/home/rding4/ece411/cachemoneyrecords/cache_datapath.sv
-Z65 F/home/rding4/ece411/cachemoneyrecords/cache_datapath.sv
+Z62 w1524377186
+Z63 8/home/rding4/ece411/cachemoneyrecords/cache_datapath.sv
+Z64 F/home/rding4/ece411/cachemoneyrecords/cache_datapath.sv
 L0 3
 R9
-Z66 !s108 1524355105.532878
-Z67 !s107 /home/rding4/ece411/cachemoneyrecords/cache_datapath.sv|
-Z68 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/cache_datapath.sv|
+Z65 !s108 1524378130.429567
+Z66 !s107 /home/rding4/ece411/cachemoneyrecords/cache_datapath.sv|
+Z67 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/cache_datapath.sv|
 !i113 1
 R13
 R14
@@ -583,14 +583,14 @@ I81ohiMn:5`3mY05K7KiY?3
 !i103 1
 S1
 R0
+R62
 R63
 R64
-R65
 L0 1
 R9
+R65
 R66
 R67
-R68
 !i113 1
 R13
 R14
@@ -608,14 +608,14 @@ IfLa;;>f3WCA=A^]n^f3Mf1
 !s105 cache_interconnect_sv_unit
 S1
 R0
-Z69 w1523766085
-Z70 8/home/rding4/ece411/cachemoneyrecords/cache_interconnect.sv
-Z71 F/home/rding4/ece411/cachemoneyrecords/cache_interconnect.sv
+Z68 w1523766085
+Z69 8/home/rding4/ece411/cachemoneyrecords/cache_interconnect.sv
+Z70 F/home/rding4/ece411/cachemoneyrecords/cache_interconnect.sv
 L0 3
 R9
-Z72 !s108 1524355105.651183
-Z73 !s107 /home/rding4/ece411/cachemoneyrecords/cache_interconnect.sv|
-Z74 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/cache_interconnect.sv|
+Z71 !s108 1524378130.496170
+Z72 !s107 /home/rding4/ece411/cachemoneyrecords/cache_interconnect.sv|
+Z73 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/cache_interconnect.sv|
 !i113 1
 R13
 R14
@@ -629,7 +629,7 @@ R4
 !s105 cache_interconnect_control_sv_unit
 S1
 R0
-Z75 w1521257881
+Z74 w1521257881
 8/home/rding4/ece411/cachemoneyrecords/cache_interconnect_control.sv
 F/home/rding4/ece411/cachemoneyrecords/cache_interconnect_control.sv
 L0 3
@@ -637,7 +637,7 @@ R9
 r1
 !s85 0
 31
-!s108 1524355095.532823
+!s108 1524378127.951197
 !s107 /home/rding4/ece411/cachemoneyrecords/cache_interconnect_control.sv|
 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/cache_interconnect_control.sv|
 !i113 1
@@ -657,14 +657,14 @@ IiWADhC[A?m?LB8dGgIRzD0
 !s105 cache_interconnect_datapath_sv_unit
 S1
 R0
-R75
-Z76 8/home/rding4/ece411/cachemoneyrecords/cache_interconnect_datapath.sv
-Z77 F/home/rding4/ece411/cachemoneyrecords/cache_interconnect_datapath.sv
+R74
+Z75 8/home/rding4/ece411/cachemoneyrecords/cache_interconnect_datapath.sv
+Z76 F/home/rding4/ece411/cachemoneyrecords/cache_interconnect_datapath.sv
 L0 3
 R9
-Z78 !s108 1524355099.151986
-Z79 !s107 /home/rding4/ece411/cachemoneyrecords/cache_interconnect_datapath.sv|
-Z80 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/cache_interconnect_datapath.sv|
+Z77 !s108 1524378129.036793
+Z78 !s107 /home/rding4/ece411/cachemoneyrecords/cache_interconnect_datapath.sv|
+Z79 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/cache_interconnect_datapath.sv|
 !i113 1
 R13
 R14
@@ -681,14 +681,14 @@ IJR_;;=?^iJOldSU>0A7O@2
 !i103 1
 S1
 R0
+R74
 R75
 R76
-R77
 L0 1
 R9
+R77
 R78
 R79
-R80
 !i113 1
 R13
 R14
@@ -705,14 +705,14 @@ IbNfDa[gPome3fd4_mneBY2
 !i103 1
 S1
 R0
+R68
 R69
 R70
-R71
 L0 1
 R9
+R71
 R72
 R73
-R74
 !i113 1
 R13
 R14
@@ -729,14 +729,14 @@ IlD5GaW5zl3jBz9_XI9;[d1
 !i103 1
 S1
 R0
+R56
 R57
 R58
-R59
 L0 1
 R9
+R59
 R60
 R61
-R62
 !i113 1
 R13
 R14
@@ -755,13 +755,13 @@ I15aTjRilI3ZP=6=AJ:YQk2
 S1
 R0
 R15
-Z81 8/home/rding4/ece411/cachemoneyrecords/cccomp.sv
-Z82 F/home/rding4/ece411/cachemoneyrecords/cccomp.sv
+Z80 8/home/rding4/ece411/cachemoneyrecords/cccomp.sv
+Z81 F/home/rding4/ece411/cachemoneyrecords/cccomp.sv
 L0 3
 R9
-Z83 !s108 1524355100.636349
-Z84 !s107 /home/rding4/ece411/cachemoneyrecords/cccomp.sv|
-Z85 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/cccomp.sv|
+Z82 !s108 1524378129.404805
+Z83 !s107 /home/rding4/ece411/cachemoneyrecords/cccomp.sv|
+Z84 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/cccomp.sv|
 !i113 1
 R13
 R14
@@ -779,13 +779,13 @@ I?84Y3J7j2dHFdR<Zzf09f1
 S1
 R0
 R15
+R80
 R81
-R82
 L0 1
 R9
+R82
 R83
 R84
-R85
 !i113 1
 R13
 R14
@@ -803,14 +803,14 @@ I`3NIF[1AMBOFCj;7Z@QMg3
 !s105 choice_predictor_sv_unit
 S1
 R0
-Z86 w1524340737
-Z87 8/home/rding4/ece411/cachemoneyrecords/choice_predictor.sv
-Z88 F/home/rding4/ece411/cachemoneyrecords/choice_predictor.sv
+Z85 w1524340737
+Z86 8/home/rding4/ece411/cachemoneyrecords/choice_predictor.sv
+Z87 F/home/rding4/ece411/cachemoneyrecords/choice_predictor.sv
 L0 3
 R9
-Z89 !s108 1524355105.091100
-Z90 !s107 /home/rding4/ece411/cachemoneyrecords/choice_predictor.sv|
-Z91 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/choice_predictor.sv|
+Z88 !s108 1524378130.157952
+Z89 !s107 /home/rding4/ece411/cachemoneyrecords/choice_predictor.sv|
+Z90 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/choice_predictor.sv|
 !i113 1
 R13
 R14
@@ -827,20 +827,20 @@ ImUzWbJzL;5lf?625`IeC?0
 !i103 1
 S1
 R0
+R85
 R86
 R87
-R88
 L0 1
 R9
+R88
 R89
 R90
-R91
 !i113 1
 R13
 R14
 vcomparator
 R1
-R56
+R49
 !i10b 1
 !s100 J8JRMAjfDjRfjQaCdfBf>1
 IS@nXPBR7bHk_C3cZ4TQ;d3
@@ -856,7 +856,7 @@ R9
 r1
 !s85 0
 31
-!s108 1524355094.616768
+!s108 1524378127.575664
 !s107 /home/rding4/ece411/cachemoneyrecords/comparator.sv|
 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/comparator.sv|
 !i113 1
@@ -876,14 +876,14 @@ I9VR6lT<E3O;8T71408hR:0
 !s105 control_sv_unit
 S1
 R0
-Z92 w1524087678
-Z93 8/home/rding4/ece411/cachemoneyrecords/control.sv
-Z94 F/home/rding4/ece411/cachemoneyrecords/control.sv
+Z91 w1524087678
+Z92 8/home/rding4/ece411/cachemoneyrecords/control.sv
+Z93 F/home/rding4/ece411/cachemoneyrecords/control.sv
 L0 4
 R9
-Z95 !s108 1524355099.801319
-Z96 !s107 /home/rding4/ece411/cachemoneyrecords/control.sv|
-Z97 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/control.sv|
+Z94 !s108 1524378129.210846
+Z95 !s107 /home/rding4/ece411/cachemoneyrecords/control.sv|
+Z96 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/control.sv|
 !i113 1
 R13
 R14
@@ -900,14 +900,14 @@ I^h3SGD0O6WTaFVE9H^2Ez1
 !i103 1
 S1
 R0
+R91
 R92
 R93
-R94
 L0 3
 R9
+R94
 R95
 R96
-R97
 !i113 1
 R13
 R14
@@ -925,14 +925,14 @@ Il4KfhF]NY:AT:VoWRe9MP0
 !s105 counter_control_sv_unit
 S1
 R0
-Z98 w1523817030
-Z99 8/home/rding4/ece411/cachemoneyrecords/counter_control.sv
-Z100 F/home/rding4/ece411/cachemoneyrecords/counter_control.sv
+Z97 w1523817030
+Z98 8/home/rding4/ece411/cachemoneyrecords/counter_control.sv
+Z99 F/home/rding4/ece411/cachemoneyrecords/counter_control.sv
 L0 3
 R9
-Z101 !s108 1524355104.674884
-Z102 !s107 /home/rding4/ece411/cachemoneyrecords/counter_control.sv|
-Z103 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/counter_control.sv|
+Z100 !s108 1524378129.940996
+Z101 !s107 /home/rding4/ece411/cachemoneyrecords/counter_control.sv|
+Z102 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/counter_control.sv|
 !i113 1
 R13
 R14
@@ -949,14 +949,14 @@ I`QeTRBOGM5hQa`XUbDOW=3
 !i103 1
 S1
 R0
+R97
 R98
 R99
-R100
 L0 1
 R9
+R100
 R101
 R102
-R103
 !i113 1
 R13
 R14
@@ -974,14 +974,14 @@ I27T0a7<;?gbMSi@ie^;HA1
 !s105 cpudatainmux_sv_unit
 S1
 R0
-R75
-Z104 8/home/rding4/ece411/cachemoneyrecords/cpudatainmux.sv
-Z105 F/home/rding4/ece411/cachemoneyrecords/cpudatainmux.sv
+R74
+Z103 8/home/rding4/ece411/cachemoneyrecords/cpudatainmux.sv
+Z104 F/home/rding4/ece411/cachemoneyrecords/cpudatainmux.sv
 L0 3
 R9
-Z106 !s108 1524355098.952503
-Z107 !s107 /home/rding4/ece411/cachemoneyrecords/cpudatainmux.sv|
-Z108 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/cpudatainmux.sv|
+Z105 !s108 1524378128.963420
+Z106 !s107 /home/rding4/ece411/cachemoneyrecords/cpudatainmux.sv|
+Z107 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/cpudatainmux.sv|
 !i113 1
 R13
 R14
@@ -998,14 +998,14 @@ IXLgi;kdonzW2NZP[TW[K=3
 !i103 1
 S1
 R0
-R75
+R74
+R103
 R104
-R105
 L0 1
 R9
+R105
 R106
 R107
-R108
 !i113 1
 R13
 R14
@@ -1023,14 +1023,14 @@ I6P[D:P7X;^6:BQXZ<`CiV3
 !s105 datapath_sv_unit
 S1
 R0
-Z109 w1524354609
-Z110 8/home/rding4/ece411/cachemoneyrecords/datapath.sv
-Z111 F/home/rding4/ece411/cachemoneyrecords/datapath.sv
+Z108 w1524354609
+Z109 8/home/rding4/ece411/cachemoneyrecords/datapath.sv
+Z110 F/home/rding4/ece411/cachemoneyrecords/datapath.sv
 L0 3
 R9
-Z112 !s108 1524355106.399398
-Z113 !s107 /home/rding4/ece411/cachemoneyrecords/datapath.sv|
-Z114 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/datapath.sv|
+Z111 !s108 1524378130.776161
+Z112 !s107 /home/rding4/ece411/cachemoneyrecords/datapath.sv|
+Z113 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/datapath.sv|
 !i113 1
 R13
 R14
@@ -1047,14 +1047,14 @@ IcVz>Dj4;MKWnjZlFUHzZh3
 !i103 1
 S1
 R0
+R108
 R109
 R110
-R111
 L0 1
 R9
+R111
 R112
 R113
-R114
 !i113 1
 R13
 R14
@@ -1072,14 +1072,14 @@ IWZz6]jFnzVT6dgeKJcDAk1
 !s105 ewb_sv_unit
 S1
 R0
-Z115 w1523766089
-Z116 8/home/rding4/ece411/cachemoneyrecords/ewb.sv
-Z117 F/home/rding4/ece411/cachemoneyrecords/ewb.sv
+Z114 w1523766089
+Z115 8/home/rding4/ece411/cachemoneyrecords/ewb.sv
+Z116 F/home/rding4/ece411/cachemoneyrecords/ewb.sv
 L0 3
 R9
-Z118 !s108 1524355105.803965
-Z119 !s107 /home/rding4/ece411/cachemoneyrecords/ewb.sv|
-Z120 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/ewb.sv|
+Z117 !s108 1524378130.575203
+Z118 !s107 /home/rding4/ece411/cachemoneyrecords/ewb.sv|
+Z119 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/ewb.sv|
 !i113 1
 R13
 R14
@@ -1097,14 +1097,14 @@ IBIc=>h7TJ<38WE]0k7BSm0
 !s105 ewb_control_sv_unit
 S1
 R0
-R115
-Z121 8/home/rding4/ece411/cachemoneyrecords/ewb_control.sv
-Z122 F/home/rding4/ece411/cachemoneyrecords/ewb_control.sv
+R114
+Z120 8/home/rding4/ece411/cachemoneyrecords/ewb_control.sv
+Z121 F/home/rding4/ece411/cachemoneyrecords/ewb_control.sv
 L0 3
 R9
-Z123 !s108 1524355097.044493
-Z124 !s107 /home/rding4/ece411/cachemoneyrecords/ewb_control.sv|
-Z125 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/ewb_control.sv|
+Z122 !s108 1524378128.373880
+Z123 !s107 /home/rding4/ece411/cachemoneyrecords/ewb_control.sv|
+Z124 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/ewb_control.sv|
 !i113 1
 R13
 R14
@@ -1121,14 +1121,14 @@ I4AWSdLeSSeaVH]3GzaPjd0
 !i103 1
 S1
 R0
-R115
+R114
+R120
 R121
-R122
 L0 1
 R9
+R122
 R123
 R124
-R125
 !i113 1
 R13
 R14
@@ -1146,14 +1146,14 @@ I_>7ch>joMj[7KKL1YG[@E3
 !s105 ewb_datapath_sv_unit
 S1
 R0
-R115
-Z126 8/home/rding4/ece411/cachemoneyrecords/ewb_datapath.sv
-Z127 F/home/rding4/ece411/cachemoneyrecords/ewb_datapath.sv
+R114
+Z125 8/home/rding4/ece411/cachemoneyrecords/ewb_datapath.sv
+Z126 F/home/rding4/ece411/cachemoneyrecords/ewb_datapath.sv
 L0 3
 R9
-Z128 !s108 1524355103.363023
-Z129 !s107 /home/rding4/ece411/cachemoneyrecords/ewb_datapath.sv|
-Z130 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/ewb_datapath.sv|
+Z127 !s108 1524378129.879020
+Z128 !s107 /home/rding4/ece411/cachemoneyrecords/ewb_datapath.sv|
+Z129 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/ewb_datapath.sv|
 !i113 1
 R13
 R14
@@ -1170,14 +1170,14 @@ IRYnEDN=WlkcEOla5Ba?dk3
 !i103 1
 S1
 R0
-R115
+R114
+R125
 R126
-R127
 L0 1
 R9
+R127
 R128
 R129
-R130
 !i113 1
 R13
 R14
@@ -1194,14 +1194,14 @@ IUPIkcJ=aE]VAZ8I[d5f0B0
 !i103 1
 S1
 R0
+R114
 R115
 R116
-R117
 L0 1
 R9
+R117
 R118
 R119
-R120
 !i113 1
 R13
 R14
@@ -1219,14 +1219,14 @@ IXkGNANR7a8M`Emf8N@MCZ0
 !s105 forwarding_unit_sv_unit
 S1
 R0
-Z131 w1522961067
-Z132 8/home/rding4/ece411/cachemoneyrecords/forwarding_unit.sv
-Z133 F/home/rding4/ece411/cachemoneyrecords/forwarding_unit.sv
+Z130 w1522961067
+Z131 8/home/rding4/ece411/cachemoneyrecords/forwarding_unit.sv
+Z132 F/home/rding4/ece411/cachemoneyrecords/forwarding_unit.sv
 L0 3
 R9
-Z134 !s108 1524355102.017509
-Z135 !s107 /home/rding4/ece411/cachemoneyrecords/forwarding_unit.sv|
-Z136 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/forwarding_unit.sv|
+Z133 !s108 1524378129.752227
+Z134 !s107 /home/rding4/ece411/cachemoneyrecords/forwarding_unit.sv|
+Z135 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/forwarding_unit.sv|
 !i113 1
 R13
 R14
@@ -1243,14 +1243,14 @@ IWSVj1l]DF2V]WzRzQQ>lm0
 !i103 1
 S1
 R0
+R130
 R131
 R132
-R133
 L0 1
 R9
+R133
 R134
 R135
-R136
 !i113 1
 R13
 R14
@@ -1268,14 +1268,14 @@ I^Ydo7dTUNBlzMmXX=DTeP0
 !s105 gencc_sv_unit
 S1
 R0
-Z137 w1520965967
-Z138 8/home/rding4/ece411/cachemoneyrecords/gencc.sv
-Z139 F/home/rding4/ece411/cachemoneyrecords/gencc.sv
+Z136 w1520965967
+Z137 8/home/rding4/ece411/cachemoneyrecords/gencc.sv
+Z138 F/home/rding4/ece411/cachemoneyrecords/gencc.sv
 L0 3
 R9
-Z140 !s108 1524355100.064840
-Z141 !s107 /home/rding4/ece411/cachemoneyrecords/gencc.sv|
-Z142 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/gencc.sv|
+Z139 !s108 1524378129.281358
+Z140 !s107 /home/rding4/ece411/cachemoneyrecords/gencc.sv|
+Z141 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/gencc.sv|
 !i113 1
 R13
 R14
@@ -1292,14 +1292,14 @@ Ii;FjJK:RfH[Rj]J6h2nIi2
 !i103 1
 S1
 R0
+R136
 R137
 R138
-R139
 L0 1
 R9
+R139
 R140
 R141
-R142
 !i113 1
 R13
 R14
@@ -1317,14 +1317,14 @@ I^INejHlITe6o0lz;IZ4XN3
 !s105 global_br_predictor_sv_unit
 S1
 R0
-Z143 w1524340746
-Z144 8/home/rding4/ece411/cachemoneyrecords/global_br_predictor.sv
-Z145 F/home/rding4/ece411/cachemoneyrecords/global_br_predictor.sv
+Z142 w1524340746
+Z143 8/home/rding4/ece411/cachemoneyrecords/global_br_predictor.sv
+Z144 F/home/rding4/ece411/cachemoneyrecords/global_br_predictor.sv
 L0 3
 R9
-Z146 !s108 1524355104.842474
-Z147 !s107 /home/rding4/ece411/cachemoneyrecords/global_br_predictor.sv|
-Z148 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/global_br_predictor.sv|
+Z145 !s108 1524378130.004505
+Z146 !s107 /home/rding4/ece411/cachemoneyrecords/global_br_predictor.sv|
+Z147 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/global_br_predictor.sv|
 !i113 1
 R13
 R14
@@ -1341,14 +1341,14 @@ I9n0oc[31<Xhb^=Dg;FKJL2
 !i103 1
 S1
 R0
+R142
 R143
 R144
-R145
 L0 1
 R9
+R145
 R146
 R147
-R148
 !i113 1
 R13
 R14
@@ -1366,14 +1366,14 @@ I3o]6gbZZ=zmbZeaPb;F<k2
 !s105 incremental_counter_sv_unit
 S1
 R0
-Z149 w1523813886
-Z150 8/home/rding4/ece411/cachemoneyrecords/incremental_counter.sv
-Z151 F/home/rding4/ece411/cachemoneyrecords/incremental_counter.sv
+Z148 w1523813886
+Z149 8/home/rding4/ece411/cachemoneyrecords/incremental_counter.sv
+Z150 F/home/rding4/ece411/cachemoneyrecords/incremental_counter.sv
 L0 3
 R9
-Z152 !s108 1524355097.290053
-Z153 !s107 /home/rding4/ece411/cachemoneyrecords/incremental_counter.sv|
-Z154 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/incremental_counter.sv|
+Z151 !s108 1524378128.453997
+Z152 !s107 /home/rding4/ece411/cachemoneyrecords/incremental_counter.sv|
+Z153 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/incremental_counter.sv|
 !i113 1
 R13
 R14
@@ -1390,14 +1390,14 @@ I_n=m@0X82gzZ]1JmGWZM`3
 !i103 1
 S1
 R0
+R148
 R149
 R150
-R151
 L0 1
 R9
+R151
 R152
 R153
-R154
 !i113 1
 R13
 R14
@@ -1415,14 +1415,14 @@ IT;5liZ8c[JVKk_]T:mVJA0
 !s105 l2array_sv_unit
 S1
 R0
-Z155 w1521257884
-Z156 8/home/rding4/ece411/cachemoneyrecords/l2array.sv
-Z157 F/home/rding4/ece411/cachemoneyrecords/l2array.sv
+Z154 w1521257884
+Z155 8/home/rding4/ece411/cachemoneyrecords/l2array.sv
+Z156 F/home/rding4/ece411/cachemoneyrecords/l2array.sv
 L0 3
 R9
-Z158 !s108 1524355098.755804
-Z159 !s107 /home/rding4/ece411/cachemoneyrecords/l2array.sv|
-Z160 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/l2array.sv|
+Z157 !s108 1524378128.908484
+Z158 !s107 /home/rding4/ece411/cachemoneyrecords/l2array.sv|
+Z159 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/l2array.sv|
 !i113 1
 R13
 R14
@@ -1439,14 +1439,14 @@ Iok5ZOz4d_h1[DdgbLn^D?3
 !i103 1
 S1
 R0
+R154
 R155
 R156
-R157
 L0 1
 R9
+R157
 R158
 R159
-R160
 !i113 1
 R13
 R14
@@ -1464,14 +1464,14 @@ IP2dWCVJ8zI[QC7X_ThXhE2
 !s105 l2cache_sv_unit
 S1
 R0
-Z161 w1524340748
-Z162 8/home/rding4/ece411/cachemoneyrecords/l2cache.sv
-Z163 F/home/rding4/ece411/cachemoneyrecords/l2cache.sv
+Z160 w1524340748
+Z161 8/home/rding4/ece411/cachemoneyrecords/l2cache.sv
+Z162 F/home/rding4/ece411/cachemoneyrecords/l2cache.sv
 L0 3
 R9
-Z164 !s108 1524355105.994808
-Z165 !s107 /home/rding4/ece411/cachemoneyrecords/l2cache.sv|
-Z166 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/l2cache.sv|
+Z163 !s108 1524378130.641660
+Z164 !s107 /home/rding4/ece411/cachemoneyrecords/l2cache.sv|
+Z165 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/l2cache.sv|
 !i113 1
 R13
 R14
@@ -1485,7 +1485,7 @@ R4
 !s105 l2cache_control_sv_unit
 S1
 R0
-R161
+R160
 8/home/rding4/ece411/cachemoneyrecords/l2cache_control.sv
 F/home/rding4/ece411/cachemoneyrecords/l2cache_control.sv
 L0 3
@@ -1493,7 +1493,7 @@ R9
 r1
 !s85 0
 31
-!s108 1524355095.364384
+!s108 1524378127.883303
 !s107 /home/rding4/ece411/cachemoneyrecords/l2cache_control.sv|
 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/l2cache_control.sv|
 !i113 1
@@ -1513,14 +1513,14 @@ I7O;M`mzfMLN0UkgPMXWNP2
 !s105 l2cache_datapath_sv_unit
 S1
 R0
-R161
-Z167 8/home/rding4/ece411/cachemoneyrecords/l2cache_datapath.sv
-Z168 F/home/rding4/ece411/cachemoneyrecords/l2cache_datapath.sv
+R160
+Z166 8/home/rding4/ece411/cachemoneyrecords/l2cache_datapath.sv
+Z167 F/home/rding4/ece411/cachemoneyrecords/l2cache_datapath.sv
 L0 3
 R9
-Z169 !s108 1524355105.422564
-Z170 !s107 /home/rding4/ece411/cachemoneyrecords/l2cache_datapath.sv|
-Z171 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/l2cache_datapath.sv|
+Z168 !s108 1524378130.349130
+Z169 !s107 /home/rding4/ece411/cachemoneyrecords/l2cache_datapath.sv|
+Z170 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/l2cache_datapath.sv|
 !i113 1
 R13
 R14
@@ -1537,14 +1537,14 @@ I[A[cz4LF=kg]IjicD6FRU1
 !i103 1
 S1
 R0
-R161
+R160
+R166
 R167
-R168
 L0 1
 R9
+R168
 R169
 R170
-R171
 !i113 1
 R13
 R14
@@ -1561,27 +1561,27 @@ IfG<hf[Z4nBc`L>BA5=aLL1
 !i103 1
 S1
 R0
+R160
 R161
 R162
-R163
 L0 1
 R9
+R163
 R164
 R165
-R166
 !i113 1
 R13
 R14
 Xlc3b_types
 R1
-Z172 !s110 1524355096
+R27
 !i10b 1
 !s100 fk<9cQR[b0SP`<zV@6EKT3
 I0ni>zE39EJF:?^W;KSe6z1
 V0ni>zE39EJF:?^W;KSe6z1
 S1
 R0
-R131
+R130
 8/home/rding4/ece411/cachemoneyrecords/lc3b_types.sv
 F/home/rding4/ece411/cachemoneyrecords/lc3b_types.sv
 L0 1
@@ -1589,7 +1589,7 @@ R9
 r1
 !s85 0
 31
-!s108 1524355096.139016
+!s108 1524378128.144492
 !s107 /home/rding4/ece411/cachemoneyrecords/lc3b_types.sv|
 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/lc3b_types.sv|
 !i113 1
@@ -1609,14 +1609,14 @@ Id:EW=hY5`Z3d9:8zYzaT60
 !s105 ldi_sti_control_sv_unit
 S1
 R0
-Z173 w1523518839
-Z174 8/home/rding4/ece411/cachemoneyrecords/ldi_sti_control.sv
-Z175 F/home/rding4/ece411/cachemoneyrecords/ldi_sti_control.sv
+Z171 w1523518839
+Z172 8/home/rding4/ece411/cachemoneyrecords/ldi_sti_control.sv
+Z173 F/home/rding4/ece411/cachemoneyrecords/ldi_sti_control.sv
 L0 3
 R9
-Z176 !s108 1524355101.843121
-Z177 !s107 /home/rding4/ece411/cachemoneyrecords/ldi_sti_control.sv|
-Z178 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/ldi_sti_control.sv|
+Z174 !s108 1524378129.689641
+Z175 !s107 /home/rding4/ece411/cachemoneyrecords/ldi_sti_control.sv|
+Z176 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/ldi_sti_control.sv|
 !i113 1
 R13
 R14
@@ -1633,14 +1633,14 @@ Io<2`I<NFi9EdalP2K;>eO0
 !i103 1
 S1
 R0
+R171
+R172
 R173
-R174
-R175
 L0 1
 R9
+R174
+R175
 R176
-R177
-R178
 !i113 1
 R13
 R14
@@ -1658,14 +1658,14 @@ IalDHWf;?^RB;z0Y90E:Sb1
 !s105 local_br_predictor_sv_unit
 S1
 R0
-Z179 w1524192052
-Z180 8/home/rding4/ece411/cachemoneyrecords/local_br_predictor.sv
-Z181 F/home/rding4/ece411/cachemoneyrecords/local_br_predictor.sv
+Z177 w1524192052
+Z178 8/home/rding4/ece411/cachemoneyrecords/local_br_predictor.sv
+Z179 F/home/rding4/ece411/cachemoneyrecords/local_br_predictor.sv
 L0 3
 R9
-Z182 !s108 1524355104.992319
-Z183 !s107 /home/rding4/ece411/cachemoneyrecords/local_br_predictor.sv|
-Z184 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/local_br_predictor.sv|
+Z180 !s108 1524378130.091058
+Z181 !s107 /home/rding4/ece411/cachemoneyrecords/local_br_predictor.sv|
+Z182 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/local_br_predictor.sv|
 !i113 1
 R13
 R14
@@ -1682,20 +1682,20 @@ IH;?F@V?HjhZXYi6E?lH]T0
 !i103 1
 S1
 R0
+R177
+R178
 R179
-R180
-R181
 L0 1
 R9
+R180
+R181
 R182
-R183
-R184
 !i113 1
 R13
 R14
 vlru_replace
 R1
-!s110 1524355098
+R27
 !i10b 1
 !s100 cBjaD5P^F]UZdhdT^M2?k2
 Ik;ec?M0DXM_PL6k@1lDfT1
@@ -1703,7 +1703,7 @@ R4
 !s105 lru_replace_sv_unit
 S1
 R0
-R161
+R160
 8/home/rding4/ece411/cachemoneyrecords/lru_replace.sv
 F/home/rding4/ece411/cachemoneyrecords/lru_replace.sv
 L0 1
@@ -1711,7 +1711,7 @@ R9
 r1
 !s85 0
 31
-!s108 1524355098.214191
+!s108 1524378128.718483
 !s107 /home/rding4/ece411/cachemoneyrecords/lru_replace.sv|
 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/lru_replace.sv|
 !i113 1
@@ -1731,14 +1731,14 @@ Im9N_QKK;BiNKOUE9Wh2<j1
 !s105 mdrmask_sv_unit
 S1
 R0
-Z185 w1521171066
-Z186 8/home/rding4/ece411/cachemoneyrecords/mdrmask.sv
-Z187 F/home/rding4/ece411/cachemoneyrecords/mdrmask.sv
+Z183 w1521171066
+Z184 8/home/rding4/ece411/cachemoneyrecords/mdrmask.sv
+Z185 F/home/rding4/ece411/cachemoneyrecords/mdrmask.sv
 L0 3
 R9
-Z188 !s108 1524355101.329931
-Z189 !s107 /home/rding4/ece411/cachemoneyrecords/mdrmask.sv|
-Z190 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/mdrmask.sv|
+Z186 !s108 1524378129.515219
+Z187 !s107 /home/rding4/ece411/cachemoneyrecords/mdrmask.sv|
+Z188 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/mdrmask.sv|
 !i113 1
 R13
 R14
@@ -1755,14 +1755,14 @@ IV72SbI;nOLfX@Y3QCGSd^3
 !i103 1
 S1
 R0
+R183
+R184
 R185
-R186
-R187
 L0 1
 R9
+R186
+R187
 R188
-R189
-R190
 !i113 1
 R13
 R14
@@ -1780,14 +1780,14 @@ I]UbVnCDDbzY?>GCT2Qd[_1
 !s105 mem_enable_ctrl_sv_unit
 S1
 R0
-Z191 w1521192231
-Z192 8/home/rding4/ece411/cachemoneyrecords/mem_enable_ctrl.sv
-Z193 F/home/rding4/ece411/cachemoneyrecords/mem_enable_ctrl.sv
+Z189 w1521192231
+Z190 8/home/rding4/ece411/cachemoneyrecords/mem_enable_ctrl.sv
+Z191 F/home/rding4/ece411/cachemoneyrecords/mem_enable_ctrl.sv
 L0 3
 R9
-Z194 !s108 1524355101.662108
-Z195 !s107 /home/rding4/ece411/cachemoneyrecords/mem_enable_ctrl.sv|
-Z196 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/mem_enable_ctrl.sv|
+Z192 !s108 1524378129.631683
+Z193 !s107 /home/rding4/ece411/cachemoneyrecords/mem_enable_ctrl.sv|
+Z194 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/mem_enable_ctrl.sv|
 !i113 1
 R13
 R14
@@ -1804,14 +1804,14 @@ IioD:52zl:6Zmh8Bj3HR370
 !i103 1
 S1
 R0
+R189
+R190
 R191
-R192
-R193
 L0 1
 R9
+R192
+R193
 R194
-R195
-R196
 !i113 1
 R13
 R14
@@ -1829,14 +1829,14 @@ IUA1RafPJj=D]FKeCQJLHd0
 !s105 mp3_sv_unit
 S1
 R0
-Z197 w1523769114
-Z198 8/home/rding4/ece411/cachemoneyrecords/mp3.sv
-Z199 F/home/rding4/ece411/cachemoneyrecords/mp3.sv
+Z195 w1523769114
+Z196 8/home/rding4/ece411/cachemoneyrecords/mp3.sv
+Z197 F/home/rding4/ece411/cachemoneyrecords/mp3.sv
 L0 3
 R9
-Z200 !s108 1524355106.638188
-Z201 !s107 /home/rding4/ece411/cachemoneyrecords/mp3.sv|
-Z202 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/mp3.sv|
+Z198 !s108 1524378130.861721
+Z199 !s107 /home/rding4/ece411/cachemoneyrecords/mp3.sv|
+Z200 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/mp3.sv|
 !i113 1
 R13
 R14
@@ -1853,20 +1853,20 @@ IWak9akmIkJFC`Uh>oPeO@3
 !i103 1
 S1
 R0
+R195
+R196
 R197
-R198
-R199
 L0 1
 R9
+R198
+R199
 R200
-R201
-R202
 !i113 1
 R13
 R14
 vmp3_tb
 R1
-Z203 !s110 1524355107
+!s110 1524378130
 !i10b 1
 !s100 _aOK[kC=Yal:C=fQaEOF42
 IEz44V=<jJeV^9Y=V2Sn^H3
@@ -1874,7 +1874,7 @@ R4
 !s105 mp3_tb_sv_unit
 S1
 R0
-R155
+R154
 8/home/rding4/ece411/cachemoneyrecords/mp3_tb.sv
 F/home/rding4/ece411/cachemoneyrecords/mp3_tb.sv
 L0 1
@@ -1882,7 +1882,7 @@ R9
 r1
 !s85 0
 31
-!s108 1524355106.897893
+!s108 1524378130.921257
 !s107 /home/rding4/ece411/cachemoneyrecords/mp3_tb.sv|
 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/mp3_tb.sv|
 !i113 1
@@ -1890,97 +1890,97 @@ R13
 R14
 vmux16
 R1
-R172
+R27
 !i10b 1
 !s100 `X4nVWlEM::SBIV04NL[O3
 IPFY1C:gjPCl^F4BBbPN572
 R4
-Z204 !s105 mux_sv_unit
+Z201 !s105 mux_sv_unit
 S1
 R0
-Z205 w1523768550
-Z206 8/home/rding4/ece411/cachemoneyrecords/mux.sv
-Z207 F/home/rding4/ece411/cachemoneyrecords/mux.sv
+Z202 w1523768550
+Z203 8/home/rding4/ece411/cachemoneyrecords/mux.sv
+Z204 F/home/rding4/ece411/cachemoneyrecords/mux.sv
 L0 63
 R9
 r1
 !s85 0
 31
-Z208 !s108 1524355096.856740
-Z209 !s107 /home/rding4/ece411/cachemoneyrecords/mux.sv|
-Z210 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/mux.sv|
+Z205 !s108 1524378128.310250
+Z206 !s107 /home/rding4/ece411/cachemoneyrecords/mux.sv|
+Z207 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/mux.sv|
 !i113 1
 R13
 R14
 vmux2
 R1
-R172
+R27
 !i10b 1
 !s100 h`YFGU71]1FiAY<5G<TU`2
 I912C19H@PbK^`n;1=O2eD2
 R4
-R204
+R201
 S1
 R0
-R205
-R206
-R207
+R202
+R203
+R204
 L0 1
 R9
 r1
 !s85 0
 31
-R208
-R209
-R210
+R205
+R206
+R207
 !i113 1
 R13
 R14
 vmux4
 R1
-R172
+R27
 !i10b 1
 !s100 g9kV2m7:SZ:U?eSV@@?L23
 ISgPE:jolPb_Y>KUg`3GA30
 R4
-R204
+R201
 S1
 R0
-R205
-R206
-R207
-Z211 L0 16
+R202
+R203
+R204
+Z208 L0 16
 R9
 r1
 !s85 0
 31
-R208
-R209
-R210
+R205
+R206
+R207
 !i113 1
 R13
 R14
 vmux8
 R1
-R172
+R27
 !i10b 1
 !s100 0Z?T`@?^m@eK`;[oec;WJ0
 IdNf_GJLYiK5Wi_H5ECTL61
 R4
-R204
+R201
 S1
 R0
-R205
-R206
-R207
+R202
+R203
+R204
 L0 35
 R9
 r1
 !s85 0
 31
-R208
-R209
-R210
+R205
+R206
+R207
 !i113 1
 R13
 R14
@@ -1994,7 +1994,7 @@ R4
 !s105 pattern_hist_table_sv_unit
 S1
 R0
-Z212 w1524192053
+Z209 w1524192053
 8/home/rding4/ece411/cachemoneyrecords/pattern_hist_table.sv
 F/home/rding4/ece411/cachemoneyrecords/pattern_hist_table.sv
 L0 1
@@ -2002,7 +2002,7 @@ R9
 r1
 !s85 0
 31
-!s108 1524355097.729824
+!s108 1524378128.592936
 !s107 /home/rding4/ece411/cachemoneyrecords/pattern_hist_table.sv|
 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/pattern_hist_table.sv|
 !i113 1
@@ -2022,14 +2022,14 @@ I]CF`iF7nOk[Un[Oo^P?4T2
 !s105 pht_update_ctrl_sv_unit
 S1
 R0
-R212
-Z213 8/home/rding4/ece411/cachemoneyrecords/pht_update_ctrl.sv
-Z214 F/home/rding4/ece411/cachemoneyrecords/pht_update_ctrl.sv
+R209
+Z210 8/home/rding4/ece411/cachemoneyrecords/pht_update_ctrl.sv
+Z211 F/home/rding4/ece411/cachemoneyrecords/pht_update_ctrl.sv
 L0 3
 R9
-Z215 !s108 1524355098.003616
-Z216 !s107 /home/rding4/ece411/cachemoneyrecords/pht_update_ctrl.sv|
-Z217 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/pht_update_ctrl.sv|
+Z212 !s108 1524378128.660369
+Z213 !s107 /home/rding4/ece411/cachemoneyrecords/pht_update_ctrl.sv|
+Z214 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/pht_update_ctrl.sv|
 !i113 1
 R13
 R14
@@ -2046,20 +2046,20 @@ Ik5]zElGf@<UMcLWn7<Ujz2
 !i103 1
 S1
 R0
+R209
+R210
+R211
+L0 1
+R9
 R212
 R213
 R214
-L0 1
-R9
-R215
-R216
-R217
 !i113 1
 R13
 R14
 vphysical_memory
 R1
-R203
+!s110 1524378131
 !i10b 1
 !s100 H`P7mS0fD8RgV=g0`dF4k1
 IAiYVHDnSTAhhW3o2JcK=61
@@ -2067,7 +2067,7 @@ R4
 !s105 physical_memory_sv_unit
 S1
 R0
-R155
+R154
 8/home/rding4/ece411/cachemoneyrecords/physical_memory.sv
 F/home/rding4/ece411/cachemoneyrecords/physical_memory.sv
 L0 1
@@ -2075,7 +2075,7 @@ R9
 r1
 !s85 0
 31
-!s108 1524355107.207310
+!s108 1524378130.985576
 !s107 /home/rding4/ece411/cachemoneyrecords/physical_memory.sv|
 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/physical_memory.sv|
 !i113 1
@@ -2083,7 +2083,7 @@ R13
 R14
 vplus2
 R1
-R172
+R27
 !i10b 1
 !s100 k?FJgXc3l7B=Nk0]iVGm[2
 II]ed2>S=jE9:5U9if6dfK2
@@ -2091,7 +2091,7 @@ R4
 !s105 plus2_sv_unit
 S1
 R0
-Z218 w1520965969
+Z215 w1520965969
 8/home/rding4/ece411/cachemoneyrecords/plus2.sv
 F/home/rding4/ece411/cachemoneyrecords/plus2.sv
 L0 1
@@ -2099,7 +2099,7 @@ R9
 r1
 !s85 0
 31
-!s108 1524355096.339392
+!s108 1524378128.203079
 !s107 /home/rding4/ece411/cachemoneyrecords/plus2.sv|
 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/plus2.sv|
 !i113 1
@@ -2119,14 +2119,14 @@ I73DFXdmOGSzMNVGUgSPJY3
 !s105 regfile_sv_unit
 S1
 R0
-Z219 w1522961068
-Z220 8/home/rding4/ece411/cachemoneyrecords/regfile.sv
-Z221 F/home/rding4/ece411/cachemoneyrecords/regfile.sv
+Z216 w1522961068
+Z217 8/home/rding4/ece411/cachemoneyrecords/regfile.sv
+Z218 F/home/rding4/ece411/cachemoneyrecords/regfile.sv
 L0 3
 R9
-Z222 !s108 1524355100.359331
-Z223 !s107 /home/rding4/ece411/cachemoneyrecords/regfile.sv|
-Z224 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/regfile.sv|
+Z219 !s108 1524378129.340033
+Z220 !s107 /home/rding4/ece411/cachemoneyrecords/regfile.sv|
+Z221 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/regfile.sv|
 !i113 1
 R13
 R14
@@ -2143,20 +2143,20 @@ IgAG?hnWJOKVJG<l5oldLe0
 !i103 1
 S1
 R0
+R216
+R217
+R218
+L0 1
+R9
 R219
 R220
 R221
-L0 1
-R9
-R222
-R223
-R224
 !i113 1
 R13
 R14
 vregister
 R1
-R172
+R27
 !i10b 1
 !s100 =zmh@?Zh;O4M^1P`K;E9m2
 I@lk?n=8dLHN5f`oP<j6C;2
@@ -2164,7 +2164,7 @@ R4
 !s105 register_sv_unit
 S1
 R0
-R218
+R215
 8/home/rding4/ece411/cachemoneyrecords/register.sv
 F/home/rding4/ece411/cachemoneyrecords/register.sv
 L0 1
@@ -2172,7 +2172,7 @@ R9
 r1
 !s85 0
 31
-!s108 1524355096.647420
+!s108 1524378128.255795
 !s107 /home/rding4/ece411/cachemoneyrecords/register.sv|
 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/register.sv|
 !i113 1
@@ -2195,7 +2195,7 @@ R0
 R6
 R7
 R8
-R211
+R208
 R9
 R10
 R11
@@ -2217,14 +2217,14 @@ IZhPhiIa>Ya9DU9KVlei4`2
 !s105 srmask_sv_unit
 S1
 R0
-Z225 w1521182494
-Z226 8/home/rding4/ece411/cachemoneyrecords/srmask.sv
-Z227 F/home/rding4/ece411/cachemoneyrecords/srmask.sv
+Z222 w1521182494
+Z223 8/home/rding4/ece411/cachemoneyrecords/srmask.sv
+Z224 F/home/rding4/ece411/cachemoneyrecords/srmask.sv
 L0 3
 R9
-Z228 !s108 1524355101.507640
-Z229 !s107 /home/rding4/ece411/cachemoneyrecords/srmask.sv|
-Z230 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/srmask.sv|
+Z225 !s108 1524378129.576093
+Z226 !s107 /home/rding4/ece411/cachemoneyrecords/srmask.sv|
+Z227 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/srmask.sv|
 !i113 1
 R13
 R14
@@ -2241,20 +2241,20 @@ II6E4M[W=DCc81oeUzf8em0
 !i103 1
 S1
 R0
+R222
+R223
+R224
+L0 1
+R9
 R225
 R226
 R227
-L0 1
-R9
-R228
-R229
-R230
 !i113 1
 R13
 R14
 Ywishbone
 R1
-R49
+R27
 !i10b 1
 !s100 5leA@<aEK9M]F:K;=KVRM3
 IzjkMnl@3kmbRgSmNIjOiK2
@@ -2270,7 +2270,7 @@ R9
 r1
 !s85 0
 31
-!s108 1524355095.894088
+!s108 1524378128.074015
 !s107 /home/rding4/ece411/cachemoneyrecords/wishbone.sv|
 !s90 -sv|-work|work|+incdir+/home/rding4/ece411/cachemoneyrecords|/home/rding4/ece411/cachemoneyrecords/wishbone.sv|
 !i113 1

@@ -30,7 +30,9 @@ entity cache_control is
         cpu_stb         : in     vl_logic;
         cpu_we          : in     vl_logic;
         cpu_ack         : out    vl_logic;
-        load_mar        : out    vl_logic;
-        load_mdr        : out    vl_logic
+        load_mdr        : out    vl_logic;
+        reginmux_sel    : out    vl_logic;
+        addrregmux_sel  : out    vl_logic;
+        load_mar        : out    vl_logic
     );
 end cache_control;
