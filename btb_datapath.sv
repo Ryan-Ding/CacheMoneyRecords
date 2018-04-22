@@ -49,7 +49,9 @@ lc3b_word data1_out;
 lc3b_word data2_out;
 lc3b_word data3_out;
 
-assign pc_index_offset = pc_addr[6:4];
+lc3b_word addrmux_out;
+
+assign pc_index_offset = addrmux_out[6:4];
 assign wb_index_offset = old_pc_addr[6:4];
 assign btb_out = dataout_mux_out;
 
@@ -91,7 +93,7 @@ btb_array #(.width(16)) data0
 (
     .clk(clk),
     .write(way0_write),
-    .rindex(pc_index_offset),
+    .rindex(pc_addr[6:4]),
 	 .windex(wb_index_offset),
     .datain(wb_addr),
     .dataout(data0_out)
@@ -101,7 +103,7 @@ btb_array #(.width(16)) data1
 (
     .clk(clk),
     .write(way1_write),
-    .rindex(pc_index_offset),
+    .rindex(pc_addr[6:4]),
 	 .windex(wb_index_offset),
     .datain(wb_addr),
     .dataout(data1_out)
@@ -111,7 +113,7 @@ btb_array #(.width(16)) data2
 (
     .clk(clk),
     .write(way2_write),
-    .rindex(pc_index_offset),
+    .rindex(pc_addr[6:4]),
 	 .windex(wb_index_offset),
     .datain(wb_addr),
     .dataout(data2_out)
@@ -121,11 +123,20 @@ btb_array #(.width(16)) data3
 (
     .clk(clk),
     .write(way3_write),
-    .rindex(pc_index_offset),
+    .rindex(pc_addr[6:4]),
 	 .windex(wb_index_offset),
     .datain(wb_addr),
     .dataout(data3_out)
 );
+
+mux2 #(.width(16)) addrmux
+(
+	.sel(wb_enable),
+	.a(pc_addr),
+	.b(old_pc_addr),
+	.f(addrmux_out)
+);
+
 
 btb_array #(.width(15)) tag0
 (

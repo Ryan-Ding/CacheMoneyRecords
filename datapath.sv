@@ -161,7 +161,6 @@ lc3b_word mem_address;
 logic flush;
 
 logic pipeline_reg_load;
-assign pipeline_reg_load = proceed & (!br_ctrl_out | ifetch.ACK);
 
 
 lc3b_word pcoutmux_out;
@@ -191,6 +190,8 @@ assign mem_rdata = data_mem_in >> (16 * mem_address[3:1]);
 assign load_pcmar = (proceed  & ifetch.ACK) | br_ctrl_out;
 //assign load_pc = (proceed | br_ctrl_out)  & ifetch.ACK;
 assign load_pc = proceed & ifetch.ACK & (!forward_fetch_stall);
+assign pipeline_reg_load = proceed & (!br_ctrl_out | ifetch.ACK) & !(!load_pc && flush && br_ctrl_out== 0);
+
 assign load_instruction_mdr = ifetch.ACK;
 
 
@@ -240,7 +241,7 @@ if(flush && br_ctrl_out== 0)
 	pcmux_sel = 3'b100;
 else if (flush && br_ctrl_out!=0 )
 	pcmux_sel = {1'b0,br_ctrl_out};
-else if ((pred_taken || is_jsr_jmp) && btb_hit)
+else if ((pred_taken) && btb_hit)
 	pcmux_sel = 3'b011;
 else pcmux_sel = 0;
 //btb_updata_pc
