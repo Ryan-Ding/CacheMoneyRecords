@@ -230,6 +230,8 @@ assign load_mem_wb_reg = pipeline_reg_load;
 //wb
 assign wbisbranch = (ir_mem_wb_out[15:12] == op_trap)|(ir_mem_wb_out[15:12] == op_jsr)|(ir_mem_wb_out[15:12] == op_jmp)|((ir_mem_wb_out[15:12] == op_br) & (ir_mem_wb_out[11]|ir_mem_wb_out[10]|ir_mem_wb_out[9]));
 
+logic is_jsr_jmp;
+assign is_jsr_jmp = (instruction_data[15:12] == op_jsr) | (instruction_data[15:12] == op_jmp);
 //pcmux selection signals
 always_comb
 begin
@@ -238,7 +240,7 @@ if(flush && br_ctrl_out== 0)
 	pcmux_sel = 3'b100;
 else if (flush && br_ctrl_out!=0 )
 	pcmux_sel = {1'b0,br_ctrl_out};
-else if (pred_taken && btb_hit)
+else if ((pred_taken || is_jsr_jmp) && btb_hit)
 	pcmux_sel = 3'b011;
 else pcmux_sel = 0;
 //btb_updata_pc

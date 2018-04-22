@@ -70,10 +70,10 @@ btb_sel btb_sel_pc
 
 btb_sel btb_sel_wb
 (
-    .pc_comp0_out(wb_comp0_out),
-	 .pc_comp1_out(wb_comp1_out),
-	 .pc_comp2_out(wb_comp2_out),
-	 .pc_comp3_out(wb_comp3_out),
+    .pc_comp0_out(way0_write),
+	 .pc_comp1_out(way1_write),
+	 .pc_comp2_out(way2_write),
+	 .pc_comp3_out(way3_write),
     .dataout_mux_sel(wb_way_hit)
 );
 
@@ -255,28 +255,28 @@ comparator #(.width(15)) pc_comp3
 
 comparator #(.width(15)) wb_comp0
 (
-	.a(wb_addr[15:1]),
+	.a(old_pc_addr[15:1]),
 	.b(tag0_out),
 	.f(wb_comp0_out)
 );
 
 comparator #(.width(15)) wb_comp1
 (
-	.a(wb_addr[15:1]),
+	.a(old_pc_addr[15:1]),
 	.b(tag1_out),
 	.f(wb_comp1_out)
 );
 
 comparator #(.width(15)) wb_comp2
 (
-	.a(wb_addr[15:1]),
+	.a(old_pc_addr[15:1]),
 	.b(tag2_out),
 	.f(wb_comp2_out)
 );
 
 comparator #(.width(15)) wb_comp3
 (
-	.a(wb_addr[15:1]),
+	.a(old_pc_addr[15:1]),
 	.b(tag3_out),
 	.f(wb_comp3_out)
 );
