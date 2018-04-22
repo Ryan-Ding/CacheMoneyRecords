@@ -5,7 +5,7 @@ module l2cache_datapath
     input clk,
 
     /* control signals */
-    input lc3b_word adr_i_cpu,
+    input lc3b_word adr_i_cpu_in,
 	 input way0_write,
 	 input v0_in,
 	 input dirty0_in,
@@ -34,10 +34,17 @@ module l2cache_datapath
 	 //mem signals
 	 output lc3b_8words dat_o_mem,
 	 output lc3b_word adr_o_mem,
-	 input lc3b_8words dat_i_mem	 
+	 input lc3b_8words dat_i_mem	 ,
+	 
+	  input reginmux_sel,
+	 input addrregmux_sel,
+	 input load_mar
+
 	 
 	 
 );
+
+lc3b_word adr_i_cpu;
 
 /* declare internal signals */
 lc3b_8words datainmux_out;
@@ -74,15 +81,18 @@ lc3b_8words cpudatainmux_out;
 logic [2:0] lru_in;
 logic [2:0] lru_out;
 
+lc3b_word mar_in;
+lc3b_word mar_out;
 
 
-assign hit0 = (adr_i_cpu[15:8] == tag0_out) & valid0_out;
-assign hit1 = (adr_i_cpu[15:8] == tag1_out) & valid1_out;
-assign hit2 = (adr_i_cpu[15:8] == tag2_out) & valid2_out;
-assign hit3 = (adr_i_cpu[15:8] == tag3_out) & valid3_out;
+assign hit0 = (adr_i_cpu_in[15:8] == tag0_out) & valid0_out;
+assign hit1 = (adr_i_cpu_in[15:8] == tag1_out) & valid1_out;
+assign hit2 = (adr_i_cpu_in[15:8] == tag2_out) & valid2_out;
+assign hit3 = (adr_i_cpu_in[15:8] == tag3_out) & valid3_out;
 assign hit = hit0 | hit1 |hit2 |hit3 ;
-assign write_back_addr = {tagmux_out,adr_i_cpu[7:4],4'b0000};
+assign write_back_addr = {tagmux_out,adr_i_cpu_in[7:4],4'b0000};
 
+assign adr_o_mem = mar_out;
 
 //way0
 //data
@@ -307,12 +317,35 @@ mux4 #(.width (8)) tagmux
 	.f(tagmux_out)
 );
 
-mux2 #(.width (16)) memaddrmux
+//mux2 #(.width (16)) memaddrmux
+//(
+//	.sel(memaddrmux_sel),
+//	.a(adr_i_cpu), 
+//	.b(write_back_addr),
+//	.f(adr_o_mem)
+//);
+
+register #(.width(16)) mar
 (
-	.sel(memaddrmux_sel),
-	.a(adr_i_cpu), 
+    .clk(clk),
+    .load(load_mar),
+    .in(mar_in),
+    .out(mar_out)
+);
+mux2 #(.width (16)) addrregmux
+(
+	.sel(addrregmux_sel),
+	.a(adr_i_cpu_in), 
+	.b(mar_out),
+	.f(adr_i_cpu)
+);
+
+mux2 #(.width (16)) reginmux
+(
+	.sel(reginmux_sel),
+	.a(adr_i_cpu_in), 
 	.b(write_back_addr),
-	.f(adr_o_mem)
+	.f(mar_in)
 );
 
 mux4 #(.width (1)) dirtymux

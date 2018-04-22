@@ -57,6 +57,9 @@ lc3b_8words dat_o_mem;
 lc3b_word adr_o_mem;
 lc3b_8words dat_i_mem;
 
+logic load_mar;
+logic reginmux_sel;
+logic addrregmux_sel;
 
 
 assign wb_cpu_cache.DAT_S = dat_o_cpu;
@@ -133,8 +136,13 @@ l2cache_control l2cache_control
 	 .cpu_cyc,
 	 .cpu_stb,
 	 .cpu_we,
-	 .cpu_ack
+	 .cpu_ack,
 //	 output logic cpu_rty
+
+	 .load_mar,
+	 .reginmux_sel,
+	 .addrregmux_sel
+
 	 
 );
 
@@ -143,7 +151,7 @@ l2cache_datapath l2cache_datapath
     .clk(wb_cache_mem.CLK),
 
     /* control signals */
-    .adr_i_cpu,
+    .adr_i_cpu_in(adr_i_cpu),
 	 .way0_write,
 	 .v0_in,
 	 . dirty0_in,
@@ -172,7 +180,11 @@ l2cache_datapath l2cache_datapath
 	 //mem signals
 	 .dat_o_mem,
 	 .adr_o_mem,
-	 .dat_i_mem	 
+	 .dat_i_mem,
+
+	 .load_mar,
+	 .reginmux_sel,
+	 .addrregmux_sel
 	 
 	 
 );

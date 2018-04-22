@@ -35,8 +35,13 @@ module l2cache_control
 	 input cpu_cyc,
 	 input cpu_stb,
 	 input cpu_we,
-	 output logic cpu_ack
+	 output logic cpu_ack,
 //	 output logic cpu_rty
+
+	output logic reginmux_sel,
+	 output logic addrregmux_sel,
+	 output logic load_mar
+
 	 
 );
 
@@ -76,6 +81,7 @@ begin : state_actions
 	 cpu_ack = 1'b0;
 //	 cpu_rty = 1'b0;
 	
+	addrregmux_sel = 1'b0;
 	 
 	 /*et cetera*/
 	 
@@ -120,6 +126,7 @@ begin : state_actions
 			mem_cyc = 1;
 			mem_stb = 1;
 			mem_we = 0;
+			addrregmux_sel = 1;
 			
 	
 			if(wb_way_sel == 2'b00)
@@ -155,6 +162,7 @@ begin : state_actions
 			mem_we = 1;
 			mem_cyc = 1;
 			mem_stb = 1;
+			addrregmux_sel = 1;
 		end
 		strobe: begin
 			mem_cyc = 0;
@@ -174,14 +182,26 @@ begin : next_state_logic
     /* Next state information and conditions (if any)
      * for transitioning between states */
 	  next_states = state;
+	  reginmux_sel = 0;
+	  load_mar = 0;
+
 
 	  case(state)
 		hit_idle:	
 			if(cpu_cyc & cpu_stb) begin
 					if(hit == 1) next_states = hit_idle;
 						else begin 
-							if(dirty == 0) next_states = allocate;
-							else next_states = write_back;
+							load_mar = 1;
+							if(dirty == 0) 
+							begin
+								next_states = allocate;
+							end
+
+							else 
+							begin
+								next_states = write_back;
+								reginmux_sel = 1;
+							end
 						end
 			end
 		allocate: if (mem_ack == 0) next_states = allocate;
